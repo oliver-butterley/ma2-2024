@@ -1,0 +1,22 @@
+\documentclass{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13}
+\usepackage{amsmath}
+\usepackage{svg} % automatically convert svg and include
+
+\begin{document}
+\begin{tikzpicture}%
+    \node[anchor=south west,inner sep=0] (image) at (0,0)
+    {\includesvg[width=80mm,inkscapelatex=false]{lagrange}};
+    % SVG adapted from work in public domain (https://commons.wikimedia.org/wiki/File:LagrangeMultipliers2D.svg)
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % scope for unitary coordinates over image
+        \node[] at (0.57,.57) {\(\nabla f\)};
+        \node[] at (0.74,.50) {\color{red}\(\nabla g\)};
+        \node[] at (0.25,0.74) {\(f=c_3\)};
+        \node[] at (0.85,0.74) {\color{red}\( g(x,y)=0\)};
+        \node[] at (0.20,0.9) {\(f=c_2\)};
+        \node[] at (0.10,0.98) {\(f = c_1\)};
+    \end{scope}
+\end{tikzpicture}
+\end{document}

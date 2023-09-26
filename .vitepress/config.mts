@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: "en-GB",
   title: "Mathematical Analysis 2",
@@ -19,7 +18,6 @@ export default defineConfig({
   },
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Overview", link: "/" },
       { text: "Lecture notes", link: "/pages/part1" },
@@ -30,17 +28,7 @@ export default defineConfig({
       { text: "Evaluation", link: "/pages/evaluation" },
       {
         text: "Lecture notes",
-        items: [
-          { text: "1. Mathematical reasoning", link: "/pages/part1" },
-          {
-            text: "2. Differential calculus in higher dimension",
-            link: "/pages/part2",
-          },
-          { text: "3. Extrema and other applications", link: "/pages/part3" },
-          { text: "4. Curves and line integrals", link: "/pages/part4" },
-          { text: "5. Multiple integrals", link: "/pages/part5" },
-          { text: "6. Surfaces and surface integrals", link: "/pages/part6" },
-        ],
+        items: Array.from(Array(6), (_,n) => ({text: `Part ${n+1}`, link: `pages/part${n+1}`})),
         collapsed: false
       },
       { text: "Mini-projects", link: "pages/project"},
@@ -62,10 +50,22 @@ export default defineConfig({
     lastUpdated: {
       text: 'Updated at',
       formatOptions: {
-        dateStyle: 'full',
-        timeStyle: 'medium'
+        dateStyle: 'short',
+        timeStyle: 'short'
       }
     }
 
   },
 });
+
+// items: [
+//   { text: "1. Mathematical reasoning", link: "/pages/part1" },
+//   {
+//     text: "2. Differential calculus in higher dimension",
+//     link: "/pages/part2",
+//   },
+//   { text: "3. Extrema and other applications", link: "/pages/part3" },
+//   { text: "4. Curves and line integrals", link: "/pages/part4" },
+//   { text: "5. Multiple integrals", link: "/pages/part5" },
+//   { text: "6. Surfaces and surface integrals", link: "/pages/part6" },
+// ],

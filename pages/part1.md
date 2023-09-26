@@ -2,6 +2,8 @@
 layout: doc
 ---
 
+# Mathematical reasoning
+
 
 ::: tip
 Some statement with mathematics 

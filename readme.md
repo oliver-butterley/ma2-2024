@@ -10,6 +10,10 @@ Site is available at [https://www.mat.uniroma2.it/ma2/].
 
 ## Local editing
 
-In order to preview locally, make sure [node.js](https://nodejs.org/en) is installed, then run `npm install` is this directory. Run `npm run site:dev` to startup a local server which will update automatically when content is changed.
+In order to preview locally, make sure [node.js](https://nodejs.org/en) is installed, then run `npm install` is this directory. Run `npm run dev` to startup a local server which will update automatically when content is changed.
 
 See the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+
+### Conversion from Latex
+
+Use search and replace with regex, for example search `\\emph\{(.+?)\}` and replace with `*$1*`. 

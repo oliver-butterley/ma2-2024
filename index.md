@@ -18,14 +18,14 @@ Classroom: Aula 8
 
 The material of the course is divided into six parts as listed below. Each part takes two weeks and is accompanied with a set of exercises. Mathematically the parts are intimately linked.
 
-| Topic (2 weeks each)                                  | Teaching period | Instructor |
-| ----------------------------------------------------- | --------------- | ---------- |
-| [Mechanics of mathematics](part1.md)                  | 25 Sep - 6 Oct  | Butterley  |
-| [Differential calculus in higher dimension](part2.md) | 9 - 20 Oct      | Butterley  |
-| [Extrema and other applications](part3.md)            | 23 Oct - 3 Nov  | Butterley  |
-| [Curves and line integrals](part4.md)                 | 6 - 17 Nov      | Butterley  |
-| [Multiple integrals](part5.md)                        | 20 Nov - 1 Dec  | Greenblatt |
-| [Surfaces and surface integrals](part6.md)            | 4 - 15 Dec      | Greenblatt |
+| Topic (2 weeks each)                                         | Teaching period | Instructor |
+| ------------------------------------------------------------ | --------------- | ---------- |
+| [Mechanics of mathematics](/pages/part1.md)                  | 25 Sep - 6 Oct  | Butterley  |
+| [Differential calculus in higher dimension](/pages/part2.md) | 9 - 20 Oct      | Butterley  |
+| [Extrema and other applications](/pages/part3.md)            | 23 Oct - 3 Nov  | Butterley  |
+| [Curves and line integrals](/pages/part4.md)                 | 6 - 17 Nov      | Butterley  |
+| [Multiple integrals](/pages/part5.md)                        | 20 Nov - 1 Dec  | Greenblatt |
+| [Surfaces and surface integrals](/pages/part6.md)            | 4 - 15 Dec      | Greenblatt |
 
 The final weeks of the course are devoted to a mini-project.
 

@@ -4,19 +4,12 @@ This "book" contains all practical information related to the course and also th
 
 ## Technical details
 
-The webpage is built using [mdbook](https://rust-lang.github.io/mdBook/) with plugin in order to format mathematics. 
-In order to preview locally, make sure that mdbook and the extensions are installed and run 
-```sh
-mdbook serve
-``` 
-to provide a local version which updates when source files are edited. 
-A github action deploys a new production version of the site when commits are made to the `main` branch.
+The webpage uses [vitepress](https://vitepress.dev) to generate everything from content written in markdown. 
 
-### Installing mdbook and mdbook-katex
+Site is available at [https://www.mat.uniroma2.it/ma2/].
 
-Make sure that `rust` and `cargo` are installed. Then
-```sh
-cargo install mdbook
-cargo install mdbook-katex
-cargo install mdbook-admonish
-```
+## Local editing
+
+In order to preview locally, make sure [node.js](https://nodejs.org/en) is installed, then run `npm install` is this directory. Run `npm run site:dev` to startup a local server which will update automatically when content is changed.
+
+See the [full list of markdown extensions](https://vitepress.dev/guide/markdown).

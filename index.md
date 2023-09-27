@@ -1,7 +1,4 @@
----
-layout: doc
-outline: deep
----
+# Overview
 
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
 
@@ -9,6 +6,13 @@ Instructors:
 
 - [Oliver Butterley](https://www.mat.uniroma2.it/butterley/) (60 hours)
 - [Rafael Greenblatt](https://www.mat.uniroma2.it/~greenblatt/) (30 hours)
+
+- Develop your intuition, it's a powerful skill – But don’t trust it completely
+- Don’t aim to memorize but rather seek to understand – It is easy to remember anything when you understand it.
+- Question always, be sceptical of all statements presented to you. Don’t
+  accept them until you are sure they are believable.
+- Observe, question how everything fits together, notice all the details.
+- Part of the process of mathematical reasoning is creative - to be creative we must drop our inhibitions and be ready to be wrong, repeatedly.
 
 Teams code: **3pddgbg** (use this to join on Microsoft Teams)
 
@@ -34,21 +38,5 @@ The final weeks of the course are devoted to a mini-project.
 | Project - week 1 | 18-22 Dec       |            |
 | Project - week 2 | 8-12 Jan        |            |
 | Project - week 3 | 15-19 Dec       |            |
-
-## Evaluation
-
-The primary evaluation system is:
-
-- 3 Midterm exams (1.5 hours each)
-- 6 Online exercises
-- 1 Mini-project & presentation
-
-### Exercises
-
-### Exam rules
-
-### Exam schedule
-
-##
 
 ### Previous years

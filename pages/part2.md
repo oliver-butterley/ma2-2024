@@ -627,8 +627,7 @@ This is because the chain rule implies that $\nabla f(\mathbf{x}(t)) \cdot \math
 ::: info Example
 Let $f(x_1,x_2,x_3):=x_1^2 + x_2^2 + x_3^2$.
 
-- If $c>0$ then $L(c)$ %$L(c) = \left\{(x_1,x_2,x_3):  x_1^2 + x_2^2 + x_3^2 = c\right\}$
-  is a sphere,
+- If $c>0$ then $L(c)$ is a sphere,
 - $L(0)$ is a single point $(0,0,0)$,
 - If $c<0$ then $L(c)$ is empty.
 

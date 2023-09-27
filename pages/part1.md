@@ -119,9 +119,9 @@ Suppose that $n$ is an integer. Then $n(n+1)$ is an even integer.
 :::
 
 ::: info Proof
-If $n$ is even, then $n(n+1)$ is also even since the multiple of an even number is even.
-If $n$ is odd, then $n+1$ is even and so $n(n+1)$ is even, again because the multiple of an even number is even.
-Since $n$ is an integer, $n$ is either even or odd so one of these two cases holds.
+- If $n$ is even, then $n(n+1)$ is also even since the multiple of an even number is even.
+- If $n$ is odd, then $n+1$ is even and so $n(n+1)$ is even, again because the multiple of an even number is even.
+- Since $n$ is an integer, $n$ is either even or odd so one of these two cases holds.
 :::
 
 ### Proof by contradiction

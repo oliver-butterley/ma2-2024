@@ -4,9 +4,11 @@
         "Aula",
         "Butterley",
         "Greenblatt",
+        "infty",
         "mathbb",
         "mathbf",
         "newcommand",
+        "pmatrix",
         "smallmatrix",
         "Vergata",
         "vitepress"

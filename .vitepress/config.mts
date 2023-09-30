@@ -53,19 +53,12 @@ export default defineConfig({
         dateStyle: 'short',
         timeStyle: 'short'
       }
+    },
+
+    footer: {
+      message: 'Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>.',
+      copyright: 'Copyright © 2023 <a href="https://www.mat.uniroma2.it/butterley/">Oliver Butterley</a>'
     }
 
   },
 });
-
-// items: [
-//   { text: "1. Mathematical reasoning", link: "/pages/part1" },
-//   {
-//     text: "2. Differential calculus in higher dimension",
-//     link: "/pages/part2",
-//   },
-//   { text: "3. Extrema and other applications", link: "/pages/part3" },
-//   { text: "4. Curves and line integrals", link: "/pages/part4" },
-//   { text: "5. Multiple integrals", link: "/pages/part5" },
-//   { text: "6. Surfaces and surface integrals", link: "/pages/part6" },
-// ],

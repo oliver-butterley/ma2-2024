@@ -8,7 +8,9 @@ In this part of the course we work on the following skills:
 - Understand and form long chains of logical manipulations while quickly identifying and fixing mistakes.
 - Justify or find counterexamples to our own guesses.
 
-## Models, definitions, logical consequences, doing science, doing mathematics
+## Models, definitions, logical consequences?!
+
+Doing science, doing mathematics
 
 (Coming soon... 🏃)
 
@@ -58,24 +60,27 @@ $$2+2=5 \quad \text{if and only if} \quad 4+4=10$$
 is well-formed and true.
 Again not very useful.
 
-<!-- ## Implication -->
-
 ## Structure of proofs
 
 Be they calculations or logical steps expressed in words, proofs must be a chain of rigorous steps.
-The correct conclusion without solid logic is not a proof 😆, e.g.,
+The correct conclusion without solid logic is not a proof 😆.
+Two humorous examples with correct conclusions but which are not proofs:
 
 $$
-\frac{16}{64} = \frac{1\not{6}}{\not{6}4} = \frac{1}{4},
+\begin{aligned}
+  \frac{16}{64} &= \frac{1\not{6}}{\not{6}4} = \frac{1}{4}, \\
+  \frac{d}{dx} \frac{1}{x} &= \frac{d}{d} \frac{1}{x^2} = \frac{\not{d}}{\not{d}} \frac{1}{x^2} = - \frac{1}{x^2}.
+\end{aligned}
 $$
 
-and
-
-$$
-\frac{d}{dx} \frac{1}{x} = \frac{d}{d} \frac{1}{x^2} = \frac{\not{d}}{\not{d}} \frac{1}{x^2} = - \frac{1}{x^2}.
-$$
+Typically there are many different ways to write a proof, often very different one to the other.
+Here we discuss a few possibilities and introduce some terminology.
 
 ### Calculation proofs
+
+These are the classic school mathematics problems, often phrased as "evaluate..." or "calculate...". 
+The proof in these cases is simply a chain of equalities to produce the final result.
+Since we already have seen so many of these we instead look at a couple of false proofs and practice our skill at searching for gaps and errors in proofs.
 
 ::: tip ~~Theorem~~
 $5=4$
@@ -95,12 +100,16 @@ $$5-\frac{9}{2} = 4-\frac{9}{2}$$
 which implies that $5=4$.
 :::
 
+Alternatively calculations might be more about geometrical reasoning.
+When a proof relies on a picture and an appeal to intuition we must be particularly careful with arguments.
+
 ::: tip ~~Theorem~~
 Every triangle is isosceles.
 :::
 
 ::: info ~~Proof~~
 Start from a triangle $ABC$.
+Sketch the triangle and the lines described in the following steps.
 
 - Draw the perpendicular bisector of $BC$, and the angle bisector from $A$.
 - Let $I$ be their intersection (if it is not unique, you are done).
@@ -109,7 +118,6 @@ Start from a triangle $ABC$.
 - Then looking at right triangles $BIJ$ and $CIK$, we obtain that $BJ=CK$.
 - We conclude that $AB = AJ+JB = AK+KC = AC$.
 
-(Sketch the triangle and the lines of the proof.)
 :::
 
 ### Proof by cases
@@ -123,6 +131,8 @@ Suppose that $n$ is an integer. Then $n(n+1)$ is an even integer.
 - If $n$ is odd, then $n+1$ is even and so $n(n+1)$ is even, again because the multiple of an even number is even.
 - Since $n$ is an integer, $n$ is either even or odd so one of these two cases holds.
 :::
+
+Another common scenario is when during a calculation / proof we must consider two cases depending on whether a certain quantity is zero or otherwise we can devide through by this quantity.
 
 ### Proof by contradiction
 
@@ -207,7 +217,7 @@ $T = 1 + 2 + 4 + 8 + 16 + \cdots$
 we get the nonsensical answer
 
 $$
-  2T = 2 + 4 + 8 + 16 + \cdots = T -1
+  2T = 2 + 4 + 8 + 16 + \cdots = T - 1
 $$
 
 and so $T = -1$.

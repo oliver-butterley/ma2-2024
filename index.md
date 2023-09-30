@@ -1,11 +1,22 @@
+---
+footer: true
+---
+
 # Overview
 
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
+These pages contain the [lecture notes](/pages/part1.md) and practical details related to the course.
 
 Instructors:
 
 - [Oliver Butterley](https://www.mat.uniroma2.it/butterley/) (60 hours)
 - [Rafael Greenblatt](https://www.mat.uniroma2.it/~greenblatt/) (30 hours)
+
+Teams code: **3pddgbg** (use this to join on Microsoft Teams)
+
+Classroom: Aula 8
+
+## General advice for approaching mathematics
 
 - Develop your intuition, it's a powerful skill – But don’t trust it completely
 - Don’t aim to memorize but rather seek to understand – It is easy to remember anything when you understand it.
@@ -13,10 +24,6 @@ Instructors:
   accept them until you are sure they are believable.
 - Observe, question how everything fits together, notice all the details.
 - Part of the process of mathematical reasoning is creative - to be creative we must drop our inhibitions and be ready to be wrong, repeatedly.
-
-Teams code: **3pddgbg** (use this to join on Microsoft Teams)
-
-Classroom: Aula 8
 
 ## Schedule
 

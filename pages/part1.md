@@ -104,7 +104,19 @@ Although a rather natural idea this can sometimes become confusing when combined
 | "There exists $x$ such that $P(x)$" | "For every $x$, not $P(x)$"            |
 
 ::: info Problem
-Think of day-to-day examples which illustrate this logic.
+Think of day-to-day examples which illustrate the logic described in this table.
+:::
+
+::: info Exercise
+Identify the hypothesis and conclusion in the following statements.
+
+1. If $x$ is a positive real number that satisfies $x^2 − 2x + 1 < 0$, then $x < 1$.
+2. If $x$ is a real number, then either $x \leq 0$, $x \geq 0$.
+3. If there exists a real number $x$ such that $x^4 + 1 = 0$, then any real number is either an integer or a
+   multiple of $\pi$.
+4. The inverse of a irrational number is also irrational.
+5. For each $x\in\mathbb{R}$ there exists $y\in\mathbb{R}$ such that $x=y^2$.
+
 :::
 
 ## Structure of proofs
@@ -294,10 +306,33 @@ If we didn't try anything until we were certain of the final answer then we woul
 
 <!-- https://hrmacbeth.github.io/math2001/07_Number_Theory.html#the-square-root-of-two -->
 
-## Optimality of statement assumptions
+## Optimality of statements
 
-- Can we improve some results from Mathematical Analysis 1?
+- Can we improve some given result?
 - Can we show that the assumptions of a given statement are required?
+
+Recall the following result from Mathematical Analysis 1.
+
+::: tip Theorem
+Let $f$ be defined on an open interval $(a, b)$ and assume that $f$ takes a local minimum or a local maximum at the point $c \in (a, b)$.
+If $f$ is differentiable at $c$ then $f′(c) = 0$.
+:::
+
+::: info Exercise
+Could we improve the statement with a stronger conclusion?
+Could we improve the statement with a weaker hypothesis?
+:::
+
+A similar statement is:
+
+::: tip Theorem
+Let $f$ be defined and differentiable on an open interval $(a, b)$.
+If $f$ takes a local minimum or a local maximum at the point $c \in (a, b)$ then $f′(c) = 0$.
+:::
+
+Is one statement implied by the other?
+In this case we would say that one statement is strictly stronger than the other.
+Can the implication in the final sentence of the statement be upgraded to an if-and-only-if?
 
 ## Why study analysis?
 

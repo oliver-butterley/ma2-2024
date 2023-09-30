@@ -1,10 +1,7 @@
----
-layout: doc
----
-
 $\newcommand{\norm}[1]{\left\|#1\right\|}$
 $\newcommand{\abs}[1]{\left|#1\right|}$
 $\newcommand{\littleo}[1]{o(#1)}$
+$\newcommand{\bR}{\mathbb{R}}$
 
 # 2. Differential calculus in higher dimension
 
@@ -12,6 +9,27 @@ In this part of the course we start to consider higher dimensional space.
 That is, instead of $\mathbb{R}$ we consider $\mathbb{R}^n$ for $n\in \mathbb{N}$.
 We will particularly focus on 2D and 3D but everything also holds in any dimension.
 Going beyond $\mathbb{R}$ we have more options for functions and correspondingly more options for derivatives.
+
+Much of what we do in this course builds on ideas established in Mathematical Analysis 1.
+In particular many of the ideas are extended to the higher dimensional setting.
+
+| Mathematical Analysis 1                | Mathematical Analysis 2                                                 |
+| -------------------------------------- | ----------------------------------------------------------------------- |
+| (Functions)$f:\bR \to \bR$             | $f:\bR^n \to \bR$ (Scalar fields)                                       |
+|                                        | $\mathbf{f}:\bR^n \to \bR^n$ (Vector fields)                            |
+|                                        | $\boldsymbol{\alpha}:\bR \to \bR^n$ (Paths)                             |
+| (Derivative)$f'(x) = \frac{df}{dx}(x)$ | $\frac{\partial f}{\partial x_j}(x_1,\ldots,x_n)$ (Partial derivatives) |
+|                                        | $\nabla f$ (Gradient)                                                   |
+|                                        | $D_v f$ (Directional derivative)                                        |
+|                                        | $\boldsymbol{\alpha}'$ (Derivative of path)                             |
+|                                        | $Df$ (Jacobian matrix)                                                  |
+|                                        | $\nabla \cdot \mathbf{f}$ (Divergence)                                  |
+|                                        | $\nabla \times \mathbf{f}$ (Curl)                                       |
+| (Extrema)$\sup_{x\in \bR} f(x)$        | $\sup_{x\in \bR^n} f(x)$ (Extrema)                                      |
+|                                        | Lagrange multiplier method                                              |
+| Integral$\int_{a}^{b} f(x) \ dx$       | Multiple integral                                                       |
+|                                        | Line integral                                                           |
+|                                        | Surface integral                                                        |
 
 Various different notation is commonly used.
 Here we will primarily use $(x,y)\in \mathbb{R}^2$, $(x,y,z) \in \mathbb{R}^3$ or, more generally, $\mathbf{x} =(x_1,x_2,\ldots,x_n) \in \mathbb{R}^n$
@@ -283,9 +301,11 @@ If $\mathbf{f}$ is continuous at $\mathbf{a}\in S$ and $\mathbf{g}$ is continuou
 :::
 
 ::: info Proof
+
 $$
 \lim{\mathbf{x}\to\mathbf{a}} \norm{\mathbf{f}(\mathbf{g}(\mathbf{x}))-\mathbf{f}(\mathbf{g}(\mathbf{a}))} =\lim{\mathbf{y}\to\mathbf{g}(\mathbf{a})}\norm{\mathbf{f}(\mathbf{y})-\mathbf{f}(\mathbf{g}(\mathbf{a}))} =0
 $$
+
 :::
 
 ::: info Example
@@ -372,7 +392,6 @@ If $f:\mathbb{R} \to \mathbb{R}$ is differentiable, then we know that, when $x$ 
 $$
 f(x) \approx f(a) + (x-a) f'(a).
 $$
-
 
 More precisely, we know that\footnote{This is [little-o notation](https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation) and here means that $\abs{f(x) - f(a) - (x-a) f'(a)}/\abs{x-a} \to 0$ as $\abs{x-a}\to 0$. } $f(x) = f(a) + (x-a) f'(a) + \epsilon(x-a)$ where $\abs{\epsilon(x-a)} = \littleo{\abs{x-a}}$.
 This way of seeing differentiability is convenient for the higher dimensional definition of differentiability.
@@ -643,7 +662,7 @@ See figure.
 
 :::
 
-<!-- 
+<!--
 Various surfaces as level sets.
 ![Sphere](../images/svg/sphere.svg)
 ![2-sheet hyperboloid](../images/svg/two-hyperboloid.svg)

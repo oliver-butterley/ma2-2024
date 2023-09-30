@@ -4,15 +4,48 @@ In this part of the course we work on the following skills:
 
 - Understand the precise meanings of mathematical statements and form our own precise statements.
 - Manipulate such statements, such as finding contrapositives, inconsistencies, special cases or generalizations.
-- Hold several ideas in our heads simultaneously, while keeping track of their truth-values and relationships between each other (which statements are justified by which others? Do any contradict each other?). (particularly in statements with many instances of "for all" and "there exist").
-- Understand and form long chains of logical manipulations while quickly identifying and fixing mistakes.
+- Hold several ideas in our heads simultaneously, while keeping track of the relationships between each (which statements are justified by which others? Do any contradict each other?).
+- Understand and form chains of logical manipulations while identifying and fixing mistakes.
 - Justify or find counterexamples to our own guesses.
 
 ## Models, definitions, logical consequences?!
 
-Doing science, doing mathematics
+We take the point of view that "doing science" involves developing well-defined models which describe physical phenomena (anything like the trajectory of a projectile, fluid mechanics, economics, etc.) whilst "doing mathematics" involves analysing the logic consequences of these models.
+The consequences understood by studying the model can then be used to further test the model or design applications which use these physical phenomena.
 
-(Coming soon... 🏃)
+We need to be rigorous in our logic otherwise, as we have seen in these examples, the conclusions can be erroneous and the difficulties are often subtle.
+
+### Curves of constant width
+
+<!-- ![The Reuleaux triangle is a curve of constant width](/images/svg/reuleaux.svg) -->
+
+Shortly we will consider examples in calculus but it is worthwhile to consider a real world application of the rigour and reasoning we aspire to.
+Suppose we are organising the production facilities which manufacture a component that is round (maybe a rocket body, maybe a gas tube, etc.).
+As part of the production it is important to have a procedure which guarantees that the fabrication is done to the correct tolerance.
+The idea proposed is:
+
+> "We measure the width from all angles to confirm that the manufactured component is correct."
+
+This is a two-dimensional problem in the sense we assume that the object is a closed curve in $\mathbb{R}^2$.
+For a given angle we define the width of this curve to be the smallest distance between two parallel lines which touch the curve in a single point but never cross it (one each side of the curve).
+We say that the curve has constant width if this width is equal from every direction.
+This is just what we would check using calipers on a part and rotating.
+The following statement is intuitive and true.
+
+::: tip Theorem
+A circle has constant width.
+:::
+
+However the converse is not true, indeed the following is true.
+
+::: tip Theorem
+There exist constant width curves which are not circles.
+:::
+
+This can be proved by constructing many such curves, for example the [Reuleaux triangle](https://en.wikipedia.org/wiki/Reuleaux_triangle).
+Indeed there are such curves which look similar to regular polygons but still have constant width.
+
+![Reuleaux triangle rotating https://commons.wikimedia.org/wiki/File:Rotation_of_Reuleaux_triangle.gif](https://upload.wikimedia.org/wikipedia/commons/2/22/Rotation_of_Reuleaux_triangle.gif)
 
 ## Mathematical statements
 
@@ -32,7 +65,6 @@ We say such are _ill-formed_ or _ill-defined_.
 Statements may also contain words.
 E.g.,
 $$\text{There are infinitely many prime numbers}.$$
-
 is a well-formed mathematical statement.
 
 Some statements, e.g.,
@@ -60,6 +92,21 @@ $$2+2=5 \quad \text{if and only if} \quad 4+4=10$$
 is well-formed and true.
 Again not very useful.
 
+The negation of statements is often essential.
+Although a rather natural idea this can sometimes become confusing when combined with logical connectives and quantifiers.
+
+| Statement                           | Negation                               |
+| ----------------------------------- | -------------------------------------- |
+| "$P$ or $Q$"                        | "not $P$ and not $Q$"                  |
+| "$P$ and $Q$"                       | "not $P$ or not $Q$"                   |
+| "if $P$, then $Q$"                  | "$P$ and not $Q$"                      |
+| "For all $x$, $P(x)$"               | "There exist $x$ such that not $P(x)$" |
+| "There exists $x$ such that $P(x)$" | "For every $x$, not $P(x)$"            |
+
+::: info Problem
+Think of day-to-day examples which illustrate this logic.
+:::
+
 ## Structure of proofs
 
 Be they calculations or logical steps expressed in words, proofs must be a chain of rigorous steps.
@@ -78,7 +125,7 @@ Here we discuss a few possibilities and introduce some terminology.
 
 ### Calculation proofs
 
-These are the classic school mathematics problems, often phrased as "evaluate..." or "calculate...". 
+These are the classic school mathematics problems, often phrased as "evaluate..." or "calculate...".
 The proof in these cases is simply a chain of equalities to produce the final result.
 Since we already have seen so many of these we instead look at a couple of false proofs and practice our skill at searching for gaps and errors in proofs.
 
@@ -98,6 +145,10 @@ $$\left(5-\frac{9}{2}\right)^2 = \left(4-\frac{9}{2}\right)^2.$$
 Taking the square root of both sides we obtain,
 $$5-\frac{9}{2} = 4-\frac{9}{2}$$
 which implies that $5=4$.
+:::
+
+::: info Exercise
+In which step in the above argument is there an error?
 :::
 
 Alternatively calculations might be more about geometrical reasoning.
@@ -122,37 +173,81 @@ Sketch the triangle and the lines described in the following steps.
 
 ### Proof by cases
 
+A common scenario is when during a calculation / proof we must consider two cases depending on whether a certain quantity is zero or otherwise we can devide through by this quantity.
+Another example is:
+
 ::: tip Theorem
 Suppose that $n$ is an integer. Then $n(n+1)$ is an even integer.
 :::
 
 ::: info Proof
+
 - If $n$ is even, then $n(n+1)$ is also even since the multiple of an even number is even.
 - If $n$ is odd, then $n+1$ is even and so $n(n+1)$ is even, again because the multiple of an even number is even.
 - Since $n$ is an integer, $n$ is either even or odd so one of these two cases holds.
-:::
+  :::
 
-Another common scenario is when during a calculation / proof we must consider two cases depending on whether a certain quantity is zero or otherwise we can devide through by this quantity.
+Observe that, in the proof, one of the first two statements is vacuous in the sense that only one can be true for a given $n$.
+In a similar way, the statement
+
+> If $2+2=5$, then $10=0$
+
+is true!
+We can prove it by calculation: $10 = 10(5-4) = 10(5-(2+2)) =0$.
+However the hypothesis of the above statement is never true so the implication of the statement is vacuous.
 
 ### Proof by contradiction
+
+It is often convenient to prove a statement by supposing that the conclusion is false and showing this contradicts the hypothesis, this is called [proof by contradiction](https://en.wikipedia.org/wiki/Proof_by_contradiction).
+In the abstract, if $P$ and $Q$ are statements then the statement "If $P$, then $Q$" is equivalent to "Not $Q$, then not $P$".
+
+> Archibald uses an umbrella whenever it rains.
+> If we see Archibald isn't using an umbrella then we know that it is not raining.
 
 ::: tip Problem
 Let $x$ and $y$ be real numbers and suppose that $xy > 0$ and $x \geq 0$. Show that $y>0$.
 :::
 
-::: info Solution
-... 🤔
+To prove this statement we can suppose, for the sake of contradiction, that $y\leq 0$.
+Since also $x \geq 0$ this implies that $xy \leq 0$ but this is a contradiction.
+
+::: info Exercise
+Find the negation of the following statements
+
+1. Some prime numbers are odd.
+2. No student is lazy.
+3. Some horses are black.
+4. For every $x\in\mathbb{R}$, $x^2 \geq 0$.
+5. There exists $x\in\mathbb{R}$ such that $x^2 = 7$.
+6. For each $x\in\mathbb{R}$ there exists $y\in\mathbb{R}$ such that $x=y^2$.
+7. If $x,y\geq 0$ then $\sqrt{x}=\sqrt{y}$ implies that $x=y$.
+
 :::
 
 ### Proof by induction
 
-::: tip Problem
-Show that $2^n \geq n+1$ for all natural numbers $n$.
-:::
+The principle of [mathematical induction](https://en.wikipedia.org/wiki/Mathematical_induction) is often a powerful technique in proofs.
 
-::: info Solution
-... 🤔
-:::
+A statement which is amenable to proof by induction is the following.
+
+> $2^n \geq n+1$ for all natural numbers $n$.
+
+However, let's take this opportunity to discuss what to do when such statements come to us.
+In the high school world the is no doubt, we are required to follow a procedure that is clearly prescribed.
+However as grown up thinkers everything is more open and there are many "correct" solutions.
+Firstly we need to ask ourselves if the statement is true!
+In this case we try a few of the smaller natural numbers and we see that it does seem to be true.
+(If we thought it wasn't true then we would try to find counter examples to prove that it is false.)
+So now we need to write a proof of the statement.
+One way to think about this would be to consider the graph $y=2^x-(x+1)$.
+That this graph lies above the axis is equivalent to the statement being true.
+We could consider the gradient of $2^x-(x+1)$ and prove that it stays positive.
+This is a perfectly reasonable proof.
+
+The statement can also be proven by induction in a concise way.
+To a large degree, the choice of proof is aesthetic.
+
+Again time to practice our skill at finding gaps in proofs.
 
 ::: tip ~~Theorem~~
 All sheep are the same colour.
@@ -173,8 +268,11 @@ We will now assume that a group of $N$ sheep are all the same colour and conside
 
 ## Variables and quantifiers
 
-(coming soon... 🏃)
+Almost always, mathematical statements will involve variables and quantifies.
+As we have already seen, various statements are stated "for all..." or perhaps "there exists... such that".
+This is a natural concept, like saying "every bird can fly" or "there exists a bird which can swim".
 
+::: info Exercise
 What does each of the following statements mean, and which of them are true?
 
 1. For every positive number $x$, and every positive number $y$, we have $y^2=x$.
@@ -183,24 +281,29 @@ What does each of the following statements mean, and which of them are true?
 4. For every positive number $y$, there exists a positive number $x$ such that $y^2=x$.
 5. There exists a positive number $y$ such that for every positive number $x$, we have $y^2=x$.
 
+:::
+
+The following is more practice for us to understand the process of developing an understanding and proof of a statement.
+
 ::: tip Problem
 Let $a$ be a real number. Suppose that, for every real number $x$, then $a\leq x^2 - 2x$. Show that $a\leq -1$.
 :::
 
-::: info Solution
-... 🤔
-:::
+As before it is important for us to start by trying things, by guessing and then by adding rigour to the argument.
+If we didn't try anything until we were certain of the final answer then we would be severely limiting our potential.
 
-## "Tightness" of statement assumptions
+<!-- https://hrmacbeth.github.io/math2001/07_Number_Theory.html#the-square-root-of-two -->
+
+## Optimality of statement assumptions
 
 - Can we improve some results from Mathematical Analysis 1?
 - Can we show that the assumptions of a given statement are required?
 
-## Mathematical analysis
+## Why study analysis?
 
-Let's consider some examples which demonstrate some of the motives behind studying analysis in general.
+Let's consider some examples which demonstrate some of the motives behind studying analysis (as opposed to calculus).
 
-### Series
+### Geometric series
 
 The geometric series
 $S = 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \cdots$
@@ -260,47 +363,66 @@ When can we do this and can't we?
 ### Interchanging integrals
 
 Let's try to integrate $e^{-xy} - xye^{-xy}$ with respect to both $x$ and $y$.
-We would like to believe that
+Is the following true?
 
 $$
   \int_{0}^{\infty} \left[ \int_{0}^{1} (e^{-xy} - xye^{-xy}) \ dy \right] \ dx
   \overset{\text{\large\color{blue}?}}{=} \int_{0}^{1} \left[ \int_{0}^{\infty}  (e^{-xy} - xye^{-xy}) \ dx \right] \ dy.
 $$
 
-Since
+::: info Exercise
+Calculate,
+
+1. $\int_{0}^{1} (e^{-xy} - xye^{-xy}) \ dy = \text{?}$
+2. $\int_{0}^{\infty} \left[ \int_{0}^{1} (e^{-xy} - xye^{-xy}) \ dy \right] \ dx = \text{?}$
+3. $\int_{0}^{\infty} (e^{-xy} - xye^{-xy}) \ dx = \text{?}$
+4. $\int_{0}^{1} \left[ \int_{0}^{\infty}  (e^{-xy} - xye^{-xy}) \ dx \right] \ dy = \text{?}$
+
+Does the order of integration matter?
+:::
+
+<!-- Since
 $$\int_{0}^{1} (e^{-xy} - xye^{-xy}) \ dy = {\left[ye^{-xy}\right]}_{y=0}^{1} = e^{-x},$$
 the left-hand side is equal to
 $\int_{0}^{\infty} e^{-x} \ dx = {\left[-e^{-x} \right]}_{0}^{\infty} = 1$.
-
 However, since
 $$\int_{0}^{\infty} (e^{-xy} - xye^{-xy}) \ dx = {\left[ xe^{-xy} \right]}_{x=0}^{\infty} = 0,$$
 the right-hand side is $\int_{0}^{1} 0 \ dx = 0$.
-So how do we know when to trust the interchange of intervals? 
+So how do we know when to trust the interchange of intervals? -->
 
 ### Interchanging limits
 
-We could easily believe that
+Similar to the question of exchanging integrals, we could exchange the order of limits.
+Is the following true?
 
 $$
   \lim_{x\to 0}\lim_{y\to 0} \frac{x^2}{x^2 + y^2}
   \overset{\text{\large\color{blue}?}}{=}
   \lim_{y\to 0}\lim_{x\to 0} \frac{x^2}{x^2 + y^2}.
-$$ 
+$$
 
-However 
-$$\lim_{y\to 0} \frac{x^2}{x^2 + y^2} = \frac{x^2}{x^2 + 0} = 1$$ 
-and so the left-hand side is $1$
-whereas 
-$$\lim_{x\to 0} \frac{x^2}{x^2 + y^2} = \frac{0}{0 + y^2} = 0$$ 
-so the right-hand side is $0$.
+::: info Exercise
+Calculate,
 
+1. $\lim_{y\to 0} \frac{x^2}{x^2 + y^2} = \text{?}$
+2. $\lim_{x\to 0} \frac{x^2}{x^2 + y^2} = \text{?}$
+
+Does the order of taking limits matter?
 What does the graph of this function look like?
-This example shows that the interchange of limits is untrustworthy. Under what circumstances is it legitimate?
+:::
 
-We need to be rigorous in our logic otherwise, as we have seen in these examples, the conclusions can be erroneous and the difficulties are often subtle. 
+<!-- However
+$$\lim_{y\to 0} \frac{x^2}{x^2 + y^2} = \frac{x^2}{x^2 + 0} = 1$$
+and so the left-hand side is $1$
+whereas
+$$\lim_{x\to 0} \frac{x^2}{x^2 + y^2} = \frac{0}{0 + y^2} = 0$$
+so the right-hand side is $0$. -->
+
+Under what circumstances is it legitimate to swap the order of integration or taking limits?
+We need to be rigorous in our logic otherwise, as we have seen in these examples, the conclusions can be erroneous and the difficulties are often subtle.
 
 ## Further reading
 
 - [The mechanics of proof](https://hrmacbeth.github.io/math2001/) by _Heather Macbeth_
-- Analysis I: Third Edition (Texts and Readings in Mathematics) (2016) by _Terence Tao_ (particularly Appendix A)
+- Analysis I: Third Edition (Texts and Readings in Mathematics) (2016) by _Terence Tao_ (particularly §1.2 "Why Analysis?" and Appendix A "The basics of mathematical logic")
 - How to Think Like a Mathematician: A Companion to Undergraduate Mathematics (2009) by _Kevin Houston_

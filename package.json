@@ -1,6 +1,7 @@
 {
   "devDependencies": {
     "markdown-it-mathjax3": "^4.3.2",
+    "prettier": "^3.0.3",
     "vitepress": "^1.0.0-rc.20",
     "vue": "^3.3.4"
   },

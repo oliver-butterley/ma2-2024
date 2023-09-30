@@ -9,8 +9,13 @@
         "mathbf",
         "newcommand",
         "pmatrix",
+        "Reuleaux",
         "smallmatrix",
         "Vergata",
         "vitepress"
-    ]
+    ],
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.formatOnSave": true
 }

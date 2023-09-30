@@ -89,7 +89,7 @@ The set of all interior points of $S$ is denoted $\operatorname{int} S$.
 A set $S \subset \mathbb{R}^n$ is said to be _open_ if all of its points are interior points, i.e., if $\operatorname{int} S = S$.
 :::
 
-![Interior points are the centre of a ball contained within the set.](../images/svg/interior.svg)
+![Interior points are the centre of a ball contained within the set.](../images/svg/interior.svg "Interior points")
 
 For example, open intervals, open disks, open balls, unions of open intervals, etc., are all open sets.
 

@@ -1,10 +1,11 @@
 import { defineConfig } from "vitepress";
+import implicitFigures from "markdown-it-implicit-figures";
 
 export default defineConfig({
   lang: "en-GB",
   title: "Mathematical Analysis 2",
   description: "Course material for Mathematical Analysis 2 (2023-24)",
-  base: '/butterley/ma2/',
+  base: "/butterley/ma2/",
 
   head: [
     ["link", { rel: "shortcut icon", href: "/favicon.png", type: "image/png" }],
@@ -15,6 +16,11 @@ export default defineConfig({
 
   markdown: {
     math: true,
+    config: (md) => {
+      md.use(implicitFigures, {
+        figcaption: "title",
+      });
+    },
   },
 
   themeConfig: {
@@ -28,15 +34,19 @@ export default defineConfig({
       { text: "Evaluation", link: "/pages/evaluation" },
       {
         text: "Lecture notes",
-        items: Array.from(Array(6), (_,n) => ({text: `Part ${n+1}`, link: `pages/part${n+1}`})),
-        collapsed: false
+        items: Array.from(Array(6), (_, n) => ({
+          text: `Part ${n + 1}`,
+          link: `pages/part${n + 1}`,
+        })),
+        collapsed: false,
       },
-      { text: "Mini-projects", link: "pages/project"},
+      { text: "Mini-projects", link: "pages/project" },
     ],
 
     editLink: {
-      pattern: 'https://github.com/oliver-butterley/ma2-web/edit/main/docs/:path',
-      text: "Edit this page on GitHub"
+      pattern:
+        "https://github.com/oliver-butterley/ma2-web/edit/main/docs/:path",
+      text: "Edit this page on GitHub",
     },
 
     search: {
@@ -48,17 +58,18 @@ export default defineConfig({
     ],
 
     lastUpdated: {
-      text: 'Updated at',
+      text: "Updated at",
       formatOptions: {
-        dateStyle: 'short',
-        timeStyle: 'short'
-      }
+        dateStyle: "short",
+        timeStyle: "short",
+      },
     },
 
     footer: {
-      message: 'Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>.',
-      copyright: 'Copyright © 2023 <a href="https://www.mat.uniroma2.it/butterley/">Oliver Butterley</a>'
-    }
-
+      message:
+        'Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>.',
+      copyright:
+        'Copyright © 2023 <a href="https://www.mat.uniroma2.it/butterley/">Oliver Butterley</a>',
+    },
   },
 });

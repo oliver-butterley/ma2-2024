@@ -8,7 +8,7 @@ export default defineConfig({
   base: "/butterley/MA2/",
 
   head: [
-    ["link", { rel: "shortcut icon", href: "/favicon.png", type: "image/png" }],
+    ["link", { rel: "shortcut icon", href: "favicon.png", type: "image/png" }],
   ],
 
   lastUpdated: true,

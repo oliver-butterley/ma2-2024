@@ -402,7 +402,7 @@ Is the following true?
 
 $$
   \int_{0}^{\infty} \left[ \int_{0}^{1} (e^{-xy} - xye^{-xy}) \ dy \right] \ dx
-  \overset{\text{\large\color{blue}?}}{=} \int_{0}^{1} \left[ \int_{0}^{\infty}  (e^{-xy} - xye^{-xy}) \ dx \right] \ dy.
+  \overset{\text{\large ?}}{=} \int_{0}^{1} \left[ \int_{0}^{\infty}  (e^{-xy} - xye^{-xy}) \ dx \right] \ dy.
 $$
 
 ::: info Exercise
@@ -432,7 +432,7 @@ Is the following true?
 
 $$
   \lim_{x\to 0}\lim_{y\to 0} \frac{x^2}{x^2 + y^2}
-  \overset{\text{\large\color{blue}?}}{=}
+  \overset{\text{\large ?}}{=}
   \lim_{y\to 0}\lim_{x\to 0} \frac{x^2}{x^2 + y^2}.
 $$
 

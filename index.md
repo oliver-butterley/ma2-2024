@@ -31,7 +31,7 @@ The material of the course is divided into six parts as listed below. Each part 
 
 | Topic (2 weeks each)                                         | Teaching period | Instructor |
 | ------------------------------------------------------------ | --------------- | ---------- |
-| [Mechanics of mathematics](/pages/part1.md)                  | 25 Sep - 6 Oct  | Butterley  |
+| [Mathematical reasoning](/pages/part1.md)                    | 25 Sep - 6 Oct  | Butterley  |
 | [Differential calculus in higher dimension](/pages/part2.md) | 9 - 20 Oct      | Butterley  |
 | [Extrema and other applications](/pages/part3.md)            | 23 Oct - 3 Nov  | Butterley  |
 | [Curves and line integrals](/pages/part4.md)                 | 6 - 17 Nov      | Butterley  |

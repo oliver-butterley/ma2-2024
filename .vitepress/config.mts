@@ -8,7 +8,7 @@ export default defineConfig({
   base: "/butterley/MA2/",
 
   head: [
-    ["link", { rel: "shortcut icon", href: "favicon.png", type: "image/png" }],
+    ["link", { rel: "shortcut icon", href: "/favicon.png", type: "image/png" }],
   ],
 
   lastUpdated: true,
@@ -45,7 +45,7 @@ export default defineConfig({
 
     editLink: {
       pattern:
-        "https://github.com/oliver-butterley/ma2-web/edit/main/docs/:path",
+        "https://github.com/oliver-butterley/ma2-2023/edit/main/docs/:path",
       text: "Edit this page on GitHub",
     },
 
@@ -54,7 +54,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/oliver-butterley/ma2-web/" },
+      { icon: "github", link: "https://github.com/oliver-butterley/ma2-2023/" },
     ],
 
     lastUpdated: {

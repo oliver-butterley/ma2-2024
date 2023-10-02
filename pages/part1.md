@@ -8,7 +8,7 @@ In this part of the course we work on the following skills:
 - Understand and form chains of logical manipulations while identifying and fixing mistakes.
 - Justify or find counterexamples to our own guesses.
 
-## Models, definitions, logical consequences?!
+## Models, definitions, logical consequences
 
 We take the point of view that "doing science" involves developing well-defined models which describe physical phenomena (anything like the trajectory of a projectile, fluid mechanics, economics, etc.) whilst "doing mathematics" involves analysing the logic consequences of these models.
 The consequences understood by studying the model can then be used to further test the model or design applications which use these physical phenomena.
@@ -52,7 +52,6 @@ Indeed there are such curves which look similar to regular polygons but still ha
 Mathematical reasoning proceeds as a sequence of mathematical statements.
 Statements are true or false.
 E.g., $2+2=4$ is a true statement and $2+2=5$ is a false statement.
-
 Not all combination of words or mathematical symbols is a statement.
 E.g.,
 $$ =4+\times 4 = - = 3$$
@@ -61,12 +60,12 @@ Similarly
 $$\frac{0}{0} = 1$$
 is not a statement since division by zero is not defined.
 We say such are _ill-formed_ or _ill-defined_.
-
 Statements may also contain words.
 E.g.,
-$$\text{There are infinitely many prime numbers}.$$
-is a well-formed mathematical statement.
 
+> There are infinitely many prime numbers
+
+is a well-formed mathematical statement.
 Some statements, e.g.,
 $$7=7, \quad 5\leq5$$
 are true but are unlikely to be useful.
@@ -83,12 +82,13 @@ As with expression, we must work with _well-defined_ or _well-formed_ expression
 In order to be mathematically rigorous, we must avoid _ill-defined_ or _ill-formed_ expressions, e.g.,
 $$1+{2}/{0}, \quad \sin^{-1}(2).$$
 We often make statements out of expressions by using relations (e.g., $=$, $<$, $\in$, $\subset$) or by using properties (e.g., "is prime", "is invertible").
-
 _Compound statements_ can be formed from other statements by using logical connectives (e.g., and, or, not, if, "if and only if",...).
 We will often do this.
 
 The statement
-$$2+2=5 \quad \text{if and only if} \quad 4+4=10$$
+
+> $2+2=5$ if and only if $4+4=10$
+
 is well-formed and true.
 Again not very useful.
 
@@ -103,7 +103,7 @@ Although a rather natural idea this can sometimes become confusing when combined
 | "For all $x$, $P(x)$"               | "There exist $x$ such that not $P(x)$" |
 | "There exists $x$ such that $P(x)$" | "For every $x$, not $P(x)$"            |
 
-::: info Problem
+::: info Exercise
 Think of day-to-day examples which illustrate the logic described in this table.
 :::
 
@@ -185,7 +185,7 @@ Sketch the triangle and the lines described in the following steps.
 
 ### Proof by cases
 
-A common scenario is when during a calculation / proof we must consider two cases depending on whether a certain quantity is zero or otherwise we can devide through by this quantity.
+A common scenario is when during a calculation / proof we must consider two cases depending on whether a certain quantity is zero or otherwise we can divide through by this quantity.
 Another example is:
 
 ::: tip Theorem
@@ -315,7 +315,7 @@ Recall the following result from Mathematical Analysis 1.
 
 ::: tip Theorem
 Let $f$ be defined on an open interval $(a, b)$ and assume that $f$ takes a local minimum or a local maximum at the point $c \in (a, b)$.
-If $f$ is differentiable at $c$ then $f′(c) = 0$.
+If $f$ is differentiable at $c$ then $f^{\prime}(c) = 0$.
 :::
 
 ::: info Exercise
@@ -327,7 +327,7 @@ A similar statement is:
 
 ::: tip Theorem
 Let $f$ be defined and differentiable on an open interval $(a, b)$.
-If $f$ takes a local minimum or a local maximum at the point $c \in (a, b)$ then $f′(c) = 0$.
+If $f$ takes a local minimum or a local maximum at the point $c \in (a, b)$ then $f^{\prime}(c) = 0$.
 :::
 
 Is one statement implied by the other?

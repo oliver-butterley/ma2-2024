@@ -35,8 +35,6 @@ There exist constant width curves which are not circles.
 
 This can be proved by constructing many such curves, for example the [Reuleaux triangle](https://en.wikipedia.org/wiki/Reuleaux_triangle). Indeed there are such curves which look similar to regular polygons but still have constant width.
 
-<!-- ![Reuleaux triangle rotating https://commons.wikimedia.org/wiki/File:Rotation_of_Reuleaux_triangle.gif](https://upload.wikimedia.org/wikipedia/commons/2/22/Rotation_of_Reuleaux_triangle.gif) -->
-
 ![Reuleaux triangle](/images/svg/reuleaux.svg "The Reuleaux triangle is a curve of constant width")
 
 ## Mathematical statements
@@ -295,8 +293,6 @@ Let $a$ be a real number. Suppose that, for every real number $x$, then $a\leq x
 
 As before it is important for us to start by trying things, by guessing and then by adding rigour to the argument.
 If we didn't try anything until we were certain of the final answer then we would be severely limiting our potential.
-
-<!-- https://hrmacbeth.github.io/math2001/07_Number_Theory.html#the-square-root-of-two -->
 
 ## Optimality of statements
 

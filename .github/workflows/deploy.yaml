@@ -2,7 +2,7 @@ name: Deploy VitePress site to server
 
 on:
   push:
-    branches: [main]
+    branches: [deploy]
 
   workflow_dispatch:
 
@@ -18,9 +18,9 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: npm 
+          cache: npm
       - name: Install dependencies
-        run: npm ci 
+        run: npm ci
       - name: Build with VitePress
         run: |
           npm run build
@@ -30,12 +30,11 @@ jobs:
           path: .vitepress/dist
       - name: Deploy to server over ssh
         uses: easingthemes/ssh-deploy@v4
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }} 
-          ARGS: "-rlgoDzvc -i" 
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+          ARGS: "-rlgoDzvc -i"
           SOURCE: ".vitepress/dist/"
-          REMOTE_HOST: "www.mat.uniroma2.it" 
-          REMOTE_USER: "butterle" 
+          REMOTE_HOST: "www.mat.uniroma2.it"
+          REMOTE_USER: "butterle"
           TARGET: "~/public_html/MA2/"
           EXCLUDE: ""
- 

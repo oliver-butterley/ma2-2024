@@ -3,6 +3,7 @@
 In this part of the course we work on the following skills:
 
 - Understand the precise meanings of mathematical statements and form our own precise statements.
+- Understand a logic written in confused statements and describe it in clear terms.
 - Manipulate such statements, such as finding contrapositives, inconsistencies, special cases or generalizations.
 - Hold several ideas in our heads simultaneously, while keeping track of the relationships between each (which statements are justified by which others? Do any contradict each other?).
 - Understand and form chains of logical manipulations while identifying and fixing mistakes.

@@ -3,35 +3,25 @@
 In this part of the course we work on the following skills:
 
 - Understand the precise meanings of mathematical statements and form our own precise statements.
-- Understand a logic written in confused statements and describe it in clear terms.
-- Manipulate such statements, such as finding contrapositives, inconsistencies, special cases or generalizations.
-- Hold several ideas in our heads simultaneously, while keeping track of the relationships between each (which statements are justified by which others? Do any contradict each other?).
-- Understand and form chains of logical manipulations while identifying and fixing mistakes.
+- Find logic buried in confused statements and describe it in clear terms.
+- Manipulate statements, such as finding contrapositives, inconsistencies, special cases or generalizations.
+- Hold several ideas in our heads simultaneously, while keeping track of the relationships between each (which statements are justified by which others? Do any contradict each other?). - Understand and form chains of logical manipulations while identifying and fixing mistakes.
 - Justify or find counterexamples to our own guesses.
 
 ## Models, definitions, logical consequences
 
-We take the point of view that "doing science" involves developing well-defined models which describe physical phenomena (anything like the trajectory of a projectile, fluid mechanics, economics, etc.) whilst "doing mathematics" involves analysing the logic consequences of these models.
-The consequences understood by studying the model can then be used to further test the model or design applications which use these physical phenomena.
+We take the point of view that "doing science" involves developing well-defined models which describe physical phenomena (anything like the trajectory of a projectile, fluid mechanics, economics, etc.) whilst "doing mathematics" involves analysing the logical consequences of these models. The consequences understood by studying the model can then be used to further test the model or design applications which use these physical phenomena.
 
-We need to be rigorous in our logic otherwise, as we have seen in these examples, the conclusions can be erroneous and the difficulties are often subtle.
+We need to be rigorous in our reasoning, otherwise, as we will see in some examples, the conclusions can be erroneous and the difficulties are often subtle.
 
 ### Curves of constant width
 
-<!-- ![The Reuleaux triangle is a curve of constant width](/images/svg/reuleaux.svg) -->
-
-Shortly we will consider examples in calculus but it is worthwhile to consider a real world application of the rigour and reasoning we aspire to.
-Suppose we are organising the production facilities which manufacture a component that is round (maybe a rocket body, maybe a gas tube, etc.).
-As part of the production it is important to have a procedure which guarantees that the fabrication is done to the correct tolerance.
-The idea proposed is:
+Shortly we will consider examples in calculus but it is worthwhile to consider a real world application of the rigour and reasoning we aspire to. Suppose we are organising the production facilities which manufacture a component that is round (maybe a rocket body, maybe a gas tube, etc.). As part of the production it is important to have a procedure which guarantees that the fabrication is done to the correct tolerance. The idea proposed is:
 
 > "We measure the width from all angles to confirm that the manufactured component is correct."
 
-This is a two-dimensional problem in the sense we assume that the object is a closed curve in $\mathbb{R}^2$.
-For a given angle we define the width of this curve to be the smallest distance between two parallel lines which touch the curve in a single point but never cross it (one each side of the curve).
-We say that the curve has constant width if this width is equal from every direction.
-This is just what we would check using calipers on a part and rotating.
-The following statement is intuitive and true.
+This is a two-dimensional problem in the sense we assume that the object is a closed curve in $\mathbb{R}^2$. For a given angle we define the width of this curve to be the smallest distance between two parallel lines which touch the curve in a single point but never cross it (one each side of the curve). We say that the curve has constant width if this width is equal from every direction.
+This is just what we would check using calipers on a part and rotating. The following statement is intuitive and true.
 
 ::: tip Theorem
 A circle has constant width.
@@ -43,10 +33,11 @@ However the converse is not true, indeed the following is true.
 There exist constant width curves which are not circles.
 :::
 
-This can be proved by constructing many such curves, for example the [Reuleaux triangle](https://en.wikipedia.org/wiki/Reuleaux_triangle).
-Indeed there are such curves which look similar to regular polygons but still have constant width.
+This can be proved by constructing many such curves, for example the [Reuleaux triangle](https://en.wikipedia.org/wiki/Reuleaux_triangle). Indeed there are such curves which look similar to regular polygons but still have constant width.
 
-![Reuleaux triangle rotating https://commons.wikimedia.org/wiki/File:Rotation_of_Reuleaux_triangle.gif](https://upload.wikimedia.org/wikipedia/commons/2/22/Rotation_of_Reuleaux_triangle.gif)
+<!-- ![Reuleaux triangle rotating https://commons.wikimedia.org/wiki/File:Rotation_of_Reuleaux_triangle.gif](https://upload.wikimedia.org/wikipedia/commons/2/22/Rotation_of_Reuleaux_triangle.gif) -->
+
+![Reuleaux triangle](/images/svg/reuleaux.svg "The Reuleaux triangle is a curve of constant width")
 
 ## Mathematical statements
 

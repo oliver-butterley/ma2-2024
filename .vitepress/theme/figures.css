@@ -1,0 +1,20 @@
+/**
+ * Custom styling for figures and their captions.
+ */
+
+:root {
+  figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    line-height: 1.4em;
+    font-style: italic;
+    font-size: smaller;
+    text-align: center;
+    padding: 3px 3px 3px 3px;
+  }
+  figure {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

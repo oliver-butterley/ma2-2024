@@ -47,3 +47,11 @@ The final weeks of the course are devoted to a mini-project.
 | Project - week 3 | 15-19 Dec       |            |
 
 ### Previous years
+
+Course material from previous years and other instructors is available.
+
+- 2022/23 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2022/MA2/)
+- 2021/22 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2021/MA2/)
+- 2020/21 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2020/MA2/)
+- 2019/20 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2019/MA2/) / [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2019MA2/2019MA2.html)
+- 2018/19 [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2018MA2/2018MA2.html) / [Morsella](http://www.mat.uniroma2.it/~morsella/didattica/2018-19/didattica.html)

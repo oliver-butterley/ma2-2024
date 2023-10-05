@@ -3,7 +3,7 @@ footer: true
 ---
 
 <script setup>
-import { data as diary } from './data/diary.data.ts'
+import { data } from './data/csv.data.ts'
 </script>
 
 # Overview
@@ -62,14 +62,14 @@ Course material from previous years and other instructors is available.
 
 ### Lesson diary
 
-<span v-if="diary">
+<span v-if="data.diary">
 
 <table>
   <thead>
     <tr ><th>Date</th><th>Time</th><th>Topic</th></tr>
   </thead>
   <tbody>
-    <tr  v-for="diaryItem in diary">
+    <tr  v-for="diaryItem in data.diary">
       <td>{{ diaryItem.date }} </td>
       <td>{{ diaryItem.time }}</td>
       <td> {{ diaryItem.topic }}</td>

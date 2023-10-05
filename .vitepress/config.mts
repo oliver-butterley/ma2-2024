@@ -1,6 +1,15 @@
 import { defineConfig } from "vitepress";
 import implicitFigures from "markdown-it-implicit-figures";
 
+const courseParts = [
+  "Mathematical reasoning",
+  "Calculus in higher dimension",
+  "Extrema and other applications",
+  "Curves and line integrals",
+  "Multiple integrals",
+  "Surfaces and surface integrals",
+];
+
 export default defineConfig({
   lang: "en-GB",
   title: "Mathematical Analysis 2",
@@ -35,7 +44,7 @@ export default defineConfig({
       {
         text: "Lecture notes",
         items: Array.from(Array(6), (_, n) => ({
-          text: `Part ${n + 1}`,
+          text: `${n + 1}. ${courseParts[n]}`, // `Part ${n + 1}: ${courseParts[n]}`
           link: `pages/part${n + 1}`,
         })),
         collapsed: false,
@@ -44,8 +53,7 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern:
-        "https://github.com/oliver-butterley/ma2-2023/edit/main/docs/:path",
+      pattern: "https://github.com/oliver-butterley/ma2-2023/edit/main/:path",
       text: "Edit this page on GitHub",
     },
 
@@ -67,7 +75,7 @@ export default defineConfig({
 
     footer: {
       message:
-        'Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>.',
+        'Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>',
       copyright:
         'Copyright © 2023 <a href="https://www.mat.uniroma2.it/butterley/">Oliver Butterley</a>',
     },

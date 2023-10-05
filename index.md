@@ -2,6 +2,10 @@
 footer: true
 ---
 
+<script setup>
+import { data as diary } from './data/diary.data.ts'
+</script>
+
 # Overview
 
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
@@ -14,9 +18,9 @@ Instructors:
 
 Teams code: **3pddgbg** (use this to join on Microsoft Teams)
 
-Classroom: Aula 8
+Classroom: **Aula 8**
 
-## General advice for approaching mathematics
+## General advice
 
 - Develop your intuition, it's a powerful skill – But don’t trust it completely
 - Don’t aim to memorize but rather seek to understand – It is easy to remember anything when you understand it.
@@ -55,3 +59,22 @@ Course material from previous years and other instructors is available.
 - 2020/21 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2020/MA2/)
 - 2019/20 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2019/MA2/) / [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2019MA2/2019MA2.html)
 - 2018/19 [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2018MA2/2018MA2.html) / [Morsella](http://www.mat.uniroma2.it/~morsella/didattica/2018-19/didattica.html)
+
+### Lesson diary
+
+<span v-if="diary">
+
+<table>
+  <thead>
+    <tr ><th>Date</th><th>Time</th><th>Topic</th></tr>
+  </thead>
+  <tbody>
+    <tr  v-for="diaryItem in diary">
+      <td>{{ diaryItem.date }} </td>
+      <td>{{ diaryItem.time }}</td>
+      <td> {{ diaryItem.topic }}</td>
+    </tr>
+  </tbody>
+</table>
+
+</span>

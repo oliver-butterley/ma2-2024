@@ -2,13 +2,14 @@
 
 In this part of the course we work on the following skills:
 
-- Understand the precise meanings of mathematical statements and form our own precise statements.
-- Find logic buried in confused statements and describe it in clear terms.
+- Understand the precise meanings of mathematical statements, form our own precise statements, find logic buried in confused statements and describe it in clear terms.
 - Manipulate statements, such as finding contrapositives, inconsistencies, special cases or generalizations.
-- Hold several ideas in our heads simultaneously, while keeping track of the relationships between each (which statements are justified by which others? Do any contradict each other?). - Understand and form chains of logical manipulations while identifying and fixing mistakes.
+- Form chains of logical manipulations while identifying and fixing mistakes.
 - Justify or find counterexamples to our own guesses.
 
-## Models, definitions, logical consequences
+This text is not a comprehensive overview, it is meant only as a reminder and light discussion of the key notions. In a sense logic is innate however our abilities working with logical reasoning can be improved and refined, it is a skill to be studied like any other.
+
+## Models, logical consequences
 
 We take the point of view that "doing science" involves developing well-defined models which describe physical phenomena (anything like the trajectory of a projectile, fluid mechanics, economics, etc.) whilst "doing mathematics" involves analysing the logical consequences of these models. The consequences understood by studying the model can then be used to further test the model or design applications which use these physical phenomena.
 
@@ -21,15 +22,15 @@ Shortly we will consider examples in calculus but it is worthwhile to consider a
 > "We measure the width from all angles to confirm that the manufactured component is correct."
 
 This is a two-dimensional problem in the sense we assume that the object is a closed curve in $\mathbb{R}^2$. For a given angle we define the width of this curve to be the smallest distance between two parallel lines which touch the curve in a single point but never cross it (one each side of the curve). We say that the curve has constant width if this width is equal from every direction.
-This is just what we would check using calipers on a part and rotating. The following statement is intuitive and true.
+This is just what we would check using calipers on a part and rotating. The abstract version of this problem is that we want to show that being a circle follows from constant width. The following statement is intuitive and true.
 
-::: tip Theorem
+::: info Theorem
 A circle has constant width.
 :::
 
 However the converse is not true, indeed the following is true.
 
-::: tip Theorem
+::: info Theorem
 There exist constant width curves which are not circles.
 :::
 
@@ -40,62 +41,30 @@ This can be proved by constructing many such curves, for example the [Reuleaux t
 ## Mathematical statements
 
 Mathematical reasoning proceeds as a sequence of mathematical statements.
-Statements are true or false.
-E.g., $2+2=4$ is a true statement and $2+2=5$ is a false statement.
-Not all combination of words or mathematical symbols is a statement.
-E.g.,
+Statements are true or false. E.g., $2+2=4$ is a true statement and $2+2=5$ is a false statement. Not all combination of words or mathematical symbols is a statement. E.g.,
 $$ =4+\times 4 = - = 3$$
-is not a statement, this combination of symbols fails to have meaning.
-Similarly 
-$$\frac{0}{0} = 1$$
-is not a statement since division by zero is not defined.
-We say such are _ill-formed_ or _ill-defined_.
-Statements may also contain words.
-E.g.,
+is not a statement, this combination of symbols fails to have meaning. Similarly 
+$$0/0 = 1$$
+is not a statement since division by zero is not defined. We say such are _ill-formed_ or _ill-defined_. Statements may also contain words or consist entirely of words, e.g.,
 
 > There are infinitely many prime numbers
 
-is a well-formed mathematical statement.
-Some statements, e.g.,
+is a well-formed mathematical statement. Some statements, e.g.,
 $$7=7, \quad 5\leq5$$
-are true but are unlikely to be useful.
-On the other hand the statement
-$$\pi=\frac{22}{7}$$
-is false but could be useful.
-We could make this a precise statement describing how this is a true approximation.
+are true but are unlikely to be useful. On the other hand the statement
+$$\pi=22/7$$
+is false but could be useful (we could make this a precise statement describing how this is a true approximation).
 
 We say that a combination of symbols such as,
 $$2+2$$
-is an _expression_, not a statement.
-This expression produces a value, it is not something that is true or false.
-As with expression, we must work with _well-defined_ or _well-formed_ expressions.
+is an _expression_, not a statement. This expression produces a value, it is not something that is true or false. As with expression, we must work with _well-defined_ or _well-formed_ expressions.
 In order to be mathematically rigorous, we must avoid _ill-defined_ or _ill-formed_ expressions, e.g.,
 $$1+{2}/{0}, \quad \sin^{-1}(2).$$
-We often make statements out of expressions by using relations (e.g., $=$, $<$, $\in$, $\subset$) or by using properties (e.g., "is prime", "is invertible").
-_Compound statements_ can be formed from other statements by using logical connectives (e.g., and, or, not, if, "if and only if",...).
-We will often do this.
-
-The statement
+We often make statements out of expressions by using relations (e.g., $=$, $<$, $\in$, $\subset$) or by using properties (e.g., "is prime", "is invertible"). _Compound statements_ can be formed from other statements by using logical connectives (e.g., and, or, not, if, if and only if,...). We will often do this. E.g., the statement
 
 > $2+2=5$ if and only if $4+4=10$
 
-is well-formed and true.
-Again not very useful.
-
-The negation of statements is often essential.
-Although a rather natural idea this can sometimes become confusing when combined with logical connectives and quantifiers.
-
-| Statement                           | Negation                               |
-| ----------------------------------- | -------------------------------------- |
-| "$P$ or $Q$"                        | "not $P$ and not $Q$"                  |
-| "$P$ and $Q$"                       | "not $P$ or not $Q$"                   |
-| "if $P$, then $Q$"                  | "$P$ and not $Q$"                      |
-| "For all $x$, $P(x)$"               | "There exist $x$ such that not $P(x)$" |
-| "There exists $x$ such that $P(x)$" | "For every $x$, not $P(x)$"            |
-
-::: info Exercise
-Think of day-to-day examples which illustrate the logic described in this table.
-:::
+is formed by combining two statements. Note that this statement is well-formed and true (we can prove by calculation). However it is vacuous in the sense that the hypothesis is false.
 
 ::: info Exercise
 Identify the hypothesis and conclusion in the following statements.
@@ -109,21 +78,46 @@ Identify the hypothesis and conclusion in the following statements.
 
 :::
 
+### Negation
+
+The negation of statements is often essential. Although a rather natural idea this can sometimes become confusing when combined with logical connectives and quantifiers.
+
+| Statement                         | Negation                             |
+| --------------------------------- | ------------------------------------ |
+| $P$ or $Q$                        | Not $P$ and not $Q$                  |
+| $P$ and $Q$                       | Not $P$ or not $Q$                   |
+| If $P$, then $Q$                  | $P$ and not $Q$                      |
+| For all $x$, $P(x)$               | There exist $x$ such that not $P(x)$ |
+| There exists $x$ such that $P(x)$ | For every $x$, not $P(x)$            |
+
+::: info Exercise
+Think of day-to-day examples which illustrate the logic described in this table.
+:::
+
+::: info Exercise
+Find the negation of the following statements
+
+1. Some prime numbers are odd.
+2. Nobody is lazy.
+3. Some horses are black.
+4. For every $x\in\mathbb{R}$, $x^2 \geq 0$.
+5. There exists $x\in\mathbb{R}$ such that $x^2 = 7$.
+6. For each $x\in\mathbb{R}$ there exists $y\in\mathbb{R}$ such that $x=y^2$.
+7. If $x,y\geq 0$ then $\sqrt{x}=\sqrt{y}$ implies that $x=y$.
+
+:::
+
 ## Structure of proofs
 
-Be they calculations or logical steps expressed in words, proofs must be a chain of rigorous steps.
-The correct conclusion without solid logic is not a proof 😆.
-Two humorous examples with correct conclusions but which are not proofs:
+Be they calculations or logical steps expressed in words, proofs must be a chain of rigorous steps. The correct conclusion without solid logic is not a proof. Typically there are many different ways to write a proof, often very different one to the other. Here we discuss a few possibilities and introduce some terminology so it is easier to discuss when we work with such.
 
+<!-- Two humorous examples with correct conclusions but which are not proofs:
 $$
 \begin{aligned}
   \frac{16}{64} &= \frac{1\not{6}}{\not{6}4} = \frac{1}{4}, \\
   \frac{d}{dx} \frac{1}{x} &= \frac{d}{d} \frac{1}{x^2} = \frac{\not{d}}{\not{d}} \frac{1}{x^2} = - \frac{1}{x^2}.
 \end{aligned}
-$$
-
-Typically there are many different ways to write a proof, often very different one to the other.
-Here we discuss a few possibilities and introduce some terminology.
+$$ -->
 
 ### Calculation proofs
 
@@ -131,32 +125,30 @@ These are the classic school mathematics problems, often phrased as "evaluate...
 The proof in these cases is simply a chain of equalities to produce the final result.
 Since we already have seen so many of these we instead look at a couple of false proofs and practice our skill at searching for gaps and errors in proofs.
 
-::: tip ~~Theorem~~
+::: info ~~Theorem~~
 $5=4$
 :::
 
 ::: info ~~Proof~~
-Since $-20=-20$ we know that
-$$25 - 45 = 16 -36,$$
-which we can rewrite as
-$$5^2 - 5 \times 9 = 4^2 - 4 \times 9.$$
-We add $\frac{81}{4}$ on both sides,
-$$5^2 - 5 \times 9 + \frac{81}{4} = 4^2 - 4 \times 9 + \frac{81}{4}.$$
-These are both perfect squares and so we know that
-$$\left(5-\frac{9}{2}\right)^2 = \left(4-\frac{9}{2}\right)^2.$$
-Taking the square root of both sides we obtain,
-$$5-\frac{9}{2} = 4-\frac{9}{2}$$
-which implies that $5=4$.
+
+- Since $-20=-20$ we know that $25 - 45 = 16 -36$.
+- Which we rewrite as $5^2 - 5 \times 9 = 4^2 - 4 \times 9$.
+- Adding $\frac{81}{4}$ on both sides, $5^2 - 5 \times 9 + \frac{81}{4} = 4^2 - 4 \times 9 + \frac{81}{4}$.
+- These are both perfect squares and so $\left(5-\frac{9}{2}\right)^2 = \left(4-\frac{9}{2}\right)^2$.
+- Taking the square root of both sides, $5-\frac{9}{2} = 4-\frac{9}{2}$.
+- And so $5=4$.
+
 :::
 
 ::: info Exercise
 In which step in the above argument is there an error?
 :::
 
+<!--
 Alternatively calculations might be more about geometrical reasoning.
 When a proof relies on a picture and an appeal to intuition we must be particularly careful with arguments.
 
-::: tip ~~Theorem~~
+::: info ~~Theorem~~
 Every triangle is isosceles.
 :::
 
@@ -171,14 +163,14 @@ Sketch the triangle and the lines described in the following steps.
 - Then looking at right triangles $BIJ$ and $CIK$, we obtain that $BJ=CK$.
 - We conclude that $AB = AJ+JB = AK+KC = AC$.
 
-:::
+::: -->
 
 ### Proof by cases
 
-A common scenario is when during a calculation / proof we must consider two cases depending on whether a certain quantity is zero or otherwise we can divide through by this quantity.
+A common scenario is when during a proof we must consider two cases depending on whether a certain quantity is zero or otherwise we can divide through by this quantity.
 Another example is:
 
-::: tip Theorem
+::: info Theorem
 Suppose that $n$ is an integer. Then $n(n+1)$ is an even integer.
 :::
 
@@ -190,41 +182,19 @@ Suppose that $n$ is an integer. Then $n(n+1)$ is an even integer.
   :::
 
 Observe that, in the proof, one of the first two statements is vacuous in the sense that only one can be true for a given $n$.
-In a similar way, the statement
-
-> If $2+2=5$, then $10=0$
-
-is true!
-We can prove it by calculation: $10 = 10(5-4) = 10(5-(2+2)) =0$.
-However the hypothesis of the above statement is never true so the implication of the statement is vacuous.
 
 ### Proof by contradiction
 
-It is often convenient to prove a statement by supposing that the conclusion is false and showing this contradicts the hypothesis, this is called [proof by contradiction](https://en.wikipedia.org/wiki/Proof_by_contradiction).
-In the abstract, if $P$ and $Q$ are statements then the statement "If $P$, then $Q$" is equivalent to "Not $Q$, then not $P$".
+It is often convenient to prove a statement by supposing that the conclusion is false and showing this contradicts the hypothesis, this is called [proof by contradiction](https://en.wikipedia.org/wiki/Proof_by_contradiction). In the abstract, if $P$ and $Q$ are statements then the statement "If $P$, then $Q$" is equivalent to "Not $Q$, then not $P$".
 
 > Archibald uses an umbrella whenever it rains.
 > If we see Archibald isn't using an umbrella then we know that it is not raining.
 
-::: tip Problem
+::: info Problem
 Let $x$ and $y$ be real numbers and suppose that $xy > 0$ and $x \geq 0$. Show that $y>0$.
 :::
 
-To prove this statement we can suppose, for the sake of contradiction, that $y\leq 0$.
-Since also $x \geq 0$ this implies that $xy \leq 0$ but this is a contradiction.
-
-::: info Exercise
-Find the negation of the following statements
-
-1. Some prime numbers are odd.
-2. No student is lazy.
-3. Some horses are black.
-4. For every $x\in\mathbb{R}$, $x^2 \geq 0$.
-5. There exists $x\in\mathbb{R}$ such that $x^2 = 7$.
-6. For each $x\in\mathbb{R}$ there exists $y\in\mathbb{R}$ such that $x=y^2$.
-7. If $x,y\geq 0$ then $\sqrt{x}=\sqrt{y}$ implies that $x=y$.
-
-:::
+To prove this statement we can suppose, for the sake of contradiction, that $y\leq 0$. Since also $x \geq 0$ this implies that $xy \leq 0$ but this is a contradiction.
 
 ### Proof by induction
 
@@ -234,24 +204,14 @@ A statement which is amenable to proof by induction is the following.
 
 > $2^n \geq n+1$ for all natural numbers $n$.
 
-However, let's take this opportunity to discuss what to do when such statements come to us.
-In the high school world the is no doubt, we are required to follow a procedure that is clearly prescribed.
-However as grown up thinkers everything is more open and there are many "correct" solutions.
-Firstly we need to ask ourselves if the statement is true!
-In this case we try a few of the smaller natural numbers and we see that it does seem to be true.
-(If we thought it wasn't true then we would try to find counter examples to prove that it is false.)
-So now we need to write a proof of the statement.
-One way to think about this would be to consider the graph $y=2^x-(x+1)$.
-That this graph lies above the axis is equivalent to the statement being true.
-We could consider the gradient of $2^x-(x+1)$ and prove that it stays positive.
-This is a perfectly reasonable proof.
+However, let's take this opportunity to discuss what to do when such statements come to us. In the high school world the is no doubt, we are required to follow a procedure that is clearly prescribed.
+However as grown up thinkers everything is more open and there are many "correct" solutions. Firstly we need to ask ourselves if the statement is true! In this case we try a few of the smaller natural numbers and we see that it does seem to be true. (If we thought it wasn't true then we would try to find counter examples to prove that it is false.) So now we need to write a proof of the statement. One way to think about this would be to consider the graph $y=2^x-(x+1)$. That this graph lies above the axis is equivalent to the statement being true. We could consider the gradient of $2^x-(x+1)$ and prove that it stays positive. This is a perfectly reasonable proof.
 
-The statement can also be proven by induction in a concise way.
-To a large degree, the choice of proof is aesthetic.
+The statement can also be proven by induction in a concise way. To a large degree, the choice of proof is aesthetic.
 
 Again time to practice our skill at finding gaps in proofs.
 
-::: tip ~~Theorem~~
+::: info ~~Theorem~~
 All sheep are the same colour.
 :::
 
@@ -268,11 +228,13 @@ We will now assume that a group of $N$ sheep are all the same colour and conside
 
 :::
 
-## Variables and quantifiers
+::: info Exercise
+Where is the logical gap in the above argument?
+:::
 
-Almost always, mathematical statements will involve variables and quantifies.
-As we have already seen, various statements are stated "for all..." or perhaps "there exists... such that".
-This is a natural concept, like saying "every bird can fly" or "there exists a bird which can swim".
+## Quantifiers
+
+Almost always, mathematical statements will involve quantifies. As we have already seen, various statements are stated "for all..." or perhaps "there exists... such that". This is a natural concept, like saying "every bird can fly" or "there exists a bird which can swim".
 
 ::: info Exercise
 What does each of the following statements mean, and which of them are true?
@@ -287,7 +249,7 @@ What does each of the following statements mean, and which of them are true?
 
 The following is more practice for us to understand the process of developing an understanding and proof of a statement.
 
-::: tip Problem
+::: info Problem
 Let $a$ be a real number. Suppose that, for every real number $x$, then $a\leq x^2 - 2x$. Show that $a\leq -1$.
 :::
 
@@ -301,26 +263,21 @@ If we didn't try anything until we were certain of the final answer then we woul
 
 Recall the following result from Mathematical Analysis 1.
 
-::: tip Theorem
+::: info Theorem
+Let $f$ be differentiable on $(a, b)$ and suppose that $f$ takes a local minimum or maximum at the point $c \in (a, b)$. Then $f^{\prime}(c) = 0$.
+:::
+
+<!-- ::: info Theorem
 Let $f$ be defined on an open interval $(a, b)$ and assume that $f$ takes a local minimum or a local maximum at the point $c \in (a, b)$.
 If $f$ is differentiable at $c$ then $f^{\prime}(c) = 0$.
-:::
+::: -->
 
 ::: info Exercise
 Could we improve the statement with a stronger conclusion?
 Could we improve the statement with a weaker hypothesis?
 :::
 
-A similar statement is:
-
-::: tip Theorem
-Let $f$ be defined and differentiable on an open interval $(a, b)$.
-If $f$ takes a local minimum or a local maximum at the point $c \in (a, b)$ then $f^{\prime}(c) = 0$.
-:::
-
-Is one statement implied by the other?
-In this case we would say that one statement is strictly stronger than the other.
-Can the implication in the final sentence of the statement be upgraded to an if-and-only-if?
+Observe that, if we modify the statement with a stronger conclusion or a weaker hypothesis then the new statement implies the original statement. It will often be of practical importance to improve theorems in this way or to show examples which demonstrate that all the hypothesis are required and that it is not possible to strengthen the conclusion. If a statement is an implication then if often makes sense to ask if it can be upgraded to an if-and-only-if statement. Again, if possible, this would produce a statement which implies the original one.
 
 ## Why study analysis?
 
@@ -334,7 +291,7 @@ can be summed by the following simple trick.
 Multiplying by $2$ we obtain that
 
 $$
-  2S = 2 + 1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \frac{1}{16} + \cdots = 2+S
+  2S = 2 + 1 + \tfrac{1}{2} + \tfrac{1}{4} + \tfrac{1}{8} + \tfrac{1}{16} + \cdots = 2+S
 $$
 
 and so $S=2$.
@@ -354,11 +311,11 @@ Why should we trust the argument in the first case and not in the second?
 If we consider any matrix of numbers, for example,
 
 $$
-  \begin{pmatrix}
+  \left(\begin{smallmatrix}
     1 & 2 & 3 \\
     4 & 5 & 6 \\
     7 & 8 & 9
-  \end{pmatrix}
+  \end{smallmatrix}\right)
 $$
 
 we can sum first the rows $6 + 15 + 24 = 45$ or first the columns $12 + 15 + 18 = 45$ to obtain the total sum of all numbers.
@@ -372,16 +329,15 @@ We would like to believe that also $\sum_{j=1}^{\infty} \sum_{k=1}^{\infty} a_{j
 However this doesn't work for the following matrix:
 
 $$
-  \begin{pmatrix}
+  \left(\begin{smallmatrix}
     1      & 0      & 0      & \cdots \\
     -1     & 1      & 0      & \cdots \\
     0      & -1     & 1      & \cdots \\
     \vdots & \vdots & \vdots & \ddots
-  \end{pmatrix}.
+  \end{smallmatrix}\right).
 $$
 
-We often want to swap the order of summing (or integrating) and often need to consider infinite sums (or integrals).
-When can we do this and can't we?
+We often want to swap the order of summing (or integrating) and often need to consider infinite sums (or integrals). When can we do this and can't we?
 
 ### Interchanging integrals
 
@@ -446,6 +402,6 @@ We need to be rigorous in our logic otherwise, as we have seen in these examples
 
 ## Further reading
 
-- [The mechanics of proof](https://hrmacbeth.github.io/math2001/) by _Heather Macbeth_
 - Analysis I: Third Edition (Texts and Readings in Mathematics) (2016) by _Terence Tao_ (particularly §1.2 "Why Analysis?" and Appendix A "The basics of mathematical logic")
+- [The mechanics of proof](https://hrmacbeth.github.io/math2001/) by _Heather Macbeth_
 - How to Think Like a Mathematician: A Companion to Undergraduate Mathematics (2009) by _Kevin Houston_

@@ -3,20 +3,27 @@
     "3pddgbg",
     "aerospike",
     "Aula",
+    "boldsymbol",
+    "Bolzano",
     "Butterley",
     "Greenblatt",
     "infty",
     "mathbb",
     "mathbf",
+    "Morrey",
     "Morsella",
     "newcommand",
+    "operatorname",
     "pmatrix",
+    "Protter",
+    "resp.",
     "Reuleaux",
     "Schwarz",
     "smallmatrix",
     "Tanimoto",
     "Vergata",
-    "vitepress"
+    "vitepress",
+    "Weierstrass"
   ],
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

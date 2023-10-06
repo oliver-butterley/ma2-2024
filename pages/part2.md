@@ -1,9 +1,9 @@
 $\newcommand{\norm}[1]{\left\|#1\right\|}$
 $\newcommand{\abs}[1]{\left|#1\right|}$
-$\newcommand{\littleo}[1]{o(#1)}$
+$\newcommand{\littleO}[1]{o(#1)}$
 $\newcommand{\bR}{\mathbb{R}}$
 
-# 2. Differential calculus in higher dimension
+# Differential calculus in higher dimension
 
 In this part of the course we start to consider higher dimensional space.
 That is, instead of $\mathbb{R}$ we consider $\mathbb{R}^n$ for $n\in \mathbb{N}$.
@@ -393,7 +393,7 @@ $$
 f(x) \approx f(a) + (x-a) f'(a).
 $$
 
-More precisely, we know that\footnote{This is [little-o notation](https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation) and here means that $\abs{f(x) - f(a) - (x-a) f'(a)}/\abs{x-a} \to 0$ as $\abs{x-a}\to 0$. } $f(x) = f(a) + (x-a) f'(a) + \epsilon(x-a)$ where $\abs{\epsilon(x-a)} = \littleo{\abs{x-a}}$.
+More precisely, we know that\footnote{This is [little-o notation](https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation) and here means that $\abs{f(x) - f(a) - (x-a) f'(a)}/\abs{x-a} \to 0$ as $\abs{x-a}\to 0$. } $f(x) = f(a) + (x-a) f'(a) + \epsilon(x-a)$ where $\abs{\epsilon(x-a)} = \littleO{\abs{x-a}}$.
 This way of seeing differentiability is convenient for the higher dimensional definition of differentiability.
 
 ::: tip Definition (Differentiable)
@@ -404,7 +404,7 @@ $$
 f(\mathbf{x}) = f(\mathbf{a}) + {df}_{\mathbf{a}}(\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a})
 $$
 
-where $\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleo{\norm{\mathbf{x}-\mathbf{a}}}$.
+where $\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf{a}}}$.
 :::
 
 For future convenience we introduce the following notation.
@@ -444,7 +444,7 @@ $$
 f(\mathbf{x}) = f(\mathbf{a}) +   \nabla f(\mathbf{a}) \cdot (\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a})
 $$
 
-where $\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleo{\norm{\mathbf{x}-\mathbf{a}}}$.
+where $\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf{a}}}$.
 Moreover, for any vector $\mathbf{v}$, $\norm{v}=1$,
 
 $$
@@ -706,7 +706,7 @@ $$
     \mathbf{f}(\mathbf{x}) = \mathbf{f}(\mathbf{a}) + {df}_{\mathbf{a}}(\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a})
 $$
 
-$\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleo{\norm{\mathbf{x}-\mathbf{a}}}$.
+$\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf{a}}}$.
 :::
 
 ::: tip Theorem
@@ -760,7 +760,7 @@ $$
 \mathbf{f}(\mathbf{x}) = \mathbf{f}(\mathbf{a}) +  D\mathbf{f}(\mathbf{a}) (\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a})
 $$
 
-where $\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleo{\norm{\mathbf{x}-\mathbf{a}}}$.
+where $\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf{a}}}$.
 This is like a Taylor expansion in higher dimensions.
 
 Here we see that in higher dimensions we have a matrix form of the chain rule.

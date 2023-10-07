@@ -1,18 +1,8 @@
-$\newcommand{\norm}[1]{\left\|#1\right\|}$
-$\newcommand{\abs}[1]{\left|#1\right|}$
-$\newcommand{\littleO}[1]{o(#1)}$
-$\newcommand{\bR}{\mathbb{R}}$
-$\newcommand{\aa}{\mathbf{a}}$
-$\newcommand{\bb}{\mathbf{b}}$
-$\newcommand{\ee}{\mathbf{e}}$
-$\newcommand{\xx}{\mathbf{x}}$
-$\newcommand{\yy}{\mathbf{y}}$
-$\newcommand{\uu}{\mathbf{u}}$
-$\newcommand{\vv}{\mathbf{v}}$
-$\newcommand{\ww}{\mathbf{w}}$
-$\newcommand{\aalpha}{\boldsymbol{\alpha}}$
-$\newcommand{\bbeta}{\boldsymbol{\beta}}$
-$\newcommand{\ff}{\mathbf{f}}$
+<!--@include: ./pages/notation.md-->
+
+::: warning
+Draft text ⚠️
+:::
 
 # Curves & line integrals
 

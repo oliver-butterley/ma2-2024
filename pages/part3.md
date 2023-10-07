@@ -1,14 +1,8 @@
-$\newcommand{\norm}[1]{\left\|#1\right\|}$
-$\newcommand{\abs}[1]{\left|#1\right|}$
-$\newcommand{\littleO}[1]{o(#1)}$
-$\newcommand{\bR}{\mathbb{R}}$
-$\newcommand{\aa}{\mathbf{a}}$
-$\newcommand{\bb}{\mathbf{b}}$
-$\newcommand{\xx}{\mathbf{x}}$
-$\newcommand{\yy}{\mathbf{y}}$
-$\newcommand{\uu}{\mathbf{u}}$
-$\newcommand{\vv}{\mathbf{v}}$
-$\newcommand{\ww}{\mathbf{w}}$
+<!--@include: ./pages/notation.md-->
+
+::: warning
+Draft text ⚠️
+:::
 
 # Extrema & other applications
 

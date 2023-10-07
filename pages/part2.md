@@ -1,7 +1,8 @@
-$\newcommand{\norm}[1]{\left\|#1\right\|}$
-$\newcommand{\abs}[1]{\left|#1\right|}$
-$\newcommand{\littleO}[1]{o(#1)}$
-$\newcommand{\bR}{\mathbb{R}}$
+<!--@include: ./pages/notation.md-->
+
+::: warning
+Draft text
+:::
 
 # Differential calculus in higher dimension
 

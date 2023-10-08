@@ -1,12 +1,14 @@
 <!--@include: ./pages/notation.md-->
 
-::: warning
-Draft text
-:::
-
 # Differential calculus in higher dimension
 
-In this part of the course we start to consider higher dimensional space.
+In this part of the course we work on the following skills:
+
+- Become comfortable working with coordinates in arbitrary dimension.
+- Develop an intuition for working with vector fields.
+- Understand the subtleties of derivatives in dimension greater than 1, evaluate and manipulate partial derivatives, directional derivatives, Jacobian.
+
+Here we start to consider higher dimensional space.
 That is, instead of $\mathbb{R}$ we consider $\mathbb{R}^n$ for $n\in \mathbb{N}$.
 We will particularly focus on 2D and 3D but everything also holds in any dimension.
 Going beyond $\mathbb{R}$ we have more options for functions and correspondingly more options for derivatives.
@@ -90,7 +92,7 @@ The set of all interior points of $S$ is denoted $\operatorname{int} S$.
 A set $S \subset \mathbb{R}^n$ is said to be _open_ if all of its points are interior points, i.e., if $\operatorname{int} S = S$.
 :::
 
-![Interior points are the centre of a ball contained within the set.](../images/svg/interior.svg "Interior points")
+![](../images/svg/interior.svg "Interior points are the centre of a ball contained within the set")
 
 For example, open intervals, open disks, open balls, unions of open intervals, etc., are all open sets.
 
@@ -137,7 +139,7 @@ Let $r=\min \{r_1,r_2\}$.
 This all means that $B(\mathbf{a},r) \subset B(a_1,r_1) \times B(a_2,r_2) \subset A_1\times A_2$.
 :::
 
-![If $A_1, A_2$ are intervals then $A_1 \times A_2$ is a rectangle.](../images/svg/cartesian.svg)
+![](../images/svg/cartesian.svg "If $A_1, A_2$ are intervals then $A_1 \\times A_2$ is a rectangle")
 
 Discussing the "interior" of the set naturally suggests the topic of the "boundary" of the set.
 In the following definitions we develop this idea.
@@ -269,7 +271,7 @@ We will independently prove the two implications.
 In higher dimensions the analogous statement is true for the vector field $\mathbf{f}(\mathbf{x}) = \left(f_1(\mathbf{x}),\ldots,f_m(\mathbf{x}) \right)$ with exactly the same proof.
 I.e., $\mathbf{f}$ is continuous if and only if each $f_k$ is continuous.
 
-::: info Example (Polynomials)
+::: info Example (polynomials)
 A _polynomial_ in $n$ variables is a scalar field on $\mathbb{R}^n$ of the form
 
 $$
@@ -281,7 +283,7 @@ E.g., $f(x,y):= x + 2x y - x^2$ is a polynomial in $2$ variables.
 Polynomials are continuous everywhere in $\mathbb{R}^n$. This is because they are the finite sum of products of continuous scalar fields.
 :::
 
-::: info Example[rational functions]
+::: info Example (rational functions)
 A _rational function_ is a scalar field
 
 $$
@@ -315,11 +317,11 @@ We can consider the scalar field $f(x,y)= \sin(x^2 + y) + x y$ as the compositio
 
 ## Derivatives of scalar fields
 
-<!-- ![Plot where colour represents the value of $f(x,y)=x^2 + y^2$. The change in $f$ depends on direction.](../images/svg/gradient.svg) -->
+![](../images/svg/gradient.png "Plot where colour represents the value of $f(x,y)=x^2 + y^2$. The change in $f$ depends on direction")
 
 We can imagine, for example in the figure, that in higher dimensions, the derivative of a scalar field depends on the direction. This motivates the following.
 
-::: tip Definition (Directional derivative)
+::: tip Definition (directional derivative)
 Let $S\subset \mathbb{R}^n$ and $f:S\to \mathbb{R}$.
 For any $\mathbf{a} \in \operatorname{int}S$ and $\mathbf{v} \in \mathbb{R}^n$, $\norm{v}=1$ the directional derivative of $f$ with respect to $\mathbf{v}$ is defined as
 
@@ -350,7 +352,7 @@ By definition $\frac{1}{h}(g(t+h)-g(h)) =\frac{1}{h}(f(\mathbf{a}+h \mathbf{v}) 
 
 The following result is useful for proving later results.
 
-::: tip Theorem (Mean value)
+::: tip Theorem (mean value)
 Assume that $D_{\mathbf{v}}(\mathbf{a}+t\mathbf{v})$ exists for each $t\in [0,1]$. Then for some $\theta \in (0,1)$,
 
 $$
@@ -397,7 +399,7 @@ $$
 More precisely, we know that\footnote{This is [little-o notation](https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation) and here means that $\abs{f(x) - f(a) - (x-a) f'(a)}/\abs{x-a} \to 0$ as $\abs{x-a}\to 0$. } $f(x) = f(a) + (x-a) f'(a) + \epsilon(x-a)$ where $\abs{\epsilon(x-a)} = \littleO{\abs{x-a}}$.
 This way of seeing differentiability is convenient for the higher dimensional definition of differentiability.
 
-::: tip Definition (Differentiable)
+::: tip Definition (differentiable)
 Let $S\subset \mathbb{R}^n$ be open, $f:S \to \mathbb{R}$.
 We say that $f$ is _differentiable_ at $\mathbf{a} \in S$ if there exists a linear transformation ${df}_{\mathbf{a}}: \mathbb{R}^n \to \mathbb{R}$ such that, for $\mathbf{x} \in B(\mathbf{a},r)$,
 
@@ -512,16 +514,16 @@ $$
 \mathbf{u}_n = \mathbf{v}.
 $$
 
-Using the mean value theorem we know that there exists $\mathbf{z}_k = \mathbf{u}_{k-1}+ \theta_k \mathbf{e}_k$ such that $f(\mathbf{a} + \mathbf{u}*k) - f(\mathbf{a} + \mathbf{u}*{k-1}) = v*k D*{\mathbf{e}\_k}f(\mathbf{a} + \mathbf{z}\_k)$.
+Using the mean value theorem we know that there exists $\mathbf{z}_k = \mathbf{u}_{k-1}+ \theta_k \mathbf{e}_k$ such that $f(\mathbf{a} + \mathbf{u}_k) - f(\mathbf{a} + \mathbf{u}_{k-1}) = v_k D_{\mathbf{e}\_k}f(\mathbf{a} + \mathbf{z}\_k)$.
 Consequently
 
 $$
 \begin{aligned}
 f(\mathbf{a}+\mathbf{v}) - f(\mathbf{a})
-& = \sum*{k=1}^{n} f(\mathbf{a} + \mathbf{u}_k) - f(\mathbf{a} + \mathbf{u}*{k-1}) \\
-& = \sum*{k=1}^{n} v_k D*{\mathbf{e}_k}f(\mathbf{a} + \mathbf{z}\_k) \\
-& = \sum_{k=1}^{n} v*k D*{\mathbf{e}_k}f(\mathbf{a} + \mathbf{u}_{k-1}) \\
-& \quad + \sum*{k=1}^{n} v_k \left( D*{\mathbf{e}_k}f(\mathbf{a} + \mathbf{z}\_k)- D_{\mathbf{e}_k}f(\mathbf{a} + \mathbf{u}_{k-1}) \right)
+& = \sum_{k=1}^{n} f(\mathbf{a} + \mathbf{u}_k) - f(\mathbf{a} + \mathbf{u}_{k-1}) \\
+& = \sum_{k=1}^{n} v_k D_{\mathbf{e}_k}f(\mathbf{a} + \mathbf{z}\_k) \\
+& = \sum_{k=1}^{n} v_k D_{\mathbf{e}_k}f(\mathbf{a} + \mathbf{u}_{k-1}) \\
+& \quad + \sum_{k=1}^{n} v_k \left( D_{\mathbf{e}_k}f(\mathbf{a} + \mathbf{z}\_k)- D_{\mathbf{e}_k}f(\mathbf{a} + \mathbf{u}_{k-1}) \right)
 \end{aligned}
 $$
 
@@ -559,7 +561,7 @@ $$
 
 Here $\boldsymbol{\alpha}'$ is a vector-valued function which represents the ``direction of movement''.
 
-![$\boldsymbol{\alpha}(t)=(\cos t, \sin t, t)$, $t\in \mathbb{R}$.](../images/svg/spiral.svg)
+![](../images/svg/spiral.svg "$\\boldsymbol{\\alpha}(t)=(\\cos t, \\sin t, t)$, $t\\in \\mathbb{R}$")
 
 ::: tip Theorem
 Let $S\subset \mathbb{R}^n$ be open and $I\subset \mathbb{R}$ an interval.
@@ -593,17 +595,19 @@ $$
 Observe that $\tfrac{1}{h}  (\mathbf{x}(t+h)-\mathbf{x}(t)) \to \mathbf{x}'(t)$ as $h\to 0$.
 :::
 
-::: info Example
+### Example
+
 A particle moves in a circle and its position at time $t\in [0,2\pi]$ is given by
 
 $$
-    \mathbf{x}(t) = (\cos t, \sin t).
+\mathbf{x}(t) = (\cos t, \sin t).
 $$
 
 The temperature at a point $\mathbf{y}=(y_1,y_2)$ is given by the function $f(\mathbf{y}) := y_1 + y_2$,
 The temperature the particle experiences at time $t$ is given by $g(t) = f (\mathbf{x}(t))$.
 Temperature change:
-$
+
+$$
 g'(t)
 = \nabla f \left(\mathbf{x}(t)\right) \cdot \mathbf{x}'(t)
 = \left(\begin{smallmatrix}
@@ -616,9 +620,9 @@ g'(t)
         \cos t
     \end{smallmatrix}\right)
 = \cos t - \sin t.
-$
-![$\mathbf{x}(t)$ is the position of a particle. Shading represents temperature $f$.](../images/svg/particle-circle.svg)
-:::
+$$
+
+![](../images/svg/particle-circle.svg "$\\mathbf{x}(t)$ is the position of a particle.")
 
 ## Level sets & tangent planes
 
@@ -663,12 +667,13 @@ See figure.
 
 :::
 
-<!--
-Various surfaces as level sets.
-![Sphere](../images/svg/sphere.svg)
-![2-sheet hyperboloid](../images/svg/two-hyperboloid.svg)
-![Infinite cone](../images/svg/infinite-cone.svg)
-![1-sheet hyperboloid](../images/svg/one-hyperboloid.svg) -->
+![](../images/svg/sphere.svg "Sphere"){width=200}
+
+![](../images/svg/two-hyperboloid.svg "2-sheet hyperboloid"){width=200}
+
+![](../images/svg/infinite-cone.svg "Infinite cone"){width=200}
+
+![](../images/svg/one-hyperboloid.svg "1-sheet hyperboloid"){width=200}
 
 Let $f$ be a differentiable scalar field on $S\subset \mathbb{R}^3$ and suppose that the level set $L(c) = \left\{\mathbf{x}\in S : f(\mathbf{x})=c\right\}$ defines a surface.
 
@@ -678,7 +683,7 @@ Let $f$ be a differentiable scalar field on $S\subset \mathbb{R}^3$ and suppose 
 
 Same argument as in $\mathbb{R}^2$ works in $\mathbb{R}^n$.
 
-![Tangent plane and normal vector](../images/svg/tangent.svg)
+![](../images/svg/tangent.svg "Tangent plane and normal vector")
 
 ## Derivatives of vector fields
 

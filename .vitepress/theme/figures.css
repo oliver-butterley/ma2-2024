@@ -25,6 +25,7 @@ img {
 }
 
 :root.dark img {
-  background-color: var(--vp-c-text-1);
+  /* background-color: var(--vp-c-text-1); */
+  background-color: rgb(255, 255, 255);
   filter: brightness(0.8) contrast(1.2);
 }

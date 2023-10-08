@@ -45,7 +45,7 @@ export default defineConfig({
         text: "Lecture notes",
         items: Array.from(Array(6), (_, n) => ({
           text: `${n + 1}. ${courseParts[n]}`, // `Part ${n + 1}: ${courseParts[n]}`
-          link: `pages/part${n + 1}`,
+          link: `/pages/part${n + 1}`,
         })),
         collapsed: false,
       },

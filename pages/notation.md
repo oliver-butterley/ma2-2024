@@ -17,4 +17,6 @@ $
 \newcommand{\aalpha}{\boldsymbol{\alpha}}
 \newcommand{\bbeta}{\boldsymbol{\beta}}
 \newcommand{\ff}{\mathbf{f}}
+\newcommand{\FF}{\mathbf{F}}
+\newcommand{\GG}{\mathbf{G}}
 $

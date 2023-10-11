@@ -19,15 +19,15 @@ In particular many of the ideas are extended to the higher dimensional setting.
 | Mathematical Analysis 1                | Mathematical Analysis 2                                                 |
 | -------------------------------------- | ----------------------------------------------------------------------- |
 | (Functions)$f:\bR \to \bR$             | $f:\bR^n \to \bR$ (Scalar fields)                                       |
-|                                        | $\mathbf{f}:\bR^n \to \bR^n$ (Vector fields)                            |
+|                                        | $\FF:\bR^n \to \bR^n$ (Vector fields)                                   |
 |                                        | $\boldsymbol{\alpha}:\bR \to \bR^n$ (Paths)                             |
 | (Derivative)$f'(x) = \frac{df}{dx}(x)$ | $\frac{\partial f}{\partial x_j}(x_1,\ldots,x_n)$ (Partial derivatives) |
 |                                        | $\nabla f$ (Gradient)                                                   |
 |                                        | $D_v f$ (Directional derivative)                                        |
 |                                        | $\boldsymbol{\alpha}'$ (Derivative of path)                             |
 |                                        | $Df$ (Jacobian matrix)                                                  |
-|                                        | $\nabla \cdot \mathbf{f}$ (Divergence)                                  |
-|                                        | $\nabla \times \mathbf{f}$ (Curl)                                       |
+|                                        | $\nabla \cdot \FF$ (Divergence)                                         |
+|                                        | $\nabla \times \FF$ (Curl)                                              |
 | (Extrema)$\sup_{x\in \bR} f(x)$        | $\sup_{x\in \bR^n} f(x)$ (Extrema)                                      |
 |                                        | Lagrange multiplier method                                              |
 | Integral$\int_{a}^{b} f(x) \ dx$       | Multiple integral                                                       |
@@ -40,7 +40,7 @@ where
 $x_1 \in \mathbb{R},\ldots, x_n \in \mathbb{R}$.
 For example, $\mathbb{R}^2$ is the plane, $\mathbb{R}^3$ is 3D space.
 
-::: tip Definition (Inner product)
+::: tip Definition (inner product)
 
 $$
 \mathbf{x} \cdot \mathbf{y} = \sum_{k=1}^{n} x_k y_k \in \mathbb{R}
@@ -51,7 +51,7 @@ $$
 We recall that the inner product being zero has a geometric meaning, it means that the two vectors are orthogonal.
 We also recall that the "length" of a vector is given by the norm, defined as follows.
 
-::: tip Definition (Norm)
+::: tip Definition (norm)
 $\norm{\mathbf{x}} =  \sqrt{\mathbf{x} \cdot \mathbf{x}} = {(\sum_{k=1}^{n} x_k^2 )}^{\frac{1}{2}}$.
 :::
 
@@ -63,7 +63,7 @@ The primary higher-dimensional functions we consider in this course are:
 - Scalar fields:
   $f:\mathbb{R}^n \to \mathbb{R}$
 - Vector fields:
-  $\mathbf{f}:\mathbb{R}^n \to \mathbb{R}^n$
+  $\FF:\mathbb{R}^n \to \mathbb{R}^n$
 - Paths:
   $\boldsymbol{\alpha}:\mathbb{R} \to \mathbb{R}^n$
 - Change of coordinates:
@@ -174,17 +174,17 @@ If $S$ is not open then there exists $\mathbf{a} \in \partial S \cap S$. Additio
 
 ## Limits and continuity
 
-Let $S\subset \mathbb{R}^n$ and $\mathbf{f} : S \to \mathbb{R}^m$.
+Let $S\subset \mathbb{R}^n$ and $\ff : S \to \mathbb{R}^m$.
 If $\mathbf{a}\in \mathbb{R}^n$, $\mathbf{b}\in \mathbb{R}^m$ we write
-$\lim_{\mathbf{x} \to \mathbf{a}}\mathbf{f}(\mathbf{x}) = \mathbf{b}$
+$\lim_{\mathbf{x} \to \mathbf{a}}\ff(\mathbf{x}) = \mathbf{b}$
 to mean that
-$\norm{\mathbf{f}(\mathbf{x})-\mathbf{b}} \to 0$ as $\norm{\mathbf{x}-\mathbf{a}}\to 0$.
+$\norm{\ff(\mathbf{x})-\mathbf{b}} \to 0$ as $\norm{\mathbf{x}-\mathbf{a}}\to 0$.
 Observe how, if $n=m=1$, this is the familiar notion of continuity for functions on $\mathbb{R}$.
 
 ::: tip Definition (Continuous)
-A function $\mathbf{f}$ is said to be _continuous_ at $\mathbf{a}$ if $\mathbf{f}$ is defined at $\mathbf{a}$ and
-$\lim_{\mathbf{x} \to \mathbf{a}}\mathbf{f}(\mathbf{x}) = \mathbf{f}(\mathbf{a})$.
-We say $\mathbf{f}$ is continuous on $S$ if $\mathbf{f}$ is continuous at each point of $S$.
+A function $\ff$ is said to be _continuous_ at $\mathbf{a}$ if $\ff$ is defined at $\mathbf{a}$ and
+$\lim_{\mathbf{x} \to \mathbf{a}}\ff(\mathbf{x}) = \ff(\mathbf{a})$.
+We say $\ff$ is continuous on $S$ if $\ff$ is continuous at each point of $S$.
 :::
 
 Even functions which look "nice" can fail to be continuous as we can see in the following example.
@@ -209,13 +209,13 @@ What is the behaviour of $f$ when approaching $(0,0)$ along the following lines?
 :::
 
 ::: tip Theorem
-Suppose that $\lim_{\mathbf{x} \to \mathbf{a}}\mathbf{f}(\mathbf{x}) = \mathbf{b}$ and $\lim_{\mathbf{x} \to \mathbf{a}}\mathbf{g}(\mathbf{x}) = \mathbf{c}$.
+Suppose that $\lim_{\mathbf{x} \to \mathbf{a}}\ff(\mathbf{x}) = \mathbf{b}$ and $\lim_{\mathbf{x} \to \mathbf{a}}\mathbf{g}(\mathbf{x}) = \mathbf{c}$.
 Then
 
-1.  $\lim_{\mathbf{x} \to \mathbf{a}}(\mathbf{f}(\mathbf{x})+\mathbf{g}(\mathbf{x})) = \mathbf{b}+\mathbf{c}$,
-2.  $\lim_{\mathbf{x} \to \mathbf{a}} \lambda \mathbf{f}(\mathbf{x}) = \lambda \mathbf{b}$ for every $\lambda \in \mathbb{R}$,
-3.  $\lim_{\mathbf{x} \to \mathbf{a}}\mathbf{f}(\mathbf{x})\cdot \mathbf{g}(\mathbf{x}) = \mathbf{b}\cdot \mathbf{c}$,
-4.  $\lim_{\mathbf{x} \to \mathbf{a}} \norm{\mathbf{f}(\mathbf{x})} = \norm{\mathbf{b}}$.
+1.  $\lim_{\mathbf{x} \to \mathbf{a}}(\ff(\mathbf{x})+\mathbf{g}(\mathbf{x})) = \mathbf{b}+\mathbf{c}$,
+2.  $\lim_{\mathbf{x} \to \mathbf{a}} \lambda \ff(\mathbf{x}) = \lambda \mathbf{b}$ for every $\lambda \in \mathbb{R}$,
+3.  $\lim_{\mathbf{x} \to \mathbf{a}}\ff(\mathbf{x})\cdot \mathbf{g}(\mathbf{x}) = \mathbf{b}\cdot \mathbf{c}$,
+4.  $\lim_{\mathbf{x} \to \mathbf{a}} \norm{\ff(\mathbf{x})} = \norm{\mathbf{b}}$.
 
 :::
 
@@ -223,33 +223,33 @@ We prove a couple of the parts of the above theorem here, the other parts are le
 
 ::: info Proof of part 3.
 
-Observe that $\mathbf{f}(\mathbf{x})\cdot\mathbf{g}(\mathbf{x}) - \mathbf{b}\cdot \mathbf{c}
-= (\mathbf{f}(\mathbf{x})-\mathbf{b})\cdot(\mathbf{g}(\mathbf{x})-\mathbf{c}) + \mathbf{b}\cdot(\mathbf{g}(\mathbf{x})-\mathbf{c}) + \mathbf{c}\cdot(\mathbf{f}(\mathbf{x})-\mathbf{b})$.
+Observe that $\ff(\mathbf{x})\cdot\mathbf{g}(\mathbf{x}) - \mathbf{b}\cdot \mathbf{c}
+= (\ff(\mathbf{x})-\mathbf{b})\cdot(\mathbf{g}(\mathbf{x})-\mathbf{c}) + \mathbf{b}\cdot(\mathbf{g}(\mathbf{x})-\mathbf{c}) + \mathbf{c}\cdot(\ff(\mathbf{x})-\mathbf{b})$.
 By the triangle inequality and Cauchy-Schwarz,
 
 $$
     \begin{aligned}
-        \norm{\mathbf{f}(\mathbf{x})\cdot\mathbf{g}(\mathbf{x}) - \mathbf{b}\cdot \mathbf{c} }
-            & \leq \norm{\mathbf{f}(\mathbf{x})-\mathbf{b}} \norm{\mathbf{g}(\mathbf{x})-\mathbf{c}} \\
+        \norm{\ff(\mathbf{x})\cdot\mathbf{g}(\mathbf{x}) - \mathbf{b}\cdot \mathbf{c} }
+            & \leq \norm{\ff(\mathbf{x})-\mathbf{b}} \norm{\mathbf{g}(\mathbf{x})-\mathbf{c}} \\
             & \quad + \norm{\mathbf{b}}\norm{\mathbf{g}(\mathbf{x})-\mathbf{c}}        \\
-            & \quad + \norm{\mathbf{c}} \norm{\mathbf{f}(\mathbf{x})-\mathbf{b}}.
+            & \quad + \norm{\mathbf{c}} \norm{\ff(\mathbf{x})-\mathbf{b}}.
     \end{aligned}
 $$
 
-Since we already know that $\norm{\mathbf{f}(\mathbf{x})-\mathbf{b}} \to 0$ and $\norm{\mathbf{g}(\mathbf{x})-\mathbf{c}} \to 0$ as $\mathbf{x} \to \mathbf{a}$, this implies that $\norm{\mathbf{f}(\mathbf{x})\cdot\mathbf{g}(\mathbf{x}) - \mathbf{b}\cdot \mathbf{c} }\to 0$.
+Since we already know that $\norm{\ff(\mathbf{x})-\mathbf{b}} \to 0$ and $\norm{\mathbf{g}(\mathbf{x})-\mathbf{c}} \to 0$ as $\mathbf{x} \to \mathbf{a}$, this implies that $\norm{\ff(\mathbf{x})\cdot\mathbf{g}(\mathbf{x}) - \mathbf{b}\cdot \mathbf{c} }\to 0$.
 :::
 
 ::: info Proof of part 4.
-Take $\mathbf{f} = \mathbf{g}$ in part (c) implies that $\lim_{\mathbf{x} \to \mathbf{a}} \norm{\mathbf{f}(\mathbf{x})}^2 = \norm{\mathbf{b}}^2$.
+Take $\ff = \mathbf{g}$ in part (c) implies that $\lim_{\mathbf{x} \to \mathbf{a}} \norm{\ff(\mathbf{x})}^2 = \norm{\mathbf{b}}^2$.
 :::
 
 When writing a vector field (or similar functions) it is often convenient to divide the higher-dimensional function into smaller parts.
 We call these parts the _components of a vector field_.
-For example $\mathbf{f}(\mathbf{x}) = \left(f_1(\mathbf{x}),f_2(\mathbf{x})\right)$ in 2D, $\mathbf{f}(\mathbf{x}) = \left(f_1(\mathbf{x}),f_2(\mathbf{x}),f_3(\mathbf{x})\right)$ in 3D, etc.
+For example $\FF(\mathbf{x}) = \left(F_1(\mathbf{x}),F_2(\mathbf{x})\right)$ in 2D, $\FF(\mathbf{x}) = \left(F_1(\mathbf{x}),F_2(\mathbf{x}),F_3(\mathbf{x})\right)$ in 3D, etc.
 
 ::: tip Theorem
-Let $\mathbf{f}(\mathbf{x}) = \left(f_1(\mathbf{x}),f_2(\mathbf{x})\right)$.
-Then $\mathbf{f}$ is continuous if and only if $f_1$ and $f_2$ are continuous.
+Let $\FF(\mathbf{x}) = \left(F_1(\mathbf{x}),F_2(\mathbf{x})\right)$.
+Then $\FF$ is continuous if and only if $F_1$ and $F_2$ are continuous.
 :::
 
 ::: info Proof
@@ -258,18 +258,18 @@ We will independently prove the two implications.
 - ($\Rightarrow$)
   Let
   $\mathbf{e}_1=(1,0)$, $\mathbf{e}_2=(0,1)$
-  and observe that $f_k(\mathbf{x}) = \mathbf{f}(\mathbf{x})\cdot \mathbf{e}_k$.
+  and observe that $F_k(\mathbf{x}) = \FF(\mathbf{x})\cdot \mathbf{e}_k$.
   We have already shown that the continuity of two vector fields implies the continuity of the inner product.
 - ($\Leftarrow$)
   By definition of the norm
   $$
-    \norm{\mathbf{f}(\mathbf{x})-\mathbf{f}(\mathbf{a})}^2 = \sum_{k=1}^{2}{(f_k(\mathbf{x})-f_k(\mathbf{a}))}^2
+    \norm{\FF(\mathbf{x})-\FF(\mathbf{a})}^2 = \sum_{k=1}^{2}{(F_k(\mathbf{x})-F_k(\mathbf{a}))}^2
   $$
-  and we know $\norm{f_k(\mathbf{x})-f_k(\mathbf{a})} \to 0$ as $\norm{\mathbf{x}-\mathbf{a}}\to 0$.
+  and we know $\norm{F_k(\mathbf{x})-F_k(\mathbf{a})} \to 0$ as $\norm{\mathbf{x}-\mathbf{a}}\to 0$.
   :::
 
-In higher dimensions the analogous statement is true for the vector field $\mathbf{f}(\mathbf{x}) = \left(f_1(\mathbf{x}),\ldots,f_m(\mathbf{x}) \right)$ with exactly the same proof.
-I.e., $\mathbf{f}$ is continuous if and only if each $f_k$ is continuous.
+In higher dimensions the analogous statement is true for the vector field $\FF(\mathbf{x}) = \left(F_1(\mathbf{x}),\ldots,F_m(\mathbf{x}) \right)$ with exactly the same proof.
+I.e., $\FF$ is continuous if and only if each $f_k$ is continuous.
 
 ::: info Example (polynomials)
 A _polynomial_ in $n$ variables is a scalar field on $\mathbb{R}^n$ of the form
@@ -297,16 +297,16 @@ A rational function is continuous at every point $\mathbf{x}$ such that $q(\math
 As described in the following result, the continuity of functions continues to hold, in an intuitive way, under composition of functions.
 
 ::: tip Theorem
-Suppose $S \subset \mathbb{R}^l$, $T\subset \mathbb{R}^m$, $\mathbf{f}:S \to \mathbb{R}^m$, $\mathbf{g} : T \to \mathbb{R}^n$ and that $\mathbf{f}(S) \subset T$ so that
-$$(\mathbf{g} \circ \mathbf{f})(\mathbf{x}) = \mathbf{g}(\mathbf{f}(\mathbf{x}))$$
+Suppose $S \subset \mathbb{R}^l$, $T\subset \mathbb{R}^m$, $\ff:S \to \mathbb{R}^m$, $\mathbf{g} : T \to \mathbb{R}^n$ and that $\ff(S) \subset T$ so that
+$$(\mathbf{g} \circ \ff)(\mathbf{x}) = \mathbf{g}(\ff(\mathbf{x}))$$
 makes sense.
-If $\mathbf{f}$ is continuous at $\mathbf{a}\in S$ and $\mathbf{g}$ is continuous at $\mathbf{f}(\mathbf{a})$ then $\mathbf{g}\circ \mathbf{f}$ is continuous at $\mathbf{a}$.
+If $\ff$ is continuous at $\mathbf{a}\in S$ and $\mathbf{g}$ is continuous at $\ff(\mathbf{a})$ then $\mathbf{g}\circ \ff$ is continuous at $\mathbf{a}$.
 :::
 
 ::: info Proof
 
 $$
-\lim{\mathbf{x}\to\mathbf{a}} \norm{\mathbf{f}(\mathbf{g}(\mathbf{x}))-\mathbf{f}(\mathbf{g}(\mathbf{a}))} =\lim{\mathbf{y}\to\mathbf{g}(\mathbf{a})}\norm{\mathbf{f}(\mathbf{y})-\mathbf{f}(\mathbf{g}(\mathbf{a}))} =0
+\lim{\mathbf{x}\to\mathbf{a}} \norm{\ff(\mathbf{g}(\mathbf{x}))-\ff(\mathbf{g}(\mathbf{a}))} =\lim{\mathbf{y}\to\mathbf{g}(\mathbf{a})}\norm{\ff(\mathbf{y})-\ff(\mathbf{g}(\mathbf{a}))} =0
 $$
 
 :::
@@ -690,35 +690,35 @@ Same argument as in $\mathbb{R}^2$ works in $\mathbb{R}^n$.
 Essentially everything discussed above for scalar fields extends to vector fields in a predictable way.
 This is because of the linearity and that we can consider each _component_ of the vector field independently.
 
-::: tip Definition (Directional derivative)
-Let $S\subset \mathbb{R}^n$ and $\mathbf{f}:S\to \mathbb{R}^m$.
-For any $\mathbf{a} \in \operatorname{int}S$ and $\mathbf{v} \in \mathbb{R}^n$ the derivative of the vector field $\mathbf{f}$ with respect to $\mathbf{v}$ is defined as
+::: tip Definition (directional derivative)
+Let $S\subset \mathbb{R}^n$ and $\FF:S\to \mathbb{R}^m$.
+For any $\mathbf{a} \in \operatorname{int}S$ and $\mathbf{v} \in \mathbb{R}^n$ the derivative of the vector field $\FF$ with respect to $\mathbf{v}$ is defined as
 
 $$
-    D_{\mathbf{v}}\mathbf{f}(\mathbf{a}) :=
-    \lim_{h\to 0} \frac{1}{h} \left(\mathbf{f}(\mathbf{a}+h \mathbf{v}) - \mathbf{f}(\mathbf{a})\right).
+    D_{\mathbf{v}}\FF(\mathbf{a}) :=
+    \lim_{h\to 0} \frac{1}{h} \left(\FF(\mathbf{a}+h \mathbf{v}) - \FF(\mathbf{a})\right).
 $$
 
 :::
 
 ::: info Remark
-If we use the notation $\mathbf{f} = (f_1,\ldots,f_m)$, i.e., we write the function using the ``components'' where each $f_k$ is a scalar field, then $D_{\mathbf{v}}\mathbf{f} = (D_{\mathbf{v}}f_1,\ldots,D_{\mathbf{v}} f_m)$.
+If we use the notation $\FF = (F_1,\ldots,F_m)$, i.e., we write the function using the ``components'' where each $F_k$ is a scalar field, then $D_{\mathbf{v}}\FF = (D_{\mathbf{v}}F_1,\ldots,D_{\mathbf{v}} F_m)$.
 :::
 
-::: tip Definition (Differentiable)
-We say that $\mathbf{f}: \mathbb{R}^n \to \mathbb{R}^m$ is _differentiable_ at $\mathbf{a}$ if there exists a linear transformation ${df}_{\mathbf{a}}: \mathbb{R}^n \to \mathbb{R}^m$ such that, for $\mathbf{x} \in B(\mathbf{a},r)$,
+::: tip Definition (differentiable)
+We say that $\FF: \mathbb{R}^n \to \mathbb{R}^m$ is _differentiable_ at $\mathbf{a}$ if there exists a linear transformation ${df}_{\mathbf{a}}: \mathbb{R}^n \to \mathbb{R}^m$ such that, for $\mathbf{x} \in B(\mathbf{a},r)$,
 
 $$
-    \mathbf{f}(\mathbf{x}) = \mathbf{f}(\mathbf{a}) + {df}_{\mathbf{a}}(\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a})
+    \FF(\mathbf{x}) = \FF(\mathbf{a}) + {df}_{\mathbf{a}}(\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a})
 $$
 
 $\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf{a}}}$.
 :::
 
 ::: tip Theorem
-If $\mathbf{f}$ is differentiable at $\mathbf{a}$
-then $\mathbf{f}$ is continuous at $\mathbf{a}$
-and ${df}_{\mathbf{a}}(\mathbf{v}) =D_{\mathbf{v}}\mathbf{f}(\mathbf{a})$.
+If $\FF$ is differentiable at $\mathbf{a}$
+then $\FF$ is continuous at $\mathbf{a}$
+and ${df}_{\mathbf{a}}(\mathbf{v}) =D_{\mathbf{v}}\FF(\mathbf{a})$.
 :::
 
 ::: info Proof
@@ -730,40 +730,40 @@ Same as for the case of scalar fields when $f:\mathbb{R}^n \to \mathbb{R}$.
 The relevant differential for higher-dimensional functions is the [Jacobian matrix](https://en.wikipedia.org/wiki/Jacobian_matrix_and_determinant).
 
 ::: tip Definition (Jacobian matrix)
-Suppose that $\mathbf{f}: \mathbb{R}^2 \to \mathbb{R}^2$ and use the notation $\mathbf{f}(x,y) = (f_1(x,y),f_2(x,y))$.
-The _Jacobian matrix_ of $\mathbf{f}$ at $\mathbf{a}$ is defined as
+Suppose that $\FF: \mathbb{R}^2 \to \mathbb{R}^2$ and use the notation $\FF(x,y) = (F_1(x,y),F_2(x,y))$.
+The _Jacobian matrix_ of $\FF$ at $\mathbf{a}$ is defined as
 
 $$
-    D\mathbf{f}(\mathbf{a}) =
+    D\FF(\mathbf{a}) =
     \begin{pmatrix}
-        \frac{\partial f_1}{\partial x} (\mathbf{a}) & \frac{\partial f_1}{\partial y} (\mathbf{a}) \\
-        \frac{\partial f_2}{\partial x} (\mathbf{a}) & \frac{\partial f_2}{\partial y} (\mathbf{a})
+        \frac{\partial F_1}{\partial x} (\mathbf{a}) & \frac{\partial F_1}{\partial y} (\mathbf{a}) \\
+        \frac{\partial F_2}{\partial x} (\mathbf{a}) & \frac{\partial F_2}{\partial y} (\mathbf{a})
     \end{pmatrix}.
 $$
 
 :::
 
 The _Jacobian matrix_ is defined analogously in any dimension.
-I.e., if $\mathbf{f} : \mathbb{R}^n \to \mathbb{R}^m$ the the Jacobian at $\mathbf{a}$ is
+I.e., if $\FF : \mathbb{R}^n \to \mathbb{R}^m$ the the Jacobian at $\mathbf{a}$ is
 
 $$
-D\mathbf{f}(\mathbf{a}) =
+D\FF(\mathbf{a}) =
 \begin{pmatrix}
-    \partial_1 f_1 (\mathbf{a}) & \partial_2 f_1 (\mathbf{a}) & \cdots & \partial_n f_1 (\mathbf{a}) \\
-    \partial_1 f_2 (\mathbf{a}) & \partial_2 f_2 (\mathbf{a}) & \cdots & \partial_n f_2 (\mathbf{a}) \\
+    \partial_1 F_1 (\mathbf{a}) & \partial_2 F_1 (\mathbf{a}) & \cdots & \partial_n F_1 (\mathbf{a}) \\
+    \partial_1 F_2 (\mathbf{a}) & \partial_2 F_2 (\mathbf{a}) & \cdots & \partial_n F_2 (\mathbf{a}) \\
     \vdots               & \vdots               &        & \vdots               \\
-    \partial_1 f_m (\mathbf{a}) & \partial_2 f_m (\mathbf{a}) & \cdots & \partial_n f_m (\mathbf{a})
+    \partial_1 F_m (\mathbf{a}) & \partial_2 F_m (\mathbf{a}) & \cdots & \partial_n F_m (\mathbf{a})
 \end{pmatrix}
 $$
 
 If we choose a basis then any linear transformation $\mathbb{R}^n \to \mathbb{R}^m$ can be written as a $m \times n$ matrix.
-We find that ${df}_{\mathbf{a}}(\mathbf{v} ) = D\mathbf{f}(\mathbf{a}) \mathbf{v}$.
+We find that ${df}_{\mathbf{a}}(\mathbf{v} ) = D\FF(\mathbf{a}) \mathbf{v}$.
 
-Let $S\subset \mathbb{R}^n$ and $\mathbf{f} : S \to \mathbb{R}^m$.
+Let $S\subset \mathbb{R}^n$ and $\FF : S \to \mathbb{R}^m$.
 If $f$ is differentiable at $\mathbf{a} \in S$ then, for all $\mathbf{x}\in B(\mathbf{a},r) \subset S$,
 
 $$
-\mathbf{f}(\mathbf{x}) = \mathbf{f}(\mathbf{a}) +  D\mathbf{f}(\mathbf{a}) (\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a})
+\FF(\mathbf{x}) = \FF(\mathbf{a}) +  D\FF(\mathbf{a}) (\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a})
 $$
 
 where $\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf{a}}}$.
@@ -773,31 +773,31 @@ Here we see that in higher dimensions we have a matrix form of the chain rule.
 
 ::: tip Theorem
 Let $S\subset \mathbb{R}^l$, $T\subset \mathbb{R}^m$ be open.
-Let $\mathbf{f}: S \to T$ and $\mathbf{g}:T \to \mathbb{R}^n$ and define
+Let $\ff: S \to T$ and $\mathbf{g}:T \to \mathbb{R}^n$ and define
 
 $$
-\mathbf{h} = \mathbf{g} \circ \mathbf{f} : S \to \mathbb{R}^n.
+\mathbf{h} = \mathbf{g} \circ \ff : S \to \mathbb{R}^n.
 $$
 
-Let $\mathbf{a}\in S$. Suppose that $\mathbf{f}$ is differentiable at $\mathbf{a}$ and $\mathbf{g}$ is differentiable at $\mathbf{f}(\mathbf{a})$.
+Let $\mathbf{a}\in S$. Suppose that $\ff$ is differentiable at $\mathbf{a}$ and $\mathbf{g}$ is differentiable at $\ff(\mathbf{a})$.
 Then $\mathbf{h}$ is differentiable at $\mathbf{a}$ and
 
 $$
-D\mathbf{h}(\mathbf{a}) = D\mathbf{g}(\mathbf{f}(\mathbf{a})) \ D\mathbf{f}(\mathbf{a}).
+D\mathbf{h}(\mathbf{a}) = D\mathbf{g}(\ff(\mathbf{a})) \ D\ff(\mathbf{a}).
 $$
 
 :::
 
 ::: info Proof
-Let $\mathbf{u} = \mathbf{f}(\mathbf{a}+\mathbf{v}) - \mathbf{f}(\mathbf{a})$.
-Since $\mathbf{f}$ and $\mathbf{g}$ are differentiable,
+Let $\mathbf{u} = \ff(\mathbf{a}+\mathbf{v}) - \ff(\mathbf{a})$.
+Since $\ff$ and $\mathbf{g}$ are differentiable,
 
 $$
 \begin{aligned}
 \mathbf{h}(\mathbf{a}+\mathbf{v}) - \mathbf{h}(\mathbf{a})
-    & = \mathbf{g}(\mathbf{f}(\mathbf{a}+\mathbf{v})) - \mathbf{g}(\mathbf{f}(\mathbf{a}))                                                                                    \\
-    & = D\mathbf{g}(\mathbf{f}(\mathbf{a}))(\mathbf{f}(\mathbf{a}+\mathbf{v}) - \mathbf{f}(\mathbf{a}) ) + \boldsymbol{\epsilon}_{\mathbf{g}}(\mathbf{u})                                          \\
-    & = D\mathbf{g}(\mathbf{f}(\mathbf{a}))   D\mathbf{f}(\mathbf{a}) \mathbf{v} + D\mathbf{g}(\mathbf{f}(\mathbf{a}))\boldsymbol{\epsilon}_{\mathbf{f}}(\mathbf{v})  + \boldsymbol{\epsilon}_{\mathbf{g}}(\mathbf{u}).
+    & = \mathbf{g}(\ff(\mathbf{a}+\mathbf{v})) - \mathbf{g}(\ff(\mathbf{a}))                                                                                    \\
+    & = D\mathbf{g}(\ff(\mathbf{a}))(\ff(\mathbf{a}+\mathbf{v}) - \ff(\mathbf{a}) ) + \boldsymbol{\epsilon}_{\mathbf{g}}(\mathbf{u})                                          \\
+    & = D\mathbf{g}(\ff(\mathbf{a}))   D\ff(\mathbf{a}) \mathbf{v} + D\mathbf{g}(\ff(\mathbf{a}))\boldsymbol{\epsilon}_{\ff}(\mathbf{v})  + \boldsymbol{\epsilon}_{\mathbf{g}}(\mathbf{u}).
 \end{aligned}
 $$
 
@@ -811,11 +811,11 @@ $$
     (r,\theta) \mapsto (r\cos \theta, r\sin \theta)
 $$
 
-as the function $\mathbf{f}(r,\theta) = (x(r,\theta),y(r,\theta))$ where $\mathbf{f}:(0,\infty)\times [0,2\pi) \to \mathbb{R}^2$.
+as the function $\ff(r,\theta) = (x(r,\theta),y(r,\theta))$ where $\ff:(0,\infty)\times [0,2\pi) \to \mathbb{R}^2$.
 We calculate the Jacobian matrix of this transformation
 
 $$
-    D\mathbf{f}(r,\theta) =
+    D\ff(r,\theta) =
     \begin{pmatrix}
         \tfrac{\partial x}{\partial r}(r,\theta) & \tfrac{\partial x}{\partial \theta}(r,\theta) \\
         \tfrac{\partial y}{\partial r}(r,\theta) & \tfrac{\partial y}{\partial \theta}(r,\theta)
@@ -827,20 +827,20 @@ $$
     \end{pmatrix}.
 $$
 
-In particular we see that $\det D\mathbf{f}(r,\theta) = r$, the familiar value used in change of variables with polar coordinated.
+In particular we see that $\det D\ff(r,\theta) = r$, the familiar value used in change of variables with polar coordinated.
 
-Suppose now that we wish to calculate derivatives of $h := g \circ \mathbf{f}$ for some $g:\mathbb{R}^2 \to \mathbb{R}$.
+Suppose now that we wish to calculate derivatives of $h := g \circ \ff$ for some $g:\mathbb{R}^2 \to \mathbb{R}$.
 Here we take advantage of the theorem concerning multiplication of Jacobians.
 
 $$
 \begin{aligned}
-    Dh(r,\theta) & = Dg(\mathbf{f}(r,\theta)) \ D\mathbf{f}(r,\theta) \\
+    Dh(r,\theta) & = Dg(\ff(r,\theta)) \ D\ff(r,\theta) \\
     \begin{pmatrix}
         \frac{\partial h}{\partial r}(r,\theta) & \frac{\partial h}{\partial \theta}(r,\theta)
     \end{pmatrix}
                     & =
     \begin{pmatrix}
-        \frac{\partial g}{\partial x}(\mathbf{f}(r,\theta)) & \frac{\partial g}{\partial y}(\mathbf{f}(r,\theta))
+        \frac{\partial g}{\partial x}(\ff(r,\theta)) & \frac{\partial g}{\partial y}(\ff(r,\theta))
     \end{pmatrix}
     \begin{pmatrix}
         \cos \theta & -r\sin \theta \\

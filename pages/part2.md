@@ -396,7 +396,8 @@ $$
 f(x) \approx f(a) + (x-a) f'(a).
 $$
 
-More precisely, we know that\footnote{This is [little-o notation](https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation) and here means that $\abs{f(x) - f(a) - (x-a) f'(a)}/\abs{x-a} \to 0$ as $\abs{x-a}\to 0$. } $f(x) = f(a) + (x-a) f'(a) + \epsilon(x-a)$ where $\abs{\epsilon(x-a)} = \littleO{\abs{x-a}}$.
+More precisely, we know that $f(x) = f(a) + (x-a) f'(a) + \epsilon(x-a)$ where $\abs{\epsilon(x-a)} = \littleO{\abs{x-a}}$.
+(This is [little-o notation](https://en.wikipedia.org/wiki/Big_O_notation#Little-o_notation) and here means that $\abs{f(x) - f(a) - (x-a) f'(a)}/\abs{x-a} \to 0$ as $\abs{x-a}\to 0$.)
 This way of seeing differentiability is convenient for the higher dimensional definition of differentiability.
 
 ::: tip Definition (differentiable)
@@ -581,14 +582,15 @@ $$
 :::
 
 ::: info Proof
-Let $h>0$ be small,
+Since $f$ is differentiable, $f(\yy) - f(\xx) = \nabla f(\xx) \cdot (\yy-\xx) + \epsilon(\xx,\yy-\xx)$ where $\abs{\epsilon(\xx,\yy-\xx)}=\littleO{\yy-\xx}$.
+Let $h>0$ be small.
 
 $$
 \begin{aligned}
     \tfrac{1}{h}\left[g(t+h)-g(t) \right]
-        & = \tfrac{1}{h}\left[f(\mathbf{x}(t+h)-f(\mathbf{x}(t)))\right]                        \\
+        & = \tfrac{1}{h}\left[f(\mathbf{x}(t+h))-f(\mathbf{x}(t))\right]                        \\
         & = \tfrac{1}{h} \nabla f(\mathbf{x}(t))\cdot (\mathbf{x}(t+h)-\mathbf{x}(t))                  \\
-        & \ \ +  \tfrac{1}{h}  \norm{\mathbf{x}(t+h)-\mathbf{x}(t)} E(\mathbf{x}(t), \mathbf{x}(t+h)-\mathbf{x}(t)).
+        & \ \ +  \tfrac{1}{h} \epsilon(\mathbf{x}(t), \mathbf{x}(t+h)-\mathbf{x}(t)).
 \end{aligned}
 $$
 
@@ -705,10 +707,10 @@ If we use the notation $\FF = (F_1,\ldots,F_m)$, i.e., we write the function usi
 We say that $\FF: \mathbb{R}^n \to \mathbb{R}^m$ is _differentiable_ at $\mathbf{a}$ if there exists a linear transformation ${df}_{\mathbf{a}}: \mathbb{R}^n \to \mathbb{R}^m$ such that, for $\mathbf{x} \in B(\mathbf{a},r)$,
 
 $$
-    \FF(\mathbf{x}) = \FF(\mathbf{a}) + {df}_{\mathbf{a}}(\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a})
+    \FF(\mathbf{x}) = \FF(\mathbf{a}) + {df}_{\mathbf{a}}(\mathbf{x}-\mathbf{a}) + \epsilon(\mathbf{x}-\mathbf{a}),
 $$
 
-$\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf{a}}}$.
+$\norm{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf{a}}}$.
 :::
 
 ::: tip Theorem
@@ -799,7 +801,7 @@ $$
 
 :::
 
-::: info Example (Polar coordinates)
+::: info Example (polar coordinates)
 Here we consider _polar coordinates_ and calculate the Jacobian of this transformation.
 We can write the change of coordinates
 
@@ -872,7 +874,7 @@ $$
 \frac{\partial^2 f}{\partial x \partial y}(x,y).
 $$
 
-::: info Example (Partial derivative problem)
+::: info Example (partial derivative problem)
 Let $f:\mathbb{R}^2 \to \mathbb{R}$ be defined as $f(0,0)=0$ and, for $(x,y)\neq (0,0)$,
 
 $$

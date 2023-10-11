@@ -82,13 +82,13 @@ $$
 B(\mathbf{a},r):= \left\{ \mathbf{x} \in \mathbb{R}^n : \norm{\mathbf{x} - \mathbf{a}}< r \right\}.
 $$
 
-::: tip Definition (Interior point)
+::: tip Definition (interior point)
 Let $S \subset \mathbb{R}^n$.
 A point $\mathbf{a} \in S$ is said to be an _interior point_ if there is $r>0$ such that $B(\mathbf{a},r) \subset S$.
 The set of all interior points of $S$ is denoted $\operatorname{int} S$.
 :::
 
-::: tip Definition (Open set)
+::: tip Definition (open set)
 A set $S \subset \mathbb{R}^n$ is said to be _open_ if all of its points are interior points, i.e., if $\operatorname{int} S = S$.
 :::
 
@@ -144,7 +144,7 @@ This all means that $B(\mathbf{a},r) \subset B(a_1,r_1) \times B(a_2,r_2) \subse
 Discussing the "interior" of the set naturally suggests the topic of the "boundary" of the set.
 In the following definitions we develop this idea.
 
-::: tip Definition (Exterior points)
+::: tip Definition (exterior points)
 Let $S\subset \mathbb{R}^n$.
 A point $\mathbf{a} \notin S$ is said to be an _exterior point_ if there exists $r>0$ such that $B(\mathbf{a},r)\cap S = \emptyset$.
 The set of all exterior points of $S$ is denoted $\operatorname{ext} S$.
@@ -153,11 +153,11 @@ The set of all exterior points of $S$ is denoted $\operatorname{ext} S$.
 Observe that $\operatorname{ext} S$ is an open set.
 We use the notation $S^c = \mathbb{R}^n \setminus S$ and we say that $C^c$ is the _complement_ of the set $S$.
 
-::: tip Definition (Boundary)
+::: tip Definition (boundary)
 The set $\mathbb{R}^n \setminus (\operatorname{int} S \cup \operatorname{ext} S )$ is called the boundary of $S \subset \mathbb{R}^n$ and is denoted $\partial S$.
 :::
 
-::: tip Definition (Closed)
+::: tip Definition (closed)
 A set $S\subset \mathbb{R}^n$ is said to be _closed_ if $\partial S \subset S$.
 :::
 
@@ -189,7 +189,7 @@ We say $\ff$ is continuous on $S$ if $\ff$ is continuous at each point of $S$.
 
 Even functions which look "nice" can fail to be continuous as we can see in the following example.
 
-::: info Example (Continuity in higher dimensions)
+::: info Example (continuity in higher dimensions)
 Let $f$ be defined, for $(x,y)\neq (0,0)$, as
 
 $$
@@ -372,7 +372,7 @@ For any $k\in\{1,2,\ldots,n\}$,
 let $\mathbf{e}_k$ be the $n$-dimensional unit vector where all entries are zero except the $k$th position which is equal to $1$.
 I.e., $\mathbf{e}_1=(1,0,\ldots,0)$, $\mathbf{e}_2=(0,1,0,\ldots,0)$, $\mathbf{e}_n=(0,\ldots,0,1)$.
 
-::: tip Definition (Partial derivatives)
+::: tip Definition (partial derivatives)
 We define the _partial derivative_ in $x_k$ of $f(x_1,\ldots,x_n)$ at $\mathbf{a}$ as
 
 $$
@@ -412,7 +412,7 @@ where $\abs{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf
 
 For future convenience we introduce the following notation.
 
-::: tip Definition (Gradient)
+::: tip Definition (gradient)
 The _gradient_ of the scalar field $f(x,y,z)$ at the point $\mathbf{a}$ is
 
 $$
@@ -559,7 +559,7 @@ $$
 \end{pmatrix}.
 $$
 
-Here $\boldsymbol{\alpha}'$ is a vector-valued function which represents the ``direction of movement''.
+Here $\boldsymbol{\alpha}'$ is a vector-valued function which represents the "direction of movement".
 
 ![](../images/svg/spiral.svg "$\\boldsymbol{\\alpha}(t)=(\\cos t, \\sin t, t)$, $t\\in \\mathbb{R}$")
 
@@ -633,11 +633,7 @@ $$
     L(c) = \left\{\mathbf{x}\in S : f(\mathbf{x})=c\right\}.
 $$
 
-The set $L(c)$ is called the _level set_.
-In general this set can be empty or it can be all of $S$.
-However the set $L(c)$ is often a curve and this is the case of interest.
-This is the same notion as that of [contour lines](https://en.wikipedia.org/wiki/Contour_line) on a map.
-I.e., $\mathbf{x}(t_a) = \mathbf{a}$ for some $t_a \in I$ and
+The set $L(c)$ is called the _level set_. In general this set can be empty or it can be all of $S$. However the set $L(c)$ is often a curve and this is the case of interest. This is the same notion as that of [contour lines](https://en.wikipedia.org/wiki/Contour_line) on a map. I.e., $\mathbf{x}(t_a) = \mathbf{a}$ for some $t_a \in I$ and
 $$f(\mathbf{x}(t))=c$$
 for all $t\in I$.
 Then
@@ -683,7 +679,7 @@ Let $f$ be a differentiable scalar field on $S\subset \mathbb{R}^3$ and suppose 
 
 Same argument as in $\mathbb{R}^2$ works in $\mathbb{R}^n$.
 
-![](../images/svg/tangent.svg "Tangent plane and normal vector")
+![](../images/png/tangent.png "Tangent plane and normal vector")
 
 ## Derivatives of vector fields
 

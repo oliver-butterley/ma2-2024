@@ -3,11 +3,11 @@ import implicitFigures from "markdown-it-implicit-figures";
 
 const courseParts = [
   "Mathematical reasoning",
-  "Calculus in higher dimension",
-  "Extrema and other applications",
-  "Curves and line integrals",
+  "Higher dimension",
+  "Extrema",
+  "Line integrals",
   "Multiple integrals",
-  "Surfaces and surface integrals",
+  "Surface integrals",
 ];
 
 export default defineConfig({

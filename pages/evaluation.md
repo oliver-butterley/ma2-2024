@@ -4,7 +4,7 @@ layout: doc
 
 ## Evaluation
 
-The primary evaluation system is a type of continuous evaluation:
+The primary evaluation system is a combination of continuous evaluation:
 
 - 3 Midterm exams (1.5 hours each) (3 x 20%)
 - 5 Online exercise sets (10%)

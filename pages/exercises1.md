@@ -1,4 +1,4 @@
-# Exercises 1
+# Additional exercises 1
 
 ## Exercise
 
@@ -53,17 +53,14 @@ Consider the following statement.
 
 > Let $f$ be differentiable on $(a, b)$ and suppose that $f$ takes a local minimum or maximum at the point $c \in (a, b)$. Then $f^{\prime}(c) = 0$.
 
-Discuss the possibility to improve the statement with a stronger conclusion or a weaker hypothesis.
+Discuss the possibility to improve the statement in the sense of making it stronger. Would this be stronger or weaker conclusion? Would this be a stronger or a weaker hypothesis?
 
 <style scoped>
-
 h1 {
     counter-reset: h2
 }
-
 h2:after {
     counter-increment: h2;
     content: "1." counter(h2) 
 }
-
 </style>

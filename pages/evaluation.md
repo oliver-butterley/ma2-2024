@@ -39,6 +39,15 @@ Each of the 6 parts of the course includes exercises. The exercises for part 1 o
 
 The focus of each midterm is on the two parts of the course which immediately proceeded the exam. However, in later parts of the course, since the material builds on the earlier foundation, knowledge of the earlier parts of the course is still required. The questions on each midterm will be very similar to the exercises attached to those parts of the course.
 
+The questions in the midterms will be very similar to the additional exercises:
+
+- [Additional exercises 1](/pages/exercises1)
+- [Additional exercises 2](/pages/exercises2)
+<!-- - [Additional exercises 3](/pages/exercises3)
+- [Additional exercises 4](/pages/exercises4)
+- [Additional exercises 5](/pages/exercises5)
+- [Additional exercises 6](/pages/exercises6) -->
+
 ### Mini-projects
 
 The last three weeks of the course are devoted to the mini-projects. Topics are to be chosen by the course participants in agreement with the course instructors. See some [possible ideas](/pages/project). Expect about 20 hours of work involved in the project. The majority of this time can be done within lesson hours.

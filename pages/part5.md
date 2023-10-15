@@ -450,7 +450,7 @@ where $F(r,\theta,z) = f(r \cos \theta, r \sin \theta,  z)$. Note that cylindric
 
 ### Spherical coordinates {#spherical-coordinates .unnumbered}
 
-[Spherical coordinates](https://en.wikipedia.org/wiki/Spherical_coordinate_system) correspond to how we use lattitude, longitude and altitude to specify a position on earth. It is the coordinate mapping (require $\rho>0$, $0\leq \theta \leq 2\pi$, $0\leq \varphi <\pi$)
+[Spherical coordinates](https://en.wikipedia.org/wiki/Spherical_coordinate_system) correspond to how we use latitude, longitude and altitude to specify a position on earth. It is the coordinate mapping (require $\rho>0$, $0\leq \theta \leq 2\pi$, $0\leq \varphi <\pi$)
 
 $$
 \begin{cases}

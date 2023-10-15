@@ -1,7 +1,3 @@
----
-footer: true
----
-
 # Overview
 
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
@@ -42,9 +38,9 @@ The final weeks of the course are devoted to a mini-project.
 
 | Project          | Teaching period | Instructor |
 | ---------------- | --------------- | ---------- |
-| Project - week 1 | 18-22 Dec       |            |
-| Project - week 2 | 8-12 Jan        |            |
-| Project - week 3 | 15-19 Dec       |            |
+| Project - week 1 | 18-22 Dec       | Greenblatt |
+| Project - week 2 | 8-12 Jan        | Butterley  |
+| Project - week 3 | 15-19 Dec       | Butterley  |
 
 See the [lesson diary](/pages/diary.md) for full details.
 

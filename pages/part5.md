@@ -6,6 +6,8 @@ Draft text ⚠️
 
 # Multiple integrals
 
+See also the [additional exercises](/pages/exercises5) associated to this part of the course.
+
 The extension to higher dimension of differentiation was established in the previous chapters. We then defined line integrals which are, in a sense, one dimensional integrals which exist in a high dimensional setting. We now take the next step and define higher dimensional integrals in the sense of how to integrate a scalar field defined on a subset of $\bR^n$. The first step will be to rigorously define which scalar fields are integrable and to define the integral. Then we need to fine reasonable ways to evaluate such integrals. Among other applications we will use this multiple integrals to calculate volumes and moment of inertia. In Green's Theorem we find a connection between multiple integrals and line integrals. We also develop the important topic of change of variables which takes advantage of the Jacobian determinant and is often invaluable for actually working with a given problem.
 
 ## Definition of the integral

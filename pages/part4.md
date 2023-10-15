@@ -6,6 +6,8 @@ Draft text ⚠️
 
 # Curves & line integrals
 
+See also the [additional exercises](/pages/exercises4) associated to this part of the course.
+
 Curves have played a part in earlier parts of the course and now we turn our attention to precisely what we mean by this notion. Up until now we relied more on an intuition, an idea of some type of 1D subset of higher dimensional space. We will also define how we can integrate scalar and vector fields along these curves. These types of integrals have a natural and important physical relevance. We will then study some of the properties of these integrals. To start let's recall a random selection of curves we have already seen:
 
 - Circle: $x^2+y^2 = 4$

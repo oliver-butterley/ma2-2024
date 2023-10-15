@@ -4,8 +4,6 @@
 Draft text
 :::
 
-## Exercise
-
 - Identify domain and codomain
 - Partial derivatives
 - Gradient of a scalar field
@@ -15,6 +13,10 @@ Draft text
 - Use the chain rule to calculate the derivative of implicit functions
 - Level sets and tangent planes
 - Identify lack of continuity
+
+## Exercise
+
+...
 
 <style scoped>
 h1 {

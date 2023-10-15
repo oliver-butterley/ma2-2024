@@ -6,6 +6,8 @@ Draft text ⚠️
 
 # Extrema & other applications
 
+See also the [additional exercises](/pages/exercises3) associated to this part of the course.
+
 In the previous chapter we introduced various notions of differentials for higher dimensional functions (scalar fields, vector
 fields, paths, etc.). In this chapter we now explore various applications of these notions and work with some of the implementations, rather than just the objects. Firstly we will consider certain partial differential equations which we now have the tools to solve. Then the majority of the chapter is devoted to searching for extrema (minima / maxima) in various different scenarios. This extends what we already know for functions in $\bR$ and we will find that in higher dimensions many more possibilities and subtleties exist.
 

@@ -16,11 +16,11 @@ Each of the 6 parts of the course includes exercises. The exercises for part 1 o
 
 | exercise set | due date    |
 | ------------ | ----------- |
-| 2            | 23 Oct 2023 |
-| 3            |             |
-| 4            |             |
-| 5            |             |
-| 6            |             |
+| Part 2       | 23 Oct 2023 |
+| Part 3       |             |
+| Part 4       |             |
+| Part 5       |             |
+| Part 6       |             |
 
 (The are no credits for the exercises connected to part 1 of the course.)
 

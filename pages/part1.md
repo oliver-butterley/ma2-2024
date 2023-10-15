@@ -9,6 +9,8 @@ In this part of the course we work on the following skills:
 
 This text is not a comprehensive overview, it is meant only as a reminder and light discussion of the key notions. In a sense logic is innate however our abilities working with logical reasoning can be improved and refined, it is a skill to be studied like any other.
 
+See also the [additional exercises](/pages/exercises1) associated to this part of the course.
+
 ## Models, logical consequences
 
 We take the point of view that "doing science" involves developing well-defined models which describe physical phenomena (anything like the trajectory of a projectile, fluid mechanics, economics, etc.) whilst "doing mathematics" involves analysing the logical consequences of these models. The consequences understood by studying the model can then be used to further test the model or design applications which use these physical phenomena.

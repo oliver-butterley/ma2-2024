@@ -1,11 +1,3 @@
----
-footer: true
----
-
-<script setup>
-import { data } from './data/csv.data.ts'
-</script>
-
 # Overview
 
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
@@ -33,22 +25,24 @@ Classroom: **Aula 8**
 
 The material of the course is divided into six parts as listed below. Each part takes two weeks and is accompanied with a set of exercises. Mathematically the parts are intimately linked.
 
-| Topic (2 weeks each)                                         | Teaching period | Instructor |
-| ------------------------------------------------------------ | --------------- | ---------- |
-| [Mathematical reasoning](/pages/part1.md)                    | 25 Sep - 6 Oct  | Butterley  |
-| [Differential calculus in higher dimension](/pages/part2.md) | 9 - 20 Oct      | Butterley  |
-| [Extrema and other applications](/pages/part3.md)            | 23 Oct - 3 Nov  | Butterley  |
-| [Curves and line integrals](/pages/part4.md)                 | 6 - 17 Nov      | Butterley  |
-| [Multiple integrals](/pages/part5.md)                        | 20 Nov - 1 Dec  | Greenblatt |
-| [Surfaces and surface integrals](/pages/part6.md)            | 4 - 15 Dec      | Greenblatt |
+| Topic (2 weeks each)                      | Teaching period | Instructor |
+| ----------------------------------------- | --------------- | ---------- |
+| [Mathematical reasoning](/pages/part1.md) | 25 Sep - 6 Oct  | Butterley  |
+| [Higher dimension](/pages/part2.md)       | 9 - 20 Oct      | Butterley  |
+| [Extrema](/pages/part3.md)                | 23 Oct - 3 Nov  | Butterley  |
+| [Line integrals](/pages/part4.md)         | 6 - 17 Nov      | Butterley  |
+| [Multiple integrals](/pages/part5.md)     | 20 Nov - 1 Dec  | Greenblatt |
+| [Surface integrals](/pages/part6.md)      | 4 - 15 Dec      | Greenblatt |
 
 The final weeks of the course are devoted to a mini-project.
 
 | Project          | Teaching period | Instructor |
 | ---------------- | --------------- | ---------- |
-| Project - week 1 | 18-22 Dec       |            |
-| Project - week 2 | 8-12 Jan        |            |
-| Project - week 3 | 15-19 Dec       |            |
+| Project - week 1 | 18-22 Dec       | Greenblatt |
+| Project - week 2 | 8-12 Jan        | Butterley  |
+| Project - week 3 | 15-19 Dec       | Butterley  |
+
+See the [lesson diary](/pages/diary.md) for full details.
 
 ### Previous years
 
@@ -59,22 +53,3 @@ Course material from previous years and other instructors is available.
 - 2020/21 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2020/MA2/)
 - 2019/20 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2019/MA2/) / [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2019MA2/2019MA2.html)
 - 2018/19 [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2018MA2/2018MA2.html) / [Morsella](http://www.mat.uniroma2.it/~morsella/didattica/2018-19/didattica.html)
-
-### Lesson diary
-
-<span v-if="data.diary">
-
-<table>
-  <thead>
-    <tr ><th>Date</th><th>Time</th><th>Topic</th></tr>
-  </thead>
-  <tbody>
-    <tr  v-for="diaryItem in data.diary">
-      <td>{{ diaryItem.date }} </td>
-      <td>{{ diaryItem.time }}</td>
-      <td> {{ diaryItem.topic }}</td>
-    </tr>
-  </tbody>
-</table>
-
-</span>

@@ -41,6 +41,7 @@ export default defineConfig({
     sidebar: [
       { text: "Overview", link: "/" },
       { text: "Evaluation", link: "/pages/evaluation" },
+      { text: "Diary", link: "/pages/diary" },
       {
         text: "Lecture notes",
         items: Array.from(Array(6), (_, n) => ({

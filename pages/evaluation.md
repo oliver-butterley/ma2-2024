@@ -43,10 +43,10 @@ The questions in the midterms will be very similar to the additional exercises:
 
 - [Additional exercises 1](/pages/exercises1)
 - [Additional exercises 2](/pages/exercises2)
-<!-- - [Additional exercises 3](/pages/exercises3)
+- [Additional exercises 3](/pages/exercises3)
 - [Additional exercises 4](/pages/exercises4)
 - [Additional exercises 5](/pages/exercises5)
-- [Additional exercises 6](/pages/exercises6) -->
+- [Additional exercises 6](/pages/exercises6)
 
 ### Mini-projects
 

@@ -4,7 +4,7 @@
 Draft text
 :::
 
-- Identify domain and codomain
+- Identify domain, codomain and compose functions
 - Partial derivatives
 - Gradient of a scalar field
 - Directional derivative

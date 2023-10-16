@@ -1,27 +1,27 @@
 date,time,topic,week
-25/09/2023,14:00-16:45,"Mathematical reasoning (models, rigour, statements)",1
-27/09/2023,09:30-11:45,Cancelled,1
+25/09/2023,14:00-15:45,"Mathematical reasoning (models, rigour, statements)",1
+27/09/2023,09:30-11:15,Cancelled,1
 27/09/2023,16:00-17:45,"Mathematical reasoning (structure of proofs, checking proofs)",1
-02/10/2023,14:00-16:45,"Mathematical reasoning (negation, quantifiers)",2
-04/10/2023,09:30-11:45,"Mathematical reasoning (optimality of statements, why analysis)",2
+02/10/2023,14:00-15:45,"Mathematical reasoning (negation, quantifiers)",2
+04/10/2023,09:30-11:15,"Mathematical reasoning (optimality of statements, why analysis)",2
 05/10/2023,16:00-17:45,Cancelled,2
-09/10/2023,14:00-16:45,"Higher dimension (partial derivatives, gradient, directional derivative)",3
-11/10/2023,09:30-11:45,"Higher dimension (chain rule, Jacobian matrix)",3
+09/10/2023,14:00-15:45,"Higher dimension (partial derivatives, gradient, directional derivative)",3
+11/10/2023,09:30-11:15,"Higher dimension (chain rule, Jacobian matrix)",3
 11/10/2023,16:00-17:45,Cancelled,3
-16/10/2023,14:00-16:45,Cancelled,4
-18/10/2023,09:30-11:45,Higher dimension,4
+16/10/2023,14:00-15:45,Cancelled,4
+18/10/2023,11:30-13:15,Higher dimension (NOTE SWAP WITH PHYSICS 2),4
 18/10/2023,16:00-17:45,Higher dimension,4
-23/10/2023,14:00-15:30,Extrema,5
-25/10/2023,09:30-11:45,Extrema,5
+23/10/2023,14:00-15:45,Extrema,5
+25/10/2023,09:30-11:15,Extrema,5
 25/10/2023,16:00-17:45,Extrema,5
-30/10/2023,14:00-16:45,Midterm 1,6
-1/11/2023,09:30-11:45,Cancelled (all saints day),6
+30/10/2023,14:00-15:30,Midterm 1,6
+1/11/2023,09:30-11:15,Cancelled (all saints day),6
 1/11/2023,16:00-17:45,Cancelled (all saints day),6
-6/11/2023,14:00-16:45,Line intergrals,7
-8/11/2023,09:30-11:45,Line intergrals,7
+6/11/2023,14:00-15:45,Line intergrals,7
+8/11/2023,09:30-11:15,Line intergrals,7
 8/11/2023,16:00-17:45,Line intergrals,7
-13/11/2023,14:00-16:45,Line intergrals,8
-15/11/2023,09:30-11:45,Line intergrals,8
+13/11/2023,14:00-15:45,Line intergrals,8
+15/11/2023,09:30-11:15,Line intergrals,8
 15/11/2023,16:00-17:45,Line intergrals,8
 20/11/2023,14:00-15:30,Midterm 2,9
 TBA,TBA,Multiple integrals,9

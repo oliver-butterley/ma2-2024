@@ -13,34 +13,7 @@ See also the [additional exercises](/pages/exercises2) associated to this part o
 Here we start to consider higher dimensional space.
 That is, instead of $\mathbb{R}$ we consider $\mathbb{R}^n$ for $n\in \mathbb{N}$.
 We will particularly focus on 2D and 3D but everything also holds in any dimension.
-Going beyond $\mathbb{R}$ we have more options for functions and correspondingly more options for derivatives.
-
-Much of what we do in this course builds on ideas established in Mathematical Analysis 1.
-In particular many of the ideas are extended to the higher dimensional setting.
-
-| Mathematical Analysis 1                | Mathematical Analysis 2                                                 |
-| -------------------------------------- | ----------------------------------------------------------------------- |
-| (Functions)$f:\bR \to \bR$             | $f:\bR^n \to \bR$ (Scalar fields)                                       |
-|                                        | $\FF:\bR^n \to \bR^n$ (Vector fields)                                   |
-|                                        | $\boldsymbol{\alpha}:\bR \to \bR^n$ (Paths)                             |
-| (Derivative)$f'(x) = \frac{df}{dx}(x)$ | $\frac{\partial f}{\partial x_j}(x_1,\ldots,x_n)$ (Partial derivatives) |
-|                                        | $\nabla f$ (Gradient)                                                   |
-|                                        | $D_v f$ (Directional derivative)                                        |
-|                                        | $\boldsymbol{\alpha}'$ (Derivative of path)                             |
-|                                        | $Df$ (Jacobian matrix)                                                  |
-|                                        | $\nabla \cdot \FF$ (Divergence)                                         |
-|                                        | $\nabla \times \FF$ (Curl)                                              |
-| (Extrema)$\sup_{x\in \bR} f(x)$        | $\sup_{x\in \bR^n} f(x)$ (Extrema)                                      |
-|                                        | Lagrange multiplier method                                              |
-| Integral$\int_{a}^{b} f(x) \ dx$       | Multiple integral                                                       |
-|                                        | Line integral                                                           |
-|                                        | Surface integral                                                        |
-
-Various different notation is commonly used.
-Here we will primarily use $(x,y)\in \mathbb{R}^2$, $(x,y,z) \in \mathbb{R}^3$ or, more generally, $\mathbf{x} =(x_1,x_2,\ldots,x_n) \in \mathbb{R}^n$
-where
-$x_1 \in \mathbb{R},\ldots, x_n \in \mathbb{R}$.
-For example, $\mathbb{R}^2$ is the plane, $\mathbb{R}^3$ is 3D space.
+Going beyond $\mathbb{R}$ we have more options for functions and correspondingly more options for derivatives. Various different notation is commonly used. Here we will primarily use $(x,y)\in \mathbb{R}^2$, $(x,y,z) \in \mathbb{R}^3$ or, more generally, $\mathbf{x} =(x_1,x_2,\ldots,x_n) \in \mathbb{R}^n$ where $x_1 \in \mathbb{R},\ldots, x_n \in \mathbb{R}$. For example, $\mathbb{R}^2$ is the plane, $\mathbb{R}^3$ is 3D space.
 
 ::: tip Definition (inner product)
 

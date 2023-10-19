@@ -41,11 +41,11 @@ export default defineConfig({
     sidebar: [
       { text: "Overview", link: "/" },
       { text: "Evaluation", link: "/pages/evaluation" },
-      { text: "Diary", link: "/pages/diary" },
+      { text: "Lecture diary", link: "/pages/diary" },
       {
         text: "Lecture notes",
         items: Array.from(Array(6), (_, n) => ({
-          text: `${n + 1}. ${courseParts[n]}`, // `Part ${n + 1}: ${courseParts[n]}`
+          text: `${n + 1}. ${courseParts[n]}`,
           link: `/pages/part${n + 1}`,
         })),
         collapsed: false,

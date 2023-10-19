@@ -5,7 +5,7 @@ import { data } from '../data/csv.data.ts'
 const weeks = data.diary.map( (el) => el.week ).filter((value, index, array) => array.indexOf(value) === index);
 </script>
 
-# Lesson diary
+# Lecture diary
 
 <div v-if="data.diary">
 <div v-for="week in weeks">

@@ -1,3 +1,5 @@
+<!--@include: ./pages/notation.md-->
+
 # Overview
 
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
@@ -44,7 +46,30 @@ The final weeks of the course are devoted to a mini-project.
 
 See the [lesson diary](/pages/diary.md) for full details.
 
-### Previous years
+## What is MA2?
+
+Much of what we do in this course builds on ideas established in Mathematical Analysis 1.
+In particular many of the ideas are extended to the higher dimensional setting.
+
+| Mathematical Analysis 1                | Mathematical Analysis 2                                                 |
+| -------------------------------------- | ----------------------------------------------------------------------- |
+| (Functions)$f:\bR \to \bR$             | $f:\bR^n \to \bR$ (Scalar fields)                                       |
+|                                        | $\FF:\bR^n \to \bR^n$ (Vector fields)                                   |
+|                                        | $\boldsymbol{\alpha}:\bR \to \bR^n$ (Paths)                             |
+| (Derivative)$f'(x) = \frac{df}{dx}(x)$ | $\frac{\partial f}{\partial x_j}(x_1,\ldots,x_n)$ (Partial derivatives) |
+|                                        | $\nabla f$ (Gradient)                                                   |
+|                                        | $D_v f$ (Directional derivative)                                        |
+|                                        | $\boldsymbol{\alpha}'$ (Derivative of path)                             |
+|                                        | $Df$ (Jacobian matrix)                                                  |
+|                                        | $\nabla \cdot \FF$ (Divergence)                                         |
+|                                        | $\nabla \times \FF$ (Curl)                                              |
+| (Extrema)$\sup_{x\in \bR} f(x)$        | $\sup_{x\in \bR^n} f(x)$ (Extrema)                                      |
+|                                        | Lagrange multiplier method                                              |
+| Integral$\int_{a}^{b} f(x) \ dx$       | Multiple integral                                                       |
+|                                        | Line integral                                                           |
+|                                        | Surface integral                                                        |
+
+## Additional info
 
 Course material from previous years and other instructors is available.
 

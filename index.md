@@ -1,5 +1,3 @@
-<!--@include: ./pages/notation.md-->
-
 # Overview
 
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
@@ -78,3 +76,5 @@ Course material from previous years and other instructors is available.
 - 2020/21 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2020/MA2/)
 - 2019/20 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2019/MA2/) / [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2019MA2/2019MA2.html)
 - 2018/19 [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2018MA2/2018MA2.html) / [Morsella](http://www.mat.uniroma2.it/~morsella/didattica/2018-19/didattica.html)
+
+<!--@include: ./pages/notation.md-->

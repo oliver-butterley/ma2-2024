@@ -1,15 +1,5 @@
 # Additional exercises 2
 
-- Identify domain, codomain and compose functions
-- Partial derivatives
-- Gradient of a scalar field
-- Directional derivative
-- Jacobian matrix
-- Apply the chain rule to the composition of functions
-- Use the chain rule to calculate the derivative of implicit functions
-- Level sets and tangent planes
-- Identify lack of continuity
-
 ## Exercise
 
 Let $f(x) = (x,x^2,x^3)$ and $g(x,y,z) = x + y -z$.
@@ -23,7 +13,7 @@ Compute the partial derivatives $\frac{\partial f}{\partial x}$, $\frac{\partial
 ## Exercise
 
 Let $f(x,y) = x^3 + 5 + e^{xy}$.
-Calculate the gradient, $\nabla f$.
+Calculate $\nabla f$, the gradient of $f$.
 
 ## Exercise
 
@@ -37,33 +27,64 @@ $$
 (u,v) \mapsto (e^u \cos v, e^u \sin v).
 $$
 
-::: warning
-Draft text
-:::
+## Exercise
+
+Consider the functions,
+
+$$
+\aalpha: [0,\infty) \to \bR^2; \quad t \mapsto (t \cos t, t \sin t),
+$$
+
+$$
+f: \bR^2 \to \bR; \quad (x,y) \mapsto 3x^2 + y^2.
+$$
+
+What curve does $\alpha(t)$ trace out as $t$ varies?
+Let $g = f \circ \aalpha$ and calculate $g^\prime$.
 
 ## Exercise
 
-...
+Let
+
+$$
+f: (u,v) \mapsto (u \cos v, u \sin v),
+$$
+
+$$
+g: (x,y) \mapsto (x^2 + y^2, x),
+$$
+
+and let $h = g \circ f$.
+Calculate $h$ and the Jacobians $Df$, $Dg$. Calculate $D h$, the Jacobian of $h$, both directly from the formula from $h$ and by the chain rule for Jacobians.
 
 ## Exercise
 
-...
+Let $f$ be defined, for $(x,y)\neq (0,0)$, as
+
+$$
+    f(x,y) = \frac{x y}{x^2 + y^2},
+$$
+
+and $f(x,y) = 0$.
+
+What is the behaviour of $f$ when approaching $(0,0)$ along the following lines?
+
+| line       | value         |
+| ---------- | ------------- |
+| $\{x=0\}$  | $f(0,t) =$ ?  |
+| $\{y=0\}$  | $f(t,0) =$ ?  |
+| $\{x=y\}$  | $f(t,t) =$ ?  |
+| $\{x=-y\}$ | $f(t,-t) =$ ? |
 
 ## Exercise
 
-...
+Consider the surface $x^2 + y^2 - z^2 = 1$.
+Verify that the point $(1,1,1)$ is contained in the surface.
+Find the tangent plane to this surface at this point.
 
-## Exercise
+_Hint: write this surface as a level set $\{ (x,y,z) : f(x,y,z) = c\}$, calculate $\nabla f$ at the specified point and use the known connection between gradient and tangent plane._
 
-...
-
-## Exercise
-
-...
-
-## Exercise
-
-...
+<!--@include: ./pages/notation.md-->
 
 <style scoped>
 h1 {

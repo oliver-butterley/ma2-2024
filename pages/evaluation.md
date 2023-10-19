@@ -1,8 +1,4 @@
----
-layout: doc
----
-
-## Evaluation
+# Evaluation
 
 The primary evaluation system is a combination of continuous evaluation:
 

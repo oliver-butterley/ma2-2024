@@ -85,7 +85,7 @@ All the basic properties of the integral of step functions, as stated in Theorem
 
 ## Evaluation of multiple integrals
 
-Now we have a definition we can rigorously work with integrals but it is essential to also have a way to practically evaluate any given integral.
+Now we have a definition, so we know what a multidimensional integral is, but it is essential to also have a way to practically evaluate any given integral.
 
 Let $f$ be a bounded integrable function on $R = [a_1,b_1] \times [a_2,b_2]$. Suppose that, for every $y\in [a_2,b_2]$, the integral $A(y) = \int_{a_1}^{b_1} f(x,y) \ dx$ exists. Then $\int_{a_2}^{b_2} A(y) \ dy$ exists and,
 
@@ -182,15 +182,14 @@ By continuity, for every $\epsilon>0$, there exists $\delta>0$ such that $\abs{\
 Let $S = \left\{(x,y): x \in [a,b], \varphi_1(x) \leq y \leq \varphi_2(x)\right\}$ where $\varphi_1, \varphi_2$ are continuous and let $f$ be a bounded continuous function of $S$. Then $f$ is integrable on $S$ and
 
 $$
-\
-iint_{S} f(x,y) \ dx dy = \int_{a}^{b} \left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy\right] \ dx.
+\iint_{S} f(x,y) \ dx dy = \int_{a}^{b} \left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy\right] \ dx.
 $$
 
 The set of discontinuity of $f_{R}$ is the boundary of $S$ in $R=[a,b]\times[\tilde a,\tilde b]$ which consists of the graphs of $\varphi_1$, $\varphi_2$. These graphs have zero content as we proved before. For each $x$, $f(x,y)$ is integrable since it has only two discontinuity points. Additionally $\int_{\tilde a}^{\tilde b} f_{R}(x,y) \ dy =  \int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy$.
 
 A similar result holds for type 2 regions but with $x$ and $y$ swapped. For higher dimensions we need to also have an understanding of how to represent subsets of $\bR^n$. Take for example a 3D solid then we would hope to be able to "project" along one of the coordinate axis and so describe it using the 2D "shadow" and a pair of continuous functions. For example, consider the upside-down cone of Figure [1.2](#fig:cone){reference-type="ref" reference="fig:cone"} which has base of radius $5$ lying in the plane $\{z=5\}$ and has tip at the origin.
 
-![](../images/svg/cone.svg "Upside-down cone of height $5$ with tip at the origin. The solid is bounded by the surfaces $z = \sqrt{x^2+y^2}$ and $z=5$. This solid can be "projected" onto the $xy$-plane")
+![](../images/svg/cone.svg "Upside-down cone of height $5$ with tip at the origin. The solid is bounded by the surfaces $z = \sqrt{x^2+y^2}$ and $z=5$. This solid can be \"projected\" onto the $xy$-plane.")
 
 In order to describe this set it is convenient to imagine how it projects down onto the $xy$-axis. We then describe it as
 
@@ -302,13 +301,13 @@ Let $S$ be a simply connected region and suppose that $\ff = \left(\begin{smallm
 
 :::
 
-In Theorem [\[thm:mixed-partials\]](#thm:mixed-partials) we already proved that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ whenever $\ff$ is conservative so we need only prove the other direction of the statement. Suppose that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ and consider any closed path $\aalpha$ in $S$. By Green's (Theorem [\[thm:greens\]](#thm:greens)),
+In Theorem [\[part4#thm:mixed-partials\]](part4#thm:mixed-partials) we already proved that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ whenever $\ff$ is conservative so we need only prove the other direction of the statement. Suppose that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ and consider any closed path $\aalpha$ in $S$. By Green's (Theorem [\[thm:greens\]](#thm:greens)),
 
 $$
 \int_{C} \ff \cdot d\aalpha = \iint_{S} \left(\tfrac{\partial Q}{\partial x} - \tfrac{\partial P}{\partial y}\right) \ dx dy = 0.
 $$
 
-This implies that $\ff$ is conservative because the fact that the line integral around every closed curve is zero (Theorem [\[thm:conservative-fields\]](#thm:conservative-fields)).
+This implies that $\ff$ is conservative because the fact that the line integral around every closed curve is zero (Theorem [\[part4#thm:conservative-fields\]](part4#thm:conservative-fields)).
 
 A crucially important consequence of the above result is that it implies the invariance of a line integral under deformation of a path when the vector field is conservative. Observe that the result can be extended to multiply connected regions by adding additional "cuts" and keeping track of the additional line integrals.
 

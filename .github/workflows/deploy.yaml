@@ -2,7 +2,7 @@ name: Deploy VitePress site to server
 
 on:
   push:
-    branches: [deploy]
+    branches: [main]
 
   workflow_dispatch:
 

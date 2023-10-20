@@ -14,4 +14,4 @@ In order to preview locally, make sure [node.js](https://nodejs.org/en) is insta
 
 See the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
 
-The `main` branch is used for drafting the site and the `deploy` branch is automatically processed and deployed to the server.
+Commits to `main` are automatically processed and deployed to the server.

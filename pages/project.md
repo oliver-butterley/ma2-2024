@@ -6,6 +6,9 @@
 - The geometry of [aerospike engines](https://en.wikipedia.org/wiki/Aerospike_engine)
 - Why are [Lagrange points](https://en.wikipedia.org/wiki/Lagrange_point) good places for spacecraft like the [JW space telescope](https://en.wikipedia.org/wiki/James_Webb_Space_Telescope)?
 - Analysis of [predator-prey](https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations) dynamics
+- Using [Lean](https://lean-lang.org/) in order to verify proofs
+- Analysis of electro-magnetic fields
+- Didactic methods for rigorous mathematics
 
 ## Rules
 

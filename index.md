@@ -77,4 +77,4 @@ Course material from previous years and other instructors is available.
 - 2019/20 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2019/MA2/) / [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2019MA2/2019MA2.html)
 - 2018/19 [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2018MA2/2018MA2.html) / [Morsella](http://www.mat.uniroma2.it/~morsella/didattica/2018-19/didattica.html)
 
-<!--@include: ./pages/notation.md-->
+<!--@include: ../pages/notation.md-->

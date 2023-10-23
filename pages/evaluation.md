@@ -19,11 +19,11 @@ Each of the 6 parts of the course includes exercises. The exercises for part 1 o
 | [Part 5][5]  | 4 December 2023  |
 | [Part 6][6]  | 18 December 2023 |
 
-[2]: (https://esamionline.uniroma2.it/course/view.php?id=6165&section=2)
-[3]: (https://esamionline.uniroma2.it/course/view.php?id=6165&section=3)
-[4]: (https://esamionline.uniroma2.it/course/view.php?id=6165&section=4)
-[5]: (https://esamionline.uniroma2.it/course/view.php?id=6165&section=5)
-[6]: (https://esamionline.uniroma2.it/course/view.php?id=6165&section=6)
+[2]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=2
+[3]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=3
+[4]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=4
+[5]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=5
+[6]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=6
 
 ### Midterm exams
 

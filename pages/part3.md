@@ -1,205 +1,15 @@
 <!--@include: ./pages/notation.md-->
 
-::: warning
-Draft text ⚠️
-:::
-
 # Extrema & other applications
+
+In this part of the course we work on the following skills:
+
+- Locating and classifying the extrema of scalar fields.
+- Applying Lagrange's multipliers method to optimize quantities with respect to constraints.
 
 See also the [additional exercises](/pages/exercises3) associated to this part of the course.
 
-In the previous chapter we introduced various notions of differentials for higher dimensional functions (scalar fields, vector
-fields, paths, etc.). In this chapter we now explore various applications of these notions and work with some of the implementations, rather than just the objects. Firstly we will consider certain partial differential equations which we now have the tools to solve. Then the majority of the chapter is devoted to searching for extrema (minima / maxima) in various different scenarios. This extends what we already know for functions in $\bR$ and we will find that in higher dimensions many more possibilities and subtleties exist.
-
-## Partial differential equations
-
-There are a huge number of different types of partial differential equations (PDEs) and here we consider just two types, _first order linear PDEs_ and the _1D wave equation_. We start by consider an example of the first type.
-
-Find all solutions of the PDE,
-$$3 \tfrac{\partial f}{\partial x}(x,y) + 2 \tfrac{\partial f}{\partial y} (x,y) = 0.$$
-
-The given PDE is equivalent to
-
-$$
-\left( \begin{smallmatrix}
-            3 \\ 2
-        \end{smallmatrix} \right)
-    \cdot
-    \nabla f(x,y) =0.
-$$
-
-We can also phrase this in terms of the directional derivative, namely
-
-$$
-D_{\mathbf{v}}f(x,y) = 0 \quad \text{where \(\mathbf{v}=\left( \begin{smallmatrix}
-                3 \\ 2
-            \end{smallmatrix} \right)\)}.
-$$
-
-This means that if a function $f$ is a solution to the PDE then it is constant in the
-direction $\left( \begin{smallmatrix}
-            3 \\ 2
-        \end{smallmatrix} \right)$. This means that all solutions have
-the form $f(x,y) = g(2x-3y)$ for some $g:\bR \to \bR$.
-
-The same idea as used for the above example gives the following general
-result.
-Let $g:\bR\to\bR$ be differentiable, $a,b\in \bR$, $(a,b)\neq (0,0)$. If
-$f(x,y)= g(bx-ay)$ then
-$$a \tfrac{\partial f}{\partial x} (x,y) + b \tfrac{\partial f}{\partial y} (x,y) = 0.$$
-Conversely, every $f$ which satisfies this equation is of the form
-$g(bx-ay)$.
-
-First we prove **($\Rightarrow$)**. If $f(x,y)= g(bx-ay)$
-then, by the chain rule,
-
-$$
-\partial_x f(x,y) = bg'(bx-ay), \quad \partial_y f(x,y) = -ag'(bx-ay).
-$$
-
-Consequently
-$$a\partial_x f(x,y) + b \partial_y f(x,y) = a bg'(bx-ay) - abg'(bx-ay) = 0.$$
-Now we prove **($\Leftarrow$)**. It's convenient to work in
-coordinates which correspond to the lines along which the solutions are
-constant. Let
-
-$$
-\left(\begin{smallmatrix}
-            u\\ v
-        \end{smallmatrix}\right)
-    = \left(\begin{smallmatrix}
-            a & b \\ b & -a
-        \end{smallmatrix}\right)
-    \left(\begin{smallmatrix}
-            x \\ y
-        \end{smallmatrix}\right).
-$$
-
-This means that
-$\left(\begin{smallmatrix}
-            x\\ y
-        \end{smallmatrix}\right)
-    = \frac{-1}{a^2 + b^2} \left(\begin{smallmatrix}
-            a & b \\ b & -a
-        \end{smallmatrix}\right)
-    \left(\begin{smallmatrix}
-            u \\ v
-        \end{smallmatrix}\right)$.
-Let
-
-$$
-h(u,v)=f\left(\frac{au + bv}{a^2 + b^2}, \frac{bu-av}{a^2+b^2}\right).
-$$
-
-We
-calculate that
-
-$$
-\partial_u h(u,v)
-        = \tfrac{1}{{a^2 + b^2}}
-        \left( a \partial_x f
-        + b \partial_y f \right)  (au + bv, bu-av) = 0.
-$$
-
-Namely,
-$h(u,v)$ is a function of $v$ only and does not depend on $u$ so we take $g(v) = h(u,v)$ and so $f(x,y) = g(bx-ay)$.
-
-Now we look at another type of PDE. The [1D wave equation](https://en.wikipedia.org/wiki/Wave_equation) is
-
-$$
-\frac{\partial^2 f}{\partial x^2}(x,t) = c^2  \frac{\partial^2 f}{\partial t^2}(x,t).
-$$
-
-Here $x$ represents the position along string, $t$ is time and $f(x,t)$ is the displacement of the string from the centre at position $x$, at time $t$. The constant $c$ is a fixed parameter depending on the string.
-
-This partial differential equation is derived from the equation of motion $F = m a$ where $F$ is the tension in the string, $a$ is the acceleration from horizontal and $m$ is the mass of a little piece of the string. The equation is valid for small displacement. In this case the _boundary conditions_ are natural: Are the ends of the string fixed? Is only one end fixed? At time $t=0$, is the string already moving?
-
-::: tip Theorem
-Let $F$ be a twice differentiable function and $G$ a differentiable function.
-The function defined as
-
-$$
-f(x,t) = \frac{1}{2}(F(x+ct) + F(x-ct)) + \frac{1}{2c} \int_{x-ct}^{x+ct} G(s) \ ds
-$$
-
-satisfies
-$\frac{\partial^2 f}{\partial x^2}(x,t) = c^2  \frac{\partial^2 f}{\partial t^2}(x,t)$,
-$f(x,0) = F(x)$ and $\frac{\partial f}{\partial t}(x,0) = G(x)$.
-
-Conversely, if a solution of
-$$\frac{\partial^2 f}{\partial x^2}(x,t) = c^2  \frac{\partial^2 f}{\partial t^2}(x,t)$$
-satisfies
-$\frac{\partial^2 f}{\partial x \partial t} = \frac{\partial^2 f}{\partial t \partial x}$,
-then it has the above
-form.
-
-:::
-
-Let $f(x,t)$ be as defined in the statement of the theorem. We calculate the
-partial derivatives
-
-$$
-\begin{aligned}
-    \tfrac{\partial f}{\partial x} (x,t)
-        & = \tfrac{1}{2} \left(F'(x+ct) + F'(x-ct)\right)          \\
-        & \quad\quad\quad
-    + \tfrac{1}{2c}\left(G(x+ct) - G(x-ct)\right)               \\
-    \tfrac{\partial^2 f}{\partial x^2}(x,t)
-        & = \tfrac{1}{2} \left(F''(x+ct) + F''(x-ct)\right)        \\
-        & \quad\quad\quad
-    + \tfrac{1}{2c}\left(G'(x+ct) - G'(x-ct)\right)             \\
-    \tfrac{\partial f}{\partial t} (x,t)
-        & = \tfrac{1}{2} \left(cF'(x+ct) - c F'(x-ct)\right)       \\
-        & \quad\quad\quad
-    + \tfrac{1}{2}\left(G(x+ct) + G(x-ct)\right)                \\
-    \tfrac{\partial^2 f}{\partial t^2} f(x,t)
-        & = \tfrac{1}{2} \left(c^2F''(x+ct) + c^2 F''(x-ct)\right) \\
-        & \quad\quad\quad
-    + \tfrac{c}{2}\left(G'(x+ct) + G'(x-ct)\right).
-    \end{aligned}
-$$
-
-From this calculation we see that
-$\frac{\partial^2 f}{\partial x^2}(x,t) = c^2  \frac{\partial^2 f}{\partial t^2}(x,t)$.
-Additionally we have $f(x,0) = F(x)$ and
-$\frac{\partial f}{\partial t}(x,0) = G(x)$.
-
-Suppose that $f$ satisfies the 1D wave equation; Introduce $u = x + ct$,
-$v=x-ct$ and observe that $x = \frac{u+v}{2}$, $t=\frac{u-v}{2c}$.
-Define $g(u,v) = f(   \frac{u+v}{2} , \frac{u-v}{2c} )$.
-By the chain
-rule
-
-$$
-\begin{aligned}
-    \tfrac{\partial g}{\partial u}(u,v)
-        & = \tfrac{1}{2} \tfrac{\partial f}{\partial x}(   \tfrac{u+v}{2} , \tfrac{u-v}{2c} )
-    + \tfrac{1}{2c} \tfrac{\partial f}{\partial t}(   \tfrac{u+v}{2} , \tfrac{u-v}{2c} ),                     \\
-    \tfrac{\partial^2 g}{\partial v \partial u}(u,v)
-        & = \tfrac{1}{4} \tfrac{\partial^2 f}{\partial x^2}(   \tfrac{u+v}{2} , \tfrac{u-v}{2c} )
-    - \tfrac{1}{4c} \tfrac{\partial^2 f}{\partial x\partial t}(   \tfrac{u+v}{2} , \tfrac{u-v}{2c} )          \\
-        & \ \ +  \tfrac{1}{4c} \tfrac{\partial^2 f}{\partial x \partial t}(   \tfrac{u+v}{2} , \tfrac{u-v}{2c} )
-    -  \tfrac{1}{4c^2} \tfrac{\partial^2 f}{\partial t^2}(   \tfrac{u+v}{2} , \tfrac{u-v}{2c} ) = 0.
-\end{aligned}
-$$
-
-Since the second derivative is zero we know that $\tfrac{\partial g}{\partial u}$ is constant in $v$, therefore we can
-write $\tfrac{\partial g}{\partial u}(u,v) = \varphi_0(u)$. In turn this means we can write $g(u,v) = \varphi_1(u) + \varphi_2(v)$. I.e., $f(x,t) = \varphi_1(x+ct) + \varphi_2(x-ct)$. Let
-
-$$
-F(x) = \varphi_1(x) + \varphi_2(x).
-$$
-
-This means that $F'(x) = \varphi_1'(x) + \varphi_2'(x)$ and
-$\frac{\partial f}{\partial t}(x,t) = c\varphi_1(x+ct) - c\varphi_2(x-ct)$.
-Let
-
-$$
-G(x) = \tfrac{\partial f}{\partial t}(x,0) = c\varphi_1(x) - c\varphi_2(x).
-$$
-
-Substituting these quantities we show that the required
-form is satisfied.
+In the previous chapter we introduced various notions of differentials for higher dimensional functions (scalar fields, vector fields, paths, etc.). The chapter is devoted to searching for extrema (minima / maxima) in various different scenarios. This extends what we already know for functions in $\bR$ and we will find that in higher dimensions many more possibilities and subtleties exist.
 
 ## Extrema (minima / maxima / saddle)
 
@@ -242,22 +52,24 @@ directional derivative $D_{\vv} f(\aa) = 0$ for every $\vv$.
 Consequently this means that $\nabla f (\aa)= \mathbf{0}$.
 :::
 
-![Graph of an inflection](../images/svg/inflection.svg "$\\nabla f(\\aa) = \\mathbf{0}$ doesn't imply a minimum or maximum at $\\aa$, even in $\\bR$, as seen with the function $f(x)=x^3$. In higher dimensions even more is possible.")
+![Graph of an inflection](../images/svg/inflection.svg "$\\nabla f(\\aa) = \\mathbf{0}$ doesn't imply a minimum or maximum at $\\aa$, even in $\\bR$, as seen with the function $f(x)=x^3$. In higher dimensions even more is possible."){#fig:inflection}
 
-Observe that here and in the subsequent text, we can always consider the case of $f:\bR \to \bR$, i.e., the case of $\bR^n$ where $n=1$. Everything still holds and reduces to the arguments and formulae previously developed for functions of one variable.
+Observe that, here and in the subsequent text, we can always consider the case of $f:\bR \to \bR$, i.e., the case of $\bR^n$ where $n=1$. Everything still holds and reduces to the arguments and formulae previously developed for functions of one variable.
 
+::: tip Definition (stationary point)
 If $\nabla f(\aa)=\mathbf{0}$ then $\aa$ is called a _stationary point_.
+:::
 
 ![Graph of a bowl shaped function](../images/svg/bowl.svg "If $f(x,y)=x^2+y^2$ then $\\nabla f(x,y) = \\left(\\begin{smallmatrix} 2x\\\\2y \\end{smallmatrix}\\right)$ and $\\nabla f(0,0) =\\left(\\begin{smallmatrix}   0\\\\0  \\end{smallmatrix}\\right)$. The point $(0,0)$ is an absolute minimum for $f$.")
 
-As we see in the inflection example, the converse of the [theorem](#thm:is-stationary) fails in the sense that a stationary
+As we see in the inflection example, the converse of the [above theorem](#thm:is-stationary) fails in the sense that a stationary
 point might not be a minimum or a maximum. The motivates the following.
 
+::: tip Definition (saddle point)
 If $\nabla f(\aa)=\mathbf{0}$ and $\aa$ is neither a minimum nor a maximum then $\aa$ is said to be a _saddle point_.
+:::
 
-The quintessential saddle has the shape seen in the [graph](#fig:pringle). However it might be similar to
-Figure [1.2](#fig:inflection){reference-type="ref"
-reference="fig:inflection"} or more complicated using the possibilities
+The quintessential saddle has the shape seen in the [graph](#fig:pringle). However it might be similar to an [inflection in 1D](#fig:inflection) or more complicated using the possibilities
 available in higher dimension.
 
 ![Graph of a saddle](../images/svg/pringle.svg "If $f(x,y)=x^2-y^2$ then $\\nabla f(x,y) = \\left(\\begin{smallmatrix} 2x  \\\\ -2y \\end{smallmatrix}\\right)$ and $\\nabla f(0,0) = \\mathbf{0}$. The point $(0,0)$ is a saddle point for $f$."){#fig:pringle}
@@ -279,7 +91,9 @@ $$
 
 Observe that the Hessian matrix $\mathbf{H} f (\aa)$ is a symmetric matrix since we know that
 $\frac{\partial^2 f}{\partial x\,\partial y} (\aa) = \frac{\partial^2 f}{\partial y\,\partial x} (\aa)$
-for twice differentiable functions. The Hessian matrix is defined analogously in any dimensions as follows. Let $f:\bR^n \to\bR$ be twice differentiable. The _Hessian matrix_ at $\aa\in \bR^n$ is defined as
+for twice differentiable functions.
+::: details The Hessian matrix is defined analogously in any dimension.
+Let $f:\bR^n \to\bR$ be twice differentiable. The _Hessian matrix_ at $\aa\in \bR^n$ is defined as
 
 $$
 \mathbf{H} f (\aa)= \begin{pmatrix}
@@ -302,23 +116,27 @@ $$
 \end{pmatrix}.
 $$
 
+:::
+
 Observe that the Hessian matrix is a real symmetric matrix in any dimension. If $f:\bR \to \bR$ then $\mathbf{H} f (a)$ is a $1\times 1$ matrix and coincides with the second derivative of $f$. In this sense what we know about extrema in $\bR$ is just a special case of everything we do here.
 
-If $\vv= \left( \begin{smallmatrix}
-            v_1\\ \vdots \\v_n
-        \end{smallmatrix} \right)$ then
+::: tip Theorem
+If $\vv= \left( v_1, \dots, v_n \right)$ then,
 
 $$
-\vv^{\mathbf{t}} \ \mathbf{H} f (\aa) \ \vv = \sum_{j,k=0}^{n}
+\vv \ \mathbf{H} f (\aa) \ \vv^{\mathbf{t}} = \sum_{j,k=0}^{n}
     \partial_{j}\partial_{k}f(\aa)
     v_j v_k \in \bR.
 $$
 
+:::
+
+::: info Proof
 Multiplying the matrices we calculate that
 
 $$
 \begin{aligned}
-            \vv^{\mathbf{t}} \ \mathbf{H} f (\aa) \ \vv
+            \vv \ \mathbf{H} f (\aa) \ \vv^{\mathbf{t}}
              & =
             \begin{pmatrix}
                 v_1 & \cdots & v_n
@@ -341,7 +159,9 @@ $$
 
 as required.
 
-Let $f(x,y)=x^2-y^2$ ([figure](#fig:pringle)). The gradient and the Hessian are respectively
+:::
+
+As an example, let $f(x,y)=x^2-y^2$ ([figure](#fig:pringle)). The gradient and the Hessian are respectively
 
 $$
 \begin{aligned}
@@ -377,13 +197,15 @@ gives a different matrix at different points $(x,y)$.
 
 ### Second order Taylor formula for scalar fields
 
-First let's recall the first order Taylor approximation from Theorem (#thm:differential). If $f$ is differentiable at $\aa$ then
-$f(\xx) \approx f(\aa)  + \nabla f(\aa) \cdot (\xx-\aa)$. If $\aa$ is a stationary point then this only tells us that $f(\xx) \approx f(\aa)$ so a natural next question is to search for slightly more detailed information.
+First let's recall the first order Taylor approximation [we saw before](./part2#thm:differential). If $f$ is differentiable at $\aa$ then $f(\xx) \approx f(\aa)  + \nabla f(\aa) \cdot (\xx-\aa)$. If $\aa$ is a stationary point then this only tells us that $f(\xx) \approx f(\aa)$ so a natural next question is to search for slightly more detailed information.
 
+::: tip Theorem
 Let $f$ be a scalar field twice differentiable on $B(\aa,r)$. Then, for $\xx$ close to $\aa$,
 $$f(\xx) \approx f(\aa) + \nabla f(\aa) \cdot (\xx-\aa) + \frac{1}{2} {(\xx-\aa)}^{\mathbf{T}} \ \mathbf{H} f (\aa) \ (\xx-\aa)$$
 in the sense that the error is $\littleO{\norm{(\xx-\aa)}^2}$.
+:::
 
+::: info Proof
 Let $\vv = \xx-\aa$ and let $g(u) = f(\aa + u \vv)$. The Taylor
 expansion of $g$ tells us that
 $g(1) = g(0) + g'(0) + \frac{1}{2} g''(c)$ for some $c\in (0,1)$. Since
@@ -413,6 +235,7 @@ $$
 Since $\abs{ v_j v_k} \leq \norm{\vv}^2$ we observe that
 $\frac{\abs{\epsilon(\vv)} }{\norm{\vv}^2} \to 0$ as $\norm{\vv} \to 0$
 as required.
+:::
 
 ## Classifying stationary points
 
@@ -435,6 +258,8 @@ $$
 
 :::
 
+::: info Proof
+
 Since $A$ is symmetric it can be diagonalised by matrix $B$ which is
 orthogonal ($B^{\mathbf{t}}=B^{-1}$) and the diagonal matrix
 $D = B^{\mathbf{t}} A B$ has the eigenvalues of $A$ as the diagonal.
@@ -446,6 +271,7 @@ Observe that, if all $\lambda_j >0$ then $\sum_{j} \lambda_j w_j^2  >0$.
 In order to prove the other direction in the "if and only if" statement,
 observe that $Q(B \uu_k ) = \lambda_k$. This means that, if $Q(\vv) > 0$
 for all $\vv \neq \mathbf{0}$ then $\lambda_k>0$ for all $k$.
+:::
 
 ::: tip Theorem
 Let $f$ be a scalar field twice differentiable on $B(\aa,r)$. Suppose
@@ -468,6 +294,7 @@ $$
 
 :::
 
+::: info Proof
 Let $Q(\vv) =  \vv^{\mathbf{t}} \mathbf{H} f (\aa) \vv$, $\ww = B \vv$
 and let $\Lambda := \min_j \lambda_j$. Observe that
 $\norm{\ww} =  \norm{\vv}$ and that
@@ -489,6 +316,8 @@ $\norm{\vv}$ is small. The argument is analogous for the second part.
 For final part consider $\vv_j$ which is the eigenvector for $\lambda_j$
 and apply the argument of the first or second part.
 
+:::
+
 ## Attaining extreme values
 
 Here we explore the extreme value theorem for continuous scalar fields. The argument will be in two parts: Firstly we show that continuity implies boundedness; Secondly we show that boundedness implies that the maximum and minimum are attained. We use the following notation for _interval_ / _rectangle_ / _cuboid_ / _tesseract_, etc. If $\aa = (a_1,\ldots,a_n)$ and $\bb = (b_1,\ldots,b_n)$ then we consider the $n$-dimensional closed Cartesian product
@@ -499,9 +328,12 @@ $$
 
 We call this set a _rectangle_ (independent of the dimension). As a first step it is convenient to know that all sequences in our setting have convergent subsequences.
 
+::: tip Theorem
 If ${\{\xx_{n}\}}_{n}$ is a sequence in $[\aa,\bb]$ there exists a
 convergent subsequence ${\{\xx_{n_j}\}}_{j}$.
+:::
 
+::: info Proof
 In order to prove the theorem we construct the subsequence. Firstly we
 divide $[\aa,\bb]$ into sub-rectangles of size half the original. We
 then choose a sub-rectangle which contains infinite elements of the
@@ -509,16 +341,24 @@ sequence and choose the first of these elements to be part of the
 sub-sequence. We repeat this process by again dividing the sub-rectangle
 we chose by half and choosing the next element of the subsequence. We
 repeat to give the full subsequence.
+:::
 
+::: tip Theorem
 Suppose that $f$ is a scalar field continuous at every point in the
 closed rectangle $[\aa,\bb]$. Then $f$ is bounded on $[\aa,\bb]$ in the
 sense that there exists $C>0$ such that $\abs{f(\xx)} \leq C$ for all
 $\xx \in [\aa,\bb]$.
+:::
 
+::: info Proof
 Suppose the contrary: for all $n\in\mathbb{N}$ there exists $\xx_n\in [\aa,\bb]$ such that $\abs{f(\xx_n)}>n$. [Bolzano-Weierstrass](https://en.wikipedia.org/wiki/Bolzano%E2%80%93Weierstrass_theorem)
 theorem means that there exists a subsequence ${\{\xx_{n_j}\}}_{j}$ converges to $\xx \in [\aa,\bb]$. Continuity of $f$ means that $f(\xx_{n_j})$ converges to $f(\xx)$. This is a contradiction and hence the theorem is proved.
+:::
 
-We can now use the above result on the boundedness in order to show that the extreme values are actually obtained. Suppose that $f$ is a scalar field continuous at every point in the closed rectangle $[\aa,\bb]$. There there exist points $\xx, \yy \in [\aa,\bb]$ such that
+We can now use the above result on the boundedness in order to show that the extreme values are actually obtained.
+
+::: tip Theorem
+Suppose that $f$ is a scalar field continuous at every point in the closed rectangle $[\aa,\bb]$. Then there exist points $\xx, \yy \in [\aa,\bb]$ such that
 
 $$
 f(\xx) = \inf f
@@ -526,10 +366,12 @@ f(\xx) = \inf f
         f(\yy)= \sup f.
 $$
 
-By the boundedness theorem $\sup f$ is finite and so there exists a sequence ${\{\xx_{n}\}}_{n}$ such that $f(\xx_n)$ converges to $\sup f$.
-Bolzano--Weierstrass theorem implies that there exists a subsequence
-${\{\xx_{n_j}\}}_{j}$ which converges to $\xx \in [\aa,\bb]$. By
+:::
+
+::: info Proof
+By the boundedness theorem $\sup f$ is finite and so there exists a sequence ${\{\xx_{n}\}}_{n}$ such that $f(\xx_n)$ converges to $\sup f$. Bolzano-Weierstrass theorem implies that there exists a subsequence ${\{\xx_{n_j}\}}_{j}$ which converges to $\xx \in [\aa,\bb]$. By
 continuity $f(\xx_n) \to f(\xx) = \sup f$.
+:::
 
 ## Extrema with constraints (Lagrange multipliers)
 
@@ -577,8 +419,11 @@ $$
 
 :::
 
-The Lagrange multiplier method is often stated and far less often proved. Since the proof is rather involved we will follow this tradition here. See, for example, Chapter 14 of "A First Course in Real Analysis" (2012) by Protter & Morrey for a complete proof and further discussion.
+::: details The Lagrange multiplier method is often stated and far less often proved.
+Since the proof is rather involved we will follow this tradition here. See, for example, Chapter 14 of "A First Course in Real Analysis" (2012) by Protter & Morrey for a complete proof and further discussion.
+:::
 
+::: info Idea of proof
 Let us consider a particular case of the method when $n=3$ and $m=2$. More precisely we consider the following problem: Find the maxima and minima of $f(x,y,z)$ along the curve $C$ defined as
 
 $$
@@ -603,12 +448,9 @@ $$
 
 To proceed it is convenient to isolate the following result of linear algebra.
 
-Consider $w, u_1,u_2 \in \bR^3$ and let
-$V = \{v : u_k \cdot v = 0, k =1,2\}$. If $w\cdot v =0$ for all
-$v \in V$ then $w = \lambda_1 u_1 + \lambda_2 u_2$ for some
-$\lambda_1,\lambda_2 \in \bR$.
+> Consider $w, u_1,u_2 \in \bR^3$ and let $V = \{v : u_k \cdot v = 0, k =1,2\}$. If $w\cdot v =0$ for all $v \in V$ then $w = \lambda_1 u_1 + \lambda_2 u_2$ for some $\lambda_1,\lambda_2 \in \bR$.
 
-We can write $w = \lambda_1 u_1 + \lambda_2 u_2 + v_0$ where $v_0 \in V$
+In order to prove this we write $w = \lambda_1 u_1 + \lambda_2 u_2 + v_0$ where $v_0 \in V$
 because $u_1, u_2$ together with $V$ must span $\bR^3$. Since
 $v_0 \in V$ and, by assumption, $w\cdot v_0 = 0$,
 
@@ -622,4 +464,5 @@ $$
 This means that $v_0 =0$ and so
 $w = \lambda_1 u_1 + \lambda_2 u_2$.
 
-The above lemma also holds in any dimension with any number of vectors with the analogous proof. Applying this lemma to the vectors $\nabla f(\aa)$, $\nabla g_1(\aa)$ and $\nabla g_2(\aa)$ recovers exactly the Lagrange multiplier method in this setting.
+The above statement holds in any dimension with any number of vectors with the analogous proof. Applying this lemma to the vectors $\nabla f(\aa)$, $\nabla g_1(\aa)$ and $\nabla g_2(\aa)$ recovers exactly the Lagrange multiplier method in this setting.
+:::

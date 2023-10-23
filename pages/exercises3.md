@@ -1,7 +1,7 @@
 # Additional exercises 3
 
 ::: warning
-Draft text
+Coming soon...
 :::
 
 ## Exercise

@@ -40,9 +40,9 @@ f: \bR^2 \to \bR; \quad (x,y) \mapsto 3x^2 + y^2.
 $$
 
 What curve does $\alpha(t)$ trace out as $t$ varies?
-Let $g = f \circ \aalpha$ and calculate $g^\prime$.
+Let $g = f \circ \aalpha$. Calculate $g^\prime$ both by using the chain rule and by first calculating $g$ and then differentiating and confirm that the answer is the same using either method.
 
-## Exercise
+<!-- ## Exercise
 
 Let
 
@@ -55,7 +55,7 @@ g: (x,y) \mapsto (x^2 + y^2, x),
 $$
 
 and let $h = g \circ f$.
-Calculate $h$ and the Jacobians $Df$, $Dg$. Calculate $D h$, the Jacobian of $h$, both directly from the formula from $h$ and by the chain rule for Jacobians.
+Calculate $h$ and the Jacobians $Df$, $Dg$. Calculate $D h$, the Jacobian of $h$, both directly from the formula from $h$ and by the chain rule for Jacobians. -->
 
 ## Exercise
 

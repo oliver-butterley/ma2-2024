@@ -1,6 +1,6 @@
 <!--@include: ./pages/notation.md-->
 
-# Extrema & other applications
+# Extrema
 
 In this part of the course we work on the following skills:
 
@@ -9,7 +9,7 @@ In this part of the course we work on the following skills:
 
 See also the [additional exercises](/pages/exercises3) associated to this part of the course.
 
-In the previous chapter we introduced various notions of differentials for higher dimensional functions (scalar fields, vector fields, paths, etc.). The chapter is devoted to searching for extrema (minima / maxima) in various different scenarios. This extends what we already know for functions in $\bR$ and we will find that in higher dimensions many more possibilities and subtleties exist.
+In the previous chapter we introduced various notions of differentials for higher dimensional functions (scalar fields, vector fields, paths, etc.). This part of the course is devoted to searching for extrema (minima / maxima) in various different scenarios. This extends what we already know for functions in $\bR$ and we will find that in higher dimensions more possibilities and subtleties exist.
 
 ## Extrema (minima / maxima / saddle)
 
@@ -44,7 +44,7 @@ If $f:S\to\bR$ is differentiable and has a relative minimum or maximum at
 $\aa$, then $\nabla f(\aa)=  \mathbf{0}$.
 :::
 
-::: info Proof
+::: details Proof
 Suppose $f$ has a relative minimum at $\aa$ (or consider $-f$). For any
 unit vector $\vv$ let $g(u) = f(\aa+u\vv)$. We know that $g:\bR \to \bR$
 has a relative minimum at $u=0$ so $u'(0)=0$. This means that the
@@ -89,9 +89,8 @@ $$
 \end{pmatrix}.
 $$
 
-Observe that the Hessian matrix $\mathbf{H} f (\aa)$ is a symmetric matrix since we know that
-$\frac{\partial^2 f}{\partial x\,\partial y} (\aa) = \frac{\partial^2 f}{\partial y\,\partial x} (\aa)$
-for twice differentiable functions.
+Observe that the Hessian matrix $\mathbf{H} f (\aa)$ is a symmetric matrix since [we know that](/pages/part2#implicit-functions-partial-derivatives)
+$\frac{\partial^2 f}{\partial x\,\partial y} (\aa) = \frac{\partial^2 f}{\partial y\,\partial x} (\aa)$ for twice differentiable functions.
 ::: details The Hessian matrix is defined analogously in any dimension.
 Let $f:\bR^n \to\bR$ be twice differentiable. The _Hessian matrix_ at $\aa\in \bR^n$ is defined as
 
@@ -125,13 +124,13 @@ If $\vv= \left( v_1, \dots, v_n \right)$ then,
 
 $$
 \vv \ \mathbf{H} f (\aa) \ \vv^{\mathbf{t}} = \sum_{j,k=0}^{n}
-    \partial_{j}\partial_{k}f(\aa)
+   \frac{\partial}{\partial x_j} \frac{\partial}{\partial x_k} f(\aa)
     v_j v_k \in \bR.
 $$
 
 :::
 
-::: info Proof
+::: details Proof
 Multiplying the matrices we calculate that
 
 $$
@@ -205,7 +204,7 @@ $$f(\xx) \approx f(\aa) + \nabla f(\aa) \cdot (\xx-\aa) + \frac{1}{2} {(\xx-\aa)
 in the sense that the error is $\littleO{\norm{(\xx-\aa)}^2}$.
 :::
 
-::: info Proof
+::: details Proof
 Let $\vv = \xx-\aa$ and let $g(u) = f(\aa + u \vv)$. The Taylor
 expansion of $g$ tells us that
 $g(1) = g(0) + g'(0) + \frac{1}{2} g''(c)$ for some $c\in (0,1)$. Since
@@ -229,7 +228,7 @@ and estimate that
 
 $$
 \abs{\epsilon(\vv)} \leq \sum_{j,k=0}^{n}
-v*j v_k \left( \partial_{j}\partial_{k}f(\aa+c\vv)-\partial_{j}\partial\_{k}f(\aa) \right).
+v_j v_k \left( \partial_{j}\partial_{k}f(\aa+c\vv)-\partial_{j}\partial_{k}f(\aa) \right).
 $$
 
 Since $\abs{ v_j v_k} \leq \norm{\vv}^2$ we observe that
@@ -258,7 +257,7 @@ $$
 
 :::
 
-::: info Proof
+::: details Proof
 
 Since $A$ is symmetric it can be diagonalised by matrix $B$ which is
 orthogonal ($B^{\mathbf{t}}=B^{-1}$) and the diagonal matrix
@@ -299,7 +298,7 @@ Let $Q(\vv) =  \vv^{\mathbf{t}} \mathbf{H} f (\aa) \vv$, $\ww = B \vv$
 and let $\Lambda := \min_j \lambda_j$. Observe that
 $\norm{\ww} =  \norm{\vv}$ and that
 $Q(\vv)=  \sum_{j} \lambda_j w_j^2  \geq \Lambda \sum_{j} w_j^2 = \Lambda  \norm{\vv}^2$.
-We have them 2^nd^-order Taylor
+We have them 2nd-order Taylor
 
 $$
 \begin{aligned}
@@ -333,7 +332,7 @@ If ${\{\xx_{n}\}}_{n}$ is a sequence in $[\aa,\bb]$ there exists a
 convergent subsequence ${\{\xx_{n_j}\}}_{j}$.
 :::
 
-::: info Proof
+::: details Proof
 In order to prove the theorem we construct the subsequence. Firstly we
 divide $[\aa,\bb]$ into sub-rectangles of size half the original. We
 then choose a sub-rectangle which contains infinite elements of the
@@ -350,7 +349,7 @@ sense that there exists $C>0$ such that $\abs{f(\xx)} \leq C$ for all
 $\xx \in [\aa,\bb]$.
 :::
 
-::: info Proof
+::: details Proof
 Suppose the contrary: for all $n\in\mathbb{N}$ there exists $\xx_n\in [\aa,\bb]$ such that $\abs{f(\xx_n)}>n$. [Bolzano-Weierstrass](https://en.wikipedia.org/wiki/Bolzano%E2%80%93Weierstrass_theorem)
 theorem means that there exists a subsequence ${\{\xx_{n_j}\}}_{j}$ converges to $\xx \in [\aa,\bb]$. Continuity of $f$ means that $f(\xx_{n_j})$ converges to $f(\xx)$. This is a contradiction and hence the theorem is proved.
 :::
@@ -368,7 +367,7 @@ $$
 
 :::
 
-::: info Proof
+::: details Proof
 By the boundedness theorem $\sup f$ is finite and so there exists a sequence ${\{\xx_{n}\}}_{n}$ such that $f(\xx_n)$ converges to $\sup f$. Bolzano-Weierstrass theorem implies that there exists a subsequence ${\{\xx_{n_j}\}}_{j}$ which converges to $\xx \in [\aa,\bb]$. By
 continuity $f(\xx_n) \to f(\xx) = \sup f$.
 :::
@@ -390,8 +389,7 @@ g_{1}(x,y,z) = 0,
         g_{2}(x,y,z) = 0
 $$
 
-and the $\nabla g_k$ are linearly
-independent. Then there exist scalars $\lambda_1$, $\lambda_2$ such that, at the extrema point,
+and the $\nabla g_k$ are linearly independent. Then there exist scalars $\lambda_1$, $\lambda_2$ such that, at the extrema point,
 $$\nabla f = \lambda_{1} \nabla g_{1} + \lambda_{2} \nabla g_{2}.$$
 
 In higher dimensions and possibly with additional constraints we have
@@ -402,19 +400,13 @@ Suppose that a differentiable scalar field $f(x_1,\ldots,x_n)$ has an
 relative extrema when it is subject to $m$ constraints
 
 $$
-g_1(x_1,\ldots,x_n) = 0,
-        \dots , g_m(x_1,\ldots,x_n)=0,
+g_1(x_1,\ldots,x_n) = 0, \dots , g_m(x_1,\ldots,x_n)=0,
 $$
 
-where $m<n$, and the
-$\nabla g_k$ are all linearly independent. Then there exist $m$ scalars
-$\lambda_1,\ldots,\lambda_m$ such that, at each extrema point,
+where $m<n$, and the $\nabla g_k$ are all linearly independent. Then there exist $m$ scalars $\lambda_1,\ldots,\lambda_m$ such that, at each extrema point,
 
 $$
-
 \nabla f = \lambda_1 \nabla g_1 + \cdots + \lambda_m \nabla g_m.
-
-
 $$
 
 :::

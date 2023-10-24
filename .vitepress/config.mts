@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
-import implicitFigures from "markdown-it-implicit-figures";
-import superscript from "markdown-it-sup";
+import mdImplicitFigures from "markdown-it-implicit-figures";
+import mdItSuperscript from "markdown-it-sup";
 
 const courseParts = [
   "Mathematical reasoning",
@@ -10,6 +10,10 @@ const courseParts = [
   "Multiple integrals",
   "Surface integrals",
 ];
+
+const figuresSetup = {
+  figcaption: "title",
+};
 
 export default defineConfig({
   lang: "en-GB",
@@ -27,9 +31,7 @@ export default defineConfig({
   markdown: {
     math: true,
     config: (md) => {
-      md.use(implicitFigures, {
-        figcaption: "title",
-      }).use(superscript);
+      md.use(mdImplicitFigures, figuresSetup).use(mdItSuperscript);
     },
   },
 

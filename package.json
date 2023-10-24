@@ -6,7 +6,8 @@
     "markdown-it-mathjax3": "^4.3.2",
     "prettier": "^3.0.3",
     "vitepress": "^1.0.0-rc.20",
-    "vue": "^3.3.4"
+    "vue": "^3.3.4",
+    "markdown-it-sup": "^1.0.0"
   },
   "scripts": {
     "dev": "vitepress dev",
@@ -14,6 +15,5 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "markdown-it-sup": "^1.0.0"
   }
 }

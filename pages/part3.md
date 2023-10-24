@@ -306,7 +306,7 @@ Let $Q(\vv) =  \vv^{\mathbf{T}} \mathbf{H} f (\aa) \vv$, $\ww = B \vv$
 and let $\Lambda := \min_j \lambda_j$. Observe that
 $\norm{\ww} =  \norm{\vv}$ and that
 $Q(\vv)=  \sum_{j} \lambda_j w_j^2  \geq \Lambda \sum_{j} w_j^2 = \Lambda  \norm{\vv}^2$.
-We have them 2nd-order Taylor
+We have them 2^nd^-order Taylor
 
 $$
 \begin{aligned}

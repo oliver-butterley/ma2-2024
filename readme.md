@@ -12,6 +12,6 @@ Released under the [Creative Commons Attribution-ShareAlike 4.0 License](https:/
 
 In order to preview locally, make sure [node.js](https://nodejs.org/en) is installed, then run `npm install` is this directory. Run `npm run dev` to startup a local server which will update automatically when content is changed.
 
-See the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+See the [full list of markdown extensions](https://vitepress.dev/guide/markdown) from vitepress. Additionally superscript is written as `2^nd^`, etc using a [plugin](https://github.com/markdown-it/markdown-it-sup).
 
 Commits to `main` are automatically processed and deployed to the server.

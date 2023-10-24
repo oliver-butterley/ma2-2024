@@ -90,7 +90,13 @@ $$
 $$
 
 Observe that the Hessian matrix $\mathbf{H} f (\aa)$ is a symmetric matrix since [we know that](/pages/part2#implicit-functions-partial-derivatives)
-$\frac{\partial^2 f}{\partial x\,\partial y} (\aa) = \frac{\partial^2 f}{\partial y\,\partial x} (\aa)$ for twice differentiable functions.
+
+$$
+\frac{\partial^2 f}{\partial x\,\partial y} (\aa) = \frac{\partial^2 f}{\partial y\,\partial x} (\aa)
+$$
+
+for twice differentiable functions.
+
 ::: details The Hessian matrix is defined analogously in any dimension.
 Let $f:\bR^n \to\bR$ be twice differentiable. The _Hessian matrix_ at $\aa\in \bR^n$ is defined as
 
@@ -119,12 +125,42 @@ $$
 
 Observe that the Hessian matrix is a real symmetric matrix in any dimension. If $f:\bR \to \bR$ then $\mathbf{H} f (a)$ is a $1\times 1$ matrix and coincides with the second derivative of $f$. In this sense what we know about extrema in $\bR$ is just a special case of everything we do here.
 
+As an example, let $f(x,y)=x^2-y^2$ ([figure](#fig:pringle)). The gradient and the Hessian are respectively
+
+$$
+\begin{aligned}
+\nabla f(x,y) & =\begin{pmatrix}
+\frac{\partial f}{\partial x} (x,y) \\[2pt]
+\frac{\partial f}{\partial y} (x,y)
+\end{pmatrix} = \begin{pmatrix}
+2x \\-2y
+\end{pmatrix}, \\
+\mathbf{H} f (x,y) & = \begin{pmatrix}
+\frac{\partial^2 f}{\partial x^2} (x,y)
+& \frac{\partial^2 f}{\partial x\,\partial y} (x,y)
+\\[2pt]
+\frac{\partial^2 f}{\partial y\,\partial x} (x,y)
+& \frac{\partial^2 f}{\partial y^2}(x,y)
+\end{pmatrix}
+= \begin{pmatrix}
+2 & 0 \\ 0 & -2
+\end{pmatrix}.
+\end{aligned}
+$$
+
+The point $(0,0)$ is a stationary point since
+$\nabla f(0,0) =\left(\begin{smallmatrix}
+            0\\0
+        \end{smallmatrix}\right)$. In this example $\mathbf{H} f$ does
+not depend on $(x,y)$ but in general we can expect dependence and so it
+gives a different matrix at different points $(x,y)$.
+
 ::: tip Theorem
 If $\vv= \left( v_1, \dots, v_n \right)$ then,
 
 $$
-\vv \ \mathbf{H} f (\aa) \ \vv^{\mathbf{t}} = \sum_{j,k=0}^{n}
-   \frac{\partial}{\partial x_j} \frac{\partial}{\partial x_k} f(\aa)
+\vv \ \mathbf{H} f (\aa) \ \vv^{\mathbf{T}} = \sum_{j,k=0}^{n}
+   \frac{\partial^2 f}{\partial x_j\partial x_k} (\aa)
     v_j v_k \in \bR.
 $$
 
@@ -135,7 +171,7 @@ Multiplying the matrices we calculate that
 
 $$
 \begin{aligned}
-            \vv \ \mathbf{H} f (\aa) \ \vv^{\mathbf{t}}
+            \vv \ \mathbf{H} f (\aa) \ \vv^{\mathbf{T}}
              & =
             \begin{pmatrix}
                 v_1 & \cdots & v_n
@@ -160,47 +196,19 @@ as required.
 
 :::
 
-As an example, let $f(x,y)=x^2-y^2$ ([figure](#fig:pringle)). The gradient and the Hessian are respectively
-
-$$
-\begin{aligned}
-\nabla f(x,y) & =\begin{pmatrix}
-\frac{\partial f}{\partial x} (x,y) \\[2pt]
-\frac{\partial f}{\partial y} (x,y)
-\end{pmatrix} = \begin{pmatrix}
-2x \\-2y
-\end{pmatrix}, \\
-\mathbf{H} f (x,y) & = \begin{pmatrix}
-\frac{\partial^2 f}{\partial x^2} (x,y)
-& \frac{\partial^2 f}{\partial x\,\partial y} (x,y)
-\\[2pt]
-\frac{\partial^2 f}{\partial y\,\partial x} (x,y)
-& \frac{\partial^2 f}{\partial y^2}(x,y)
-\end{pmatrix}
-= \begin{pmatrix}
-2
-& 0
-\\[2.2ex]
-0
-& -2
-\end{pmatrix}.
-\end{aligned}
-$$
-
-The point $(0,0)$ is a stationary point since
-$\nabla f(0,0) =\left(\begin{smallmatrix}
-            0\\0
-        \end{smallmatrix}\right)$. In this example $\mathbf{H} f$ does
-not depend on $(x,y)$ but in general we can expect dependence and so it
-gives a different matrix at different points $(x,y)$.
-
 ### Second order Taylor formula for scalar fields
 
-First let's recall the first order Taylor approximation [we saw before](./part2#thm:differential). If $f$ is differentiable at $\aa$ then $f(\xx) \approx f(\aa)  + \nabla f(\aa) \cdot (\xx-\aa)$. If $\aa$ is a stationary point then this only tells us that $f(\xx) \approx f(\aa)$ so a natural next question is to search for slightly more detailed information.
+First let's recall the first order Taylor approximation [we saw before](./part2#thm:differential). If $f$ is differentiable at $\aa$ then
+
+$$
+f(\xx) \approx f(\aa)  + \nabla f(\aa) \cdot (\xx-\aa).
+$$
+
+If $\aa$ is a stationary point then this only tells us that $f(\xx) \approx f(\aa)$ so a natural next question is to search for slightly more detailed information.
 
 ::: tip Theorem
 Let $f$ be a scalar field twice differentiable on $B(\aa,r)$. Then, for $\xx$ close to $\aa$,
-$$f(\xx) \approx f(\aa) + \nabla f(\aa) \cdot (\xx-\aa) + \frac{1}{2} {(\xx-\aa)}^{\mathbf{T}} \ \mathbf{H} f (\aa) \ (\xx-\aa)$$
+$$f(\xx) \approx f(\aa) + \nabla f(\aa) \cdot (\xx-\aa) + \frac{1}{2} {(\xx-\aa)} \ \mathbf{H} f (\aa) \ (\xx-\aa)^{\mathbf{T}}$$
 in the sense that the error is $\littleO{\norm{(\xx-\aa)}^2}$.
 :::
 
@@ -216,14 +224,14 @@ g'(u) & = \sum_{j=1}^{n} \partial_j f( a_1 + uv_1, \ldots, a_n + u v_n ) v_j
 =\nabla f( \aa + u \vv) \cdot \vv, \\
 g''(u) & = \sum_{j,k=1}^{n} \partial_j\partial_k f( a_1 + uv_1, \ldots, a_n + u v_n ) v_j v_k \\
 & \quad \quad \quad
-= \vv^{\mathbf{t}} \ \mathbf{H} f (\aa + u \vv) \ \vv.
+= \vv^{\mathbf{T}} \ \mathbf{H} f (\aa + u \vv) \ \vv.
 \end{aligned}
 $$
 
 Consequently
-$f(\aa+\vv) = f(\aa) + \nabla f(\aa) \cdot \vv + \frac{1}{2} \vv^{\mathbf{t}} \ \mathbf{H} f (\aa + c\vv) \ \vv$.
+$f(\aa+\vv) = f(\aa) + \nabla f(\aa) \cdot \vv + \frac{1}{2} \vv^{\mathbf{T}} \ \mathbf{H} f (\aa + c\vv) \ \vv$.
 We define the "error" in the approximation as
-$\epsilon(\vv) = \frac{1}{2}  \vv^{\mathbf{t}} (\mathbf{H} f (\aa + c\vv) - \mathbf{H} f (\aa)  ) \vv$
+$\epsilon(\vv) = \frac{1}{2}  \vv^{\mathbf{T}} (\mathbf{H} f (\aa + c\vv) - \mathbf{H} f (\aa)  ) \vv$
 and estimate that
 
 $$
@@ -241,7 +249,7 @@ as required.
 In order to classify the stationary points we will take advantage of the Hessian matrix and therefore we need to first understand the follow fact about real symmetric matrices.
 
 ::: tip Theorem
-Let $A$ be a real symmetric matrix and let $Q(\vv) =  \vv^{\mathbf{t}} A  \vv$.
+Let $A$ be a real symmetric matrix and let $Q(\vv) =  \vv^{\mathbf{T}} A  \vv$.
 Then
 
 $$
@@ -260,10 +268,10 @@ $$
 ::: details Proof
 
 Since $A$ is symmetric it can be diagonalised by matrix $B$ which is
-orthogonal ($B^{\mathbf{t}}=B^{-1}$) and the diagonal matrix
-$D = B^{\mathbf{t}} A B$ has the eigenvalues of $A$ as the diagonal.
+orthogonal ($B^{\mathbf{T}}=B^{-1}$) and the diagonal matrix
+$D = B^{\mathbf{T}} A B$ has the eigenvalues of $A$ as the diagonal.
 This means that
-$Q(\vv) = \vv^{\mathbf{t}} B^{\mathbf{t}} B A B^{\mathbf{t}} B \vv = \ww^{\mathbf{t}} D \ww$
+$Q(\vv) = \vv^{\mathbf{T}} B^{\mathbf{T}} B A B^{\mathbf{T}} B \vv = \ww^{\mathbf{T}} D \ww$
 where $\ww = B \vv$. Consequently $Q(\vv) =  \sum_{j} \lambda_j w_j^2$.
 Observe that, if all $\lambda_j >0$ then $\sum_{j} \lambda_j w_j^2  >0$.
 
@@ -294,7 +302,7 @@ $$
 :::
 
 ::: info Proof
-Let $Q(\vv) =  \vv^{\mathbf{t}} \mathbf{H} f (\aa) \vv$, $\ww = B \vv$
+Let $Q(\vv) =  \vv^{\mathbf{T}} \mathbf{H} f (\aa) \vv$, $\ww = B \vv$
 and let $\Lambda := \min_j \lambda_j$. Observe that
 $\norm{\ww} =  \norm{\vv}$ and that
 $Q(\vv)=  \sum_{j} \lambda_j w_j^2  \geq \Lambda \sum_{j} w_j^2 = \Lambda  \norm{\vv}^2$.
@@ -303,7 +311,7 @@ We have them 2nd-order Taylor
 $$
 \begin{aligned}
             f(\aa+\vv) - f(\aa)
-             & =  \frac{1}{2} \vv^{\mathbf{t}} \ \mathbf{H} f (\aa) \ \vv +  \epsilon(\vv)                \\
+             & =  \frac{1}{2} \vv^{\mathbf{T}} \ \mathbf{H} f (\aa) \ \vv +  \epsilon(\vv)                \\
              & \geq  \left(\tfrac{\Lambda}{2} - \tfrac{\epsilon(\vv)}{\norm{\vv}^2} \right) \norm{\vv}^2.
         \end{aligned}
 $$

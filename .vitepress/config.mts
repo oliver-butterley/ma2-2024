@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 import implicitFigures from "markdown-it-implicit-figures";
-import subscript from "markdown-it-sup";
+import superscript from "markdown-it-sup";
 
 const courseParts = [
   "Mathematical reasoning",
@@ -29,7 +29,7 @@ export default defineConfig({
     config: (md) => {
       md.use(implicitFigures, {
         figcaption: "title",
-      }).use(subscript);
+      }).use(superscript);
     },
   },
 

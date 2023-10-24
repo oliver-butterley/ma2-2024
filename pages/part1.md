@@ -26,13 +26,13 @@ Shortly we will consider examples in calculus but it is worthwhile to consider a
 This is a two-dimensional problem in the sense we assume that the object is a closed curve in $\mathbb{R}^2$. For a given angle we define the width of this curve to be the smallest distance between two parallel lines which touch the curve in a single point but never cross it (one each side of the curve). We say that the curve has constant width if this width is equal from every direction.
 This is just what we would check using calipers on a part and rotating. The abstract version of this problem is that we want to show that being a circle follows from constant width. The following statement is intuitive and true.
 
-::: info Theorem
+::: theorem
 A circle has constant width.
 :::
 
 However the converse is not true, indeed the following is true.
 
-::: info Theorem
+::: theorem
 There exist constant width curves which are not circles.
 :::
 
@@ -172,7 +172,7 @@ Sketch the triangle and the lines described in the following steps.
 A common scenario is when during a proof we must consider two cases depending on whether a certain quantity is zero or otherwise we can divide through by this quantity.
 Another example is:
 
-::: info Theorem
+::: theorem
 Suppose that $n$ is an integer. Then $n(n+1)$ is an even integer.
 :::
 
@@ -265,11 +265,11 @@ If we didn't try anything until we were certain of the final answer then we woul
 
 Recall the following result from Mathematical Analysis 1.
 
-::: info Theorem
+::: theorem
 Let $f$ be differentiable on $(a, b)$ and suppose that $f$ takes a local minimum or maximum at the point $c \in (a, b)$. Then $f^{\prime}(c) = 0$.
 :::
 
-<!-- ::: info Theorem
+<!-- ::: theorem
 Let $f$ be defined on an open interval $(a, b)$ and assume that $f$ takes a local minimum or a local maximum at the point $c \in (a, b)$.
 If $f$ is differentiable at $c$ then $f^{\prime}(c) = 0$.
 ::: -->

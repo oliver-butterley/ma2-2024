@@ -39,7 +39,7 @@ as a synonym of _absolute_ and _local_ as a synonym of _relative_.
 To proceed it is convenient to connect the extrema with the behaviour of
 the gradient of the scalar field.
 
-::: tip Theorem {#thm:is-stationary}
+::: theorem {#thm:is-stationary}
 If $f:S\to\bR$ is differentiable and has a relative minimum or maximum at
 $\aa$, then $\nabla f(\aa)=  \mathbf{0}$.
 :::
@@ -155,7 +155,7 @@ $\nabla f(0,0) =\left(\begin{smallmatrix}
 not depend on $(x,y)$ but in general we can expect dependence and so it
 gives a different matrix at different points $(x,y)$.
 
-::: tip Theorem
+::: theorem
 If $\vv= \left( v_1, \dots, v_n \right)$ then,
 
 $$
@@ -206,7 +206,7 @@ $$
 
 If $\aa$ is a stationary point then this only tells us that $f(\xx) \approx f(\aa)$ so a natural next question is to search for slightly more detailed information.
 
-::: tip Theorem
+::: theorem
 Let $f$ be a scalar field twice differentiable on $B(\aa,r)$. Then, for $\xx$ close to $\aa$,
 $$f(\xx) \approx f(\aa) + \nabla f(\aa) \cdot (\xx-\aa) + \frac{1}{2} {(\xx-\aa)} \ \mathbf{H} f (\aa) \ (\xx-\aa)^{\mathbf{T}}$$
 in the sense that the error is $\littleO{\norm{(\xx-\aa)}^2}$.
@@ -248,7 +248,7 @@ as required.
 
 In order to classify the stationary points we will take advantage of the Hessian matrix and therefore we need to first understand the follow fact about real symmetric matrices.
 
-::: tip Theorem
+::: theorem
 Let $A$ be a real symmetric matrix and let $Q(\vv) =  \vv^{\mathbf{T}} A  \vv$.
 Then
 
@@ -280,7 +280,7 @@ observe that $Q(B \uu_k ) = \lambda_k$. This means that, if $Q(\vv) > 0$
 for all $\vv \neq \mathbf{0}$ then $\lambda_k>0$ for all $k$.
 :::
 
-::: tip Theorem
+::: theorem
 Let $f$ be a scalar field twice differentiable on $B(\aa,r)$. Suppose
 $\nabla f(\aa) = \mathbf{0}$ and consider the eigenvalues of
 $\mathbf{H} f (\aa)$. Then
@@ -335,7 +335,7 @@ $$
 
 We call this set a _rectangle_ (independent of the dimension). As a first step it is convenient to know that all sequences in our setting have convergent subsequences.
 
-::: tip Theorem
+::: theorem
 If ${\{\xx_{n}\}}_{n}$ is a sequence in $[\aa,\bb]$ there exists a
 convergent subsequence ${\{\xx_{n_j}\}}_{j}$.
 :::
@@ -350,7 +350,7 @@ we chose by half and choosing the next element of the subsequence. We
 repeat to give the full subsequence.
 :::
 
-::: tip Theorem
+::: theorem
 Suppose that $f$ is a scalar field continuous at every point in the
 closed rectangle $[\aa,\bb]$. Then $f$ is bounded on $[\aa,\bb]$ in the
 sense that there exists $C>0$ such that $\abs{f(\xx)} \leq C$ for all
@@ -364,7 +364,7 @@ theorem means that there exists a subsequence ${\{\xx_{n_j}\}}_{j}$ converges to
 
 We can now use the above result on the boundedness in order to show that the extreme values are actually obtained.
 
-::: tip Theorem
+::: theorem
 Suppose that $f$ is a scalar field continuous at every point in the closed rectangle $[\aa,\bb]$. Then there exist points $\xx, \yy \in [\aa,\bb]$ such that
 
 $$
@@ -403,7 +403,7 @@ $$\nabla f = \lambda_{1} \nabla g_{1} + \lambda_{2} \nabla g_{2}.$$
 In higher dimensions and possibly with additional constraints we have
 the following general theorem.
 
-::: tip Theorem
+::: theorem
 Suppose that a differentiable scalar field $f(x_1,\ldots,x_n)$ has an
 relative extrema when it is subject to $m$ constraints
 

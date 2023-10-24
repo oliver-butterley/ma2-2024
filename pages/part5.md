@@ -44,7 +44,7 @@ $$
 
 Observe that the value of the integral is independent of the partition, as long as the function is constant on each sub-rectangle. In this sense the integral is well-defined (not dependent on the choice of partition used to calculate it).
 
-::: tip Theorem {#thm:props-integral }
+::: theorem {#thm:props-integral }
 Let $f,g$ be step functions. Then
 
 $$
@@ -189,7 +189,7 @@ The set of discontinuity of $f_{R}$ is the boundary of $S$ in $R=[a,b]\times[\ti
 
 A similar result holds for type 2 regions but with $x$ and $y$ swapped. For higher dimensions we need to also have an understanding of how to represent subsets of $\bR^n$. Take for example a 3D solid then we would hope to be able to "project" along one of the coordinate axis and so describe it using the 2D "shadow" and a pair of continuous functions. For example, consider the upside-down cone of Figure [1.2](#fig:cone){reference-type="ref" reference="fig:cone"} which has base of radius $5$ lying in the plane $\{z=5\}$ and has tip at the origin.
 
-![](../images/svg/cone.svg "Upside-down cone of height $5$ with tip at the origin. The solid is bounded by the surfaces $z = \sqrt{x^2+y^2}$ and $z=5$. This solid can be \"projected\" onto the $xy$-plane.")
+![](../images/svg/cone.svg 'Upside-down cone of height $5$ with tip at the origin. The solid is bounded by the surfaces $z = \\sqrt{x^2+y^2}$ and $z=5$. This solid can be "projected" onto the $xy$-plane.')
 
 In order to describe this set it is convenient to imagine how it projects down onto the $xy$-axis. We then describe it as
 
@@ -254,7 +254,7 @@ By tradition, if the density is constant, then the centre of mass is called the 
 
 We can now establish a connection between multiple integrals and the line integrals of the previous chapter.
 
-::: tip Theorem (Green's theorem) {#thm:greens}
+::: theorem Green's {#thm:greens}
 Let $C\subset\bR^2$ be a piecewise-smooth simple (no intersections) curve and $\aalpha$ a path that parametrizes $C$ in the counter-clockwise direction. Let $S$ be the region enclosed by $C$. Suppose that $\ff(x,y) = \left(\begin{smallmatrix}
             P(x,y) \\ Q(x,y)
         \end{smallmatrix}\right)$ is a vector field continuously differentiable on an open set containing $S$. Then
@@ -294,7 +294,7 @@ A connected set $S\subset \bR^n$ is said to be _simply-connected_ if any closed 
 
 The following result extends Theorem [\[thm:conservative-convex\]](#thm:conservative-convex){reference-type="ref" reference="thm:conservative-convex"} which was limited to convex sets.
 
-::: tip Theorem {#thm:conservative-fields-simply-connected}
+::: theorem {#thm:conservative-fields-simply-connected}
 Let $S$ be a simply connected region and suppose that $\ff = \left(\begin{smallmatrix}
             P \\ Q
         \end{smallmatrix}\right)$ is a vector field, continuously differentiable on $S$. Then $\ff$ is conservative if and only if $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$.
@@ -325,7 +325,7 @@ In higher dimension we obtain a similar result but $g'$ must be replaced by a ty
 
 For the 2D case we have the following result.
 
-::: tip Theorem (change of variables) {#thm:change-variable-2D}
+::: theorem change of variables {#thm:change-variable-2D}
 Suppose that $(u,v) \mapsto (X(u,v),Y(u,v))$ maps $T$ to $S$ one-to-one and $X$, $Y$ are continuously differentiable. Then
 
 $$

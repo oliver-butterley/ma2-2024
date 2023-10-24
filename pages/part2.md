@@ -183,7 +183,7 @@ What is the behaviour of $f$ when approaching $(0,0)$ along the following lines?
 
 :::
 
-::: tip Theorem
+::: theorem
 Suppose that $\lim_{\mathbf{x} \to \mathbf{a}}\ff(\mathbf{x}) = \mathbf{b}$ and $\lim_{\mathbf{x} \to \mathbf{a}}\mathbf{g}(\mathbf{x}) = \mathbf{c}$.
 Then
 
@@ -222,7 +222,7 @@ When writing a vector field (or similar functions) it is often convenient to div
 We call these parts the _components of a vector field_.
 For example $\FF(\mathbf{x}) = \left(F_1(\mathbf{x}),F_2(\mathbf{x})\right)$ in 2D, $\FF(\mathbf{x}) = \left(F_1(\mathbf{x}),F_2(\mathbf{x}),F_3(\mathbf{x})\right)$ in 3D, etc.
 
-::: tip Theorem
+::: theorem
 Let $\FF(\mathbf{x}) = \left(F_1(\mathbf{x}),F_2(\mathbf{x})\right)$.
 Then $\FF$ is continuous if and only if $F_1$ and $F_2$ are continuous.
 :::
@@ -271,7 +271,7 @@ A rational function is continuous at every point $\mathbf{x}$ such that $q(\math
 
 As described in the following result, the continuity of functions continues to hold, in an intuitive way, under composition of functions.
 
-::: tip Theorem
+::: theorem
 Suppose $S \subset \mathbb{R}^l$, $T\subset \mathbb{R}^m$, $\ff:S \to \mathbb{R}^m$, $\mathbf{g} : T \to \mathbb{R}^n$ and that $\ff(S) \subset T$ so that
 $$(\mathbf{g} \circ \ff)(\mathbf{x}) = \mathbf{g}(\ff(\mathbf{x}))$$
 makes sense.
@@ -309,7 +309,7 @@ $$
 
 When $h$ is small we can guarantee that $\mathbf{a} + h \mathbf{v} \in S$ because $\mathbf{a}\in \operatorname{int} S$ so this definition makes sense.
 
-::: tip Theorem
+::: theorem
 Suppose $S\subset \mathbb{R}^n$, $f:S\to \mathbb{R}$, $\mathbf{a} \in \operatorname{int} S$.
 Let $g(t) := f(\mathbf{a} + t\mathbf{v})$.
 If one of the derivatives $g'(t)$ or $D_\mathbf{v} f(\mathbf{a})$ exists then the other also exists and
@@ -327,7 +327,7 @@ By definition $\frac{1}{h}(g(t+h)-g(h)) =\frac{1}{h}(f(\mathbf{a}+h \mathbf{v}) 
 
 The following result is useful for proving later results.
 
-::: tip Theorem (mean value)
+::: theorem mean value
 Assume that $D_{\mathbf{v}}(\mathbf{a}+t\mathbf{v})$ exists for each $t\in [0,1]$. Then for some $\theta \in (0,1)$,
 
 $$
@@ -414,7 +414,7 @@ $$
     \end{pmatrix}.
 $$
 
-::: tip Theorem
+::: theorem
 If $f$ is differentiable at $\mathbf{a}$
 then ${df}_{\mathbf{a}}(\mathbf{v}) = \nabla f(\mathbf{a}) \cdot \mathbf{v}$.
 This means that, for $\mathbf{x} \in B(\mathbf{a},r)$,
@@ -450,7 +450,7 @@ $$
 In particular ${df}_{\mathbf{a}}(\mathbf{e}_k) = D_{\mathbf{e}_k}f(\mathbf{a})$.
 :::
 
-::: tip Theorem
+::: theorem
 If $f$ is differentiable at $\mathbf{a}$, then it is continuous at $\mathbf{a}$.
 :::
 
@@ -465,7 +465,7 @@ $$
 and so this tends to $0$ as $\norm{\mathbf{v}} \to 0$.
 :::
 
-::: tip Theorem
+::: theorem
 Suppose that $f(x_1,\ldots,x_n)$ is a scalar field.
 If the partial derivatives $\partial_1 f(\mathbf{x}), \ldots, \partial_n f(\mathbf{x})$ exist for all $\mathbf{x}\in B(\mathbf{a},r)$ and are continuous at $\mathbf{a}$ then $f$ is differentiable at $\mathbf{a}$.
 :::
@@ -539,7 +539,7 @@ Here $\boldsymbol{\alpha}'$ is a vector-valued function which represents the "di
 
 ![](../images/svg/spiral.svg "$\\boldsymbol{\\alpha}(t)=(\\cos t, \\sin t, t)$, $t\\in \\mathbb{R}$")
 
-::: tip Theorem
+::: theorem
 Let $S\subset \mathbb{R}^n$ be open and $I\subset \mathbb{R}$ an interval.
 Let $\mathbf{x}: I \to S$ and $f:S \to \mathbb{R}$ and define, for $t\in I$,
 
@@ -688,7 +688,7 @@ $$
 $\norm{\epsilon(\mathbf{x}-\mathbf{a})} = \littleO{\norm{\mathbf{x}-\mathbf{a}}}$.
 :::
 
-::: tip Theorem
+::: theorem
 If $\FF$ is differentiable at $\mathbf{a}$
 then $\FF$ is continuous at $\mathbf{a}$
 and ${df}_{\mathbf{a}}(\mathbf{v}) =D_{\mathbf{v}}\FF(\mathbf{a})$.
@@ -744,7 +744,7 @@ This is like a Taylor expansion in higher dimensions.
 
 Here we see that in higher dimensions we have a matrix form of the chain rule.
 
-::: tip Theorem
+::: theorem
 Let $S\subset \mathbb{R}^l$, $T\subset \mathbb{R}^m$ be open.
 Let $\ff: S \to T$ and $\mathbf{g}:T \to \mathbb{R}^n$ and define
 
@@ -860,7 +860,7 @@ We calculate that $\frac{\partial^2 f}{\partial y \partial x} (0,0) = -1$ but
 $\frac{\partial^2 f}{\partial x \partial y}(0,0) = 1$.
 :::
 
-::: tip Theorem
+::: theorem
 Let $f:S\to\mathbb{R}$ be a scalar field such that the partial derivatives $\frac{\partial f}{\partial x }$, $\frac{\partial f}{\partial y}$ and $\frac{\partial^2 f}{\partial y \partial x}$ exist on an open set $S\subset \mathbb{R}^2$ containing $\mathbf{x}$.
 Further assume that $\frac{\partial^2 f}{\partial y \partial x}$ is continuous on $S$.
 Then the derivative $\frac{\partial^2 f}{\partial x \partial y} (\mathbf{x})$ exists and

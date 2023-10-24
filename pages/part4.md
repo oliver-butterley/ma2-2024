@@ -128,7 +128,7 @@ Furthermore, we say that $\aalpha(t)$ and $\bbeta(t)$ are
 
 With this terminology we can precisely describe the dependence of the integral on the choice of parametrization.
 
-::: tip Theorem {#thm:change-param}
+::: theorem {#thm:change-param}
 Let $\ff$ be a continuous vector field and let $\aalpha$, $\bbeta$ be equivalent paths. Then
 
 $$
@@ -272,7 +272,7 @@ $$\ff = \nabla \varphi.$$
 
 Note that some authors call such a vector field a _gradient_ (i.e., the vector field is the gradient of some scalar). If $\ff = \nabla \varphi$ then the scalar field $\varphi$ is called the _potential_ (associated to $\ff$). Observe that that the potential is not unique, $\nabla \varphi = \nabla(\varphi + C)$ for any constant $C \in \bR$.
 
-::: tip Theorem (Conservative fields){#thm:conservative-fields}
+::: theorem conservative fields {#thm:conservative-fields}
 Let $S \subset \bR^n$ and and consider the vector field $\ff : S \to \bR^n$. The following are equivalent:
 
 1.  $\ff$ is conservative, i.e., $\ff = \nabla \varphi$ on $S$ for some $\varphi$,
@@ -287,7 +287,7 @@ Now we prove that (ii) implies (iii): Let $\aalpha(t)$ be a closed path and let 
 
 It remains to prove that (iii) implies (ii): The two paths between $\aa$ and $\bb$ can be combined (with a minus sign) to give a closed path.
 
-::: tip Theorem (mixed partial derivatives){#thm:mixed-partials-2D}
+::: theorem mixed partial derivatives {#thm:mixed-partials-2D}
 Suppose that $S \subset \bR^2$ and that $\ff:S \to \bR^2$ is a differentiable vector field and write $\ff = \left(\begin{smallmatrix}
             f_1 \\ f_2
         \end{smallmatrix}\right)$.
@@ -298,7 +298,7 @@ $$\frac{\partial f_1}{\partial y} = \frac{\partial f_2}{\partial x}.$$
 
 The above result is a special case of the following general statement which holds in any dimension.
 
-::: tip Theorem (mixed partial derivatives){#thm:mixed-partials}
+::: theorem mixed partial derivatives {#thm:mixed-partials}
 Suppose that $\ff$ is a differentiable vector field[^1] on $S\subset \bR^n$. If $\ff$ is conservative then, for each $l,k$,
 $$\frac{\partial f_l}{\partial x_k} = \frac{\partial f_k}{\partial x_l}.$$
 :::
@@ -394,7 +394,7 @@ A set $S\subset \bR^n$ is said to be _convex_ if for any $\xx,\yy\in S$ the segm
 
 This extra property permits the following sufficient condition for a vector field to be conservative.
 
-::: tip Theorem {#thm:conservative-convex}
+::: theorem {#thm:conservative-convex}
 Let $\ff$ be a differentiable vector field on a convex region $S\subset \bR^n$. Then $\ff$ is conservative if and only if
 
 $$
@@ -424,7 +424,7 @@ $$
 
 is called _exact_ if there exists $\varphi : S \to \bR$ such that $p = \frac{\partial \varphi}{\partial x}$ and $q = \frac{\partial \varphi}{\partial y}$. [Exact differential equations](https://en.wikipedia.org/wiki/Exact_differential_equation) are closely related to conservative vector fields.
 
-::: tip Theorem {#thm:exact-diff-eq}
+::: theorem {#thm:exact-diff-eq}
 Let $S\subset \bR^2$ be connected and open.
 
 - Suppose that $\varphi: S \to \bR$ satisfies $\nabla \varphi =   \left(\begin{smallmatrix}

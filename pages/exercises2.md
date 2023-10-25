@@ -39,8 +39,8 @@ $$
 f: \bR^2 \to \bR; \quad (x,y) \mapsto 3x^2 + y^2.
 $$
 
-What curve does $\alpha(t)$ trace out as $t$ varies?
 Let $g = f \circ \aalpha$. Calculate $g^\prime$ both by using the chain rule and by first calculating $g$ and then differentiating and confirm that the answer is the same using either method.
+_Out of curiosity, try to understand what curve $\alpha(t)$ traces out as $t$ varies._
 
 <!-- ## Exercise
 

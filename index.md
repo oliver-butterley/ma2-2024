@@ -49,23 +49,23 @@ See the [lesson diary](/pages/diary.md) for full details.
 Much of what we do in this course builds on ideas established in Mathematical Analysis 1.
 In particular many of the ideas are extended to the higher dimensional setting.
 
-| Mathematical Analysis 1                | Mathematical Analysis 2                                                 |
-| -------------------------------------- | ----------------------------------------------------------------------- |
-| (Functions)$f:\bR \to \bR$             | $f:\bR^n \to \bR$ (Scalar fields)                                       |
-|                                        | $\FF:\bR^n \to \bR^n$ (Vector fields)                                   |
-|                                        | $\boldsymbol{\alpha}:\bR \to \bR^n$ (Paths)                             |
-| (Derivative)$f'(x) = \frac{df}{dx}(x)$ | $\frac{\partial f}{\partial x_j}(x_1,\ldots,x_n)$ (Partial derivatives) |
-|                                        | $\nabla f$ (Gradient)                                                   |
-|                                        | $D_v f$ (Directional derivative)                                        |
-|                                        | $\boldsymbol{\alpha}'$ (Derivative of path)                             |
-|                                        | $Df$ (Jacobian matrix)                                                  |
-|                                        | $\nabla \cdot \FF$ (Divergence)                                         |
-|                                        | $\nabla \times \FF$ (Curl)                                              |
-| (Extrema)$\sup_{x\in \bR} f(x)$        | $\sup_{x\in \bR^n} f(x)$ (Extrema)                                      |
-|                                        | Lagrange multiplier method                                              |
-| Integral$\int_{a}^{b} f(x) \ dx$       | Multiple integral                                                       |
-|                                        | Line integral                                                           |
-|                                        | Surface integral                                                        |
+| Mathematical Analysis 1                  | Mathematical Analysis 2                                                 |
+| ---------------------------------------- | ----------------------------------------------------------------------- |
+| (Functions)$f:\mathbb{R} \to \mathbb{R}$ | $f:\mathbb{R}^n \to \mathbb{R}$ (Scalar fields)                         |
+|                                          | $\mathbf{F}:\mathbb{R}^n \to \mathbb{R}^n$ (Vector fields)              |
+|                                          | $\boldsymbol{\alpha}:\mathbb{R} \to \mathbb{R}^n$ (Paths)               |
+| (Derivative)$f'(x) = \frac{df}{dx}(x)$   | $\frac{\partial f}{\partial x_j}(x_1,\ldots,x_n)$ (Partial derivatives) |
+|                                          | $\nabla f$ (Gradient)                                                   |
+|                                          | $D_v f$ (Directional derivative)                                        |
+|                                          | $\boldsymbol{\alpha}'$ (Derivative of path)                             |
+|                                          | $Df$ (Jacobian matrix)                                                  |
+|                                          | $\nabla \cdot \mathbf{F}$ (Divergence)                                  |
+|                                          | $\nabla \times \mathbf{F}$ (Curl)                                       |
+| (Extrema)$\sup_{x\in \mathbb{R}} f(x)$   | $\sup_{x\in \mathbb{R}^n} f(x)$ (Extrema)                               |
+|                                          | Lagrange multiplier method                                              |
+| Integral$\int_{a}^{b} f(x) \ dx$         | Multiple integral                                                       |
+|                                          | Line integral                                                           |
+|                                          | Surface integral                                                        |
 
 ## Additional info
 
@@ -76,5 +76,3 @@ Course material from previous years and other instructors is available.
 - 2020/21 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2020/MA2/)
 - 2019/20 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2019/MA2/) / [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2019MA2/2019MA2.html)
 - 2018/19 [Tanimoto](http://www.mat.uniroma2.it/~tanimoto/teaching/2018MA2/2018MA2.html) / [Morsella](http://www.mat.uniroma2.it/~morsella/didattica/2018-19/didattica.html)
-
-<!--@include: ../pages/notation.md-->

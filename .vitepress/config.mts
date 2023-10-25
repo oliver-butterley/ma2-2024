@@ -2,9 +2,7 @@ import { defineConfig } from "vitepress";
 import mdImplicitFigures from "markdown-it-implicit-figures";
 import mdSuperscript from "markdown-it-sup";
 import MarkdownIt from "markdown-it";
-import md from "markdown-it";
 import mdContainer from "markdown-it-container";
-import type { RenderRule } from "markdown-it/lib/renderer";
 
 const courseParts = [
   "Mathematical reasoning",

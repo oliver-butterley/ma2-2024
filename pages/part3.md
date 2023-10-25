@@ -196,7 +196,7 @@ as required.
 
 :::
 
-### Second order Taylor formula for scalar fields
+## Second order Taylor formula for scalar fields
 
 First let's recall the first order Taylor approximation [we saw before](./part2#thm:differential). If $f$ is differentiable at $\aa$ then
 
@@ -206,7 +206,7 @@ $$
 
 If $\aa$ is a stationary point then this only tells us that $f(\xx) \approx f(\aa)$ so a natural next question is to search for slightly more detailed information.
 
-::: theorem
+::: theorem second order Taylor for scalar fields
 Let $f$ be a scalar field twice differentiable on $B(\aa,r)$. Then, for $\xx$ close to $\aa$,
 $$f(\xx) \approx f(\aa) + \nabla f(\aa) \cdot (\xx-\aa) + \frac{1}{2} {(\xx-\aa)} \ \mathbf{H} f (\aa) \ (\xx-\aa)^{\mathbf{T}}$$
 in the sense that the error is $\littleO{\norm{(\xx-\aa)}^2}$.
@@ -249,19 +249,10 @@ as required.
 In order to classify the stationary points we will take advantage of the Hessian matrix and therefore we need to first understand the follow fact about real symmetric matrices.
 
 ::: theorem
-Let $A$ be a real symmetric matrix and let $Q(\vv) =  \vv^{\mathbf{T}} A  \vv$.
-Then
+Let $A$ be a real symmetric matrix and let $Q(\vv) =  \vv^{\mathbf{T}} A  \vv$. Then,
 
-$$
-\begin{aligned}
-\text{\(Q(\vv) > 0\) for all \(\vv \neq \mathbf{0}\)}
-& \quad \Longleftrightarrow \quad
-\text{all eigenvalues of \(A\) are positive}, \\
-\text{\(Q(\vv) < 0\) for all \(\vv \neq \mathbf{0}\)}
-& \quad \Longleftrightarrow \quad
-\text{all eigenvalues of \(A\) are negative}.
-\end{aligned}
-$$
+- $Q(\vv) > 0$ for all $\vv \neq \mathbf{0}$ $\quad \Longleftrightarrow \quad$ all eigenvalues of $A$ are positive,
+- $Q(\vv) < 0$ for all $\vv \neq \mathbf{0}$ $\quad \Longleftrightarrow \quad$ all eigenvalues of $A$ are negative.
 
 :::
 
@@ -280,24 +271,14 @@ observe that $Q(B \uu_k ) = \lambda_k$. This means that, if $Q(\vv) > 0$
 for all $\vv \neq \mathbf{0}$ then $\lambda_k>0$ for all $k$.
 :::
 
-::: theorem
+::: theorem classifying stationary points
 Let $f$ be a scalar field twice differentiable on $B(\aa,r)$. Suppose
 $\nabla f(\aa) = \mathbf{0}$ and consider the eigenvalues of
-$\mathbf{H} f (\aa)$. Then
+$\mathbf{H} f (\aa)$. Then,
 
-$$
-\begin{aligned}
-\text{{All} eigenvalues are positive}
-    & \quad \Longrightarrow \quad
-\text{relative minimum at \(\aa\)}, \\
-\text{{All} eigenvalues are negative}
-    & \quad \Longrightarrow \quad
-\text{relative maximum at \(\aa\)}, \\
-\text{Some positive, some negative}
-    & \quad \Longrightarrow \quad
-\text{\(\aa\) is a saddle point}.
-\end{aligned}
-$$
+- All eigenvalues are positive $\quad \Longrightarrow \quad$ relative minimum at $\aa$,
+- All eigenvalues are negative $\quad \Longrightarrow \quad$ relative maximum at $\aa$,
+- Some positive, some negative $\quad \Longrightarrow \quad$ $\aa$ is a saddle point.
 
 :::
 
@@ -403,7 +384,7 @@ $$\nabla f = \lambda_{1} \nabla g_{1} + \lambda_{2} \nabla g_{2}.$$
 In higher dimensions and possibly with additional constraints we have
 the following general theorem.
 
-::: theorem
+::: theorem Lagrange multipliers
 Suppose that a differentiable scalar field $f(x_1,\ldots,x_n)$ has an
 relative extrema when it is subject to $m$ constraints
 

@@ -1,4 +1,4 @@
-# Additional exercises 2 <!--@include: ./pages/notation.md-->
+# Additional exercises 2
 
 ## Exercise
 
@@ -32,14 +32,14 @@ $$
 Consider the functions,
 
 $$
-\aalpha: [0,\infty) \to \bR^2; \quad t \mapsto (t \cos t, t \sin t),
+\boldsymbol{\alpha}: [0,\infty) \to \mathbb{R}^2; \quad t \mapsto (t \cos t, t \sin t),
 $$
 
 $$
-f: \bR^2 \to \bR; \quad (x,y) \mapsto 3x^2 + y^2.
+f: \mathbb{R}^2 \to \mathbb{R}; \quad (x,y) \mapsto 3x^2 + y^2.
 $$
 
-Let $g = f \circ \aalpha$. Calculate $g^\prime$ both by using the chain rule and by first calculating $g$ and then differentiating and confirm that the answer is the same using either method.
+Let $g = f \circ \boldsymbol{\alpha}$. Calculate $g^\prime$ both by using the chain rule and by first calculating $g$ and then differentiating and confirm that the answer is the same using either method.
 _Out of curiosity, try to understand what curve $\alpha(t)$ traces out as $t$ varies._
 
 <!-- ## Exercise

@@ -1,4 +1,4 @@
-# Additional exercises 2
+# Additional exercises 2 <!--@include: ./pages/notation.md-->
 
 ## Exercise
 
@@ -83,8 +83,6 @@ Verify that the point $(1,1,1)$ is contained in the surface.
 Find the tangent plane to this surface at this point.
 
 _Hint: write this surface as a level set $\{ (x,y,z) : f(x,y,z) = c\}$, calculate $\nabla f$ at the specified point and use the known connection between gradient and tangent plane._
-
-<!--@include: ./pages/notation.md-->
 
 <style scoped>
 h1 {

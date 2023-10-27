@@ -9,6 +9,8 @@
 - Using [Lean](https://lean-lang.org/) in order to verify proofs
 - Analysis of electro-magnetic fields
 - Didactic methods for rigorous mathematics
+- Analysis of [moment of inertia](https://en.wikipedia.org/wiki/Moment_of_inertia#Motion_in_a_fixed_plane), etc for different geometries of wheel design
+- Whatever else seems interesting!
 
 ## Rules
 

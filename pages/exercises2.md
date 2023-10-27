@@ -65,9 +65,7 @@ $$
     f(x,y) = \frac{x y}{x^2 + y^2},
 $$
 
-and $f(x,y) = 0$.
-
-What is the behaviour of $f$ when approaching $(0,0)$ along the following lines?
+and $f(x,y) = 0$. Calculate the 4 missing values in the following table, assuming that $t=neq 0$.
 
 | line       | value         |
 | ---------- | ------------- |
@@ -75,6 +73,8 @@ What is the behaviour of $f$ when approaching $(0,0)$ along the following lines?
 | $\{y=0\}$  | $f(t,0) =$ ?  |
 | $\{x=y\}$  | $f(t,t) =$ ?  |
 | $\{x=-y\}$ | $f(t,-t) =$ ? |
+
+What does this say about $f$ when approaching $(0,0)$ along these different lines?
 
 ## Exercise
 

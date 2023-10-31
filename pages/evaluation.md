@@ -33,7 +33,7 @@ Each of the 6 parts of the course includes exercises. The exercises for part 1 o
 | midterm 2         | 20 November 2023                    | 14:00-15:30 | 3-4    | TBA            |
 | midterm 3         | 18 December 2023                    | 14:00-15:30 | 5-6    | TBA            |
 
-[mid1]: /midterm.pdf
+[mid1]: /midterm1.pdf
 
 The focus of each midterm is on the two parts of the course which immediately proceeded the exam. However, in later parts of the course, since the material builds on the earlier foundation, knowledge of the earlier parts of the course is still required. The questions on each midterm will be very similar to the exercises attached to those parts of the course.
 

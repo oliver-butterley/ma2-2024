@@ -1,5 +1,7 @@
 # Evaluation
 
+## Continuous evaluation
+
 The primary evaluation system is a combination of continuous evaluation:
 
 - 3 Midterm exams (1.5 hours each) (3 x 20%)
@@ -49,3 +51,15 @@ The questions in the midterms will be very similar to the additional exercises:
 ### Mini-projects
 
 The last three weeks of the course are devoted to the mini-projects. Topics are to be chosen by the course participants in agreement with the course instructors. See some [possible ideas](/pages/project). Expect about 20 hours of work involved in the project. The majority of this time can be done within lesson hours.
+
+## Alternative evaluation
+
+As an alternative to the continuous evaluation, students have the right to instead choose to attempt a written and oral exam during one of the 6 exam calls of the year. It highly recommended to opt for the continuous evaluation.
+
+If one chooses this evaluation system:
+
+- The written and oral must be taken in the same call
+- Grades acquired during any of the continuous evaluation **do not** contribute to the final score if the student chooses this option
+- The written exam questions will be similar to the questions used during the last few years of this course,
+- During the written exam solutions must be written completely and fully justified
+- The oral exam requires the students to demonstrate ability to work with the material of the course, the same material which is the subject of the written exam

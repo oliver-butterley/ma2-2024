@@ -10,22 +10,22 @@ The primary evaluation system is a combination of continuous evaluation:
 
 ### Exercises
 
-Each of the 6 parts of the course includes exercises. The exercises for part 1 of the course isn't graded but the exercises for parts 2 - 6 are graded and this contributes towards the final score.
+Each of the 6 parts of the course includes exercises. The exercises for part 1 of the course aren't graded but the exercises for parts 2 - 6 are graded and this contributes towards the final score. The questions in the midterms will be very similar to those in the additional exercises.
 
-| exercise set | due date         |
-| ------------ | ---------------- |
-| Part 1       | not obligatory   |
-| [Part 2][2]  | 23 October 2023  |
-| [Part 3][3]  | 6 November 2023  |
-| [Part 4][4]  | 20 November 2023 |
-| [Part 5][5]  | 4 December 2023  |
-| [Part 6][6]  | 18 December 2023 |
+| graded exercises  | due date         | ungraded exercises          |
+| ----------------- | ---------------- | --------------------------- |
+| Part 1            | not obligatory   | [Part 1](/pages/exercises1) |
+| [Part 2][graded2] | 23 October 2023  | [Part 2](/pages/exercises2) |
+| [Part 3][graded3] | 6 November 2023  | [Part 3](/pages/exercises3) |
+| [Part 4][graded4] | 20 November 2023 | [Part 4](/pages/exercises4) |
+| [Part 5][graded5] | 4 December 2023  | [Part 5](/pages/exercises5) |
+| [Part 6][graded6] | 18 December 2023 | [Part 6](/pages/exercises6) |
 
-[2]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=2
-[3]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=3
-[4]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=4
-[5]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=5
-[6]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=6
+[graded2]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=2
+[graded3]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=3
+[graded4]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=4
+[graded5]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=5
+[graded6]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=6
 
 ### Midterm exams
 

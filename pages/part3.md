@@ -7,7 +7,9 @@ In this part of the course we work on the following skills:
 - Locating and classifying the extrema of scalar fields.
 - Applying Lagrange's multipliers method to optimize quantities with respect to constraints.
 
-See also the [additional exercises](/pages/exercises3) associated to this part of the course.
+See also the [graded exercises][graded3] and [additional exercises](/pages/exercises3) associated to this part of the course.
+
+[graded3]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=3
 
 In the previous chapter we introduced various notions of differentials for higher dimensional functions (scalar fields, vector fields, paths, etc.). This part of the course is devoted to searching for extrema (minima / maxima) in various different scenarios. This extends what we already know for functions in $\bR$ and we will find that in higher dimensions more possibilities and subtleties exist.
 

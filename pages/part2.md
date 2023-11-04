@@ -8,7 +8,9 @@ In this part of the course we work on the following skills:
 - Develop an intuition for working with vector fields.
 - Understand the subtleties of derivatives in dimension greater than 1, evaluate and manipulate partial derivatives, directional derivatives, Jacobian.
 
-See also the [additional exercises](/pages/exercises2) associated to this part of the course.
+See also the [graded exercises][graded2] and [additional exercises](/pages/exercises2) associated to this part of the course.
+
+[graded2]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=2
 
 Here we start to consider higher dimensional space.
 That is, instead of $\mathbb{R}$ we consider $\mathbb{R}^n$ for $n\in \mathbb{N}$.

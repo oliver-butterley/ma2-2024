@@ -1,12 +1,24 @@
 # Additional exercises 4
 
-::: warning
-Draft text
-:::
+## Exercise
+
+Consider the vector field $\ff(x,y) = (\sqrt y, x^3 + y)$ and the path $\aalpha(t)= (t^2,t^3)$ for $t \in (0,1)$. Evaluate $\int \ff \cdot d\aalpha$.
 
 ## Exercise
 
-...
+## Exercise
+
+## Exercise
+
+## Exercise
+
+## Exercise
+
+## Exercise
+
+## Exercise
+
+## Exercise
 
 <style scoped>
 h1 {

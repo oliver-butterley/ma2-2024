@@ -537,7 +537,7 @@ $$
 
 Here $\boldsymbol{\alpha}'$ is a vector-valued function which represents the "direction of movement".
 
-![](../images/svg/spiral.svg "$\\boldsymbol{\\alpha}(t)=(\\cos t, \\sin t, t)$, $t\\in \\mathbb{R}$")
+![](../images/svg/spiral.svg "$\\boldsymbol{\\alpha}(t)=(\\cos t, \\sin t, t)$, $t\\in \\mathbb{R}$"){#fig:spiral}
 
 ::: theorem
 Let $S\subset \mathbb{R}^n$ be open and $I\subset \mathbb{R}$ an interval.
@@ -599,7 +599,7 @@ g'(t)
 = \cos t - \sin t.
 $$
 
-![](../images/svg/particle-circle.svg "$\\mathbf{x}(t)$ is the position of a particle.")
+![](../images/svg/particle-circle.svg "$\\mathbf{x}(t)$ is the position of a particle."){#fig:particle-circle}
 
 ## Level sets & tangent planes
 

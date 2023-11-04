@@ -1,10 +1,13 @@
 <!--@include: ./pages/notation.md-->
 
-::: warning
-Draft text ⚠️
-:::
-
 # Curves & line integrals
+
+In this part of the course we work on the following skills:
+
+- Work with parametric paths
+- Evaluate and work with scalar line integrals
+- Evaluate and work with vector line integrals
+- Work with potentials and conservative vector fields
 
 See also the [additional exercises](/pages/exercises4) associated to this part of the course.
 
@@ -31,7 +34,7 @@ We say that $\aalpha(t)$ is _piecewise differentiable_ if $[a,b] = [a,c_1]\cup[c
 If $\aalpha: [a,b] \to \bR^n$ is piecewise differentiable then we call it a _path_.
 :::
 
-Note that different functions can trace out the _same_ curve in different ways. Also note that a path has an inherent direction. We say that this is a _parametric representation_ of a given curve. We already saw examples of paths in [spiral](#fig:spiral) and [circular motion](#fig:particle-circle). A few examples of paths are as follows.
+Note that different functions can trace out the _same_ curve in different ways. Also note that a path has an inherent direction. We say that this is a _parametric representation_ of a given curve. We already saw examples of paths in [spiral](/pages/part2#fig:spiral) and [circular motion](/pages/part2#fig:particle-circle). A few examples of paths are as follows.
 
 - $\aalpha(t)= (t,t)$, $t\in[0,1]$
 - $\aalpha(t) = (\cos t, \sin t)$, $t\in[0,2\pi]$
@@ -63,20 +66,16 @@ $$\int \ff \cdot d\aalpha = \int_{a}^{b} \ff(\aalpha(t)) \cdot \aalpha'(t) \ dt.
 
 Sometimes the same integral is written as $\int_C \ff \cdot d\aalpha$ to emphasize that the integral is along the curve $C$. Alternatively the integral is sometimes written as $\int f_1 \ d\alpha_1 + \cdots + f_n \ d\alpha_n$ or $\int f_1 \ dx_1 + \cdots + f_n \ dx_n$. Each of these different notations are in common usage in different contexts but the underlying quantity is always the same.
 
-Consider the vector field $\ff(x,y) = \left(\begin{smallmatrix}
-        \sqrt y \\ x^3 + y
-    \end{smallmatrix}\right)$ and the path $\aalpha(t)= (t^2,t^3)$ for $t \in (0,1)$. Evaluate $\int \ff \cdot d\aalpha$.
+::: info Example
+Consider the vector field $\ff(x,y) = (\sqrt y, x^3 + y)$ and the path $\aalpha(t)= (t^2,t^3)$ for $t \in (0,1)$. Evaluate $\int \ff \cdot d\aalpha$.
+:::
 
+::: info Solution
 We start by calculating
 
 $$
-\aalpha'(t) = \begin{pmatrix}
-            2t \\ 3t^2
-        \end{pmatrix},\\
-        \quad
-        \ff(\aalpha(t)) = \begin{pmatrix}
-            t^{\frac{3}{2}} \\ t^6 + t^3
-        \end{pmatrix}.
+\aalpha'(t) = \begin{pmatrix} 2t \\ 3t^2  \end{pmatrix},  \quad
+\ff(\aalpha(t)) = \begin{pmatrix} t^{\frac{3}{2}} \\ t^6 + t^3 \end{pmatrix}.
 $$
 
 This means that $\ff(\aalpha(t)) \cdot  \aalpha'(t) =    2 t^{\frac{5}{2}} + 3t^8 + 3t^5$ and so
@@ -85,10 +84,13 @@ $$
 \displaystyle\int \ff \cdot d\aalpha = \displaystyle\int_{0}^{1} (2 t^{\frac{5}{2}} + 3t^8 + 3t^5 ) \ dt = \frac{59}{42}.
 $$
 
+:::
+
 ## Basic properties of the line integral
 
 Having defined the line integral, the next step is to clarify its behaviour, in particular the following key properties.
 
+::: theorem
 **Linearity:** Suppose $\ff$, $\mathbf{g}$ are vector fields and $\aalpha(t)$ is a path. For any $c,d\in \bR$, then
 
 $$
@@ -116,6 +118,8 @@ $$
 \int_{C} \ff  \cdot d\aalpha = \int_{C_1} \ff  \cdot d\aalpha + \int_{C_2} \ff  \cdot d\aalpha.
 $$
 
+:::
+
 As already mentioned, for a given curve there are many different choices of parametrization. For example, consider the curve $C = \{(x,y) : x^2 + y^2 = 1, y\geq 0\}$. This is a semi-circle and two possible parametrizations are $\aalpha(t) = (-t, \sqrt{1-t^2})$, $t\in [-1,1]$ and $\bbeta(t) = (\cos t, \sin t)$, $t\in [0,\pi]$. These are just two possibilities among many possible choices. For a given curve, to what extent does the line integral depend on the choice of parametrization?
 
 We say that two paths $\aalpha(t)$ and $\bbeta(t)$ are _equivalent_ if there exists a differentiable function $u : [c,d] \to [a,b]$ such that $\aalpha(u(t)) = \bbeta(t)$.
@@ -141,6 +145,7 @@ $$
 
 :::
 
+::: info Proof
 Suppose that the paths are continuously differentiable path, decomposing if required. Since $\aalpha(u(t)) = \bbeta(t)$ the chain rule implies that $\bbeta'(t) = \aalpha'(u(t)) \ u'(t)$. In particular
 
 $$
@@ -148,6 +153,7 @@ $$
 $$
 
 Changing variables, adding a minus sign if path is opposite direction because we need to swap the limits of integration, completes the proof.
+:::
 
 ### Gradients & work
 
@@ -196,9 +202,12 @@ In this case we see, as expected, the work done on the particle moving in the fo
 
 Recall that, if $\varphi:\bR \to \bR$ is differentiable then $\int_a^b \varphi'(t) \ dt = \varphi(b) - \varphi(a)$. This is called the [second fundamental theorem of calculus](https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus#Second_part) and is one of the ways in which we see that differentiation and integration are opposites. The analog for line integrals is the following.
 
+::: theorem second fundamental theorem for line integrals
 Suppose that $\varphi$ is a continuously differentiable scalar field on $S \subset \bR^n$ and suppose that $\aalpha(t)$, $t\in[a,b]$ is a path in $S$. Let $\aa = \aalpha(a)$, $\bb = \aalpha(b)$. Then
 $$\int \nabla \varphi \cdot d\aalpha = \varphi(\bb) - \varphi(\aa).$$
+:::
 
+::: info Proof
 Suppose that $\aalpha(t)$ is differentiable. By the chain rule $\frac{d}{dt} \varphi(\aalpha(t)) = \nabla \varphi(\aalpha(t))\cdot \aalpha'(t)$. Consequently
 
 $$
@@ -208,6 +217,7 @@ $$
 $$
 
 By the 2^nd^ fundamental theorem in $\bR$ we know that $\int_0^1 \tfrac{d}{dt} \varphi(\aalpha(t)) \ dt = \varphi(\aalpha(b)) - \varphi(\aalpha(a))$.
+:::
 
 Our earth has mass $M$ with centre at $(0,0,0)$. Suppose that there is a small particle close to earth which has mass $m$. The force field of gravitation and potential energy are, respectively,
 
@@ -237,8 +247,11 @@ Sometimes this property is called "path connected" to distinguish between differ
 
 Recall that, if $f:\bR \to \bR$ is continuous and we let $\varphi(x) = \int_a^x f(t) \ dt$ then $\varphi'(x) = f(x)$. This is called the [first fundamental theorem of calculus](https://en.wikipedia.org/wiki/Fundamental_theorem_of_calculus#First_part) and is the other way in which we see that differentiation and integration are opposites. Again we have an analog for the line integral but here it becomes a little more subtle since there are many different paths along which we can integrate between any two points.
 
+::: theorem first fundamental theorem for line integrals
 Let $\ff$ be a continuous vector field on a connected set $S \subset \bR^n$. Suppose that, for $\xx,\aa\in S$, the line integral $\int \ff \cdot d\aalpha$ is equal for every path $\aalpha$ such that $\aalpha(a)=\aa$, $\aalpha(b)=\xx$. Fix $\aa\in S$ and define $\varphi(\xx)= \int \ff \cdot d\alpha$. Then $\varphi$ is continuously differentiable and $\nabla \varphi = \ff$.
+:::
 
+::: info Proof
 As before let $\ee_1 = \left(\begin{smallmatrix}
             1 \\ 0 \\ 0
         \end{smallmatrix}\right)$, $\ee_2 = \left(\begin{smallmatrix}
@@ -262,6 +275,7 @@ $$
 $$
 
 In other words, we have shown that $\nabla \varphi (\xx) =  \ff(\xx)$.
+:::
 
 We say a path $\aalpha(t)$, $t\in [a,b]$ is _closed_ if $\aalpha(a) = \aalpha(b)$.
 
@@ -281,11 +295,13 @@ Let $S \subset \bR^n$ and and consider the vector field $\ff : S \to \bR^n$. The
 
 :::
 
+::: info Proof
 In the previous theorems (the two fundamental theorems) we proved that (i) is equivalent to (ii).
 
 Now we prove that (ii) implies (iii): Let $\aalpha(t)$ be a closed path and let $\bbeta(t)$ be the same path in the opposite direction. Observe that $\int \ff \cdot d\aalpha = - \int \ff \cdot d \bbeta$ but that $\int \ff \cdot d \aalpha = \int \ff \cdot d \bbeta$ and so $\int \ff \cdot d \aalpha = 0$.
 
 It remains to prove that (iii) implies (ii): The two paths between $\aa$ and $\bb$ can be combined (with a minus sign) to give a closed path.
+:::
 
 ::: theorem mixed partial derivatives {#thm:mixed-partials-2D}
 Suppose that $S \subset \bR^2$ and that $\ff:S \to \bR^2$ is a differentiable vector field and write $\ff = \left(\begin{smallmatrix}
@@ -312,6 +328,7 @@ $$
         = \tfrac{\partial f_k}{\partial x_l}.
 $$
 
+::: info Example
 Consider the vector field
 
 $$
@@ -331,7 +348,12 @@ $$
 $$
 
 This means that
-$$\int \ff \cdot d\aalpha = \int_{0}^{2\pi} ( \sin^2 t + \cos^2 t )\ dt = 2\pi.$$
+
+$$
+\int \ff \cdot d\aalpha = \int_{0}^{2\pi} ( \sin^2 t + \cos^2 t )\ dt = 2\pi.
+$$
+
+:::
 
 Observe that in the above example $S$ is somehow not a "nice" set because of the "hole" in the middle. Moreover, observe that the line integral is the same for any circle, independent of the radius.
 
@@ -414,6 +436,7 @@ This is equal to $\int_{0}^{1} \left( t \nabla f_k(t\xx) \cdot \xx + f_k(t\xx) \
 
 The above gives us a useful tool to check if a given vector field is conservative. Using the idea of "gluing together" several convex regions this result can be manually extended to some more general settings. Later, we will take advantage of some further ideas in order to significantly extend this result.
 
+<!--
 ### Application to exact differential equations
 
 Let $S\subset \bR^2$ be simply-connected and open. The differential equation, considered on $S$,
@@ -440,7 +463,7 @@ If $y(x)$ satisfies $\varphi(x,y(x))=C$, then by the chain rule and the fact tha
 
 Solve $y^2 + 2xyy' = 0$. Let $p(x,y) = y^2$, $q(x,y) = 2xy$ and find $\varphi(x,y) = xy^2$ so $\nabla \varphi = \left(\begin{smallmatrix}
             p\\ q
-        \end{smallmatrix}\right)$. Solutions satisfy $\varphi(x,y(x))= x {y(x)}^2 =C$, i.e., $y(x) = \sqrt{\frac{C}{x}}$.
+        \end{smallmatrix}\right)$. Solutions satisfy $\varphi(x,y(x))= x {y(x)}^2 =C$, i.e., $y(x) = \sqrt{\frac{C}{x}}$. -->
 
 ## Line integrals of scalar fields
 

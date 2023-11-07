@@ -305,7 +305,7 @@ We say a path $\aalpha(t)$, $t\in [a,b]$ is _closed_ if $\aalpha(a) = \aalpha(b)
 
 Observe that, if $\aalpha(t)$, $t\in[a,b]$ is a closed path then we can divided it into two paths: Let $c\in[a,b]$ and consider the two paths $\aalpha(t)$, $t\in[a,c]$ and $\aalpha(t)$, $t\in[c,b]$. On the other hand, suppose $\aalpha(t)$, $t\in [a,b]$ and $\bbeta(t)$, $t\in [c,d]$ are two path starting at $\aa$ and finishing at $\bb$. The these can be combined to define a closed path (by following one backward).
 
-::: Definition (conservative vector field)
+::: tip Definition (conservative vector field)
 A vector field $\ff$, continuous on $S \subset \bR^n$ is _conservative_ if there exists a scalar field $\varphi$ such that, on $S$,
 
 $$

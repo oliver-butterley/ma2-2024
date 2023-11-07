@@ -61,7 +61,7 @@ $$
 \right).
 $$
 
-::: tip Definition (Line integral) {#def:line-integral-vector}
+::: tip Definition (line integral of vector field) {#def:line-integral-vector}
 The _line integral_ of the vector field $\ff$ along the path $\aalpha$ is defined as
 $$\int \ff \cdot d\aalpha = \int_{a}^{b} \ff(\aalpha(t)) \cdot \aalpha'(t) \ dt.$$
 :::
@@ -87,6 +87,19 @@ $$
 $$
 
 :::
+
+Now we consider the question of defining the line integral for scalar fields. Such a line integral allows us also to define the _length of a curve_ in a meaningful way. Again let $\aalpha(t)$, $t\in [a,b]$ be a path in $\bR^n$ and let $f:\bR^n \to \bR$ be a continuous vector field.
+
+::: tip Definition (line integral of scalar field){#def:line-integral-scalar }
+The _line integral_ of the scalar field $f$ along the path $\aalpha$ is defined as
+
+$$
+\int f \ d\alpha = \int_a^b f(\alpha(t)) \ \norm{\aalpha'(t)} \ dt.
+$$
+
+:::
+
+Subsequently we will primarily work with the line integral of a vector field. However the analogous results hold also for this integral and the proofs are essentially the same. Namely it is linear and also respects how a path can be decomposed or joined with other paths which changing the value of the integral. Moreover, the value of the integral along a given path is independent of the choice of parametrization of the curve. In this case, even if the curve is parametrized in the opposite direction then the integral takes the same value. Consequently it makes sense to define the length of the curve as the line integral of the unit scalar field, i.e., the length of a curve parametrized by the path $\aalpha$ is $\int_a^b \norm{\aalpha'(t)} \ dt$.
 
 ## Basic properties of the line integral
 
@@ -466,20 +479,3 @@ If $y(x)$ satisfies $\varphi(x,y(x))=C$, then by the chain rule and the fact tha
 Solve $y^2 + 2xyy' = 0$. Let $p(x,y) = y^2$, $q(x,y) = 2xy$ and find $\varphi(x,y) = xy^2$ so $\nabla \varphi = \left(\begin{smallmatrix}
             p\\ q
         \end{smallmatrix}\right)$. Solutions satisfy $\varphi(x,y(x))= x {y(x)}^2 =C$, i.e., $y(x) = \sqrt{\frac{C}{x}}$. -->
-
-## Line integrals of scalar fields
-
-Up until now this chapter has been devoted to line integrals of vector fields but there is also the obvious question of defining the line integral for scalar fields. This we do now. Such a line integral allows us also to define the _length of a curve_ in a meaningful way. Let $\aalpha(t)$, $t\in [a,b]$ be a path in $\bR^n$ and let $f:\bR^n \to \bR$.
-
-::: tip Definition (scalar line integral){#def:line-integral-scalar }
-The _line integral_ of the scalar field $f$ along the path $\aalpha$ is defined as
-
-$$
-\int f \ d\alpha = \int_a^b f(\alpha(t)) \ \norm{\aalpha'(t)} \ dt.
-$$
-
-:::
-
-This integral shares the same basic properties of the line integral of a vector field and the proofs are essentially the same. Namely it is linear and also respects how a path can be decomposed or joined with other paths which changing the value of the integral. Moreover, the value of the integral along a given path is independent of the choice of parametrization of the curve. In this case, even if the curve is parametrized in the opposite direction then the integral takes the same value. Consequently it makes sense to define the length of the curve as the line integral of the unit scalar field, i.e., the length of a curve parametrized by the path $\aalpha$ is $\int_a^b \norm{\aalpha'(t)} \ dt$.
-
-As a simple application, consider that the path represents a wire and the wire has density $f(\aalpha(t))$ at the point $\aalpha(t)$. Then the mass of the wire is equal to $\int  f \ d\alpha$.

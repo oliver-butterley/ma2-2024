@@ -62,8 +62,13 @@ $$
 $$
 
 ::: tip Definition (line integral of vector field) {#def:line-integral-vector}
+Let $\aalpha(t)$ be a (piecewise differentiable) path on $[a,b]$ and let $\ff: \bR^n\to\bR^n$ be a continuous vector field.
 The _line integral_ of the vector field $\ff$ along the path $\aalpha$ is defined as
-$$\int \ff \cdot d\aalpha = \int_{a}^{b} \ff(\aalpha(t)) \cdot \aalpha'(t) \ dt.$$
+
+$$
+\int \ff \cdot d\aalpha = \int_{a}^{b} \ff(\aalpha(t)) \cdot \aalpha'(t) \ dt.
+$$
+
 :::
 
 Sometimes the same integral is written as $\int_C \ff \cdot d\aalpha$ to emphasize that the integral is along the curve $C$. Alternatively the integral is sometimes written as $\int f_1 \ d\alpha_1 + \cdots + f_n \ d\alpha_n$ or $\int f_1 \ dx_1 + \cdots + f_n \ dx_n$. Each of these different notations are in common usage in different contexts but the underlying quantity is always the same.
@@ -88,9 +93,10 @@ $$
 
 :::
 
-Now we consider the question of defining the line integral for scalar fields. Such a line integral allows us also to define the _length of a curve_ in a meaningful way. Again let $\aalpha(t)$, $t\in [a,b]$ be a path in $\bR^n$ and let $f:\bR^n \to \bR$ be a continuous vector field.
+Now we consider the question of defining the line integral for scalar fields. Such a line integral allows us also to define the _length of a curve_ in a meaningful way. Again let $\aalpha(t)$, $t\in [a,b]$ be a path in $\bR^n$ and let $f:\bR^n \to \bR$ be a continuous scalar field.
 
-::: tip Definition (line integral of scalar field){#def:line-integral-scalar }
+::: tip Definition (line integral of scalar field){#def:line-integral-scalar}
+Let $\aalpha(t)$, $t\in [a,b]$ be a (piecewise differentiable) path in $\bR^n$ and let $f:\bR^n \to \bR$ be a continuous scalar field.
 The _line integral_ of the scalar field $f$ along the path $\aalpha$ is defined as
 
 $$
@@ -137,6 +143,7 @@ $$
 
 As already mentioned, for a given curve there are many different choices of parametrization. For example, consider the curve $C = \{(x,y) : x^2 + y^2 = 1, y\geq 0\}$. This is a semi-circle and two possible parametrizations are $\aalpha(t) = (-t, \sqrt{1-t^2})$, $t\in [-1,1]$ and $\bbeta(t) = (\cos t, \sin t)$, $t\in [0,\pi]$. These are just two possibilities among many possible choices. For a given curve, to what extent does the line integral depend on the choice of parametrization?
 
+::: tip Definition (equivalent paths)
 We say that two paths $\aalpha(t)$ and $\bbeta(t)$ are _equivalent_ if there exists a differentiable function $u : [c,d] \to [a,b]$ such that $\aalpha(u(t)) = \bbeta(t)$.
 
 Furthermore, we say that $\aalpha(t)$ and $\bbeta(t)$ are
@@ -144,6 +151,8 @@ Furthermore, we say that $\aalpha(t)$ and $\bbeta(t)$ are
 - _in the same direction_ if $u(c)=a$ and $u(d)=b$,
 
 - _in the opposite direction_ if $u(c)=b$ and $u(d)=a$.
+
+:::
 
 With this terminology we can precisely describe the dependence of the integral on the choice of parametrization.
 
@@ -153,8 +162,8 @@ Let $\ff$ be a continuous vector field and let $\aalpha$, $\bbeta$ be equivalent
 $$
 \int \ff \cdot d\aalpha =
         \begin{cases}
-            \int \ff \cdot d\bbeta   & \text{if the paths are in the same direction},     \\
-            - \int \ff \cdot d\bbeta & \text{if the paths are in the opposite direction}.
+            \int \ff \cdot d\bbeta   & \text{if the paths in the same direction},     \\
+            - \int \ff \cdot d\bbeta & \text{if the paths in the opposite direction}.
         \end{cases}
 $$
 
@@ -283,10 +292,10 @@ Moreover $\bbeta'_k(t) = \ee_k$. Consequently
 
 $$
 \begin{aligned}
-            \frac{\partial \varphi}{\partial x_k}(\xx)
-             & =  \displaystyle\lim_{h\to 0} \frac{1}{h}( \varphi(\xx + h \ee_k) - \varphi(\xx))                \\
-             & = \displaystyle \lim_{h\to 0} \frac{1}{h} \int_0^h \ff(\bbeta_k(t)) \cdot \ee_k \ dt = f_k(\xx).
-        \end{aligned}
+  \frac{\partial \varphi}{\partial x_k}(\xx)
+    & =  \displaystyle\lim_{h\to 0} \frac{1}{h}( \varphi(\xx + h \ee_k) - \varphi(\xx))                \\
+    & = \displaystyle \lim_{h\to 0} \frac{1}{h} \int_0^h \ff(\bbeta_k(t)) \cdot \ee_k \ dt = f_k(\xx).
+  \end{aligned}
 $$
 
 In other words, we have shown that $\nabla \varphi (\xx) =  \ff(\xx)$.
@@ -296,8 +305,14 @@ We say a path $\aalpha(t)$, $t\in [a,b]$ is _closed_ if $\aalpha(a) = \aalpha(b)
 
 Observe that, if $\aalpha(t)$, $t\in[a,b]$ is a closed path then we can divided it into two paths: Let $c\in[a,b]$ and consider the two paths $\aalpha(t)$, $t\in[a,c]$ and $\aalpha(t)$, $t\in[c,b]$. On the other hand, suppose $\aalpha(t)$, $t\in [a,b]$ and $\bbeta(t)$, $t\in [c,d]$ are two path starting at $\aa$ and finishing at $\bb$. The these can be combined to define a closed path (by following one backward).
 
+::: Definition (conservative vector field)
 A vector field $\ff$, continuous on $S \subset \bR^n$ is _conservative_ if there exists a scalar field $\varphi$ such that, on $S$,
-$$\ff = \nabla \varphi.$$
+
+$$
+\ff = \nabla \varphi.
+$$
+
+:::
 
 Note that some authors call such a vector field a _gradient_ (i.e., the vector field is the gradient of some scalar). If $\ff = \nabla \varphi$ then the scalar field $\varphi$ is called the _potential_ (associated to $\ff$). Observe that that the potential is not unique, $\nabla \varphi = \nabla(\varphi + C)$ for any constant $C \in \bR$.
 

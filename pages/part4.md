@@ -33,7 +33,7 @@ We say that $\aalpha(t)$ is _piecewise differentiable_ if $[a,b] = [a,c_1]\cup[c
 :::
 
 ::: tip Definition {#def:path}
-If $\aalpha: [a,b] \to \bR^n$ is piecewise differentiable then we call it a _path_.
+If $\aalpha: [a,b] \to \bR^n$ is continuous and piecewise differentiable then we call it a _path_.
 :::
 
 Note that different functions can trace out the _same_ curve in different ways. Also note that a path has an inherent direction. We say that this is a _parametric representation_ of a given curve. We already saw examples of paths in [spiral](/pages/part2#fig:spiral) and [circular motion](/pages/part2#fig:particle-circle). A few examples of paths are as follows.

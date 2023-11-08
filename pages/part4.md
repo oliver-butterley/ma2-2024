@@ -255,7 +255,7 @@ We can calculate $\nabla \varphi(\xx)$ and see that it is equal to $\ff(\xx)$.
 
 ## The first fundamental theorem
 
-First we need to consider a basic topological property of sets. In particular we want to avoid the possibility of the set being several disconnected pieces, in other words we want to guarantee that we can get from one point to another in the set in a way without every leaving the set (see [figure](#fig:connected).
+First we need to consider a basic topological property of sets. In particular we want to avoid the possibility of the set being several disconnected pieces, in other words we want to guarantee that we can get from one point to another in the set in a way without every leaving the set (see [figure](#fig:connected)).
 
 ::: tip Definition
 The set $S\subset \bR^n$ is said to be _connected_ if, for every pair of points $\aa,\bb\in S$, there exists a path $\aalpha(t), t\in[a,b]$ such that

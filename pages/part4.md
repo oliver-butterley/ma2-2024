@@ -349,6 +349,7 @@ Suppose that $\ff$ is a differentiable vector field[^1] on $S\subset \bR^n$. If 
 $$\frac{\partial f_l}{\partial x_k} = \frac{\partial f_k}{\partial x_l}.$$
 :::
 
+::: info Proof
 By assumption the second order partial derivatives exist and so
 
 $$
@@ -357,6 +358,8 @@ $$
         = \tfrac{\partial^2 \varphi}{\partial x_l \partial x_k}
         = \tfrac{\partial f_k}{\partial x_l}.
 $$
+
+:::
 
 ::: info Example
 Consider the vector field
@@ -456,6 +459,7 @@ $$
 
 :::
 
+::: info Proof
 We have already proved that $\ff$ being conservative implies the equality of partial derivatives ([mixed partials theorem](#thm:mixed-partials)) and therefore we need only assume that $\partial_g f_l = \partial_l f_k$ and construct a potential. Let $\varphi(\xx) = \int \ff \cdot d\aalpha$ where $\aalpha(t) = t\xx$, $t\in[0,1]$. Since $\aalpha'(t) = \xx$, $\varphi(\xx) = \int_0^1 \ff(t\xx)\cdot \xx \ dt$. Also (needs proving)
 
 $$
@@ -463,6 +467,7 @@ $$
 $$
 
 This is equal to $\int_{0}^{1} \left( t \nabla f_k(t\xx) \cdot \xx + f_k(t\xx) \right) \ dt$ because $\partial_g f_l = \partial_l f_k$; By the chain rule applied to $g(t) = t \nabla f_k(t\xx)$ this is equal to $f_k(\xx)$ as required.
+:::
 
 The above gives us a useful tool to check if a given vector field is conservative. Using the idea of "gluing together" several convex regions this result can be manually extended to some more general settings. Later, we will take advantage of some further ideas in order to significantly extend this result.
 

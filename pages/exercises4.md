@@ -36,7 +36,7 @@ Evaluate $\int (x^2−2y) \ d\boldsymbol{\alpha}$ where $d\boldsymbol{\alpha}$ i
 
 ## Exercise
 
-Determine if The vector-field $\mathbf{G}(x,y) = (2y^2, x+2)$ is conservative on $\mathbb{R}^2$.
+Determine if the vector-field $\mathbf{G}(x,y) = (2y^2, x+2)$ is conservative on $\mathbb{R}^2$.
 
 ## Exercise
 

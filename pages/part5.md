@@ -1,5 +1,3 @@
-::: warning Draft text ⚠️
-:::
 
 <!--@include: ./pages/notation.md-->
 
@@ -9,7 +7,7 @@ See also the [graded exercises][graded5] and [additional exercises](/pages/exerc
 
 [graded5]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=5
 
-The extension to higher dimension of differentiation was established in the previous chapters. We then defined line integrals which are, in a sense, one dimensional integrals which exist in a high dimensional setting. We now take the next step and define higher dimensional integrals in the sense of how to integrate a scalar field defined on a subset of $\bR^n$. The first step will be to rigorously define which scalar fields are integrable and to define the integral. Then we need to fine reasonable ways to evaluate such integrals. Among other applications we will use this multiple integrals to calculate volumes and moment of inertia. In Green's Theorem we find a connection between multiple integrals and line integrals. We also develop the important topic of change of variables which takes advantage of the Jacobian determinant and is often invaluable for actually working with a given problem.
+The extension to higher dimension of differentiation was established in the previous chapters. We then defined line integrals which are, in a sense, one dimensional integrals which exist in a high dimensional setting. We now take the next step and define higher dimensional integrals in the sense of how to integrate a scalar field defined on a subset of $\bR^n$. The first step will be to rigorously define which scalar fields are integrable and to define the integral. Then we need to find reasonable ways to evaluate such integrals. Among other applications we will use this multiple integrals to calculate volumes and moment of inertia. In Green's Theorem we find a connection between multiple integrals and line integrals. We also develop the important topic of change of variables which takes advantage of the Jacobian determinant and is often invaluable for actually working with a given problem.
 
 ## Definition of the integral
 
@@ -82,7 +80,7 @@ $$
 
 This number $I$ is called the integral of $f$ on $R$ and is denoted $\iint_{R} f(x,y) \ dx dy$.
 
-All the basic properties of the integral of step functions, as stated in Theorem [\[thm:props-integral\]](#thm:props-integral), as holds for the integral of any integrable functions. This can be shown by considering the limiting procedure of the upper and lower integral of step functions which are part of the definition of integrability.
+All the basic properties of the integral of step functions, as stated in [the above Theorem](#thm:props-integral), as holds for the integral of any integrable functions. This can be shown by considering the limiting procedure of the upper and lower integral of step functions which are part of the definition of integrability.
 
 ## Evaluation of multiple integrals
 
@@ -293,7 +291,7 @@ A connected set $S\subset \bR^n$ is said to be _simply-connected_ if any closed 
 
 ![](../images/svg/not-simply-connected.svg "Not simply connected")
 
-The following result extends Theorem [\[thm:conservative-convex\]](#thm:conservative-convex){reference-type="ref" reference="thm:conservative-convex"} which was limited to convex sets.
+The following result extends [the theorem about conservative vector fields from Part 4](part4#thm:conservative-convex){reference-type="ref" reference="thm:conservative-convex"} which was limited to convex sets.
 
 ::: theorem {#thm:conservative-fields-simply-connected}
 Let $S$ be a simply connected region and suppose that $\ff = \left(\begin{smallmatrix}
@@ -302,13 +300,13 @@ Let $S$ be a simply connected region and suppose that $\ff = \left(\begin{smallm
 
 :::
 
-In Theorem [\[part4#thm:mixed-partials\]](part4#thm:mixed-partials) we already proved that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ whenever $\ff$ is conservative so we need only prove the other direction of the statement. Suppose that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ and consider any closed path $\aalpha$ in $S$. By Green's (Theorem [\[thm:greens\]](#thm:greens)),
+In [the mixed partials theorem](part4#thm:mixed-partials) we already proved that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ whenever $\ff$ is conservative so we need only prove the other direction of the statement. Suppose that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ and consider any closed path $\aalpha$ in $S$. [Green's theorem](#thm:greens),
 
 $$
 \int_{C} \ff \cdot d\aalpha = \iint_{S} \left(\tfrac{\partial Q}{\partial x} - \tfrac{\partial P}{\partial y}\right) \ dx dy = 0.
 $$
 
-This implies that $\ff$ is conservative because the fact that the line integral around every closed curve is zero (Theorem [\[part4#thm:conservative-fields\]](part4#thm:conservative-fields)).
+This implies that $\ff$ is conservative because the fact that the line integral around every closed curve is zero (using [a theorem from Part 4](part4#thm:conservative-fields)).
 
 A crucially important consequence of the above result is that it implies the invariance of a line integral under deformation of a path when the vector field is conservative. Observe that the result can be extended to multiply connected regions by adding additional "cuts" and keeping track of the additional line integrals.
 
@@ -405,7 +403,7 @@ $$
 
 ### Extension to higher dimensions
 
-The exact analog of Theorem [\[thm:change-variable-2D\]](#thm:change-variable-2D) holds in any dimension. In particular, in 3D, if we consider the change of variables $(u,v,w) \mapsto (X(u,v,w),Y(u,v,w),Z(u,v,w))$, then $\iiint_{S} f(x,y,z) \ dx dy dz$ is equal to
+The exact analog of  [the 2D change of variables formula](#thm:change-variable-2D) holds in any dimension. In particular, in 3D, if we consider the change of variables $(u,v,w) \mapsto (X(u,v,w),Y(u,v,w),Z(u,v,w))$, then $\iiint_{S} f(x,y,z) \ dx dy dz$ is equal to
 
 $$
 \iiint_{T} f(X(u,v,w),Y(u,v,w),Z(u,v,w)) \ \abs{J(u,v,w)} \ du dv dw
@@ -415,7 +413,7 @@ where $J(u,v)$ is now the Jacobian matrix of dimension $(3 \times 3)$.
 
 ### Cylindrical coordinates
 
-[Cylindrical coordinates](https://en.wikipedia.org/wiki/Cylindrical_coordinate_system) corresponds to the mapping (require $r>0$, $0\leq \theta \leq 2\pi$)
+[Cylindrical coordinates](https://en.wikipedia.org/wiki/Cylindrical_coordinate_system) correspond to the mapping (require $r>0$, $0\leq \theta \leq 2\pi$)
 
 $$
 \begin{cases}

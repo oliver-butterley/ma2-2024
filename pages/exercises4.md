@@ -32,6 +32,18 @@ Consider the vector field $F(x,y) = (2 - y, x)$ and path $\boldsymbol{\alpha}(t)
 
 ## Exercise
 
+Consider the vector field
+
+$$
+\mathbf{f}(x,y) = \left(\begin{smallmatrix}-y {(x^2 + y^2)}^{-1} \\ x {(x^2 + y^2)}^{-1}\end{smallmatrix}\right)
+$$
+
+defined on $S = \mathbb{R}^2 \setminus (0,0)$.
+Let $\boldsymbol{\alpha}(t)$ denote the path which traverses clockwise the circle of radius $r>0$ centred at the origin.
+Evaluate the line integral $\int \mathbf{f} \cdot d\boldsymbol{\alpha}$.
+
+## Exercise
+
 Evaluate $\int (x^2−2y) \ d\boldsymbol{\alpha}$ where $d\boldsymbol{\alpha}$ is the path defined as $d\boldsymbol{\alpha}(t)=(4t^4,t^4)$ for $t\in[-1,0]$.
 
 ## Exercise

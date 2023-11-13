@@ -32,6 +32,10 @@ Consider the vector field $F(x,y) = (2 - y, x)$ and path $\boldsymbol{\alpha}(t)
 
 ## Exercise
 
+The vector field $\mathbf{F}(x,y) = \left(3 x^2 y, x^3\right)$ is conservative on $\mathbf{R}^2$. Find $\varphi$ (the potential) such that $\mathbf{F} = \nabla \varphi$.
+
+## Exercise
+
 Consider the vector field
 
 $$

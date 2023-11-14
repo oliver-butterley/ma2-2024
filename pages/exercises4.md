@@ -16,7 +16,7 @@ Let $C$ denote the line segment from the point $\mathbf{a} = (1,2,3)$ to the poi
 
 ## Exercise
 
-Let $C$ denote the curve $x^2 + y^2 = 4$. Find a parameterization of the curve $C$.
+Let $C$ denote the curve $x^2 + y^2 = 4$. Find an anticlockwise parameterization of the curve $C$.
 
 ## Exercise
 

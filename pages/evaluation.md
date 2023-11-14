@@ -32,8 +32,8 @@ Each of the 6 parts of the course includes exercises. The exercises for part 1 o
 | exam              | date                                | time        | topics | location       |
 | ----------------- | ----------------------------------- | ----------- | ------ | -------------- |
 | [midterm 1][mid1] | ~~23 October 2023~~ 30 October 2023 | 14:00-15:30 | 1-2    | aula disegno 2 |
-| midterm 2         | 20 November 2023                    | 14:00-15:30 | 3-4    | TBA            |
-| midterm 3         | 18 December 2023                    | 14:00-15:30 | 5-6    | TBA            |
+| midterm 2         | 20 November 2023                    | 14:00-15:30 | 3-4    | aula disegno 2 |
+| midterm 3         | 18 December 2023                    | 14:00-15:30 | 5-6    | aula disegno 2 |
 
 [mid1]: /midterm1.pdf
 

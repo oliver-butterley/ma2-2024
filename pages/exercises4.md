@@ -48,7 +48,7 @@ Evaluate the line integral $\int \mathbf{f} \cdot d\boldsymbol{\alpha}$.
 
 ## Exercise
 
-Evaluate $\int (x^2−2y) \ d\boldsymbol{\alpha}$ where $d\boldsymbol{\alpha}$ is the path defined as $d\boldsymbol{\alpha}(t)=(4t^4,t^4)$ for $t\in[-1,0]$.
+Evaluate $\int (x^2−2y) \ d\boldsymbol{\alpha}$ where $d\boldsymbol{\alpha}$ is the path defined as $\boldsymbol{\alpha}(t)=(4t^4,t^4)$ for $t\in[-1,0]$.
 
 ## Exercise
 

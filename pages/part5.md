@@ -66,7 +66,7 @@ All properties follow from the definition by basic calculations.
 
 We are now in the position to define the set of integrable functions. In order to define integrability we take advantage of "upper" and "lower" integrals which "sandwich" the function we really want to integrate.
 
-Let $R$ be a rectangle and let $f: R \to \bR$ be a bounded function. If there is one and only one number $I\in \bR$ such that
+Let $R$ be a rectangle and let $f: R \to \bR$ be a bounded function. We call $f$ an _integrable_ function if there is one and only one number $I\in \bR$ such that
 
 $$
 \iint_{R} g(x,y) \ dx dy \leq I \leq \iint_{R} h(x,y) \ dx dy
@@ -80,7 +80,7 @@ $$
 
 This number $I$ is called the integral of $f$ on $R$ and is denoted $\iint_{R} f(x,y) \ dx dy$.
 
-All the basic properties of the integral of step functions, as stated in [the above Theorem](#thm:props-integral), as holds for the integral of any integrable functions. This can be shown by considering the limiting procedure of the upper and lower integral of step functions which are part of the definition of integrability.
+All the basic properties of the integral of step functions, as stated in [the above Theorem](#thm:props-integral), also hold for the integral of any integrable functions. This can be shown by considering the limiting procedure of the upper and lower integral of step functions which are part of the definition of integrability.
 
 ## Evaluation of multiple integrals
 

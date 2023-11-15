@@ -56,7 +56,7 @@ Determine if the vector-field $\mathbf{G}(x,y) = (2y^2, x+2)$ is conservative on
 
 ## Exercise
 
-Evaluate $\int \nabla f \cdot d\boldsymbol{\alpha}$ where $f(x,y) = ye^{x^2−1} + 4xy$ and the path is $\boldsymbol{\alpha}(t) = (1−t,2t2−2t)$ for $0 \leq t \leq 2$.
+Evaluate $\int \nabla f \cdot d\boldsymbol{\alpha}$ where $f(x,y) = ye^{x^2 − 1} + 4xy$ and the path is $\boldsymbol{\alpha}(t) = (1 − t, 2t^2 − 2t)$ for $0 \leq t \leq 2$.
 
 <style scoped>
 h1 {

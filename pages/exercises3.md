@@ -40,7 +40,7 @@ $$
 
 ## Exercise
 
-Find the absolute minimum and absolute maximum of $f(x,y)=(9x2−1)(1+4y)$ on the rectangle given by $−2 \leq x \leq 3$, $−1\leq y \leq4$.
+Find the absolute minimum and absolute maximum of $f(x,y)=(9x^2 − 1)(1 + 4y)$ on the rectangle given by $−2 \leq x \leq 3$, $−1\leq y \leq4$.
 
 ## Exercise
 

@@ -1,6 +1,3 @@
-::: warning
-Draft text ⚠️
-:::
 
 <!--@include: notation.md-->
 
@@ -333,7 +330,10 @@ If $\ff(x,y,z) = \left(\begin{smallmatrix}
 Let $S\subset \bR^3$ be convex. Then $\nabla \times \ff \equiv \mathbf{0}$ on $S$ if and only if $\ff$ is conservative on $S$.
 This implies [this theorem from Part 5 about conservative fields](part5#thm:conservative-fields-simply-connected) (the 2D vector fields can be written as 3D vector fields with a zero component).
 
-## Theorems of Stokes and Gauss
+## Stokes' Theorem and Gauss's Theorem
+::: warning
+Draft text ⚠️
+:::
 
 ::: theorem Stokes {#thm:stokes}
 

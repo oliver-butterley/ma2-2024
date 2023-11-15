@@ -3,7 +3,7 @@
 
 # Surface integrals
 
-See also the [graded exercises][graded6] and [additional exercises](/pages/exercises6) associated to this part of the course.
+See also the [graded exercises][graded6] and [additional exercises](/pages/exercises6) associated to this part of the course.  If you want more, Sections 6.4 to 6.8 of [OpenStax Calculus Volume 3](https://openstax.org/details/books/calculus-volume-3) are a good option.
 
 [graded6]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=6
 

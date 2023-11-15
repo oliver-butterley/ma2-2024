@@ -1,9 +1,9 @@
 
-<!--@include: ./pages/notation.md-->
+<!--@include: notation.md-->
 
 # Multiple integrals
 
-See also the [graded exercises][graded5] and [additional exercises](/pages/exercises5) associated to this part of the course.
+See also the [graded exercises][graded5] and [additional exercises](/pages/exercises5) associated to this part of the course.  If you want more, Chapter 5 (plus sections 6.3 and 6.4) of [OpenStax Calculus Volume 3](https://openstax.org/details/books/calculus-volume-3) is a good option.
 
 [graded5]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=5
 

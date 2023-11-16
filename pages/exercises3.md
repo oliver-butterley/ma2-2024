@@ -13,6 +13,7 @@ Calculate the Hessian matrix at the point $(2,1)$.
 ## Exercise
 
 Consider the scalar field $f(x,y) = 8 \sin x \sin y$. Calculate the second order Taylor approximation of $f$ at the point $(\frac{\pi}{2},\frac{\pi}{2})$.
+_Hint: $f(\mathbf{x}) \approx f(\mathbf{aa}) + \nabla f(\mathbf{a}) \cdot (\mathbf{x}-\mathbf{a}) + \frac{1}{2} {(\mathbf{x}-\mathbf{a})} \ \mathbf{H} f (\mathbf{a}) \ (\mathbf{x}-\mathbf{a})^{\mathbf{T}}$._
 
 ## Exercise
 

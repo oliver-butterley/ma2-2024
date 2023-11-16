@@ -2,6 +2,9 @@
 
 ## Possible topics
 
+- More in depth with surface integrals
+- More in depth with multiple integrals and change of variables
+- More in depth with line integrals
 - The [rocket equation](https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation) and hence why having multiple stages improves efficiency
 - The geometry of [aerospike engines](https://en.wikipedia.org/wiki/Aerospike_engine)
 - Why are [Lagrange points](https://en.wikipedia.org/wiki/Lagrange_point) good places for spacecraft like the [JW space telescope](https://en.wikipedia.org/wiki/James_Webb_Space_Telescope)?
@@ -17,3 +20,8 @@
 - The project should demonstrate approximately 20 hours of work on topics related to the mathematics of the course
 - Projects are carried out in a team of 1,2 or 3 people
 - The work of each person in the team must be described
+
+## Schedule
+
+- 8 Dec 2023: deadline for agreeing project topic and project team
+- 29-30 Jan 2024: project presentations

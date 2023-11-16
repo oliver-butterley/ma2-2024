@@ -4,9 +4,18 @@
 
 The primary evaluation system is a combination of continuous evaluation:
 
-- 3 Midterm exams (1.5 hours each) (3 x 20%)
-- 5 Online exercise sets (10%)
-- 1 Mini-project & presentation (30%)
+- 3 Midterm exams (grades: $M_{\mathrm{min}} \leq M_{\mathrm{mid}} \leq M_{\mathrm{max}}$)
+- 5 Online exercise sets (grade: $E$)
+- 1 Mini-project & presentation (grade: $P$)
+
+All grades ($M_{\mathrm{min}}$, $M_{\mathrm{mid}}$, $M_{\mathrm{max}}$, $E$, $P$) are graded on a scale of 0 to 30.
+To obtain the final score we calculate
+
+$$
+0.4 P + 0.1 E + 0.3 M_{\mathrm{max}} + 0.2 M_{\mathrm{mid}} + 0.1 M_{\mathrm{min}}
+$$
+
+and then round to the nearest integer. A grade of 31 or over is interpreted as 30 Lode. A grade of 18 or above is considered as passing the course.
 
 ### Exercises
 
@@ -54,7 +63,7 @@ The last three weeks of the course are devoted to the mini-projects. Topics are 
 
 ## Alternative evaluation
 
-As an alternative to the continuous evaluation, students have the right to instead choose to attempt a written and oral exam during one of the 6 exam calls of the year. It highly recommended to opt for the continuous evaluation.
+As an alternative to the continuous evaluation, students have the right to instead choose to attempt a written and oral exam during one of the 6 exam calls of the year. However it highly recommended to opt for the continuous evaluation.
 
 If one chooses this evaluation system:
 

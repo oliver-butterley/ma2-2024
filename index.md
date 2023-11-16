@@ -1,7 +1,7 @@
 # Overview
 
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
-These pages contain the [lecture notes](/pages/part1.md) and practical details related to the course.
+These pages contain the [lecture notes](/pages/part1) and practical details related to the course.
 
 Instructors:
 
@@ -34,15 +34,17 @@ The material of the course is divided into six parts as listed below. Each part 
 | [Multiple integrals](/pages/part5.md)     | 20 Nov - 1 Dec  | Greenblatt |
 | [Surface integrals](/pages/part6.md)      | 4 - 15 Dec      | Greenblatt |
 
-The final weeks of the course are devoted to a mini-project.
+The final weeks of the course are devoted to a [mini-project](/pages/project).
 
 | Project          | Teaching period | Instructor |
 | ---------------- | --------------- | ---------- |
-| Project - week 1 | 18-22 Dec       | Greenblatt |
-| Project - week 2 | 8-12 Jan        | Butterley  |
-| Project - week 3 | 15-19 Dec       | Butterley  |
+| Project - week 1 | 8-12 Jan        | Greenblatt |
+| Project - week 2 | 15-19 Jan       | Butterley  |
 
-See the [lesson diary](/pages/diary.md) for full details.
+- 8 Dec 2023: deadline for agreeing project topic and project team
+- 29-30 Jan 2024: project presentations
+
+See the [lesson diary](/pages/diary) for full details.
 
 ## What is MA2?
 

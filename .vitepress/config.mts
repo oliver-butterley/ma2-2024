@@ -17,21 +17,29 @@ const figuresSetup = {
   figcaption: "title",
 };
 
-const theoremSetup = function (md: MarkdownIt) {
-  return {
-    render: function (tokens, idx, _options, env) {
-      const token = tokens[idx];
-      const info = token.info.trim().slice("theorem".length).trim();
-      const attrs = md.renderer.renderAttrs(token);
-      const thmString = `Theorem ${info ? `(${info})` : ""}`;
-      if (token.nesting === 1) {
-        const title = md.renderInline(thmString, {
-          references: env.references,
-        });
-        return `<div class="tip custom-block"${attrs}><p class="custom-block-title">${title}</p>\n`;
-      } else return `</div>\n`;
+const containerSetup = function (
+  md: MarkdownIt,
+  name: String,
+  heading: String,
+  format: "tip" | "info" | "warning" | "danger"
+) {
+  return [
+    name,
+    {
+      render: function (tokens, idx, _options, env) {
+        const token = tokens[idx];
+        const info = token.info.trim().slice(name.length).trim();
+        const attrs = md.renderer.renderAttrs(token);
+        const headerString = `${heading} ${info ? `(${info})` : ""}`;
+        if (token.nesting === 1) {
+          const title = md.renderInline(headerString, {
+            references: env.references,
+          });
+          return `<div class="${format} custom-block"${attrs}><p class="custom-block-title">${title}</p>\n`;
+        } else return `</div>\n`;
+      },
     },
-  };
+  ];
 };
 
 export default defineConfig({
@@ -52,7 +60,11 @@ export default defineConfig({
     config: (md) => {
       md.use(mdImplicitFigures, figuresSetup)
         .use(mdSuperscript)
-        .use(mdContainer, "theorem", theoremSetup(md));
+        .use(mdContainer, ...containerSetup(md, "theorem", "Theorem", "tip"))
+        .use(
+          mdContainer,
+          ...containerSetup(md, "definition", "Definition", "tip")
+        );
     },
   },
 

@@ -34,6 +34,8 @@ The material of the course is divided into six parts as listed below. Each part 
 | [Multiple integrals](/pages/part5.md)     | 20 Nov - 1 Dec  | Greenblatt |
 | [Surface integrals](/pages/part6.md)      | 4 - 15 Dec      | Greenblatt |
 
+See the [lesson diary](/pages/diary) for full details.
+
 The final weeks of the course are devoted to a [mini-project](/pages/project).
 
 | Project          | Teaching period | Instructor |
@@ -44,7 +46,6 @@ The final weeks of the course are devoted to a [mini-project](/pages/project).
 - 8 Dec 2023: deadline for agreeing project topic and project team
 - 29-30 Jan 2024: project presentations
 
-See the [lesson diary](/pages/diary) for full details.
 
 ## What is MA2?
 

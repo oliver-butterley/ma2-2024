@@ -41,6 +41,7 @@ $$
 \iint_{R} f \ dx dy = \sum_{j=0}^{m-1} \sum_{k=0}^{n-1} c_{jk} (x_{j+1}-x_{j})(y_{k+1}-y_{k}).
 $$
 
+This should remind you of Riemann sums from Analysis I.
 Observe that the value of the integral is independent of the partition, as long as the function is constant on each sub-rectangle. In this sense the integral is well-defined (not dependent on the choice of partition used to calculate it).
 
 ::: theorem {#thm:props-integral }
@@ -66,6 +67,7 @@ All properties follow from the definition by basic calculations.
 
 We are now in the position to define the set of integrable functions. In order to define integrability we take advantage of "upper" and "lower" integrals which "sandwich" the function we really want to integrate.
 
+::: tip Definition (integrability on a rectangle) {#def:integrability_rectangle}
 Let $R$ be a rectangle and let $f: R \to \bR$ be a bounded function. We call $f$ an _integrable_ function if there is one and only one number $I\in \bR$ such that
 
 $$
@@ -79,40 +81,67 @@ g(x,y) \leq f(x,y) \leq h(x,y).
 $$
 
 This number $I$ is called the integral of $f$ on $R$ and is denoted $\iint_{R} f(x,y) \ dx dy$.
+:::
 
 All the basic properties of the integral of step functions, as stated in [the above Theorem](#thm:props-integral), also hold for the integral of any integrable functions. This can be shown by considering the limiting procedure of the upper and lower integral of step functions which are part of the definition of integrability.
 
+The most important words in the definition are "only one number": that's what we need to check to verify that a function is integrable.
+That still isn't immediately easy to check and so it is convenient to now investigate the integrability of continuous functions.
+
+::: theorem {thm:continuous_integrable}
+Suppose that $f$ is a continuous function defined on the rectangle $R$. Then $f$ is integrable.
+:::
+
+Continuity implies boundedness and so upper and lower integrals exist. Let $\epsilon>0$. Exists $\delta>0$ such that $\abs{f(\xx)-f(\yy)}\leq \epsilon$ whenever $\norm{\xx-\yy}\leq \delta$. We can choose a partition such that $\norm{\xx-\yy}\leq \delta$ whenever $\xx,\yy$ are in the same sub-rectangle $Q_{jk}$. We then define the step functions $g,h$ s.t. $g(\xx)=\inf_{Q{jk}} f$, $h(\xx)=\sup_{Q{jk}} f$ when $\xx\in Q_{jk}$. 
+To finish the proof we observe that $\abs{\inf_{Q{jk}} f - \sup_{Q{jk}} f }\leq \epsilon$ and $\epsilon>0$ can be made arbitrarily small, so we can make the upper and lower integrals as close as we want.
+
+
+
+
+
 ## Evaluation of multiple integrals
 
-Now we have a definition, so we know what a multidimensional integral is, but it is essential to also have a way to practically evaluate any given integral.
+Now we have a definition, so we know what a multidimensional integral is, and we also know that some interesting ones exist, but it is essential to also have a way to practically evaluate any given integral.  It turns out we can do that by integrating in one variable at a time:
 
-Let $f$ be a bounded integrable function on $R = [a_1,b_1] \times [a_2,b_2]$. Suppose that, for every $y\in [a_2,b_2]$, the integral $A(y) = \int_{a_1}^{b_1} f(x,y) \ dx$ exists. Then $\int_{a_2}^{b_2} A(y) \ dy$ exists and,
+:::theorem Fubini {thm:fubini_rectangle}
 
-$$
-\iint_{R} f \ dx dy = \int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} f(x,y) \ dx  \right] \ dy.
-$$
-
-We start by choosing step functions $g,h$ such that $g\leq f \leq h$. By assumption $\int_{a_1}^{b_1} g(x,y) \ dx \leq A(y) \leq \int_{a_1}^{b_1} h(x,y) \ dx$. We then observe that $\int_{a_1}^{b_1} g(x,y) \ dx$ and $\int_{a_1}^{b_1} h(x,y) \ dx$ are step functions (in $y$) and so $A(y)$ is integrable. Moreover,
-
-$$
-\int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} g(x,y) \ dx  \right] \ dy
-        \leq \int_{a_2}^{b_2} A(y) \ dy
-        \leq \int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} h(x,y) \ dx  \right] \ dy.
-$$
-
-This both proves the existence of $\int_{a_2}^{b_2} A(y) \ dy$ and the value of the integral.
-
-The conditions of the above theorem aren't immediately easy to check and so it is convenient to now investigate the integrability of continuous functions.
-
-Suppose that $f$ is a continuous function defined on the rectangle $R$. Then $f$ is integrable and
+Let $f$ be an integrable function on the rectangle $R = [a_1,b_1] \times [a_2,b_2]$.  Then
 
 $$
 \iint_{R} f(x,y) \ dx dy
         = \int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} f(x,y) \ dx  \right] \ dy
         = \int_{a_1}^{b_1} \left[\int_{a_2}^{b_2}  f(x,y) \ dy  \right] \ dx.
 $$
+:::
 
-Continuity implies boundedness and so upper and lower integrals exist. Let $\epsilon>0$. Exists $\delta>0$ such that $\abs{f(\xx)-f(\yy)}\leq \epsilon$ whenever $\norm{\xx-\yy}\leq \delta$. We can choose a partition such $\norm{\xx-\yy}\leq \delta$ whenever $\xx,\yy$ are in the same sub-rectangle $Q_{jk}$. We then define the step functions $g,h$ s.t. $g(\xx)=\inf_{Q{jk}} f$, $h(\xx)=\sup_{Q{jk}} f$ when $\xx\in Q_{jk}$. To finish the proof we observe that $\abs{\inf_{Q{jk}} f - \sup_{Q{jk}} f }\leq \epsilon$ and $\epsilon>0$ can be made arbitrarily small.
+To see this, think about any pair of step functions $g,h$ such that $g\leq f \leq h$.
+Since these are step functions,
+$$
+	\iint_R g(x,y) \ dx dy
+	= 
+	\int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} g(x,y) \ dx  \right] \ dy
+	= 
+	\int_{a_1}^{b_1} \left[ \int_{a_2}^{b_2} g(x,y) \ dy  \right] \ dx
+$$
+since these are all just different names for the same sum, and the same is true for $h$.
+Using this, 
+$$
+	\iint_R g(x,y) \ dx dy
+	\leq
+        \int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} f(x,y) \ dx  \right] \ dy
+	\leq
+	\iint_R h(x,y) \ dx dy
+;
+$$
+in other words the iterated integral in the middle is bounded from above and below by the same upper and lower integrals as the integral of $f$, which leaves only one possible value
+$$
+        \int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} f(x,y) \ dx  \right] \ dy
+	=
+	\iint_R f(x,y) \ dx dy
+$$
+and the other equality holds for the same reason.
+
+
 
 This integral naturally allows us to calculate the volume of a solid. Let $f(x,y)\leq z \leq g(x,y)$ be defined on the rectangle $R \subset \bR^2$ and consider the 3D set defined as
 
@@ -124,7 +153,7 @@ The volume of the set $V$ is equal to $\operatorname{Vol}(V) = \iint_{R} \left[ 
 
 ![](../images/svg/volume.svg "Set enclosed by $xy$-plane and $f(x,y)$")
 
-Up until now we have considered step function and continuous functions. Clearly we can permit some discontinuities and we introduce the following concept to be able to control the functions with discontinuities sufficiently to guarantee that the integrals are well-defined.
+Up until now we have considered step function and continuous functions. As with one-dimensional integrals we can permit some discontinuities and we introduce the following concept to be able to control the functions with discontinuities sufficiently to guarantee that the integrals are well-defined.
 
 A bounded subset $A\subset \bR^2$ is said to have content zero if, for every $\epsilon>0$, there exists a finite set of rectangles whose union includes $A$ and the sum of the areas of the rectangles is not greater than $\epsilon$.
 

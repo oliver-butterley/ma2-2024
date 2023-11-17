@@ -155,13 +155,18 @@ The volume of the set $V$ is equal to $\operatorname{Vol}(V) = \iint_{R} \left[ 
 
 Up until now we have considered step function and continuous functions. As with one-dimensional integrals we can permit some discontinuities and we introduce the following concept to be able to control the functions with discontinuities sufficiently to guarantee that the integrals are well-defined.
 
+::: definition Content zero
 A bounded subset $A\subset \bR^2$ is said to have content zero if, for every $\epsilon>0$, there exists a finite set of rectangles whose union includes $A$ and the sum of the areas of the rectangles is not greater than $\epsilon$.
+:::
 
 Examples of content zero sets include: finite sets of points; bounded line segments; continuous paths.
 
 ![](../images/svg/content-zero.svg "The graph of a continuous function has content zero")
 
+:::theorem
+
 Let $f$ be a bounded function on $R$ and suppose that the set of discontinuities $A\subset R$ has content zero. Then the double integral $\iint_{R}f(x,y) \ dx dy$ exists.
+:::
 
 Take a cover of $A$ by rectangles with total area not greater than $\delta>0$. Let $P$ be a partition of $R$ which is finer than the cover of $A$. We may assume that $\abs{\inf_{Q{jk}} f - \sup_{Q{jk}} f }\leq \epsilon$ on each sub-rectangle of the partition which doesn't contain a discontinuity of $f$. The contribution to the integral of bounding step functions from the cover of $A$ is bounded by $\delta \sup \abs{f}$.
 
@@ -181,29 +186,31 @@ $$
 
 We use this notation in the following definition.
 
-We say that $f$ is integrable if $f_{R}$ is integrable and define
+:::definition
+We say that $f : S \to \bR$ is integrable if $f_{R}$ is integrable and define
 
 $$
 \iint_{S} f(x,y) \ dx dy = \iint_{R} f_{R}(x,y) \ dx dy.
 $$
+:::
 
-Suppose that there are continuous functions $\varphi_1$, $\varphi_2$ on $\bR$ and consider the set (see Figure [1.1](#fig:type-one))
-
+Suppose that there are continuous functions $\varphi_1$, $\varphi_2$ on $\bR$ and consider the set 
 $$
 S = \left\{(x,y): a \leq x \leq b, \varphi_1(x) \leq y \leq \varphi_2(x)\right\} \subset \bR^2.
 $$
 
-Not all sets can be written in this way but many can and such a way of describing a subset of $\bR^2$ is convenient for evaluating integrals. Observe that we could also consider the following set
+![](../images/svg/type-one.svg "A region defined by two continuous functions. The projection of the region onto the $x$-axis is the interval $[a,b]$")
 
-$$
-S = \left\{(x,y): a \leq y \leq b, \varphi_1(y) \leq x \leq \varphi_2(y)\right\}.
-$$
+
+Not all sets can be written in this way but many can and such a way of describing a subset of $\bR^2$ is convenient for evaluating integrals. 
 
 In the first case we could describe the representation as projecting along the $y$-coordinate whereas in the second case we are projecting along the $x$-coordinate. Observe that it doesn't make a different to the integral if we use $<$ or $\leq$ in the definition of $S$ since the difference would be a content zero set.
 
-![](../images/svg/type-one.svg "A region defined by two continuous functions. The projection of the region onto the $x$-axis is the interval $[a,b]$")
+::: theorem
 
 Suppose that $\varphi$ is a continuous function on $[a,b]$. Then the graph $\big\{(x,y): x\in [a,b], y=\varphi(x)\big\}$ has zero content.
+
+:::
 
 By continuity, for every $\epsilon>0$, there exists $\delta>0$ such that $\abs{\varphi(x) - \varphi(y)}\leq \epsilon$ whenever $\abs{x-y}\leq \delta$. We then take partition of $[a,b]$ into subintervals of length less than $\delta$. Using this partition we generate a cover of the graph which has area not greater than $2\epsilon \abs{b-a}$.
 
@@ -215,7 +222,12 @@ $$
 
 The set of discontinuity of $f_{R}$ is the boundary of $S$ in $R=[a,b]\times[\tilde a,\tilde b]$ which consists of the graphs of $\varphi_1$, $\varphi_2$. These graphs have zero content as we proved before. For each $x$, $f(x,y)$ is integrable since it has only two discontinuity points. Additionally $\int_{\tilde a}^{\tilde b} f_{R}(x,y) \ dy =  \int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy$.
 
-A similar result holds for type 2 regions but with $x$ and $y$ swapped. For higher dimensions we need to also have an understanding of how to represent subsets of $\bR^n$. Take for example a 3D solid then we would hope to be able to "project" along one of the coordinate axis and so describe it using the 2D "shadow" and a pair of continuous functions. For example, consider the upside-down cone of Figure [1.2](#fig:cone){reference-type="ref" reference="fig:cone"} which has base of radius $5$ lying in the plane $\{z=5\}$ and has tip at the origin.
+Observe that we could also consider the following set
+
+$$
+S = \left\{(x,y): a \leq y \leq b, \varphi_1(y) \leq x \leq \varphi_2(y)\right\}.
+$$
+A similar result holds for this set with $x$ and $y$ swapped. For higher dimensions we need to also have an understanding of how to represent subsets of $\bR^n$. Take for example a 3D solid; then we would hope to be able to "project" along one of the coordinate axis and so describe it using the 2D "shadow" and a pair of continuous functions. For example, consider the upside-down cone [in this figure](#fig:cone){reference-type="ref" reference="fig:cone"} which has base of radius $5$ lying in the plane $\{z=5\}$ and has tip at the origin.
 
 ![](../images/svg/cone.svg 'Upside-down cone of height $5$ with tip at the origin. The solid is bounded by the surfaces $z = \\sqrt{x^2+y^2}$ and $z=5$. This solid can be "projected" onto the $xy$-plane.')
 

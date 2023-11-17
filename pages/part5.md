@@ -155,13 +155,21 @@ The volume of the set $V$ is equal to $\operatorname{Vol}(V) = \iint_{R} \left[ 
 
 Up until now we have considered step function and continuous functions. As with one-dimensional integrals we can permit some discontinuities and we introduce the following concept to be able to control the functions with discontinuities sufficiently to guarantee that the integrals are well-defined.
 
-::: definition Content zero
+::: definition Content zero sets
 A bounded subset $A\subset \bR^2$ is said to have content zero if, for every $\epsilon>0$, there exists a finite set of rectangles whose union includes $A$ and the sum of the areas of the rectangles is not greater than $\epsilon$.
 :::
 
 Examples of content zero sets include: finite sets of points; bounded line segments; continuous paths.
 
 ![](../images/svg/content-zero.svg "The graph of a continuous function has content zero")
+
+::: theorem
+
+Suppose that $\varphi$ is a continuous function on $[a,b]$. Then the graph $\big\{(x,y): x\in [a,b], y=\varphi(x)\big\}$ has zero content.
+
+:::
+
+By continuity, for every $\epsilon>0$, there exists $\delta>0$ such that $\abs{\varphi(x) - \varphi(y)}\leq \epsilon$ whenever $\abs{x-y}\leq \delta$. We then take partition of $[a,b]$ into subintervals of length less than $\delta$. Using this partition we generate a cover of the graph which has area not greater than $2\epsilon \abs{b-a}$.
 
 :::theorem
 
@@ -206,15 +214,8 @@ Not all sets can be written in this way but many can and such a way of describin
 
 In the first case we could describe the representation as projecting along the $y$-coordinate whereas in the second case we are projecting along the $x$-coordinate. Observe that it doesn't make a different to the integral if we use $<$ or $\leq$ in the definition of $S$ since the difference would be a content zero set.
 
-::: theorem
 
-Suppose that $\varphi$ is a continuous function on $[a,b]$. Then the graph $\big\{(x,y): x\in [a,b], y=\varphi(x)\big\}$ has zero content.
-
-:::
-
-By continuity, for every $\epsilon>0$, there exists $\delta>0$ such that $\abs{\varphi(x) - \varphi(y)}\leq \epsilon$ whenever $\abs{x-y}\leq \delta$. We then take partition of $[a,b]$ into subintervals of length less than $\delta$. Using this partition we generate a cover of the graph which has area not greater than $2\epsilon \abs{b-a}$.
-
-Let $S = \left\{(x,y): x \in [a,b], \varphi_1(x) \leq y \leq \varphi_2(x)\right\}$ where $\varphi_1, \varphi_2$ are continuous and let $f$ be a bounded continuous function of $S$. Then $f$ is integrable on $S$ and
+Let $S = \left\{(x,y): x \in [a,b], \varphi_1(x) \leq y \leq \varphi_2(x)\right\}$ where $\varphi_1, \varphi_2$ are continuous and let $f$ be a bounded continuous function of $S$. Then $f$ is integrable on $S$ and 
 
 $$
 \iint_{S} f(x,y) \ dx dy = \int_{a}^{b} \left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy\right] \ dx.

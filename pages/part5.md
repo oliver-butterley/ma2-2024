@@ -21,19 +21,24 @@ First we need to find a definition of integrability and the integral. Then we wi
 
 For higher dimensions we follow the same logic. We will then show that we can evaluate higher dimensional integrals by repeated one-dimensional integration.
 
-Let $R = [a_1,b_1] \times [a_2,b_2]$ be a rectangle. Suppose that $P_1 = \{x_0,\ldots,x_m\}$ and $P_2 = \{y_0,\ldots,y_n\}$ such that $a_1 = x_0 < x_2 < \cdots < x_m = b_1$ and $a_2 = y_0 < y_2 < \cdots < y_n = b_2$. $P= P_1 \times P_2$ is said to be a partition of $R$.
-
-Observe that a partition divides $R$ into $nm$ sub-rectangles. If $P \subseteq Q$ then we say that $Q$ is a finer partition than $P$. Partitions are constructed in higher dimension, for $\bR^n$, in an analogous way. Before defining integration for general functions it is convenient to make the definition for a special class of functions called step functions.
+:::definition partition
+Let $R = [a_1,b_1] \times [a_2,b_2]$ be a rectangle. Suppose that $P_1 = \{x_0,\ldots,x_m\}$ and $P_2 = \{y_0,\ldots,y_n\}$ such that $a_1 = x_0 < x_2 < \cdots < x_m = b_1$ and $a_2 = y_0 < y_2 < \cdots < y_n = b_2$. $P= P_1 \times P_2$ is said to be a _partition_ of $R$.
+:::
 
 ![](../images/svg/partition.svg "A partition of a rectangle $R$")
 
-A function $f:R\to \bR$ is said to be a _step function_ if there is a partition $P$ of $R$ such that $f$ is constant on each sub-rectangle of the partition.
+Observe that a partition divides $R$ into $nm$ sub-rectangles. If $P \subseteq Q$ then we say that $Q$ is a finer partition than $P$. Partitions are constructed in higher dimension, for $\bR^n$, in an analogous way. Before defining integration for general functions it is convenient to make the definition for a special class of functions called step functions.
 
-If $f$ and $q$ are step functions and $c,d \in \bR$, then $c f + d g$ is also a step function. Also note that the area of the sub-rectangle $Q_{jk}:=[x_{j},x_{j+1}]\times [y_{k},y_{k+1}]$ is equal to $(x_{j+1}-x_{j})(y_{k+1}-y_{k})$.
+:::definition step function
+A function $f:R\to \bR$ is said to be a _step function_ if there is a partition $P$ of $R$ such that $f$ is constant on each sub-rectangle of the partition.
+:::
+
+![](../images/svg/step-function.svg "Graph of a step function")
+
+If $f$ and $g$ are step functions and $c,d \in \bR$, then $c f + d g$ is also a step function. Also note that the area of the sub-rectangle $Q_{jk}:=[x_{j},x_{j+1}]\times [y_{k},y_{k+1}]$ is equal to $(x_{j+1}-x_{j})(y_{k+1}-y_{k})$.
 
 We can now define the integral of a step function in a reasonable way. The definition here is for 2D but the analogous definition holds for any dimension.
 
-![](../images/svg/step-function.svg "Graph of a step function")
 
 Suppose that $f$ is a step function with value $c_{jk}$ on the sub-rectangle $(x_{j},x_{j+1})\times (y_{k},y_{k+1})$. Then we define the integral as
 

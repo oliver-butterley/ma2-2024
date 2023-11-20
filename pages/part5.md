@@ -22,7 +22,7 @@ First we need to find a definition of integrability and the integral. Then we wi
 For higher dimensions we follow the same logic. We will then show that we can evaluate higher dimensional integrals by repeated one-dimensional integration.
 
 :::definition partition
-Let $R = [a_1,b_1] \times [a_2,b_2]$ be a rectangle. Suppose that $P_1 = \{x_0,\ldots,x_m\}$ and $P_2 = \{y_0,\ldots,y_n\}$ such that $a_1 = x_0 < x_2 < \cdots < x_m = b_1$ and $a_2 = y_0 < y_2 < \cdots < y_n = b_2$. $P= P_1 \times P_2$ is said to be a _partition_ of $R$.
+Let $R = [a_1,b_1] \times [a_2,b_2]$ be a rectangle. Suppose that $P_1 = \{x_0,\ldots,x_m\}$ and $P_2 = \{y_0,\ldots,y_n\}$ such that $a_1 = x_0 < x_1 < \cdots < x_m = b_1$ and $a_2 = y_0 < y_1 < \cdots < y_n = b_2$. $P= P_1 \times P_2$ is said to be a _partition_ of $R$.
 :::
 
 ![](../images/svg/partition.svg "A partition of a rectangle $R$")

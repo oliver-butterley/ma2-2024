@@ -41,10 +41,11 @@ Each of the 6 parts of the course includes exercises. The exercises for part 1 o
 | exam              | date                                | time        | topics | location       |
 | ----------------- | ----------------------------------- | ----------- | ------ | -------------- |
 | [midterm 1][mid1] | ~~23 October 2023~~ 30 October 2023 | 14:00-15:30 | 1-2    | aula disegno 2 |
-| midterm 2         | 20 November 2023                    | 14:00-15:30 | 3-4    | aula disegno 2 |
+| [midterm 2][mid2] | 20 November 2023                    | 14:00-15:30 | 3-4    | aula disegno 2 |
 | midterm 3         | 18 December 2023                    | 14:00-15:30 | 5-6    | aula disegno 2 |
 
 [mid1]: /midterm1.pdf
+[mid2]: /midterm2.pdf
 
 The focus of each midterm is on the two parts of the course which immediately proceeded the exam. However, in later parts of the course, since the material builds on the earlier foundation, knowledge of the earlier parts of the course is still required. The questions on each midterm will be very similar to the exercises attached to those parts of the course.
 

@@ -5,22 +5,13 @@
 
 ## Exercise
 
-Let $R = [0,1]\times [0,1]$
-and let $f(x,y) = 27 xy(x+y)$.
+Evaluate the multiple integral $I = \iint_R f(x,y) \ dx dy$ by iterated integration, where:
 
-Evaluate the integral 
-$$\iint_{R} f(x,y) \ dx dy. $$
-
-## Exercise
-
-Let $R = [0,\pi/2]\times [0,\pi/2]$
-and let $f(x,y) = 7 \sin(x+y)$.
-
-Evaluate the integral 
-$$
-    \iint_{R} f(x,y) \ dx dy .
-$$
-
+1. $R = [0,1]\times [0,1]$, $f(x,y) = 27 xy(x+y)$
+1. $R = [0,1]\times [0,1]$, $f(x,y) = 4x^3$
+2. $R = [0,\pi/2]\times [0,\pi/2]$, $f(x,y) = 7 \sin(x+y)$.
+3. $R = [0,1] \times [1,2]$, $f(x,y) = x e^{xy}$
+4. $R = [0,1] \times [1,2]$, $f(x,y) = x e^{x-y}$
 
 ## Exercise
 

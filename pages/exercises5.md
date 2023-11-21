@@ -1,9 +1,7 @@
 # Additional exercises 5
 
 <!--@include: notation.md-->
-::: warning
-This page is likely to change in the next few days.
-:::
+
 
 ## Exercise
 

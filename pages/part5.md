@@ -233,7 +233,7 @@ Observe that we could also consider the following set
 $$
 S = \left\{(x,y): a \leq y \leq b, \varphi_1(y) \leq x \leq \varphi_2(y)\right\}.
 $$
-A similar result holds for this set with $x$ and $y$ swapped. For higher dimensions we need to also have an understanding of how to represent subsets of $\bR^n$. Take for example a 3D solid; then we would hope to be able to "project" along one of the coordinate axis and so describe it using the 2D "shadow" and a pair of continuous functions. For example, consider the upside-down cone [in this figure](#fig:cone){reference-type="ref" reference="fig:cone"} which has base of radius $5$ lying in the plane $\{z=5\}$ and has tip at the origin.
+A similar result holds for this set with $x$ and $y$ swapped. For higher dimensions we need to also have an understanding of how to represent subsets of $\bR^n$. Take for example a 3D solid; then we would hope to be able to "project" along one of the coordinate axis and so describe it using the 2D "shadow" and a pair of continuous functions. For example, consider the upside-down cone [in this figure](#fig:cone){reference-type="ref" reference="fig:cone"} which has base of radius $5$ lying in the plane $\{z=5\}$ and has its tip at the origin.
 
 ![](../images/svg/cone.svg 'Upside-down cone of height $5$ with tip at the origin. The solid is bounded by the surfaces $z = \\sqrt{x^2+y^2}$ and $z=5$. This solid can be "projected" onto the $xy$-plane.')
 

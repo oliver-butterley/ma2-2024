@@ -51,6 +51,10 @@ Sketch $S$ and find its centroid.
 
 ## Exercise
 
+Find the center of mass of trapezoidal object with corners $(x,y)=(2,0)$, $(2,4)$, $(-4,-2)$ and $(-2,0)$ and density $\rho(x,y) = x^2 + y^2 + 1$.
+
+## Exercise
+
 Use polar coordinates to evaluate
 
 $$

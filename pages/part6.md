@@ -364,7 +364,7 @@ $$
 
 As such, it suffices to show that $\iiint_V \left(\frac{\partial f_x}{\partial x}  \right) \ dx dy dz = \iint_{S} \left(f_x n_x \right) \ dS$. If we suppose the solid $V$ is $xy$-projectable then we can explicitly write the integral (later to be extended to general solids). We then use the fundamental theorem of calculus to express $f_x$ as the integral of the derivative.
 
-Stokes' Theorem allows us to connect surface integrals (2D) to line integrals (1D). On the other hand Gauss' Theorem allows us to connect volume integrals (3D) to surface integrals (2D). In this way they are similar to each other; in both of them we "cancel" a derivative with an integral. Indeed the fundamental theorem of calculus for line integral also fits into this same pattern. The branch of mathematics called "differential geometry" provides a framework in which all these results can be described in a unified way by the statement
+Stokes' Theorem allows us to connect surface integrals (2D) to line integrals (1D). On the other hand Gauss' Theorem allows us to connect volume integrals (3D) to surface integrals (2D). In this way they are similar to each other; in both of them we change one side to the other by lowering the dimension of the integral and removing a derivative. Indeed the fundamental theorem of calculus for line integral also fits into this same pattern. The branch of mathematics called "differential geometry" provides a framework in which all these results can be described in a unified way by the statement
 
 $$
 \int_{\partial \Omega} \omega = \int_{\Omega} d\omega.

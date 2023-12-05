@@ -44,7 +44,7 @@ $$
         \end{aligned}
 $$
 
-Observe that the second form can be deduced from spherical coordinates (fixed angle from $z$-axis).
+Observe that the second form can be deduced from spherical coordinates (fixed angle from $z$-axis) or from cylindrical coordinates (fixed ratio between vertical coordinate and distance from the the $z$-axis).
 
 ### Fundamental vector product
 
@@ -246,6 +246,8 @@ so the definition does make sense.
 
 In preparation for defining the surface integral of a vector field we need the notion of the _normal_ vector of a surface. This is a natural geometric notion, for each point in the surface it is the unit vector field which is orthogonal to the surface.
 
+::: definition unit normal {#def:unit-normal}
+
 Let $S=\rr(T)$ be a parametric surface. At each regular point the two unit normals are
 
 $$
@@ -253,6 +255,7 @@ $$
 \quad \text{and} \quad
 \nn_2 = -\nn_1.
 $$
+:::
 
 This definition makes $\norm{\nn_1} = \norm{\nn_2} = 1$. That there are two normal vectors is expected because there are two sides to the surface at each point, one is just the opposite direction to the other.  When we have two parameterizations of the same surface, they always have the same *pair* of normals at any regular point, but which one is $\nn_1$ and which one is $\nn_2$ can be different.
 
@@ -331,9 +334,6 @@ Let $S\subset \bR^3$ be convex. Then $\nabla \times \ff \equiv \mathbf{0}$ on $S
 This implies [this theorem from Part 5 about conservative fields](part5#thm:conservative-fields-simply-connected) (the 2D vector fields can be written as 3D vector fields with a zero component).
 
 ## Stokes' Theorem and Gauss's Theorem
-::: warning
-Draft text ⚠️
-:::
 
 ::: theorem Stokes {#thm:stokes}
 
@@ -364,7 +364,7 @@ $$
 
 As such, it suffices to show that $\iiint_V \left(\frac{\partial f_x}{\partial x}  \right) \ dx dy dz = \iint_{S} \left(f_x n_x \right) \ dS$. If we suppose the solid $V$ is $xy$-projectable then we can explicitly write the integral (later to be extended to general solids). We then use the fundamental theorem of calculus to express $f_x$ as the integral of the derivative.
 
-Stokes' Theorem allows us to connect surface integrals (2D) to line integrals (1D). On the other hand Gauss' Theorem allows us to connect volume integrals (3D) to surface integrals (2D). In this way they are similar to each other, the integral goes decreases dimension and also there is the loss of a derivative. Indeed the fundamental theorem of calculus for line integral also fits into this same pattern. The branch of mathematics called "differential geometry" provides a framework in which all these results can be described in a unified way by the statement
+Stokes' Theorem allows us to connect surface integrals (2D) to line integrals (1D). On the other hand Gauss' Theorem allows us to connect volume integrals (3D) to surface integrals (2D). In this way they are similar to each other; in both of them we change one side to the other by lowering the dimension of the integral and removing a derivative. Indeed the fundamental theorem of calculus for line integral also fits into this same pattern. The branch of mathematics called "differential geometry" provides a framework in which all these results can be described in a unified way by the statement
 
 $$
 \int_{\partial \Omega} \omega = \int_{\Omega} d\omega.

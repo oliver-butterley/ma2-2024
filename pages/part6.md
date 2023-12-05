@@ -44,7 +44,7 @@ $$
         \end{aligned}
 $$
 
-Observe that the second form can be deduced from spherical coordinates (fixed angle from $z$-axis).
+Observe that the second form can be deduced from spherical coordinates (fixed angle from $z$-axis) or from cylindrical coordinates (fixed ratio between vertical coordinate and distance from the the $z$-axis).
 
 ### Fundamental vector product
 

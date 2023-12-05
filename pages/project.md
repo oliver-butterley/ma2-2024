@@ -23,5 +23,5 @@
 
 ## Schedule
 
-- 8 Dec 2023: deadline for agreeing project topic and project team
+- 8 Jan 2024: deadline for agreeing project topic and project team
 - 29-30 Jan 2024: project presentations

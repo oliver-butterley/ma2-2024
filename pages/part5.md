@@ -333,11 +333,13 @@ $$
             \iint_{S}  \left(\tfrac{\partial Q}{\partial x} - \tfrac{\partial P}{\partial y}\right) \ dx dy
              & =
             \int_{a}^{b}\left[\int_{\varphi_1(x)}^{\varphi_2(x)}  (- \tfrac{\partial P}{\partial y}) \ dy\right] \ dx \\
-             & = \int_{a}^{b}  (P(x,\varphi_1(x))-P(x,\varphi_2(x)))   dx,
+             & = \int_{a}^{b}  [P(x,\varphi_1(x))-P(x,\varphi_2(x))]   dx,
         \end{aligned}
 $$
 
-It is then natural to choose four paths $\aalpha_1(t) = (t,\varphi_1(t))$, $\aalpha_2(t) = (a,t)$, $\aalpha_3(t) = (t,\varphi_2(t))$, $\aalpha_4(t) = (b,t)$. We can calculate that $\int_{C} \ff \cdot d\aalpha = \int \ff \cdot d\aalpha_1 - \int \ff \cdot d\aalpha_3 = \int_{a}^{b} P(t,\varphi_1(t)) \ dt -  \int_{a}^{b} P(t,\varphi_2(t)) \ dt$. If $S$ is also type 2 then this works for $P=0$ and linearity means it works for $\ff = \left(\begin{smallmatrix}
+It is then natural to choose four paths $\aalpha_1(t) = (t,\varphi_1(t))$, $\aalpha_2(t) = (a,t)$, $\aalpha_3(t) = (t,\varphi_2(t))$, $\aalpha_4(t) = (b,t)$. We can calculate that 
+$$\int_{C} \ff \cdot d\aalpha = \int \ff \cdot d\aalpha_1 - \int \ff \cdot d\aalpha_3 = \int_{a}^{b} P(t,\varphi_1(t)) \ dt -  \int_{a}^{b} P(t,\varphi_2(t)) \ dt.$$
+If $S$ is also type 2 then this works for $P=0$ and linearity means it works for $\ff = \left(\begin{smallmatrix}
             P \\ 0
         \end{smallmatrix}\right)+\left(\begin{smallmatrix}
             0 \\ Q

@@ -343,8 +343,10 @@ $$
 $$
 :::
 
+::: info Proof
 Write $\ff = \left(\begin{smallmatrix}  f_x \\ f_y \\ f_z \end{smallmatrix}\right)$
 and suppose that $f_y = f_z = 0$. This effectively reduces the full problem to the lower dimensional version that we considered, and we can apply [Green's theorem](#thm:greens). Finally we conclude for general $\ff$ by linearity of the integral.
+:::
 
 Just as Green's Theorem holds for regions which can contain holes, as long as they are correctly accounted for, we can extend Stokes' theorem to more general surfaces with the idea of "cutting and gluing" the surface. In particular this allows the extension to surfaces with holes, cylinders, spheres, etc. On the other hand the theorem can't be extended to the Möbius band because the topology of this surface prevents a similar process being completed.
 
@@ -356,6 +358,7 @@ $$
 $$
 :::
 
+:::info Proof
 We start by writing
 
 $$
@@ -363,6 +366,7 @@ $$
 $$
 
 As such, it suffices to show that $\iiint_V \left(\frac{\partial f_x}{\partial x}  \right) \ dx dy dz = \iint_{S} \left(f_x n_x \right) \ dS$. If we suppose the solid $V$ is $xy$-projectable then we can explicitly write the integral (later to be extended to general solids). We then use the fundamental theorem of calculus to express $f_x$ as the integral of the derivative.
+:::
 
 Stokes' Theorem allows us to connect surface integrals (2D) to line integrals (1D). On the other hand Gauss' Theorem allows us to connect volume integrals (3D) to surface integrals (2D). In this way they are similar to each other; in both of them we change one side to the other by lowering the dimension of the integral and removing a derivative. Indeed the fundamental theorem of calculus for line integral also fits into this same pattern. The branch of mathematics called "differential geometry" provides a framework in which all these results can be described in a unified way by the statement
 

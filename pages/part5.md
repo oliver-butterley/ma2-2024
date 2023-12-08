@@ -68,7 +68,9 @@ $$
 
 :::
 
+:::info Proof
 All properties follow from the definition by basic calculations.
+:::
 
 We are now in the position to define the set of integrable functions. In order to define integrability we take advantage of "upper" and "lower" integrals which "sandwich" the function we really want to integrate.
 
@@ -97,9 +99,10 @@ That still isn't immediately easy to check and so it is convenient to now invest
 Suppose that $f$ is a continuous function defined on the rectangle $R$. Then $f$ is integrable.
 :::
 
+::: info Proof
 Continuity implies boundedness and so upper and lower integrals exist. Let $\epsilon>0$. Exists $\delta>0$ such that $\abs{f(\xx)-f(\yy)}\leq \epsilon$ whenever $\norm{\xx-\yy}\leq \delta$. We can choose a partition such that $\norm{\xx-\yy}\leq \delta$ whenever $\xx,\yy$ are in the same sub-rectangle $Q_{jk}$. We then define the step functions $g,h$ s.t. $g(\xx)=\inf_{Q{jk}} f$, $h(\xx)=\sup_{Q{jk}} f$ when $\xx\in Q_{jk}$. 
 To finish the proof we observe that $\abs{\inf_{Q{jk}} f - \sup_{Q{jk}} f }\leq \epsilon$ and $\epsilon>0$ can be made arbitrarily small, so we can make the upper and lower integrals as close as we want.
-
+:::
 
 
 
@@ -119,6 +122,7 @@ $$
 $$
 :::
 
+::: info Proof
 To see this, think about any pair of step functions $g,h$ such that $g\leq f \leq h$.
 Since these are step functions,
 $$
@@ -145,7 +149,7 @@ $$
 	\iint_R f(x,y) \ dx dy
 $$
 and the other equality holds for the same reason.
-
+:::
 
 
 This integral naturally allows us to calculate the volume of a solid. Let $f(x,y)\leq z \leq g(x,y)$ be defined on the rectangle $R \subset \bR^2$ and consider the 3D set defined as
@@ -174,14 +178,18 @@ Suppose that $\varphi$ is a continuous function on $[a,b]$. Then the graph $\big
 
 :::
 
+::: info Proof
 By continuity, for every $\epsilon>0$, there exists $\delta>0$ such that $\abs{\varphi(x) - \varphi(y)}\leq \epsilon$ whenever $\abs{x-y}\leq \delta$. We then take partition of $[a,b]$ into subintervals of length less than $\delta$. Using this partition we generate a cover of the graph which has area not greater than $2\epsilon \abs{b-a}$.
+:::
 
 :::theorem
 
 Let $f$ be a bounded function on $R$ and suppose that the set of discontinuities $A\subset R$ has content zero. Then the double integral $\iint_{R}f(x,y) \ dx dy$ exists.
 :::
 
+::: info Proof
 Take a cover of $A$ by rectangles with total area not greater than $\delta>0$. Let $P$ be a partition of $R$ which is finer than the cover of $A$. We may assume that $\abs{\inf_{Q{jk}} f - \sup_{Q{jk}} f }\leq \epsilon$ on each sub-rectangle of the partition which doesn't contain a discontinuity of $f$. The contribution to the integral of bounding step functions from the cover of $A$ is bounded by $\delta \sup \abs{f}$.
+:::
 
 ## Regions bounded by functions
 
@@ -317,6 +325,7 @@ $$
 
 :::
 
+::: info Proof
 To start we assume that $S$ is a type 1 region and that $Q=0$, Since $S = \left\{(x,y): x \in [a,b], \varphi_1(x) \leq y \leq \varphi_2(x)\right\}$,
 
 $$
@@ -333,6 +342,7 @@ It is then natural to choose four paths $\aalpha_1(t) = (t,\varphi_1(t))$, $\aal
         \end{smallmatrix}\right)+\left(\begin{smallmatrix}
             0 \\ Q
         \end{smallmatrix}\right)$, More general regions can be formed by "glueing" together simpler regions of the above type to complete the argument.
+:::
 
 The quantity $\tfrac{\partial Q}{\partial x} - \tfrac{\partial P}{\partial y}$ is reminiscent of something we saw with conservative vector fields and we take advantage of this with the following application. We previously introduced the concept of _connected sets_ but now we need a slight refinement of the idea.
 
@@ -353,6 +363,7 @@ Let $S$ be a simply connected region and suppose that $\ff = \left(\begin{smallm
 
 :::
 
+::: info Proof
 In [the mixed partials theorem](part4#thm:mixed-partials) we already proved that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ whenever $\ff$ is conservative so we need only prove the other direction of the statement. Suppose that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ and consider any closed path $\aalpha$ in $S$. Then [Green's theorem](#thm:greens) tells us that
 
 $$
@@ -360,6 +371,7 @@ $$
 $$
 
 This implies that $\ff$ is conservative because the fact that the line integral around every closed curve is zero (using [a theorem from Part 4](part4#thm:conservative-fields)).
+:::
 
 A crucially important consequence of the above result is that it implies the invariance of a line integral under deformation of a path when the vector field is conservative. Observe that the result can be extended to multiply connected regions by adding additional "cuts" and keeping track of the additional line integrals.
 

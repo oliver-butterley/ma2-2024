@@ -343,9 +343,8 @@ $$
 $$
 :::
 
-::: info Proof
-Write $\ff = \left(\begin{smallmatrix}  f_x \\ f_y \\ f_z \end{smallmatrix}\right)$
-and suppose that $f_y = f_z = 0$. This effectively reduces the full problem to the lower dimensional version that we considered, and we can apply [Green's theorem](#thm:greens). Finally we conclude for general $\ff$ by linearity of the integral.
+::: info "Proof"
+It's possible to prove this by a similar method to what we used for [Green's theorem](#thm:greens), but the details are quite complicated and not very interesting.
 :::
 
 Just as Green's Theorem holds for regions which can contain holes, as long as they are correctly accounted for, we can extend Stokes' theorem to more general surfaces with the idea of "cutting and gluing" the surface. In particular this allows the extension to surfaces with holes, cylinders, spheres, etc. On the other hand the theorem can't be extended to the Möbius band because the topology of this surface prevents a similar process being completed.

@@ -105,7 +105,7 @@ $$
 Consider the surface $S = \left\{(x,y,z) : x^2 + y^2 =  z, z\leq 9\right\}$.
 Find a parametric form for $S$ based on polar coordinates $x=r \cos \theta, \ y = r \sin \theta$, and find the associated fundamental vector product.
 
-Use this to find the surface integral $\int_S \mathbf{f} \cdot \mathbf{n} \ dS$, 
+Use this to find the surface integral $\iint_S \mathbf{f} \cdot \mathbf{n} \ dS$, 
 where $\mathbf{f}$ is the vector field 
 $$  \mathbf{f}(x,y,z) =
     \left(\begin{smallmatrix}
@@ -132,6 +132,11 @@ Calculate $\iint_{S} \mathbf{f} \cdot \mathbf{n} \ dS$, where $\mathbf{n}$ is th
 
 _Hint_: Use Gauss's theorem to rewrite this as a volume integral.
 
+## Exercise
+
+Let $S$ be the part of the surface $z = 1 - x^2 - 2y^2$ with $z \ge 0$, oriented in the positive $z$ direction.  Find
+$$ I = \iint_S \nabla \times \ff \cdot d \mathbf{S}, $$
+with $\ff(x,y,z) = (x,y^2,z  e^{xy})$.
 
 
 

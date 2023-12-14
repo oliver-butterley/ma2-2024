@@ -147,6 +147,6 @@ h1 {
 }
 h2:after {
     counter-increment: h2;
-    content: "5." counter(h2) 
+    content: "6." counter(h2) 
 }
 </style>

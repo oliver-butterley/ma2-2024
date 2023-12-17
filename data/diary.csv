@@ -25,15 +25,15 @@ date,time,topic,week,instructor
 15/11/2023,09:30-11:15,Line intergrals (worked examples of line integrals and extrema),8,Butterley
 20/11/2023,14:00-15:45,Midterm 2,9,Butterley
 21/11/2023,10:00-11:45,Solutions to Midterm 2  [ONLINE],9,Butterley
-22/11/2023,09:30-11:15,Multiple integrals,9,Greenblatt
-27/11/2023,14:00-15:45,Multiple integrals,10,Greenblatt
-28/11/2023,10:00-11:45,Multiple integrals  [ONLINE],10,Greenblatt
-29/11/2023,09:30-11:15,Multiple integrals,10,Greenblatt
-4/12/2023,14:00-15:45,Multiple integrals,11,Greenblatt
-5/12/2023,10:00-11:45,Surface integrals  [ONLINE],11,Greenblatt
-6/12/2023,09:30-11:15,Surface integrals,11,Greenblatt
-11/12/2023,14:00-15:45,Surface integrals,12,Greenblatt
-12/12/2023,10:00-11:45,Surface integrals  [ONLINE],12,Greenblatt
-13/12/2023,09:30-11:15,Surface integrals,12,Greenblatt
+22/11/2023,09:30-11:15,"Multiple integrals (Introduction, integrability on rectangles, Fubini's theorem and iterative integration)",9,Greenblatt
+27/11/2023,14:00-15:45,[CANCELLED] Multiple integrals,10,Greenblatt
+29/11/2023,09:30-11:15,Multiple integrals (general regions),10,Greenblatt
+30/11/2023,10:00-11:45,Multiple integrals (change of variables)  [ONLINE],10,Greenblatt
+4/12/2023,14:00-15:45,Multiple integrals (exercises),11,Greenblatt
+6/12/2023,09:30-11:15,"Surface integrals (parameterization of surfaces, fundamental vector product, area of a surface)",11,Greenblatt
+7/12/2023,10:00-11:45,"Surface integrals (integrating scalar and vector fields over surfaces, flux and flow)  [ONLINE]",11,Greenblatt
+11/12/2023,14:00-15:45,"Green's theorem, divergence and curl",12,Greenblatt
+12/12/2023,10:00-11:45,"Stokes' theorem and Gauss' theorem [ONLINE]",12,Greenblatt
+13/12/2023,09:30-11:15,Exercises on surface integrals,12,Greenblatt
 18/12/2023,14:00-15:30,Midterm 3,13,Greenblatt
-19/12/2023,10:00-11:45,Solutions to Midterm 3  [ONLINE],13,Greenblatt
+19/12/2023,14:00-15:45,Solutions to Midterm 3  [ONLINE],13,Greenblatt

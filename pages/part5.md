@@ -68,7 +68,9 @@ $$
 
 :::
 
+:::info Proof
 All properties follow from the definition by basic calculations.
+:::
 
 We are now in the position to define the set of integrable functions. In order to define integrability we take advantage of "upper" and "lower" integrals which "sandwich" the function we really want to integrate.
 
@@ -97,9 +99,10 @@ That still isn't immediately easy to check and so it is convenient to now invest
 Suppose that $f$ is a continuous function defined on the rectangle $R$. Then $f$ is integrable.
 :::
 
+::: info Proof
 Continuity implies boundedness and so upper and lower integrals exist. Let $\epsilon>0$. Exists $\delta>0$ such that $\abs{f(\xx)-f(\yy)}\leq \epsilon$ whenever $\norm{\xx-\yy}\leq \delta$. We can choose a partition such that $\norm{\xx-\yy}\leq \delta$ whenever $\xx,\yy$ are in the same sub-rectangle $Q_{jk}$. We then define the step functions $g,h$ s.t. $g(\xx)=\inf_{Q{jk}} f$, $h(\xx)=\sup_{Q{jk}} f$ when $\xx\in Q_{jk}$. 
 To finish the proof we observe that $\abs{\inf_{Q{jk}} f - \sup_{Q{jk}} f }\leq \epsilon$ and $\epsilon>0$ can be made arbitrarily small, so we can make the upper and lower integrals as close as we want.
-
+:::
 
 
 
@@ -119,6 +122,7 @@ $$
 $$
 :::
 
+::: info Proof
 To see this, think about any pair of step functions $g,h$ such that $g\leq f \leq h$.
 Since these are step functions,
 $$
@@ -145,7 +149,7 @@ $$
 	\iint_R f(x,y) \ dx dy
 $$
 and the other equality holds for the same reason.
-
+:::
 
 
 This integral naturally allows us to calculate the volume of a solid. Let $f(x,y)\leq z \leq g(x,y)$ be defined on the rectangle $R \subset \bR^2$ and consider the 3D set defined as
@@ -174,14 +178,18 @@ Suppose that $\varphi$ is a continuous function on $[a,b]$. Then the graph $\big
 
 :::
 
+::: info Proof
 By continuity, for every $\epsilon>0$, there exists $\delta>0$ such that $\abs{\varphi(x) - \varphi(y)}\leq \epsilon$ whenever $\abs{x-y}\leq \delta$. We then take partition of $[a,b]$ into subintervals of length less than $\delta$. Using this partition we generate a cover of the graph which has area not greater than $2\epsilon \abs{b-a}$.
+:::
 
 :::theorem
 
 Let $f$ be a bounded function on $R$ and suppose that the set of discontinuities $A\subset R$ has content zero. Then the double integral $\iint_{R}f(x,y) \ dx dy$ exists.
 :::
 
+::: info Proof
 Take a cover of $A$ by rectangles with total area not greater than $\delta>0$. Let $P$ be a partition of $R$ which is finer than the cover of $A$. We may assume that $\abs{\inf_{Q{jk}} f - \sup_{Q{jk}} f }\leq \epsilon$ on each sub-rectangle of the partition which doesn't contain a discontinuity of $f$. The contribution to the integral of bounding step functions from the cover of $A$ is bounded by $\delta \sup \abs{f}$.
+:::
 
 ## Regions bounded by functions
 
@@ -215,25 +223,31 @@ $$
 ![](../images/svg/type-one.svg "A region defined by two continuous functions. The projection of the region onto the $x$-axis is the interval $[a,b]$")
 
 
-Not all sets can be written in this way but many can and such a way of describing a subset of $\bR^2$ is convenient for evaluating integrals. 
+Not all sets can be written in this way but many can and such a way of describing a subset of $\bR^2$ is convenient for evaluating integrals.  We will call sets that can be written this way Type 1 sets in this section.
 
-In the first case we could describe the representation as projecting along the $y$-coordinate whereas in the second case we are projecting along the $x$-coordinate. Observe that it doesn't make a different to the integral if we use $<$ or $\leq$ in the definition of $S$ since the difference would be a content zero set.
 
 
 Let $S = \left\{(x,y): x \in [a,b], \varphi_1(x) \leq y \leq \varphi_2(x)\right\}$ where $\varphi_1, \varphi_2$ are continuous and let $f$ be a bounded continuous function of $S$. Then $f$ is integrable on $S$ and 
 
 $$
-\iint_{S} f(x,y) \ dx dy = \int_{a}^{b} \left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy\right] \ dx.
+\iint_{S} f(x,y) \ dx dy = \int_{a}^{b} \left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy\right] \ dx:
 $$
 
-The set of discontinuity of $f_{R}$ is the boundary of $S$ in $R=[a,b]\times[\tilde a,\tilde b]$ which consists of the graphs of $\varphi_1$, $\varphi_2$. These graphs have zero content as we proved before. For each $x$, $f(x,y)$ is integrable since it has only two discontinuity points. Additionally $\int_{\tilde a}^{\tilde b} f_{R}(x,y) \ dy =  \int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy$.
+the set of discontinuity of $f_{R}$ is the boundary of $S$ in $R=[a,b]\times[\tilde a,\tilde b]$ which consists of the graphs of $\varphi_1$, $\varphi_2$. These graphs have zero content as we proved before. For each $x$, $f(x,y)$ is integrable since it has only two discontinuity points. Additionally $\int_{\tilde a}^{\tilde b} f_{R}(x,y) \ dy =  \int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy$.  Observe that it doesn't make a different to the integral if we use $<$ or $\leq$ in the definition of $S$ since the difference would be a content zero set.
 
-Observe that we could also consider the following set
+We could also consider the following set
 
 $$
-S = \left\{(x,y): a \leq y \leq b, \varphi_1(y) \leq x \leq \varphi_2(y)\right\}.
+R = \left\{(x,y): a \leq y \leq b, \varphi_1(y) \leq x \leq \varphi_2(y)\right\},
 $$
-A similar result holds for this set with $x$ and $y$ swapped. For higher dimensions we need to also have an understanding of how to represent subsets of $\bR^n$. Take for example a 3D solid; then we would hope to be able to "project" along one of the coordinate axis and so describe it using the 2D "shadow" and a pair of continuous functions. For example, consider the upside-down cone [in this figure](#fig:cone){reference-type="ref" reference="fig:cone"} which has base of radius $5$ lying in the plane $\{z=5\}$ and has tip at the origin.
+which we will call a Type 2 set.  This is just the same situation as above with the roles of $x$ and $y$ switched, that is
+$$
+\iint_{R} f(x,y) \ dx dy = \int_{a}^{b} \left[\int_{\varphi_1(y)}^{\varphi_2(y)} f(x,y) \ dx\right] \ dy.
+$$
+
+In the first case we could describe the representation as projecting along the $y$-coordinate whereas in the second case we are projecting along the $x$-coordinate.  Many interesting sets are both Type 1 and Type 2, although very often one form is more obvious or more useful than the other.
+
+For higher dimensions we need to also have an understanding of how to represent subsets of $\bR^n$. Take for example a 3D solid; then we would hope to be able to "project" along one of the coordinate axis and so describe it using the 2D "shadow" and a pair of continuous functions. For example, consider the upside-down cone [in this figure](#fig:cone){reference-type="ref" reference="fig:cone"} which has base of radius $5$ lying in the plane $\{z=5\}$ and has its tip at the origin.
 
 ![](../images/svg/cone.svg 'Upside-down cone of height $5$ with tip at the origin. The solid is bounded by the surfaces $z = \\sqrt{x^2+y^2}$ and $z=5$. This solid can be "projected" onto the $xy$-plane.')
 
@@ -311,6 +325,7 @@ $$
 
 :::
 
+::: info Proof
 To start we assume that $S$ is a type 1 region and that $Q=0$, Since $S = \left\{(x,y): x \in [a,b], \varphi_1(x) \leq y \leq \varphi_2(x)\right\}$,
 
 $$
@@ -318,15 +333,18 @@ $$
             \iint_{S}  \left(\tfrac{\partial Q}{\partial x} - \tfrac{\partial P}{\partial y}\right) \ dx dy
              & =
             \int_{a}^{b}\left[\int_{\varphi_1(x)}^{\varphi_2(x)}  (- \tfrac{\partial P}{\partial y}) \ dy\right] \ dx \\
-             & = \int_{a}^{b}  (P(x,\varphi_1(x))-P(x,\varphi_2(x)))   dx,
+             & = \int_{a}^{b}  [P(x,\varphi_1(x))-P(x,\varphi_2(x))]   dx,
         \end{aligned}
 $$
 
-It is then natural to choose four paths $\aalpha_1(t) = (t,\varphi_1(t))$, $\aalpha_2(t) = (a,t)$, $\aalpha_3(t) = (t,\varphi_2(t))$, $\aalpha_4(t) = (b,t)$. We can calculate that $\int_{C} \ff \cdot d\aalpha = \int \ff \cdot d\aalpha_1 - \int \ff \cdot d\aalpha_3 = \int_{a}^{b} P(t,\varphi_1(t)) \ dt -  \int_{a}^{b} P(t,\varphi_2(t)) \ dt$. If $S$ is also type 2 then this works for $P=0$ and linearity means it works for $\ff = \left(\begin{smallmatrix}
+It is then natural to choose four paths $\aalpha_1(t) = (t,\varphi_1(t))$, $\aalpha_2(t) = (a,t)$, $\aalpha_3(t) = (t,\varphi_2(t))$, $\aalpha_4(t) = (b,t)$. We can calculate that 
+$$\int_{C} \ff \cdot d\aalpha = \int \ff \cdot d\aalpha_1 - \int \ff \cdot d\aalpha_3 = \int_{a}^{b} P(t,\varphi_1(t)) \ dt -  \int_{a}^{b} P(t,\varphi_2(t)) \ dt.$$
+If $S$ is also type 2 then this works for $P=0$ and linearity means it works for $\ff = \left(\begin{smallmatrix}
             P \\ 0
         \end{smallmatrix}\right)+\left(\begin{smallmatrix}
             0 \\ Q
         \end{smallmatrix}\right)$, More general regions can be formed by "glueing" together simpler regions of the above type to complete the argument.
+:::
 
 The quantity $\tfrac{\partial Q}{\partial x} - \tfrac{\partial P}{\partial y}$ is reminiscent of something we saw with conservative vector fields and we take advantage of this with the following application. We previously introduced the concept of _connected sets_ but now we need a slight refinement of the idea.
 
@@ -347,6 +365,7 @@ Let $S$ be a simply connected region and suppose that $\ff = \left(\begin{smallm
 
 :::
 
+::: info Proof
 In [the mixed partials theorem](part4#thm:mixed-partials) we already proved that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ whenever $\ff$ is conservative so we need only prove the other direction of the statement. Suppose that $\tfrac{\partial Q}{\partial x} = \tfrac{\partial P}{\partial y}$ and consider any closed path $\aalpha$ in $S$. Then [Green's theorem](#thm:greens) tells us that
 
 $$
@@ -354,6 +373,7 @@ $$
 $$
 
 This implies that $\ff$ is conservative because the fact that the line integral around every closed curve is zero (using [a theorem from Part 4](part4#thm:conservative-fields)).
+:::
 
 A crucially important consequence of the above result is that it implies the invariance of a line integral under deformation of a path when the vector field is conservative. Observe that the result can be extended to multiply connected regions by adding additional "cuts" and keeping track of the additional line integrals.
 

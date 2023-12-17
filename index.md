@@ -43,7 +43,7 @@ The final weeks of the course are devoted to a [mini-project](/pages/project).
 | Project - week 1 | 8-12 Jan        | Greenblatt |
 | Project - week 2 | 15-19 Jan       | Butterley  |
 
-- 8 Dec 2023: deadline for agreeing project topic and project team
+- 8 Jan 2024: deadline for agreeing project topic and project team
 - 29-30 Jan 2024: project presentations
 
 

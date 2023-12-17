@@ -17,11 +17,11 @@
 
 ## Rules
 
-- The project should demonstrate approximately 20 hours of work on topics related to the mathematics of the course
+- The project should demonstrate approximately 20 hours of work per person on topics related to the mathematics of the course
 - Projects are carried out in a team of 1,2 or 3 people
 - The work of each person in the team must be described
 
 ## Schedule
 
-- 8 Dec 2023: deadline for agreeing project topic and project team
+- 8 Jan 2024: deadline for agreeing project topic and project team
 - 29-30 Jan 2024: project presentations

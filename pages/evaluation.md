@@ -68,8 +68,10 @@ As an alternative to the continuous evaluation, students have the right to inste
 
 If one chooses this evaluation system:
 
-- The written and oral must be taken in the same call
-- Grades acquired during any of the continuous evaluation **do not** contribute to the final score if the student chooses this option
-- The written exam questions will be similar to the questions used during the last few years of this course,
-- During the written exam solutions must be written completely and fully justified
-- The oral exam requires the students to demonstrate ability to work with the material of the course, the same material which is the subject of the written exam
+- The written and oral must be taken in the same call;
+- Grades acquired during any of the continuous evaluation **do not** contribute to the final score if the student chooses this option;
+- The written exam questions will be similar to the questions used during the last few years of this course;
+- During the written exam solutions must be written completely and fully justified;
+- The oral exam requires the students to demonstrate ability to work with the material of the course, the same material which is the subject of the written exam.
+
+For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/). The written exam is 10:00 - 13:00 and the orals start at 14:00.

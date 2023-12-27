@@ -4,7 +4,8 @@
 
 - Course participants, in agreement with the teachers, are required to choose a topic related to the course. They will then work with this topic, understanding it in greater depth;
 - The aim is to demonstate a deep understanding and ability working with the chosen material;
-- A written document detailing this work will be submitted for evaluation. Additionally the course participant will give a 5 minute presentation on their work and respond to questions;
+- A written document detailing this work will be submitted for evaluation (or, subject to prior agreement, some equivalent product of work, for instance computer code or other).
+- Additionally the course participant will give a 5 minute presentation on their work and respond to questions;
 - The project should demonstrate approximately 20 hours of work per person on topics related to the mathematics of the course;
 - Projects are carried out in a team of 1,2 or 3 people;
 - Each person in a team must submit their own written text related to their part of the work and each must respond to questions related to the work, the work of each person in the team must be described;

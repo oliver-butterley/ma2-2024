@@ -75,4 +75,11 @@ If one chooses this evaluation system:
 - During the written exam solutions must be written completely and fully justified;
 - The oral exam requires the students to demonstrate ability to work with the material of the course, the same material which is the subject of the written exam.
 
-For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/). The written exam is 10:00 - 13:00 and the orals start at 14:00.
+For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/). The written exam is 10:00-13:00 and the orals start at 14:00.
+
+- Call 1, 31/01/2024 [questions](/call1.pdf)
+- Call 2, 16/02/2024
+- Call 3,
+- Call 4,
+- Call 5,
+- Call 6

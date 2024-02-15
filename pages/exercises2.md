@@ -65,7 +65,7 @@ $$
     f(x,y) = \frac{x y}{x^2 + y^2},
 $$
 
-and $f(x,y) = 0$. Calculate the 4 missing values in the following table, assuming that $t= \neq 0$.
+and $f(x,y) = 0$. Calculate the 4 missing values in the following table, assuming that $t\neq 0$.
 
 | line       | value         |
 | ---------- | ------------- |

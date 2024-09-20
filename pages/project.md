@@ -1,5 +1,9 @@
 # Mini projects
 
+::: warning
+The information in this section is being updated.
+:::
+
 ## Rules
 
 - Course participants, in agreement with the teachers, are required to choose a topic related to the course. They will then work with this topic, understanding it in greater depth;

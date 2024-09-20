@@ -7,6 +7,10 @@ const weeks = data.diary.map( (el) => el.week ).filter((value, index, array) => 
 
 # Lecture diary
 
+::: warning
+The information in this section is being updated.
+:::
+
 <div v-if="data.diary">
 <div v-for="week in weeks">
 

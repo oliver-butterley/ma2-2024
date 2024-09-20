@@ -1,9 +1,12 @@
-
 <!--@include: notation.md-->
 
 # Surface integrals
 
-See also the [graded exercises][graded6] and [additional exercises](/pages/exercises6) associated to this part of the course.  If you want more, Sections 6.4 to 6.8 of [OpenStax Calculus Volume 3](https://openstax.org/details/books/calculus-volume-3) are a good option.
+::: warning
+The information in this section is being updated.
+:::
+
+See also the [graded exercises][graded6] and [additional exercises](/pages/exercises6) associated to this part of the course. If you want more, Sections 6.4 to 6.8 of [OpenStax Calculus Volume 3](https://openstax.org/details/books/calculus-volume-3) are a good option.
 
 [graded6]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=6
 
@@ -114,6 +117,7 @@ $$
 
 An example of such a representation is as follows for the hemisphere.
 Let $T=\{x^2+y^2 \leq 1\}$, and let
+
 $$
 \rr(x,y)=(x,y,\sqrt{1-x^2 -y^2}).
 $$
@@ -137,7 +141,7 @@ $$
 \rr(u,v) = (\cos u \cos v, \sin u \cos v, \sin v).
 $$
 
-The surface $\rr(T)$ is the unit hemisphere $\{(x,y,z): x^2 + y^2 + z^2 = 1\}$. 
+The surface $\rr(T)$ is the unit hemisphere $\{(x,y,z): x^2 + y^2 + z^2 = 1\}$.
 This representation is connected to spherical coordinates. We calculate that
 
 $$
@@ -240,6 +244,7 @@ $$
 =
 \iint_{B} f \circ \mathbf{r} \ \norm{\tfrac{\partial \mathbf{r} }{\partial u} \times \tfrac{\partial \mathbf{r} }{\partial v}} \ du dv
 $$
+
 so the definition does make sense.
 
 ## Surface integral of a vector field
@@ -255,9 +260,10 @@ $$
 \quad \text{and} \quad
 \nn_2 = -\nn_1.
 $$
+
 :::
 
-This definition makes $\norm{\nn_1} = \norm{\nn_2} = 1$. That there are two normal vectors is expected because there are two sides to the surface at each point, one is just the opposite direction to the other.  When we have two parameterizations of the same surface, they always have the same *pair* of normals at any regular point, but which one is $\nn_1$ and which one is $\nn_2$ can be different.
+This definition makes $\norm{\nn_1} = \norm{\nn_2} = 1$. That there are two normal vectors is expected because there are two sides to the surface at each point, one is just the opposite direction to the other. When we have two parameterizations of the same surface, they always have the same _pair_ of normals at any regular point, but which one is $\nn_1$ and which one is $\nn_2$ can be different.
 
 If $\ff$ is a vector field then $\ff \cdot \nn$ is the component of the flow in direction of $\nn$.
 
@@ -338,9 +344,11 @@ This implies [this theorem from Part 5 about conservative fields](part5#thm:cons
 ::: theorem Stokes {#thm:stokes}
 
 Let $S=\rr(T)$ be a parametric surface. Suppose that $T$ is simply connected and that the boundary of $T$ is mapped to $C$, the boundary of $S$. Let $\bbeta$ be a counter clockwise parametrization of the boundary of $T$ and let $\aalpha(t) = \rr(\bbeta(t))$. Then
+
 $$
 \iint_{S} (\nabla \times \ff) \cdot \nn \ dS = \int_C \ff \cdot d\aalpha.
 $$
+
 :::
 
 ::: info "Proof"
@@ -355,6 +363,7 @@ Let $V \subset \bR^3$ be a solid with boundary the parametric surface $S$ and le
 $$
 \iiint_{V} \nabla \cdot \ff \ dx dy dz = \iint_{S} \ff \cdot \nn \ dS.
 $$
+
 :::
 
 :::info Proof

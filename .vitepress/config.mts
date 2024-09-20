@@ -45,7 +45,7 @@ const containerSetup = function (
 export default defineConfig({
   lang: "en-GB",
   title: "Mathematical Analysis 2",
-  description: "Course material for Mathematical Analysis 2 (2023-24)",
+  description: "Course material for Mathematical Analysis 2 (2024-25)",
   base: "/butterley/MA2/",
 
   head: [
@@ -90,7 +90,7 @@ export default defineConfig({
     ],
 
     editLink: {
-      pattern: "https://github.com/oliver-butterley/ma2-2023/edit/main/:path",
+      pattern: "https://github.com/oliver-butterley/ma2-2024/edit/main/:path",
       text: "Edit this page on GitHub",
     },
 
@@ -99,7 +99,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/oliver-butterley/ma2-2023/" },
+      { icon: "github", link: "https://github.com/oliver-butterley/ma2-2024/" },
     ],
 
     lastUpdated: {

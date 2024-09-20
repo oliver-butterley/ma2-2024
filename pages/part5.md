@@ -1,9 +1,12 @@
-
 <!--@include: notation.md-->
 
 # Multiple integrals
 
-See also the [graded exercises][graded5] and [additional exercises](/pages/exercises5) associated to this part of the course.  If you want more, Chapter 5 (plus sections 6.3 and 6.4) of [OpenStax Calculus Volume 3](https://openstax.org/details/books/calculus-volume-3) is a good option.
+::: warning
+The information in this section is being updated.
+:::
+
+See also the [graded exercises][graded5] and [additional exercises](/pages/exercises5) associated to this part of the course. If you want more, Chapter 5 (plus sections 6.3 and 6.4) of [OpenStax Calculus Volume 3](https://openstax.org/details/books/calculus-volume-3) is a good option.
 
 [graded5]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=5
 
@@ -39,7 +42,6 @@ If $f$ and $g$ are step functions and $c,d \in \bR$, then $c f + d g$ is also a 
 
 We can now define the integral of a step function in a reasonable way. The definition here is for 2D but the analogous definition holds for any dimension.
 
-
 Suppose that $f$ is a step function with value $c_{jk}$ on the sub-rectangle $(x_{j},x_{j+1})\times (y_{k},y_{k+1})$. Then we define the integral as
 
 $$
@@ -74,8 +76,8 @@ All properties follow from the definition by basic calculations.
 
 We are now in the position to define the set of integrable functions. In order to define integrability we take advantage of "upper" and "lower" integrals which "sandwich" the function we really want to integrate.
 
-::: tip Definition (integrability on a rectangle) {#def:integrability_rectangle}
-Let $R$ be a rectangle and let $f: R \to \bR$ be a bounded function. We call $f$ an _integrable_ function if there is one and only one number $I\in \bR$ such that
+::: tip Definition (integrability on a rectangle) {#def:integrability*rectangle}
+Let $R$ be a rectangle and let $f: R \to \bR$ be a bounded function. We call $f$ an \_integrable* function if there is one and only one number $I\in \bR$ such that
 
 $$
 \iint_{R} g(x,y) \ dx dy \leq I \leq \iint_{R} h(x,y) \ dx dy
@@ -100,40 +102,41 @@ Suppose that $f$ is a continuous function defined on the rectangle $R$. Then $f$
 :::
 
 ::: info Proof
-Continuity implies boundedness and so upper and lower integrals exist. Let $\epsilon>0$. Exists $\delta>0$ such that $\abs{f(\xx)-f(\yy)}\leq \epsilon$ whenever $\norm{\xx-\yy}\leq \delta$. We can choose a partition such that $\norm{\xx-\yy}\leq \delta$ whenever $\xx,\yy$ are in the same sub-rectangle $Q_{jk}$. We then define the step functions $g,h$ s.t. $g(\xx)=\inf_{Q{jk}} f$, $h(\xx)=\sup_{Q{jk}} f$ when $\xx\in Q_{jk}$. 
+Continuity implies boundedness and so upper and lower integrals exist. Let $\epsilon>0$. Exists $\delta>0$ such that $\abs{f(\xx)-f(\yy)}\leq \epsilon$ whenever $\norm{\xx-\yy}\leq \delta$. We can choose a partition such that $\norm{\xx-\yy}\leq \delta$ whenever $\xx,\yy$ are in the same sub-rectangle $Q_{jk}$. We then define the step functions $g,h$ s.t. $g(\xx)=\inf_{Q{jk}} f$, $h(\xx)=\sup_{Q{jk}} f$ when $\xx\in Q_{jk}$.
 To finish the proof we observe that $\abs{\inf_{Q{jk}} f - \sup_{Q{jk}} f }\leq \epsilon$ and $\epsilon>0$ can be made arbitrarily small, so we can make the upper and lower integrals as close as we want.
 :::
 
-
-
-
 ## Evaluation of multiple integrals
 
-Now we have a definition, so we know what a multidimensional integral is, and we also know that some interesting ones exist, but it is essential to also have a way to practically evaluate any given integral.  It turns out we can do that by integrating in one variable at a time:
+Now we have a definition, so we know what a multidimensional integral is, and we also know that some interesting ones exist, but it is essential to also have a way to practically evaluate any given integral. It turns out we can do that by integrating in one variable at a time:
 
 :::theorem Fubini {thm:fubini_rectangle}
 
-Let $f$ be an integrable function on the rectangle $R = [a_1,b_1] \times [a_2,b_2]$.  Then
+Let $f$ be an integrable function on the rectangle $R = [a_1,b_1] \times [a_2,b_2]$. Then
 
 $$
 \iint_{R} f(x,y) \ dx dy
         = \int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} f(x,y) \ dx  \right] \ dy
         = \int_{a_1}^{b_1} \left[\int_{a_2}^{b_2}  f(x,y) \ dy  \right] \ dx.
 $$
+
 :::
 
 ::: info Proof
 To see this, think about any pair of step functions $g,h$ such that $g\leq f \leq h$.
 Since these are step functions,
+
 $$
 	\iint_R g(x,y) \ dx dy
-	= 
+	=
 	\int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} g(x,y) \ dx  \right] \ dy
-	= 
+	=
 	\int_{a_1}^{b_1} \left[ \int_{a_2}^{b_2} g(x,y) \ dy  \right] \ dx
 $$
+
 since these are all just different names for the same sum, and the same is true for $h$.
-Using this, 
+Using this,
+
 $$
 	\iint_R g(x,y) \ dx dy
 	\leq
@@ -142,15 +145,17 @@ $$
 	\iint_R h(x,y) \ dx dy
 ;
 $$
+
 in other words the iterated integral in the middle is bounded from above and below by the same upper and lower integrals as the integral of $f$, which leaves only one possible value
+
 $$
         \int_{a_2}^{b_2} \left[ \int_{a_1}^{b_1} f(x,y) \ dx  \right] \ dy
 	=
 	\iint_R f(x,y) \ dx dy
 $$
+
 and the other equality holds for the same reason.
 :::
-
 
 This integral naturally allows us to calculate the volume of a solid. Let $f(x,y)\leq z \leq g(x,y)$ be defined on the rectangle $R \subset \bR^2$ and consider the 3D set defined as
 
@@ -213,39 +218,40 @@ We say that $f : S \to \bR$ is integrable if $f_{R}$ is integrable and define
 $$
 \iint_{S} f(x,y) \ dx dy = \iint_{R} f_{R}(x,y) \ dx dy.
 $$
+
 :::
 
-Suppose that there are continuous functions $\varphi_1$, $\varphi_2$ on $\bR$ and consider the set 
+Suppose that there are continuous functions $\varphi_1$, $\varphi_2$ on $\bR$ and consider the set
+
 $$
 S = \left\{(x,y): a \leq x \leq b, \varphi_1(x) \leq y \leq \varphi_2(x)\right\} \subset \bR^2.
 $$
 
 ![](../images/svg/type-one.svg "A region defined by two continuous functions. The projection of the region onto the $x$-axis is the interval $[a,b]$")
 
+Not all sets can be written in this way but many can and such a way of describing a subset of $\bR^2$ is convenient for evaluating integrals. We will call sets that can be written this way Type 1 sets in this section.
 
-Not all sets can be written in this way but many can and such a way of describing a subset of $\bR^2$ is convenient for evaluating integrals.  We will call sets that can be written this way Type 1 sets in this section.
-
-
-
-Let $S = \left\{(x,y): x \in [a,b], \varphi_1(x) \leq y \leq \varphi_2(x)\right\}$ where $\varphi_1, \varphi_2$ are continuous and let $f$ be a bounded continuous function of $S$. Then $f$ is integrable on $S$ and 
+Let $S = \left\{(x,y): x \in [a,b], \varphi_1(x) \leq y \leq \varphi_2(x)\right\}$ where $\varphi_1, \varphi_2$ are continuous and let $f$ be a bounded continuous function of $S$. Then $f$ is integrable on $S$ and
 
 $$
 \iint_{S} f(x,y) \ dx dy = \int_{a}^{b} \left[\int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy\right] \ dx:
 $$
 
-the set of discontinuity of $f_{R}$ is the boundary of $S$ in $R=[a,b]\times[\tilde a,\tilde b]$ which consists of the graphs of $\varphi_1$, $\varphi_2$. These graphs have zero content as we proved before. For each $x$, $f(x,y)$ is integrable since it has only two discontinuity points. Additionally $\int_{\tilde a}^{\tilde b} f_{R}(x,y) \ dy =  \int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy$.  Observe that it doesn't make a different to the integral if we use $<$ or $\leq$ in the definition of $S$ since the difference would be a content zero set.
+the set of discontinuity of $f_{R}$ is the boundary of $S$ in $R=[a,b]\times[\tilde a,\tilde b]$ which consists of the graphs of $\varphi_1$, $\varphi_2$. These graphs have zero content as we proved before. For each $x$, $f(x,y)$ is integrable since it has only two discontinuity points. Additionally $\int_{\tilde a}^{\tilde b} f_{R}(x,y) \ dy =  \int_{\varphi_1(x)}^{\varphi_2(x)} f(x,y) \ dy$. Observe that it doesn't make a different to the integral if we use $<$ or $\leq$ in the definition of $S$ since the difference would be a content zero set.
 
 We could also consider the following set
 
 $$
 R = \left\{(x,y): a \leq y \leq b, \varphi_1(y) \leq x \leq \varphi_2(y)\right\},
 $$
-which we will call a Type 2 set.  This is just the same situation as above with the roles of $x$ and $y$ switched, that is
+
+which we will call a Type 2 set. This is just the same situation as above with the roles of $x$ and $y$ switched, that is
+
 $$
 \iint_{R} f(x,y) \ dx dy = \int_{a}^{b} \left[\int_{\varphi_1(y)}^{\varphi_2(y)} f(x,y) \ dx\right] \ dy.
 $$
 
-In the first case we could describe the representation as projecting along the $y$-coordinate whereas in the second case we are projecting along the $x$-coordinate.  Many interesting sets are both Type 1 and Type 2, although very often one form is more obvious or more useful than the other.
+In the first case we could describe the representation as projecting along the $y$-coordinate whereas in the second case we are projecting along the $x$-coordinate. Many interesting sets are both Type 1 and Type 2, although very often one form is more obvious or more useful than the other.
 
 For higher dimensions we need to also have an understanding of how to represent subsets of $\bR^n$. Take for example a 3D solid; then we would hope to be able to "project" along one of the coordinate axis and so describe it using the 2D "shadow" and a pair of continuous functions. For example, consider the upside-down cone [in this figure](#fig:cone){reference-type="ref" reference="fig:cone"} which has base of radius $5$ lying in the plane $\{z=5\}$ and has its tip at the origin.
 
@@ -337,7 +343,7 @@ $$
         \end{aligned}
 $$
 
-It is then natural to choose four paths $\aalpha_1(t) = (t,\varphi_1(t))$, $\aalpha_2(t) = (a,t)$, $\aalpha_3(t) = (t,\varphi_2(t))$, $\aalpha_4(t) = (b,t)$. We can calculate that 
+It is then natural to choose four paths $\aalpha_1(t) = (t,\varphi_1(t))$, $\aalpha_2(t) = (a,t)$, $\aalpha_3(t) = (t,\varphi_2(t))$, $\aalpha_4(t) = (b,t)$. We can calculate that
 $$\int_{C} \ff \cdot d\aalpha = \int \ff \cdot d\aalpha_1 - \int \ff \cdot d\aalpha_3 = \int_{a}^{b} P(t,\varphi_1(t)) \ dt -  \int_{a}^{b} P(t,\varphi_2(t)) \ dt.$$
 If $S$ is also type 2 then this works for $P=0$ and linearity means it works for $\ff = \left(\begin{smallmatrix}
             P \\ 0

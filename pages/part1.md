@@ -1,5 +1,9 @@
 # Mathematical reasoning
 
+::: warning
+The information in this section is being updated.
+:::
+
 In this part of the course we work on the following skills:
 
 - Understand the precise meanings of mathematical statements, form our own precise statements, find logic buried in confused statements and describe it in clear terms.

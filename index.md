@@ -5,10 +5,10 @@ These pages contain the [lecture notes](/pages/part1) and practical details rela
 
 Instructors:
 
+- [Yoh Tanimoto](https://www.mat.uniroma2.it/~tanimoto/) (30 hours)
 - [Oliver Butterley](https://www.mat.uniroma2.it/butterley/) (60 hours)
-- [Rafael Greenblatt](https://www.mat.uniroma2.it/~greenblatt/) (30 hours)
 
-Teams code: **3pddgbg** (use this to join on Microsoft Teams)
+Teams code: **ojz9mnk** (use this to join on Microsoft Teams)
 
 Classroom: **Aula 8**
 
@@ -16,12 +16,16 @@ Classroom: **Aula 8**
 
 - Develop your intuition, it's a powerful skill – But don’t trust it completely
 - Don’t aim to memorize but rather seek to understand – It is easy to remember anything when you understand it.
-- Question always, be sceptical of all statements presented to you. Don’t
+- Question always, be skeptical of all statements presented to you. Don’t
   accept them until you are sure they are believable.
 - Observe, question how everything fits together, notice all the details.
 - Part of the process of mathematical reasoning is creative - to be creative we must drop our inhibitions and be ready to be wrong, repeatedly.
 
 ## Schedule
+
+::: warning
+This information is in the process of being updated.
+:::
 
 The material of the course is divided into six parts as listed below. Each part takes two weeks and is accompanied with a set of exercises. Mathematically the parts are intimately linked.
 
@@ -35,17 +39,6 @@ The material of the course is divided into six parts as listed below. Each part 
 | [Surface integrals](/pages/part6.md)      | 4 - 15 Dec      | Greenblatt |
 
 See the [lesson diary](/pages/diary) for full details.
-
-The final weeks of the course are devoted to a [mini-project](/pages/project).
-
-| Project          | Teaching period | Instructor |
-| ---------------- | --------------- | ---------- |
-| Project - week 1 | 8-12 Jan        | Greenblatt |
-| Project - week 2 | 15-19 Jan       | Butterley  |
-
-- 8 Jan 2024: deadline for agreeing project topic and project team
-- 29-30 Jan 2024: project presentations
-
 
 ## What is MA2?
 
@@ -74,6 +67,7 @@ In particular many of the ideas are extended to the higher dimensional setting.
 
 Course material from previous years and other instructors is available.
 
+- 2023/24 [Butterley/Greenblatt](https://www.mat.uniroma2.it/butterley/archive/2023/MA2/)
 - 2022/23 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2022/MA2/)
 - 2021/22 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2021/MA2/)
 - 2020/21 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2020/MA2/)

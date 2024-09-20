@@ -1,9 +1,5 @@
 # Evaluation
 
-::: warning
-The information in this section is being updated.
-:::
-
 ## Continuous evaluation
 
 The primary evaluation system is a combination of continuous evaluation:
@@ -79,7 +75,7 @@ If one chooses this evaluation system:
 - During the written exam solutions must be written completely and fully justified;
 - The oral exam requires the students to demonstrate ability to work with the material of the course, the same material which is the subject of the written exam.
 
-For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/).
+For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/). 
 
 - Call 1, 31/01/2024 [questions](/call1.pdf) (written exam: 10:00-13:00, orals start at: 14:00)
 - Call 2, 16/02/2024 [questions](/call2.pdf) (written exam: 10:00-13:00, orals start at: 14:00)

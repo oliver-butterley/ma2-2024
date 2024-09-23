@@ -4,6 +4,7 @@
 The information in this section is being updated.
 :::
 
+<!--
 ## Continuous evaluation
 
 The primary evaluation system is a combination of continuous evaluation:
@@ -86,4 +87,4 @@ For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/).
 - Call 3, 08/07/2024 [questions](/call3.pdf) (written exam: 10:00-13:00, orals start at: 14:00)
 - Call 4, 23/07/2024 [questions](/call4.pdf) (written exam: 10:00-13:00, orals start at: 14:00)
 - Call 5, 06/09/2024 (written exam: 14:00-17:00, orals following day starting at: 10:00)
-- Call 6, 27/09/2024 (written exam: 14:00-17:00, orals following day starting at: 10:00)
+- Call 6, 27/09/2024 (written exam: 14:00-17:00, orals following day starting at: 10:00) -->

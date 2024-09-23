@@ -1,7 +1,7 @@
 # Overview
 
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
-These pages contain the [lecture notes](/pages/part1) and practical details related to the course.
+These pages contain the practical details related to the course.
 
 Instructors:
 
@@ -11,6 +11,12 @@ Instructors:
 Teams code: **ojz9mnk** (use this to join on Microsoft Teams)
 
 Classroom: **Aula 8**
+
+## Lecture notes
+
+A [pdf of lecture notes](https://www.mat.uniroma2.it/butterley/ma2.pdf) is available for download.
+This text will be updated as the course progresses.
+As such, text corresponding to lectures which have not yet been delivered should be considered as a draft and subject to change.
 
 ## General advice
 
@@ -23,6 +29,7 @@ Classroom: **Aula 8**
 
 ## Schedule
 
+<!--
 ::: warning
 This information is in the process of being updated.
 :::
@@ -37,6 +44,7 @@ The material of the course is divided into six parts as listed below. Each part 
 | [Line integrals](/pages/part4.md)         | 6 - 17 Nov      | Butterley  |
 | [Multiple integrals](/pages/part5.md)     | 20 Nov - 1 Dec  | Greenblatt |
 | [Surface integrals](/pages/part6.md)      | 4 - 15 Dec      | Greenblatt |
+-->
 
 See the [lesson diary](/pages/diary) for full details.
 

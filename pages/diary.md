@@ -7,10 +7,6 @@ const weeks = data.diary.map( (el) => el.week ).filter((value, index, array) => 
 
 # Lecture diary
 
-::: warning
-The information in this section is being updated.
-:::
-
 <div v-if="data.diary">
 <div v-for="week in weeks">
 
@@ -18,7 +14,8 @@ The information in this section is being updated.
 
 <ul>
   <li  v-for="diaryItem in data.diary.filter((el) => el.week == week )">
-    {{ diaryItem.date }}, {{ diaryItem.time }}: {{ diaryItem.topic }}
+    {{ diaryItem.date }}, {{ diaryItem.time }}: {{ diaryItem.topic }} 
+    <span v-if="diaryItem.instructor">({{ diaryItem.instructor }})</span>
   </li>
 </ul>
 

@@ -71,22 +71,22 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: "Overview", link: "/" },
-      { text: "Lecture notes", link: "/pages/part1" },
+      // { text: "Lecture notes", link: "/pages/part1" },
     ],
 
     sidebar: [
       { text: "Overview", link: "/" },
       { text: "Evaluation", link: "/pages/evaluation" },
       { text: "Lecture diary", link: "/pages/diary" },
-      {
-        text: "Lecture notes",
-        items: Array.from(Array(6), (_, n) => ({
-          text: `${n + 1}. ${courseParts[n]}`,
-          link: `/pages/part${n + 1}`,
-        })),
-        collapsed: false,
-      },
-      { text: "Mini-projects", link: "pages/project" },
+      // {
+      //   text: "Lecture notes",
+      //   items: Array.from(Array(6), (_, n) => ({
+      //     text: `${n + 1}. ${courseParts[n]}`,
+      //     link: `/pages/part${n + 1}`,
+      //   })),
+      //   collapsed: false,
+      // },
+      // { text: "Mini-projects", link: "pages/project" },
     ],
 
     editLink: {
@@ -111,10 +111,10 @@ export default defineConfig({
     },
 
     footer: {
-      message:
-        'Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>',
-      copyright:
-        'Copyright © 2023 <a href="https://www.mat.uniroma2.it/butterley/">Oliver Butterley</a>',
+      // message:
+      //   'Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>',
+      // copyright:
+      //   'Copyright © 2023 <a href="https://www.mat.uniroma2.it/butterley/">Oliver Butterley</a>',
     },
   },
 });

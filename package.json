@@ -16,7 +16,7 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "date-fns": "^4.1.0",
+    "dayjs": "^1.11.13",
     "fs": "^0.0.1-security"
   }
 }

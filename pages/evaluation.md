@@ -1,72 +1,46 @@
 # Evaluation
 
-::: warning
-The information in this section is being updated.
-:::
-
-<!--
 ## Continuous evaluation
 
-The primary evaluation system is a combination of continuous evaluation:
+The primary evaluation system is a form of continuous evaluation:
 
-- 3 Midterm exams (grades: $M_{\mathrm{min}} \leq M_{\mathrm{mid}} \leq M_{\mathrm{max}}$)
-- 5 Online exercise sets (grade: $E$)
-- 1 Mini-project & presentation (grade: $P$)
+- 4 Online exercise sets (grade: $E$, max 4)
+- 1 Mini-project & presentation (grade: $P$, max 6)
+- written exam (grade: $W$, max 20)
+- possible bonus assigned during the oral (grade: $B$, max 5)
 
-All grades ($M_{\mathrm{min}}$, $M_{\mathrm{mid}}$, $M_{\mathrm{max}}$, $E$, $P$) are graded on a scale of 0 to 30.
-To obtain the final score we calculate
+Satisfactory performance in the oral is required else all other grades are forfeit.
+The final score is calculated as
 
 $$
-0.4 P + 0.1 E + 0.3 M_{\mathrm{max}} + 0.2 M_{\mathrm{mid}} + 0.1 M_{\mathrm{min}}
+E + P + W + B.
 $$
 
-and then round to the nearest integer. A grade of 31 or over is interpreted as 30 Lode. A grade of 18 or above is considered as passing the course.
+A grade of 18 or above and is considered as passing the course.
+A grade of 31 or over is interpreted as 30 Lode.
 
 ### Exercises
 
-Each of the 6 parts of the course includes exercises. The exercises for part 1 of the course aren't graded but the exercises for parts 2 - 6 are graded and this contributes towards the final score. The questions in the midterms will be very similar to those in the additional exercises.
+During the course there are 4 online exercise sets. Each exercise set will be published at least two weeks before the due date of that set.
 
-| graded exercises  | due date         | ungraded exercises          |
-| ----------------- | ---------------- | --------------------------- |
-| Part 1            | not obligatory   | [Part 1](/pages/exercises1) |
-| [Part 2][graded2] | 23 October 2023  | [Part 2](/pages/exercises2) |
-| [Part 3][graded3] | 6 November 2023  | [Part 3](/pages/exercises3) |
-| [Part 4][graded4] | 20 November 2023 | [Part 4](/pages/exercises4) |
-| [Part 5][graded5] | 4 December 2023  | [Part 5](/pages/exercises5) |
-| [Part 6][graded6] | 18 December 2023 | [Part 6](/pages/exercises6) |
+| exercises | due date   | topics |
+| --------- | ---------- | ------ |
+| Set 1     | 11/11/2024 | TBA    |
+| Set 2     | 25/11/2024 | TBA    |
+| Set 3     | 09/12/2024 | TBA    |
+| Set 4     | 23/12/2024 | TBA    |
 
-[graded2]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=2
-[graded3]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=3
-[graded4]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=4
-[graded5]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=5
-[graded6]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=6
+### Written exam
 
-### Midterm exams
+At the end of the course there is a written exam. This will test the course participant's ability for all the parts of the course. Practicing exercises for all the topics is the best preparation for the exam. In order to benefit from the continuous assessment evaluation, the written and oral **must be taken in call 1**.
 
-| exam              | date                                | time        | topics | location       |
-| ----------------- | ----------------------------------- | ----------- | ------ | -------------- |
-| [midterm 1][mid1] | ~~23 October 2023~~ 30 October 2023 | 14:00-15:30 | 1-2    | aula disegno 2 |
-| [midterm 2][mid2] | 20 November 2023                    | 14:00-15:30 | 3-4    | aula disegno 2 |
-| [midterm 3][mid3] | 18 December 2023                    | 14:00-15:30 | 5-6    | aula disegno 2 |
+### Oral exam
 
-[mid1]: /midterm1.pdf
-[mid2]: /midterm2.pdf
-[mid3]: /midterm3.pdf
-
-The focus of each midterm is on the two parts of the course which immediately proceeded the exam. However, in later parts of the course, since the material builds on the earlier foundation, knowledge of the earlier parts of the course is still required. The questions on each midterm will be very similar to the exercises attached to those parts of the course.
-
-The questions in the midterms will be very similar to the additional exercises:
-
-- [Additional exercises 1](/pages/exercises1)
-- [Additional exercises 2](/pages/exercises2)
-- [Additional exercises 3](/pages/exercises3)
-- [Additional exercises 4](/pages/exercises4)
-- [Additional exercises 5](/pages/exercises5)
-- [Additional exercises 6](/pages/exercises6)
+The oral exam is obligatory and will be conducted shortly after the written exam. Preparation for the written exam suffices as preparation for the oral. During the oral the course participant is required to show an ability working with the material on par with what they have demonstrated in their exercise set solutions during the semester and the written exam solutions.
 
 ### Mini-projects
 
-The last three weeks of the course are devoted to the mini-projects. Topics are to be chosen by the course participants in agreement with the course instructors. See some [possible ideas](/pages/project). Expect about 20 hours of work involved in the project. The majority of this time can be done within lesson hours.
+The last two weeks of the course are devoted to the mini-projects. Topics are to be chosen by the course participants in agreement with the course instructors. See some [possible ideas](/pages/project). The project is expected to take about 20 hours of work. The majority of this time can be done within lesson hours. A project which demonstrates 20 hours of solid mathematics work suffices to obtain the maximum grade.
 
 ## Alternative evaluation
 
@@ -75,16 +49,16 @@ As an alternative to the continuous evaluation, students have the right to inste
 If one chooses this evaluation system:
 
 - The written and oral must be taken in the same call;
-- Grades acquired during any of the continuous evaluation **do not** contribute to the final score if the student chooses this option;
-- The written exam questions will be similar to the "additional exercises" available on this site and the questions used during the last few years of this course;
+- Grades acquired during any of the continuous evaluation **do not** contribute to the final score if the student chooses this option (in particular grades from the exercises and mini-project do not count);
+<!-- - The written exam questions will be similar to the "additional exercises" available on this site and the questions used during the last few years of this course; -->
 - During the written exam solutions must be written completely and fully justified;
 - The oral exam requires the students to demonstrate ability to work with the material of the course, the same material which is the subject of the written exam.
 
 For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/).
 
-- Call 1, 31/01/2024 [questions](/call1.pdf) (written exam: 10:00-13:00, orals start at: 14:00)
-- Call 2, 16/02/2024 [questions](/call2.pdf) (written exam: 10:00-13:00, orals start at: 14:00)
-- Call 3, 08/07/2024 [questions](/call3.pdf) (written exam: 10:00-13:00, orals start at: 14:00)
-- Call 4, 23/07/2024 [questions](/call4.pdf) (written exam: 10:00-13:00, orals start at: 14:00)
-- Call 5, 06/09/2024 (written exam: 14:00-17:00, orals following day starting at: 10:00)
-- Call 6, 27/09/2024 (written exam: 14:00-17:00, orals following day starting at: 10:00) -->
+- Call 1, TBA
+- Call 2, TBA
+- Call 3, TBA
+- Call 4, TBA
+- Call 5, TBA
+- Call 6, TBA

@@ -1,24 +1,20 @@
 # Mini projects
 
-::: warning
-The information in this section is being updated.
-:::
-
 ## Rules
 
-- Course participants, in agreement with the teachers, are required to choose a topic related to the course. They will then work with this topic, understanding it in greater depth;
-- The aim is to demonstate a deep understanding and ability working with the chosen material;
+- Course participants, in agreement with the course instructors, are required to choose a topic related to the course. They will then work with this topic, understanding it in greater depth;
+- The aim is to demonstrate a deep understanding and ability working with the chosen material;
 - A written document detailing this work will be submitted for evaluation (or, subject to prior agreement, some equivalent product of work, for instance computer code or other).
-- Additionally the course participant will give a 5 minute presentation on their work and respond to questions;
+- Additionally the course participant will give a short presentation on their work and respond to questions;
 - The project should demonstrate approximately 20 hours of work per person on topics related to the mathematics of the course;
 - Projects are carried out in a team of 1,2 or 3 people;
 - Each person in a team must submit their own written text related to their part of the work and each must respond to questions related to the work, the work of each person in the team must be described;
-- Presentations must happen on the scheduled days or, if required to avoid conflicts with other exams, they can be done earlier with a mutually agreed choice of date.
+- Presentations must happen on the scheduled days or, if required to avoid scheduling conflicts, they can be done earlier with a mutually agreed choice of date.
 
 ## Schedule
 
-- 8 Jan 2024: deadline for agreeing project topic and project team
-- 29-30 Jan 2024: project presentations
+- TBA: deadline for agreeing project topic and project team
+- TBA: project presentations
 
 ## Possible topics
 
@@ -35,4 +31,5 @@ The information in this section is being updated.
 - Analysis of electro-magnetic fields
 - Didactic methods for rigorous mathematics
 - Analysis of [moment of inertia](https://en.wikipedia.org/wiki/Moment_of_inertia#Motion_in_a_fixed_plane), etc for different geometries of wheel design
+- Could the technology of Star Catcher be used to prolong the Voyager missions?
 - Whatever else seems interesting and contains sufficient quantity of material related to MA2!

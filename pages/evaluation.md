@@ -38,6 +38,8 @@ At the end of the course there is a written exam. This will test the course part
 
 The oral exam is obligatory and will be conducted shortly after the written exam. Preparation for the written exam suffices as preparation for the oral. During the oral the course participant is required to show an ability working with the material on par with what they have demonstrated in their exercise set solutions during the semester and the written exam solutions.
 
+Careless errors, etc which have caused a loss of points in the written exam can potentially be recovered during the oral with points being added to the bonus.
+
 ### Mini-projects
 
 The last two weeks of the course are devoted to the mini-projects. Topics are to be chosen by the course participants in agreement with the course instructors. See some [possible ideas](/pages/project). The project is expected to take about 20 hours of work. The majority of this time can be done within lesson hours. A project which demonstrates 20 hours of solid mathematics work suffices to obtain the maximum grade.

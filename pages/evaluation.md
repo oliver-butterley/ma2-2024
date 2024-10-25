@@ -23,12 +23,14 @@ A grade of 31 or over is interpreted as 30 Lode.
 
 During the course there are 4 online exercise sets. Each exercise set will be published at least two weeks before the due date of that set.
 
-| exercises | due date   | topics |
-| --------- | ---------- | ------ |
-| Set 1     | 11/11/2024 | TBA    |
-| Set 2     | 25/11/2024 | TBA    |
-| Set 3     | 09/12/2024 | TBA    |
-| Set 4     | 23/12/2024 | TBA    |
+| exercises                                                                  | due date   |
+| -------------------------------------------------------------------------- | ---------- |
+| [Set 1](https://esamionline.uniroma2.it/course/view.php?id=6165&section=1) | 11/11/2024 |
+| [Set 2](https://esamionline.uniroma2.it/course/view.php?id=6165&section=2) | 25/11/2024 |
+| [Set 3](https://esamionline.uniroma2.it/course/view.php?id=6165&section=3) | 09/12/2024 |
+| [Set 4](https://esamionline.uniroma2.it/course/view.php?id=6165&section=4) | 23/12/2024 |
+
+Course participants are encouraged to work together and discuss the mathematics but everyone needs to understand each exercise and submit their own responses.
 
 ### Written exam
 

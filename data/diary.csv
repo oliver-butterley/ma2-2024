@@ -10,7 +10,7 @@ date,time,topic,week,instructor
 11/10/2024,11:30-13:15,"Exercises on open sets, domains in higher dimensions, directional derivatives, partial derivatives and gradients",3,Tanimoto
 14/10/2024,14:00-15:45,"Differentiability and continuity of scalar fields, a sufficient condition for differentiability, chain rule for scalar fields, level sets, gradient and tangent lines.",4,Tanimoto
 16/10/2024,09:30-11:15,"Directional derivatives, and differentiability of vector fields, Jacobian matrix, chain rule for vector fields, examples, implicit functions and their partial derivatives",4,Tanimoto
-18/10/2024,11:30-13:15,"Exercises on chain rules, applications to differentiations, Jacombian matrix of vector fields, spherical coordinates, implicit functions, higher partial derivatives",4,Tanimoto
+18/10/2024,11:30-13:15,"Exercises on chain rules, applications to differentiations, Jacobian matrix of vector fields, spherical coordinates, implicit functions, higher partial derivatives",4,Tanimoto
 21/10/2024,14:00-15:45,"Commutation of partial derivatives, partial differential equations, solutions of first order linear PDE with constant coefficients and 1D wave equation",5,Tanimoto
 23/10/2024,09:30-11:15,"Global and local minima and maxima (extrema), gradient and extrema, Hessian matrix, examples, the second-order Taylor formula for scalar fields",5,Tanimoto
 25/10/2024,11:30-13:15,"Exercises on partial differential equations, gradient, stationary point, Hessian matrix, the method of least equares",5,Tanimoto
@@ -22,7 +22,7 @@ date,time,topic,week,instructor
 06/11/2024,09:30-11:15,TBA,7,Butterley
 08/11/2024,11:30-13:15,TBA,7,Butterley
 11/11/2024,14:00-15:45,TBA,8,Butterley
-12/11/2024,13:00-17:00,Office hours / exercises (Aula B2),,
+12/11/2024,13:00-17:00,Office hours / exercises (Aula B2),8,
 13/11/2024,09:30-11:15,TBA,8,Butterley
 15/11/2024,11:30-13:15,TBA,8,Butterley
 18/11/2024,14:00-15:45,TBA,9,Butterley

@@ -13,9 +13,10 @@ Satisfactory performance in the oral is required else all other grades are forfe
 The final score is calculated as
 
 $$
-E + P + W + B.
+E + P + W + B
 $$
 
+and then rounded to the nearest integer.
 A grade of 18 or above and is considered as passing the course.
 A grade of 31 or over is interpreted as 30 Lode.
 

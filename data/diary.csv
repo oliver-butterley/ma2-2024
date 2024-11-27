@@ -4,7 +4,7 @@ date,time,topic,week,instructor
 27/09/2024,11:30-13:15,"Series of functions, Weierstrass M-test, power series, radius of convergence,integration of power series, examples",1,Tanimoto
 30/09/2024,14:00-15:45,Cancelled,2,
 02/10/2024,09:30-11:15,"Differentiation of power series, uniqueness of power series coefficients, convergence of Taylor series, applications to differential equations",2,Tanimoto
-04/10/2024,11:30-13:15,"Exercises on pointwise and uniform convergence, derivative and limit, radius of convergence of power series and applications to differential equations",2,Tanimoto
+04/10/2024,11:30-13:15,"Exercises on point-wise and uniform convergence, derivative and limit, radius of convergence of power series and applications to differential equations",2,Tanimoto
 07/10/2024,14:00-15:45,"Open and closed sets in higher-dimensional spaces, limits and continuity of functions, continuity of various operations (sum, scalar multiplication, scalar product, norm)",3,Tanimoto
 09/10/2024,09:30-11:15,"Continuity of components of vector fields, directional derivatives of scalar fields, partial derivatives, examples, differentiability",3,Tanimoto
 11/10/2024,11:30-13:15,"Exercises on open sets, domains in higher dimensions, directional derivatives, partial derivatives and gradients",3,Tanimoto
@@ -17,12 +17,12 @@ date,time,topic,week,instructor
 28/10/2024,14:00-15:45,"Review of linear algebra, classification of stationary points using Hessian matrix, example, attaining extrema of continuous scalar fields",6,Tanimoto
 30/10/2024,09:30-11:15,Cancelled,6,
 01/11/2024,11:30-13:15,Cancelled (All saints),6,
-04/11/2024,14:00-15:45,Extrema with contraints: Lagrange multiplier method,7,Butterley
+04/11/2024,14:00-15:45,Extrema with constraints: Lagrange multiplier method,7,Butterley
 05/11/2024,14:00-16:00,Office hours / exercises (Aula B2),7,Butterley
-06/11/2024,09:30-11:15,Lagrange multipier method example,7,Butterley
+06/11/2024,09:30-11:15,Lagrange multiplier method example,7,Butterley
 07/11/2024,10:00-12:00,Office hours / exercises (Aula 8),7,Butterley
 08/11/2024,11:30-13:15,Cancelled,7,
-11/11/2024,14:00-15:45,"Lagrange mulitplier with many constraints and example. Curves, paths, parametric paths.",8,Butterley
+11/11/2024,14:00-15:45,"Lagrange multiplier with many constraints and example. Curves, paths, parametric paths.",8,Butterley
 12/11/2024,13:00-17:00,Office hours / exercises (Aula B2),8,Butterley
 13/11/2024,09:30-11:15,"More on parametric curves, regular, congruent, tangent vector, length of a curve.",8,Butterley
 14/11/2024,14:00-15:45,Office hours / exercises (Aula 8),8,Butterley

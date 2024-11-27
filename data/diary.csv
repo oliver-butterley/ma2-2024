@@ -13,7 +13,7 @@ date,time,topic,week,instructor
 18/10/2024,11:30-13:15,"Exercises on chain rules, applications to differentiations, Jacobian matrix of vector fields, spherical coordinates, implicit functions, higher partial derivatives",4,Tanimoto
 21/10/2024,14:00-15:45,"Commutation of partial derivatives, partial differential equations, solutions of first order linear PDE with constant coefficients and 1D wave equation",5,Tanimoto
 23/10/2024,09:30-11:15,"Global and local minima and maxima (extrema), gradient and extrema, Hessian matrix, examples, the second-order Taylor formula for scalar fields",5,Tanimoto
-25/10/2024,11:30-13:15,"Exercises on partial differential equations, gradient, stationary point, Hessian matrix, the method of least equares",5,Tanimoto
+25/10/2024,11:30-13:15,"Exercises on partial differential equations, gradient, stationary point, Hessian matrix, the method of least squares",5,Tanimoto
 28/10/2024,14:00-15:45,"Review of linear algebra, classification of stationary points using Hessian matrix, example, attaining extrema of continuous scalar fields",6,Tanimoto
 30/10/2024,09:30-11:15,Cancelled,6,
 01/11/2024,11:30-13:15,Cancelled (All saints),6,
@@ -32,7 +32,8 @@ date,time,topic,week,instructor
 21/11/2024,14:00-15:45,Office hours / exercises (Aula 8),9,Butterley
 22/11/2024,11:30-13:15,"Conservative vector field, equivalent characterizations. Parametric surfaces, some examples, fundamental vector product.",9,Butterley
 25/11/2024,14:00-15:45,"Identifying a conservative vector field, constructing a potential for a conservative vector field. Intro to multiple integrals, definition of multiple integrals, evaluation by repeated integration, triangular regions.",10,Butterley
-27/11/2024,09:30-11:15,TBA,10,Butterley
+27/11/2024,09:30-11:15,"Theory behind integrating over a region lying between curves. Tactics for approaching different integrals. Various examples of multiple integrals.",10,Butterley
+28/11/2024,14:00-15:45, Office hours / exercises (Aula 8),10,Butterley
 29/11/2024,11:30-13:15,TBA,10,Butterley
 02/12/2024,14:00-15:45,TBA,11,Butterley
 04/12/2024,09:30-11:15,TBA,11,Butterley

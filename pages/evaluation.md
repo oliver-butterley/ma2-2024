@@ -35,7 +35,7 @@ Course participants are encouraged to work together and discuss the mathematics 
 
 ### Written exam
 
-At the end of the course there is a written exam. This will test the course participant's ability for all the parts of the course. Practicing exercises for all the topics is the best preparation for the exam. In order to benefit from the continuous assessment evaluation, the written and oral **must be taken in call 1**.
+At the end of the course there is a written exam. This will test the course participant's ability for all the parts of the course. Practicing exercises for all the topics is the best preparation for the exam. In order to benefit from the continuous assessment evaluation, the written and oral **must be taken in call 1 or call 2**.
 
 ### Oral exam
 
@@ -45,7 +45,7 @@ Careless errors, etc which have caused a loss of points in the written exam can 
 
 ### Mini-projects
 
-The last two weeks of the course are devoted to the mini-projects. Topics are to be chosen by the course participants in agreement with the course instructors. See some [possible ideas](/pages/project). The project is expected to take about 20 hours of work. The majority of this time can be done within lesson hours. A project which demonstrates 20 hours of solid mathematics work suffices to obtain the maximum grade.
+The last two weeks of the course are devoted to the mini-projects (i.e., starting Monday 16/12/2024). Topics are to be chosen by the course participants in agreement with the course instructor. See some [possible ideas](/pages/project). The project is expected to take about 20 hours of work. The majority of this time can be done within lesson hours. A project which demonstrates 20 hours of solid mathematics work suffices to obtain the maximum grade. Project presentations will take place in January.
 
 ## Alternative evaluation
 
@@ -55,14 +55,13 @@ If one chooses this evaluation system:
 
 - The written and oral must be taken in the same call;
 - Grades acquired during any of the continuous evaluation **do not** contribute to the final score if the student chooses this option (in particular grades from the exercises and mini-project do not count);
-<!-- - The written exam questions will be similar to the "additional exercises" available on this site and the questions used during the last few years of this course; -->
 - During the written exam solutions must be written completely and fully justified;
 - The oral exam requires the students to demonstrate ability to work with the material of the course, the same material which is the subject of the written exam.
 
 For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/).
 
-- Call 1, TBA
-- Call 2, TBA
+- Call 1, 20/01/2025
+- Call 2, 03/02/2025
 - Call 3, TBA
 - Call 4, TBA
 - Call 5, TBA

@@ -13,23 +13,26 @@
 
 ## Schedule
 
-- TBA: deadline for agreeing project topic and project team
-- TBA: project presentations
+- 20/12/2024: deadline for agreeing project topic and project team (this is flexible but best to aim for having a definite plan even a week before this)
+- 13/01/2025 - 17/01/2025: project presentations (this is flexible if required to avoid other commitments by arranging the presentation earlier)
 
 ## Possible topics
 
-- More in depth with surface integrals
-- More in depth with multiple integrals and change of variables
-- More in depth with line integrals
-- More in depth with... etc.
-- Consider a few of the theorems of the course and prepare the proofs in detail
+- The proof of [Stokes' theorem](https://en.wikipedia.org/wiki/Stokes%27_theorem)
+- [Manifolds, differential forms, exterior derivative](https://en.wikipedia.org/wiki/Differential_geometry) (an introduction)
 - The [rocket equation](https://en.wikipedia.org/wiki/Tsiolkovsky_rocket_equation) and hence why having multiple stages improves efficiency
 - The geometry of [aerospike engines](https://en.wikipedia.org/wiki/Aerospike_engine)
 - Why are [Lagrange points](https://en.wikipedia.org/wiki/Lagrange_point) good places for spacecraft like the [JW space telescope](https://en.wikipedia.org/wiki/James_Webb_Space_Telescope)?
 - Analysis of [predator-prey](https://en.wikipedia.org/wiki/Lotka%E2%80%93Volterra_equations) dynamics
 - Using [Lean](https://lean-lang.org/) in order to verify proofs
+- An analysis of spacecraft station keeping using gyroscopes
 - Analysis of electro-magnetic fields
+- Derivation of orbital mechanics, period of orbits, etc. from the underlying physics
 - Didactic methods for rigorous mathematics
 - Analysis of [moment of inertia](https://en.wikipedia.org/wiki/Moment_of_inertia#Motion_in_a_fixed_plane), etc for different geometries of wheel design
-- Could the technology of Star Catcher be used to prolong the Voyager missions?
+- Could the technology of Star Catcher be used to prolong the Voyager missions (huge mirrors to focus and transmit solar energy)?
 - Whatever else seems interesting and contains sufficient quantity of material related to MA2!
+- What's going on with the [Dzhanibekov effect](https://en.wikipedia.org/wiki/File:Dzhanibekov_effect.ogv)?
+- The history and properties of the exponential function
+- [Picard–Lindelöf theorem](https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem)
+- Optimizing long flight routes through regions with different prevailing winds

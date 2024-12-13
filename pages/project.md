@@ -37,3 +37,4 @@
 - [Picard–Lindelöf theorem](https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem)
 - Optimizing long flight routes through regions with different prevailing winds
 - Some calculations related to flywheel electricity storage
+- Derivation and motivation of [Pappus's theorem](https://en.wikipedia.org/wiki/Pappus%27s_centroid_theorem)

@@ -38,3 +38,4 @@
 - Optimizing long flight routes through regions with different prevailing winds
 - Some calculations related to flywheel electricity storage
 - Derivation and motivation of [Pappus's theorem](https://en.wikipedia.org/wiki/Pappus%27s_centroid_theorem)
+- The error involved in approximating celestial bodies as point masses and when this becomes significant

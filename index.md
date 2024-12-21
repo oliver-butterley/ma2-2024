@@ -21,9 +21,9 @@ If you wish to have a reference book, we recommend [Mathematical Analysis II by 
 
 ## General advice
 
-- Develop your intuition, it's a powerful skill – But don’t trust it completely
-- Don’t aim to memorize but rather seek to understand – It is easy to remember anything when you understand it.
-- Question always, be skeptical of all statements presented to you. Don’t
+- Develop your intuition, it's a powerful skill - But don't trust it completely
+- Don't aim to memorize but rather seek to understand - It is easy to remember anything when you understand it.
+- Question always, be skeptical of all statements presented to you. Don't
   accept them until you are sure they are believable.
 - Observe, question how everything fits together, notice all the details.
 - Part of the process of mathematical reasoning is creative - to be creative we must drop our inhibitions and be ready to be wrong, repeatedly.

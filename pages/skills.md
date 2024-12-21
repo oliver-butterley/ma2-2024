@@ -17,7 +17,9 @@
 - Use the chain rule for these higher dimensional derivatives
 - Calculate curl of a vector field (\(\nabla \times F\))
 - Calculate divergence of a vector field (\(\nabla \cdot F\))
-- Work with level sets, find the normal to a level set surface
+- Visualize and sketch vector fields
+- Visualize and sketch level sets
+- Find the normal to a level set surface
 - Identify connected and simply connected regions
 
 ## Extrema
@@ -27,21 +29,21 @@
 - Apply the Lagrange multiplier method to find the extrema of a constrained problem
 - Determine the second-order Taylor formula for a scalar field
 
-## Curves / paths
-
-- Work with parametric curves
-- Identify and construct standard parametric curves
-- Evaluate the length of a path
-- Evaluate the path integral of a scalar field
-- Evaluate the path integral of a vector field (flux integral)
-
 ## Multiple integrals
 
 - Evaluate 2D/3D multiple integrals by repeated integration
 - Manipulate the description of 2D/3D regions in ways that are useful for integrating
 - Exchange the order of integration
 - Perform change of variable for multiple integrals
-- Use polar coordinates
+- Use polar coordinates, cylindrical coordinates, spherical coordinates
+
+## Curves / paths
+
+- Work with parametric curves
+- Identify and construct parametric curves
+- Evaluate the length of a path
+- Evaluate the path integral of a scalar field
+- Evaluate the path integral of a vector field (flux integral)
 
 ## Surfaces
 
@@ -58,6 +60,6 @@
 - Determine if a vector field is conservative
 - Construct a potential for a conservative vector field
 - Apply the 1st and 2nd fundamental theorems of calculus for path integrals
-- Apply Stokes’ theorem
-- Apply Gauss’ theorem
 - Apply Green's theorem
+- Apply Stokes' theorem
+- Apply Gauss' theorem

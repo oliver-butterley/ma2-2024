@@ -35,7 +35,11 @@ Course participants are encouraged to work together and discuss the mathematics 
 
 ### Written exam
 
-At the end of the course there is a written exam. This will test the course participant's ability for all the parts of the course. Practicing exercises for all the topics is the best preparation for the exam. In order to benefit from the continuous assessment evaluation, the written and oral **must be taken in call 1 or call 2**.
+At the end of the course there is a written exam. This will test the course participant's ability for all the parts of the course. Practicing exercises for all the topics is the best preparation for the exam.
+
+In order to benefit from the continuous assessment evaluation, the written and oral **must be taken in call 1 or call 2**.
+
+It is permitted to take up to 10 A4 sheets (or equivalent surface area) of notes to the exam. No electronic devices are permitted in the exam.
 
 ### Oral exam
 

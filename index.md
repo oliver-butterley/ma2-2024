@@ -14,7 +14,7 @@ Classroom: **Aula 8**
 
 ## Lecture notes and key skills learnt in the course
 
-See [pages/skills] for a list of the key skills learnt in this course.
+See [here](/pages/skills) for a list of the key skills learnt in this course.
 
 A [pdf of lecture notes](https://www.mat.uniroma2.it/butterley/ma2.pdf) is available for download.
 If you wish to have a reference book, we recommend [Mathematical Analysis II by Canuto and Tabacco](https://link.springer.com/book/10.1007/978-3-319-12757-6).

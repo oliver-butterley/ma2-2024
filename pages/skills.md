@@ -8,15 +8,15 @@
 - Differentiate / integrate a power series
 - Obtain power series solutions to ordinary differential equations
 
-## Functions in \(\mathbb{R}^n\)
+## Functions in $\mathbb{R}^n$
 
 - Calculate partial derivatives of a function of several variables
-- Calculate the gradient of a scalar field (\(\nabla f\))
+- Calculate the gradient of a scalar field ($\nabla f$)
 - Calculate the directional derivatives
 - Calculate the Jacobian matrix of a general function
 - Use the chain rule for these higher dimensional derivatives
-- Calculate curl of a vector field (\(\nabla \times F\))
-- Calculate divergence of a vector field (\(\nabla \cdot F\))
+- Calculate curl of a vector field ($\nabla \times F$)
+- Calculate divergence of a vector field ($\nabla \cdot F$)
 - Visualize and sketch vector fields
 - Visualize and sketch level sets
 - Find the normal to a level set surface

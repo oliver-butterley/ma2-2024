@@ -6,7 +6,7 @@
 - Calculate Taylor series of functions
 - Calculate radius of convergence of a power series
 - Differentiate / integrate a power series
-- Obtain power series solutions to ordinary differential equations
+<!-- - Obtain power series solutions to ordinary differential equations -->
 
 ## Functions in $\mathbb{R}^n$
 
@@ -25,7 +25,7 @@
 ## Extrema
 
 - Find stationary points of a scalar field
-- Use Hessian to classify stationary points
+- Use the Hessian matrix to classify stationary points
 - Apply the Lagrange multiplier method to find the extrema of a constrained problem
 - Determine the second-order Taylor formula for a scalar field
 
@@ -43,7 +43,7 @@
 - Identify and construct parametric curves
 - Evaluate the length of a path
 - Evaluate the path integral of a scalar field
-- Evaluate the path integral of a vector field (flux integral)
+- Evaluate the path integral of a vector field
 
 ## Surfaces
 

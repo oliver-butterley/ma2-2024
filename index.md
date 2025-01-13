@@ -14,16 +14,16 @@ Classroom: **Aula 8**
 
 ## Lecture notes and key skills learnt in the course
 
-See [pages/skills] for a list of the key skills learnt in this course.
+See [here](/pages/skills) for a list of the key skills learnt in this course.
 
 A [pdf of lecture notes](https://www.mat.uniroma2.it/butterley/ma2.pdf) is available for download.
 If you wish to have a reference book, we recommend [Mathematical Analysis II by Canuto and Tabacco](https://link.springer.com/book/10.1007/978-3-319-12757-6).
 
 ## General advice
 
-- Develop your intuition, it's a powerful skill – But don’t trust it completely
-- Don’t aim to memorize but rather seek to understand – It is easy to remember anything when you understand it.
-- Question always, be skeptical of all statements presented to you. Don’t
+- Develop your intuition, it's a powerful skill - But don't trust it completely
+- Don't aim to memorize but rather seek to understand - It is easy to remember anything when you understand it.
+- Question always, be skeptical of all statements presented to you. Don't
   accept them until you are sure they are believable.
 - Observe, question how everything fits together, notice all the details.
 - Part of the process of mathematical reasoning is creative - to be creative we must drop our inhibitions and be ready to be wrong, repeatedly.

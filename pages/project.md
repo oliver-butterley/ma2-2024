@@ -34,8 +34,9 @@
 - Whatever else seems interesting and contains sufficient quantity of material related to MA2!
 - What's going on with the [Dzhanibekov effect](https://en.wikipedia.org/wiki/File:Dzhanibekov_effect.ogv)?
 - The history and properties of the exponential function
-- [Picard–Lindelöf theorem](https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem)
+- [Picard-Lindelöf theorem](https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem)
 - Optimizing long flight routes through regions with different prevailing winds
 - Some calculations related to flywheel electricity storage
 - Derivation and motivation of [Pappus's theorem](https://en.wikipedia.org/wiki/Pappus%27s_centroid_theorem)
 - The error involved in approximating celestial bodies as point masses and when this becomes significant
+- The difference between the Fourier transform and the FFT (fast Fourier transform)

@@ -40,3 +40,4 @@
 - Derivation and motivation of [Pappus's theorem](https://en.wikipedia.org/wiki/Pappus%27s_centroid_theorem)
 - The error involved in approximating celestial bodies as point masses and when this becomes significant
 - The difference between the Fourier transform and the FFT (fast Fourier transform)
+- Is it better to include 3, 4, 5, 6 or more legs in the design when one needs to maximise stability whilst minimizing weight?

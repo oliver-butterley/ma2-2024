@@ -64,7 +64,7 @@ If one chooses this evaluation system:
 
 For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/).
 
-- Call 1, 20/01/2025
+- Call 1 ([questions](/call1.pdf) & [solutions](/Call1Solutions.pdf)), 20/01/2025
 - Call 2, 03/02/2025
 - Call 3, TBA
 - Call 4, TBA

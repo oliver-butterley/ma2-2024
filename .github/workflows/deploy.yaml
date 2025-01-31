@@ -25,11 +25,11 @@ jobs:
         run: |
           npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .vitepress/dist
       - name: Deploy to server over ssh
-        uses: easingthemes/ssh-deploy@v4
+        uses: easingthemes/ssh-deploy@v5
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-rlgoDzvc -i"

@@ -68,5 +68,5 @@ For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/).
 - Call 2 ([questions](/call2.pdf) & [solutions](/Call2Solutions.pdf)), 03/02/2025 09:30
 - Call 3 ([questions](/call3.pdf)), 02/07/2025 09:30
 - Call 4 ([questions](/call4.pdf)), 16/07/2025 09:30
-- Call 5, 10/09/2025 14:00
-- Call 6, 25/09/2025 14:00
+- Call 5 (no exam), 10/09/2025 14:00
+- Call 6 ([questions](/call6.pdf)), 25/09/2025 14:00

@@ -3,21 +3,20 @@
 **Mathematical Analysis 2** is a 9 CFU course, part of the [Engineering Sciences](https://engineering-sciences.uniroma2.it/) bachelor course.
 These pages contain the practical details related to the course.
 
-Instructors:
+Instructor:
 
-- [Yoh Tanimoto](https://www.mat.uniroma2.it/~tanimoto/) (30 hours)
 - [Oliver Butterley](https://www.mat.uniroma2.it/butterley/) (60 hours)
 
-Teams code: **ojz9mnk** (use this to join on Microsoft Teams)
+Teams code: **8dlmm2g** (use this to join on Microsoft Teams)
 
 Classroom: **Aula 8**
 
-## Lecture notes and key skills learnt in the course
+<!-- ## Lecture notes and key skills learnt in the course -->
 
-See [here](/pages/skills) for a list of the key skills learnt in this course.
+<!-- See [here](/pages/skills) for a list of the key skills learnt in this course.
 
 A [pdf of lecture notes](https://www.mat.uniroma2.it/butterley/ma2.pdf) is available for download.
-If you wish to have a reference book, we recommend [Mathematical Analysis II by Canuto and Tabacco](https://link.springer.com/book/10.1007/978-3-319-12757-6).
+If you wish to have a reference book, we recommend [Mathematical Analysis II by Canuto and Tabacco](https://link.springer.com/book/10.1007/978-3-319-12757-6). -->
 
 ## General advice
 
@@ -77,6 +76,7 @@ In particular many of the ideas are extended to the higher dimensional setting.
 Course material from previous years and other instructors is available.
 
 - 2023/24 [Butterley/Greenblatt](https://www.mat.uniroma2.it/butterley/archive/2023/MA2/)
+- 2024/25 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2024/MA2/)
 - 2022/23 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2022/MA2/)
 - 2021/22 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2021/MA2/)
 - 2020/21 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2020/MA2/)

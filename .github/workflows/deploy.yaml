@@ -36,5 +36,5 @@ jobs:
           SOURCE: ".vitepress/dist/"
           REMOTE_HOST: "www.mat.uniroma2.it"
           REMOTE_USER: "butterle"
-          TARGET: "~/public_html/archive/2024/MA2/"
+          TARGET: "~/public_html/MA2/"
           EXCLUDE: ""

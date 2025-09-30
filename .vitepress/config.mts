@@ -46,7 +46,7 @@ export default defineConfig({
   lang: "en-GB",
   title: "Mathematical Analysis 2",
   description: "Course material for Mathematical Analysis 2 (2024-25)",
-  base: "/butterley/MA2/",
+  base: "/butterley/archive/2024/MA2/",
 
   head: [
     ["link", { rel: "shortcut icon", href: "/favicon.png", type: "image/png" }],

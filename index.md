@@ -5,11 +5,17 @@ These pages contain the practical details related to the course.
 
 Instructor:
 
-- [Oliver Butterley](https://www.mat.uniroma2.it/butterley/) (60 hours)
+- [Oliver Butterley](https://www.mat.uniroma2.it/butterley/) (90 hours)
 
 Teams code: **8dlmm2g** (use this to join on Microsoft Teams)
 
 Classroom: **Aula 8**
+
+Classes:
+
+- Monday 14:00 - 15:45 (in person)
+- Wednesday 09:30 - 11:15 (in person)
+- Friday 11:30 - 13:15 (online)
 
 <!-- ## Lecture notes and key skills learnt in the course -->
 
@@ -75,8 +81,8 @@ In particular many of the ideas are extended to the higher dimensional setting.
 
 Course material from previous years and other instructors is available.
 
-- 2023/24 [Butterley/Greenblatt](https://www.mat.uniroma2.it/butterley/archive/2023/MA2/)
 - 2024/25 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2024/MA2/)
+- 2023/24 [Butterley/Greenblatt](https://www.mat.uniroma2.it/butterley/archive/2023/MA2/)
 - 2022/23 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2022/MA2/)
 - 2021/22 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2021/MA2/)
 - 2020/21 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2020/MA2/)

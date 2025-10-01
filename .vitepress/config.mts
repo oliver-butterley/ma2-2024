@@ -5,7 +5,7 @@ import MarkdownIt from "markdown-it";
 import mdContainer from "markdown-it-container";
 
 const courseParts = [
-  "Mathematical reasoning",
+  // "Mathematical reasoning",
   "Higher dimension",
   "Extrema",
   "Line integrals",
@@ -78,14 +78,14 @@ export default defineConfig({
       { text: "Overview", link: "/" },
       { text: "Evaluation", link: "/pages/evaluation" },
       { text: "Lecture diary", link: "/pages/diary" },
-      // {
-      //   text: "Lecture notes",
-      //   items: Array.from(Array(6), (_, n) => ({
-      //     text: `${n + 1}. ${courseParts[n]}`,
-      //     link: `/pages/part${n + 1}`,
-      //   })),
-      //   collapsed: false,
-      // },
+      {
+        text: "Lecture notes",
+        items: Array.from(Array(5), (_, n) => ({
+          text: `${n + 1}. ${courseParts[n]}`,
+          link: `/pages/part${n + 2}`,
+        })),
+        collapsed: false,
+      },
       // { text: "Mini-projects", link: "pages/project" },
     ],
 
@@ -111,10 +111,10 @@ export default defineConfig({
     },
 
     footer: {
-      // message:
-      //   'Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>',
-      // copyright:
-      //   'Copyright © 2023 <a href="https://www.mat.uniroma2.it/butterley/">Oliver Butterley</a>',
+      message:
+        'Released under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 License</a>',
+      copyright:
+        'Copyright © 2023 <a href="https://www.mat.uniroma2.it/butterley/">Oliver Butterley</a>',
     },
   },
 });

@@ -52,7 +52,7 @@ The material of the course is divided into six parts as listed below. Each part 
 | [Surface integrals](/pages/part6.md)      | 4 - 15 Dec      | Greenblatt |
 -->
 
-See the [lesson diary](/pages/diary) for full details.
+See the [lesson diary](/pages/diary) for full details (class topics for dates in the future are provisional and subject to change).
 
 ## What is MA2?
 

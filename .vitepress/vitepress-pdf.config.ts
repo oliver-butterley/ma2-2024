@@ -1,4 +1,4 @@
-import { defineUserConfig } from 'vitepress-export-pdf'
+import { defineUserConfig, type PageType } from 'vitepress-export-pdf'
 
 export default defineUserConfig({
   // Output file name
@@ -7,14 +7,21 @@ export default defineUserConfig({
   // Output directory
   outDir: 'pdf',
 
-  // Route patterns - specify which pages to include (only parts 2-6)
-  // Patterns are relative to source directory, not including base path
+  // Route patterns - specify which pages to include
+  // Using glob patterns - exclude everything, then include what we want
   routePatterns: [
-    '/pages/part2',
-    '/pages/part3',
-    '/pages/part4',
-    '/pages/part5',
-    '/pages/part6',
+    '!/**',  // Exclude everything first
+    '/butterley/MA2/',  // Index page
+    '/butterley/MA2/pages/part2',
+    '/butterley/MA2/pages/part3',
+    '/butterley/MA2/pages/part4',
+    '/butterley/MA2/pages/part5',
+    '/butterley/MA2/pages/part6',
+    '/butterley/MA2/pages/exercises2',
+    '/butterley/MA2/pages/exercises3',
+    '/butterley/MA2/pages/exercises4',
+    '/butterley/MA2/pages/exercises5',
+    '/butterley/MA2/pages/exercises6',
   ],
 
   // PDF generation options
@@ -41,22 +48,24 @@ export default defineUserConfig({
   pdfOutlines: true,
 
   // Sort URLs - you can customize page order here
-  sorter: (a: string, b: string) => {
-    // Ensure we have strings
-    const strA = String(a)
-    const strB = String(b)
-
-    // Define custom order (parts 2-6 in sequence)
+  sorter: (a: PageType, b: PageType) => {
+    // Define custom order: index, parts 2-6, exercises 2-6
     const order = [
-      '/pages/part2',
-      '/pages/part3',
-      '/pages/part4',
-      '/pages/part5',
-      '/pages/part6',
+      '/butterley/MA2/',
+      '/butterley/MA2/pages/part2',
+      '/butterley/MA2/pages/part3',
+      '/butterley/MA2/pages/part4',
+      '/butterley/MA2/pages/part5',
+      '/butterley/MA2/pages/part6',
+      '/butterley/MA2/pages/exercises2',
+      '/butterley/MA2/pages/exercises3',
+      '/butterley/MA2/pages/exercises4',
+      '/butterley/MA2/pages/exercises5',
+      '/butterley/MA2/pages/exercises6',
     ]
 
-    const indexA = order.indexOf(strA)
-    const indexB = order.indexOf(strB)
+    const indexA = order.indexOf(a.path)
+    const indexB = order.indexOf(b.path)
 
     // If both found in order array, sort by position
     if (indexA !== -1 && indexB !== -1) {
@@ -68,6 +77,6 @@ export default defineUserConfig({
     if (indexB !== -1) return 1
 
     // Otherwise use alphabetical
-    return strA.localeCompare(strB)
+    return a.path.localeCompare(b.path)
   },
 })

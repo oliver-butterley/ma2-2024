@@ -80,6 +80,8 @@ In particular many of the ideas are extended to the higher dimensional setting.
 
 ## Additional info
 
+The online version of the notes and exercises is recommended, but a [PDF version](/butterley/MA2/MA2-2025.pdf) can also be downloaded (updated as the notes are updated).
+
 Course material from previous years and other instructors is available.
 
 - 2024/25 [Butterley](https://www.mat.uniroma2.it/butterley/archive/2024/MA2/)

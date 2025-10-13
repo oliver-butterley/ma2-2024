@@ -4,8 +4,8 @@ export default defineUserConfig({
   // Output file name
   outFile: 'MA2-2025.pdf',
 
-  // Output directory
-  outDir: 'pdf',
+  // Output directory (root of the built site)
+  outDir: '.vitepress/dist',
 
   // Route patterns - specify which pages to include
   // Using glob patterns - exclude everything, then include what we want

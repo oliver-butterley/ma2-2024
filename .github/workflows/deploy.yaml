@@ -24,6 +24,9 @@ jobs:
       - name: Build with VitePress
         run: |
           npm run build
+      - name: Export PDF
+        run: |
+          npm run export-pdf
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

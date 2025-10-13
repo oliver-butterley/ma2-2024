@@ -41,18 +41,17 @@ If you wish to have a reference book, we recommend [Mathematical Analysis II by 
 ::: warning
 This information is in the process of being updated.
 :::
-
-The material of the course is divided into six parts as listed below. Each part takes two weeks and is accompanied with a set of exercises. Mathematically the parts are intimately linked.
-
-| Topic (2 weeks each)                      | Teaching period | Instructor |
-| ----------------------------------------- | --------------- | ---------- |
-| [Mathematical reasoning](/pages/part1.md) | 25 Sep - 6 Oct  | Butterley  |
-| [Higher dimension](/pages/part2.md)       | 9 - 20 Oct      | Butterley  |
-| [Extrema](/pages/part3.md)                | 23 Oct - 3 Nov  | Butterley  |
-| [Line integrals](/pages/part4.md)         | 6 - 17 Nov      | Butterley  |
-| [Multiple integrals](/pages/part5.md)     | 20 Nov - 1 Dec  | Greenblatt |
-| [Surface integrals](/pages/part6.md)      | 4 - 15 Dec      | Greenblatt |
 -->
+
+The material of the course is divided into five parts as listed below. Each part takes two weeks. Mathematically the parts are intimately linked.
+
+| Topic (2 weeks each)                  | Teaching period | Instructor |
+| ------------------------------------- | --------------- | ---------- |
+| [Higher dimension](/pages/part2.md)   | 29 Sep - 8 Oct  | Butterley  |
+| [Extrema](/pages/part3.md)            | 13 Oct - 24 Oct | Butterley  |
+| [Line integrals](/pages/part4.md)     | 27 Oct - 7 Nov  | Butterley  |
+| [Multiple integrals](/pages/part5.md) | 10 Nov - 21 Nov | Butterley  |
+| [Surface integrals](/pages/part6.md)  | 24 Nov - 5 Dec  | Butterley  |
 
 See the [lesson diary](/pages/diary) for full details (class topics for dates in the future are provisional and subject to change).
 

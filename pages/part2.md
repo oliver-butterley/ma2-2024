@@ -1,4 +1,4 @@
-<!--@include: ./pages/notation.md-->
+<!--@include: notation.md-->
 
 # Differential calculus in higher dimension
 

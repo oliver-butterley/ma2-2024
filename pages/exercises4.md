@@ -1,6 +1,6 @@
 # Additional exercises 3
 
-<!--@include: ./pages/notation.md-->
+<!--@include: notation.md-->
 
 ## Exercise
 

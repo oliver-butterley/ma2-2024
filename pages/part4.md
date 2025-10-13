@@ -1,4 +1,4 @@
-<!--@include: ./pages/notation.md-->
+<!--@include: notation.md-->
 
 # Curves & line integrals
 

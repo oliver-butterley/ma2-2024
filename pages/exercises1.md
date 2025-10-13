@@ -1,4 +1,4 @@
-# Additional exercises 1
+# Additional exercises 0
 
 ## Exercise
 
@@ -61,6 +61,6 @@ h1 {
 }
 h2:after {
     counter-increment: h2;
-    content: "1." counter(h2) 
+    content: "0." counter(h2)
 }
 </style>

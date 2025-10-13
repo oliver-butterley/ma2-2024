@@ -1,4 +1,4 @@
-# Additional exercises 4
+# Additional exercises 3
 
 <!--@include: ./pages/notation.md-->
 
@@ -64,6 +64,6 @@ h1 {
 }
 h2:after {
     counter-increment: h2;
-    content: "4." counter(h2) 
+    content: "3." counter(h2)
 }
 </style>

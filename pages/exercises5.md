@@ -1,4 +1,4 @@
-# Additional exercises 5
+# Additional exercises 4
 
 <!--@include: notation.md-->
 
@@ -120,6 +120,6 @@ h1 {
 }
 h2:after {
     counter-increment: h2;
-    content: "5." counter(h2) 
+    content: "4." counter(h2)
 }
 </style>

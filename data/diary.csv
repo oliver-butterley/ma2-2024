@@ -1,37 +1,37 @@
 date,time,topic,week,instructor
 29/09/2025,14:00-15:45,"Overview of the course, MA1 vs MA2, why are we here, higher dimension, vector fields, etc.",1,Butterley
-01/10/2025,09:30-11:15,"",1,Butterley
-03/10/2025,11:30-13:15,"",1,Butterley
-06/10/2025,14:00-15:45,"",2,Butterley
-08/10/2025,09:30-11:15,"",2,Butterley
-10/10/2025,11:30-13:15,"Open and closed sets in higher-dimensional spaces, limits and continuity of functions, continuity of various operations (sum, scalar multiplication, scalar product, norm)",2,Butterley
-13/10/2025,14:00-15:45,"Continuity of components of vector fields, directional derivatives of scalar fields, partial derivatives, examples, differentiability",3,Butterley
-15/10/2025,09:30-11:15,"Exercises on open sets, domains in higher dimensions, directional derivatives, partial derivatives and gradients",3,Butterley
-17/10/2025,11:30-13:15,"Differentiability and continuity of scalar fields, a sufficient condition for differentiability, chain rule for scalar fields, level sets, gradient and tangent lines.",3,Butterley
-20/10/2025,14:00-15:45,"Directional derivatives, and differentiability of vector fields, Jacobian matrix, chain rule for vector fields, examples, implicit functions and their partial derivatives",4,Butterley
-22/10/2025,09:30-11:15,"Exercises on chain rules, applications to differentiations, Jacobian matrix of vector fields, spherical coordinates, implicit functions, higher partial derivatives",4,Butterley
-24/10/2025,11:30-13:15,"Commutation of partial derivatives, partial differential equations, solutions of first order linear PDE with constant coefficients and 1D wave equation",4,Butterley
-27/10/2025,14:00-15:45,"Global and local minima and maxima (extrema), gradient and extrema, Hessian matrix, examples, the second-order Taylor formula for scalar fields",5,Butterley
-29/10/2025,09:30-11:15,"Exercises on partial differential equations, gradient, stationary point, Hessian matrix, the method of least squares",5,Butterley
-31/10/2025,11:30-13:15,"Review of linear algebra, classification of stationary points using Hessian matrix, example, attaining extrema of continuous scalar fields",5,Butterley
-03/11/2025,14:00-15:45,Extrema with constraints: Lagrange multiplier method,6,Butterley
-05/11/2025,09:30-11:15,Lagrange multiplier method example,6,Butterley
-07/11/2025,11:30-13:15,"Lagrange multiplier with many constraints and example. Curves, paths, parametric paths.",6,Butterley
-10/11/2025,14:00-15:45,"More on parametric curves, regular, congruent, tangent vector, length of a curve.",7,Butterley
-12/11/2025,09:30-11:15,"Various standard parametric curves, scalar path integral, vector path integral. Dependence of integral on choice of parametrization.",7,Butterley
-14/11/2025,11:30-13:15,"Properties of line integrals, first and second fundamental theorems. Evaluating the line integral of a gradient. Sketching vector fields.",7,Butterley
-17/11/2025,14:00-15:45,"Conservative vector field, equivalent characterizations. Parametric surfaces, some examples, fundamental vector product.",8,Butterley
-19/11/2025,09:30-11:15,"Identifying a conservative vector field, constructing a potential for a conservative vector field. Intro to multiple integrals, definition of multiple integrals, evaluation by repeated integration, triangular regions.",8,Butterley
-21/11/2025,11:30-13:15,Theory behind integrating over a region lying between curves. Tactics for approaching different integrals. Various examples of multiple integrals.,8,Butterley
-24/11/2025,14:00-15:45,"Change of variable is multiple integrals, examples. Describing 3D solids. Triple integrals.",9,Butterley
-26/11/2025,09:30-11:15,Center of mass / centroid. Examples.,9,Butterley
-28/11/2025,11:30-13:15,Surface integrals of scalar fields. Surface integrals of vector fields.,9,Butterley
-01/12/2025,14:00-15:45,Examples of surface integrals.,10,Butterley
-03/12/2025,09:30-11:15,"Reminder of curl, div. Stokes' thm, Gauss' thm. Green's thm. Discussion of generalized Stokes' thm.",10,Butterley
-05/12/2025,11:30-13:15,Green's and Stokes' thm for regions with holes.,10,Butterley
-08/12/2025,14:00-15:45,,11,Butterley
-10/12/2025,09:30-11:15,,11,Butterley
-12/12/2025,11:30-13:15,,11,Butterley
-15/12/2025,14:00-15:45,,12,Butterley
-17/12/2025,09:30-11:15,,12,Butterley
-19/12/2025,11:30-13:15,,12,Butterley
+01/10/2025,09:30-11:15,"directional derivatives of scalar fields, partial derivatives",1,Butterley
+03/10/2025,11:30-13:15,"domains in higher dimensions, directional derivatives, partial derivatives and gradients",1,Butterley
+06/10/2025,14:00-15:45,"chain rule for scalar fields, level sets, gradient and tangent lines",2,Butterley
+08/10/2025,09:30-11:15,"Chain rule, applications to differentiations, Jacobian matrix",2,Butterley
+08/10/2025,11:30-13:15,"Jacobian matrix, chain rule for vector fields, implicit functions, higher partial derivatives",2,Butterley
+13/10/2025,14:00-15:45,"",3,Butterley
+15/10/2025,09:30-11:15,"",3,Butterley
+15/10/2025,11:30-13:15,"",3,Butterley
+20/10/2025,14:00-15:45,"",4,Butterley
+22/10/2025,09:30-11:15,,4,Butterley
+22/10/2025,11:30-13:15,"",4,Butterley
+27/10/2025,14:00-15:45,5,Butterley
+29/10/2025,09:30-11:15,5,Butterley
+29/10/2025,11:30-13:15,5,Butterley
+03/11/2025,14:00-15:45,6,Butterley
+05/11/2025,09:30-11:15,6,Butterley
+07/11/2025,11:30-13:15,6,Butterley
+10/11/2025,14:00-15:45,7,Butterley
+12/11/2025,09:30-11:15,7,Butterley
+14/11/2025,11:30-13:15,7,Butterley
+17/11/2025,14:00-15:45,8,Butterley
+19/11/2025,09:30-11:15,8,Butterley
+21/11/2025,11:30-13:15,8,Butterley
+24/11/2025,14:00-15:45,9,Butterley
+26/11/2025,09:30-11:15,9,Butterley
+28/11/2025,11:30-13:15,9,Butterley
+01/12/2025,14:00-15:45,10,Butterley
+03/12/2025,09:30-11:15,10,Butterley
+05/12/2025,11:30-13:15,10,Butterley
+08/12/2025,14:00-15:45,11,Butterley
+10/12/2025,09:30-11:15,11,Butterley
+12/12/2025,11:30-13:15,11,Butterley
+15/12/2025,14:00-15:45,12,Butterley
+17/12/2025,09:30-11:15,12,Butterley
+19/12/2025,11:30-13:15,12,Butterley

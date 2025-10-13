@@ -17,6 +17,8 @@ Classes:
 - Wednesday 09:30 - 11:15 (in person)
 - Friday 11:30 - 13:15 (online)
 
+During October we won't have the Friday class, instead we will have the class in person on Wednesday at 11:30 - 13:15.
+
 <!-- ## Lecture notes and key skills learnt in the course -->
 
 <!-- See [here](/pages/skills) for a list of the key skills learnt in this course.

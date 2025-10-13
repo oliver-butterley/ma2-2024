@@ -2,19 +2,13 @@
 
 # Differential calculus in higher dimension
 
-::: warning
-The information in this section is being updated.
-:::
-
 In this part of the course we work on the following skills:
 
 - Become comfortable working with coordinates in arbitrary dimension.
 - Develop an intuition for working with vector fields.
 - Understand the subtleties of derivatives in dimension greater than 1, evaluate and manipulate partial derivatives, directional derivatives, Jacobian.
 
-See also the [graded exercises][graded2] and [additional exercises](/pages/exercises2) associated to this part of the course.
-
-[graded2]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=2
+See also the [exercises](/pages/exercises2) associated to this part of the course.
 
 Here we start to consider higher dimensional space.
 That is, instead of $\mathbb{R}$ we consider $\mathbb{R}^n$ for $n\in \mathbb{N}$.

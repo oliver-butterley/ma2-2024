@@ -86,6 +86,14 @@ export default defineConfig({
         })),
         collapsed: false,
       },
+      {
+        text: "Exercises",
+        items: Array.from(Array(5), (_, n) => ({
+          text: `${n + 1}. ${courseParts[n]}`,
+          link: `/pages/exercises${n + 2}`,
+        })),
+        collapsed: false,
+      },
       // { text: "Mini-projects", link: "pages/project" },
     ],
 

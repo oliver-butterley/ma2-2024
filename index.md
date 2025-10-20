@@ -45,13 +45,13 @@ This information is in the process of being updated.
 
 The material of the course is divided into five parts as listed below. Each part takes two weeks. Mathematically the parts are intimately linked.
 
-| Topic (2 weeks each)                  | Teaching period | Instructor |
-| ------------------------------------- | --------------- | ---------- |
-| [Higher dimension](/pages/part2.md)   | 29 Sep - 8 Oct  | Butterley  |
-| [Extrema](/pages/part3.md)            | 13 Oct - 24 Oct | Butterley  |
-| [Line integrals](/pages/part4.md)     | 27 Oct - 7 Nov  | Butterley  |
-| [Multiple integrals](/pages/part5.md) | 10 Nov - 21 Nov | Butterley  |
-| [Surface integrals](/pages/part6.md)  | 24 Nov - 5 Dec  | Butterley  |
+| Topic (2 weeks each)                  | Teaching period                  | Instructor |
+| ------------------------------------- | -------------------------------- | ---------- |
+| [Higher dimension](/pages/part2.md)   | 29 Sep - 8 Oct                   | Butterley  |
+| [Extrema](/pages/part3.md)            | 13 Oct - 18 Oct, 27 Oct - 31 Oct | Butterley  |
+| [Line integrals](/pages/part4.md)     | 3 Nov- 14 Nov                    | Butterley  |
+| [Multiple integrals](/pages/part5.md) | 17 Nov - 28 Nov                  | Butterley  |
+| [Surface integrals](/pages/part6.md)  | 1 Dec - 19 Dec                   | Butterley  |
 
 See the [lesson diary](/pages/diary) for full details (class topics for dates in the future are provisional and subject to change).
 

@@ -24,6 +24,21 @@ jobs:
       - name: Build with VitePress
         run: |
           npm run build
+      - name: Create .htaccess for Apache SPA routing
+        run: |
+          cat > .vitepress/dist/.htaccess << 'EOF'
+          <IfModule mod_rewrite.c>
+            RewriteEngine On
+            RewriteBase /butterley/MA2/
+
+            # If the request is for an existing file or directory, serve it
+            RewriteCond %{REQUEST_FILENAME} !-f
+            RewriteCond %{REQUEST_FILENAME} !-d
+
+            # Otherwise, serve index.html
+            RewriteRule ^ index.html [L]
+          </IfModule>
+          EOF
       - name: Export PDF
         run: |
           npm run export-pdf

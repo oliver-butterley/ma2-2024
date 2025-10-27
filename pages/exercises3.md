@@ -43,6 +43,8 @@ $$
 f(x, y, z) = 2e^{(x−1)^2} (y^4 − 4yz + 2z^2).
 $$
 
+Note: this problem is rather harder than the previous ones and harder than anticipated in exams.
+
 ## Exercise
 
 Find the absolute minimum and absolute maximum of $f(x,y)=(9x^2 − 1)(1 + 4y)$ on the rectangle given by $−2 \leq x \leq 3$, $−1\leq y \leq4$.

@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /butterley/MA2/
+
+  # If the request is for an existing file or directory, serve it
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+
+  # Otherwise, serve index.html
+  RewriteRule ^ index.html [L]
+</IfModule>

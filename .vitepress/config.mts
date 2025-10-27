@@ -53,7 +53,7 @@ export default defineConfig({
   ],
 
   lastUpdated: true,
-  cleanUrls: true,
+  cleanUrls: false,
 
   markdown: {
     math: true,

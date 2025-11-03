@@ -2,10 +2,6 @@
 
 # Curves & line integrals
 
-::: warning
-The information in this section is being updated.
-:::
-
 In this part of the course we work on the following skills:
 
 - Work with parametric paths
@@ -13,9 +9,7 @@ In this part of the course we work on the following skills:
 - Evaluate and work with vector line integrals
 - Work with potentials and conservative vector fields
 
-See also the [graded exercises][graded4] and [additional exercises](/pages/exercises4) associated to this part of the course.
-
-[graded4]: https://esamionline.uniroma2.it/course/view.php?id=6165&section=4
+See also the [exercises](/pages/exercises4) associated to this part of the course.
 
 Curves have played a part in earlier parts of the course and now we turn our attention to precisely what we mean by this notion. Up until now we relied more on an intuition, an idea of some type of 1D subset of higher dimensional space. We will also define how we can integrate scalar and vector fields along these curves. These types of integrals have a natural and important physical relevance. We will then study some of the properties of these integrals. To start let's recall a random selection of curves we have already seen:
 

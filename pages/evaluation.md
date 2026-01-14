@@ -25,3 +25,14 @@ The written and oral must be taken in the same call.
 ## Grades
 
 A grade of 18 or above and is considered as passing the course. The highest grade is 30 Lode.
+
+## Exam schedule
+
+For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/).
+
+- Call 1: 20/01/2026, (Part 1: 9:30-11:00, Part2: 11:30-13:00, Oral: afternoon)
+- Call 2: 24/02/2026, (Part 1: 9:30-11:00, Part2: 11:30-13:00, Oral: afternoon)
+- Call 3: TBA
+- Call 4: TBA
+- Call 5: TBA
+- Call 6: TBA

@@ -16,9 +16,7 @@ The written exam consist of two parts, each of 90 minutes duration. Each part co
 
 ## Oral exam
 
-The oral exam is obligatory and will be conducted shortly after the written exam. Preparation for the written exam suffices as preparation for the oral. During the oral the course participant is required to show an ability working with the material on par with what they have demonstrated in their exercise set solutions during the semester and the written exam solutions.
-
-Careless errors, etc which have caused a loss of points in the written exam can potentially be recovered during the oral with points being added to the bonus.
+The oral exam is obligatory and will be conducted shortly after the written exam. Preparation for the written exam suffices as preparation for the oral. During the oral the course participant is required to show an ability working with the material on par with what they have demonstrated in their written exam solutions.
 
 The written and oral must be taken in the same call.
 

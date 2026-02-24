@@ -29,7 +29,7 @@ A grade of 18 or above and is considered as passing the course. The highest grad
 For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/).
 
 - Call 1: 20/01/2026, (Part 1: 9:30-11:00, Part2: 11:30-13:00, Oral: afternoon) [Questions and solutions](/call1.pdf)
-- Call 2: 24/02/2026, (Part 1: 9:30-11:00, Part2: 11:30-13:00, Oral: afternoon)
+- Call 2: 24/02/2026, (Part 1: 9:30-11:00, Part2: 11:30-13:00, Oral: afternoon) [Questions and solutions](/call2.pdf)
 - Call 3: TBA
 - Call 4: TBA
 - Call 5: TBA

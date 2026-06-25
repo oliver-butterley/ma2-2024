@@ -34,3 +34,8 @@ For exam dates and reservation, see [Delphi](https://delphi.uniroma2.it/).
 - Call 4: TBA
 - Call 5: TBA
 - Call 6: TBA
+
+## Past exams
+
+- 2024–25: [Call 1](/exams/2024-25/call1.pdf), [Call 2](/exams/2024-25/call2.pdf), [Call 3](/exams/2024-25/call3.pdf), [Call 4](/exams/2024-25/call4.pdf), [Call 6](/exams/2024-25/call6.pdf)
+- 2023–24: [Call 1](/exams/2023-24/call1.pdf), [Call 2](/exams/2023-24/call2.pdf), [Call 3](/exams/2023-24/call3.pdf), [Call 4](/exams/2023-24/call4.pdf)

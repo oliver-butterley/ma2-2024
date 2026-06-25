@@ -46,7 +46,7 @@ export default defineConfig({
   lang: "en-GB",
   title: "Mathematical Analysis 2",
   description: "Course material for Mathematical Analysis 2 (2025-26)",
-  base: "/butterley/MA2/",
+  base: process.env.DEPLOY_BASE ?? "/butterley/MA2/",
 
   head: [
     ["link", { rel: "shortcut icon", href: "/favicon.png", type: "image/png" }],

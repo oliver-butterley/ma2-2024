@@ -1,5 +1,24 @@
 import { defineUserConfig, type PageType } from 'vitepress-export-pdf'
 
+// Must match `base` in config.mts (overridable for different deploy targets)
+const base = process.env.DEPLOY_BASE ?? '/butterley/MA2/'
+
+// Pages to include, in order, relative to the site base
+const pages = [
+  '',
+  'pages/part2',
+  'pages/part3',
+  'pages/part4',
+  'pages/part5',
+  'pages/part6',
+  'pages/exercises2',
+  'pages/exercises3',
+  'pages/exercises4',
+  'pages/exercises5',
+  'pages/exercises6',
+]
+const routes = pages.map((p) => `${base}${p}`)
+
 export default defineUserConfig({
   // Output file name
   outFile: 'MA2-2025.pdf',
@@ -11,17 +30,7 @@ export default defineUserConfig({
   // Using glob patterns - exclude everything, then include what we want
   routePatterns: [
     '!/**',  // Exclude everything first
-    '/butterley/MA2/',  // Index page
-    '/butterley/MA2/pages/part2',
-    '/butterley/MA2/pages/part3',
-    '/butterley/MA2/pages/part4',
-    '/butterley/MA2/pages/part5',
-    '/butterley/MA2/pages/part6',
-    '/butterley/MA2/pages/exercises2',
-    '/butterley/MA2/pages/exercises3',
-    '/butterley/MA2/pages/exercises4',
-    '/butterley/MA2/pages/exercises5',
-    '/butterley/MA2/pages/exercises6',
+    ...routes,
   ],
 
   // PDF generation options
@@ -50,19 +59,7 @@ export default defineUserConfig({
   // Sort URLs - you can customize page order here
   sorter: (a: PageType, b: PageType) => {
     // Define custom order: index, parts 2-6, exercises 2-6
-    const order = [
-      '/butterley/MA2/',
-      '/butterley/MA2/pages/part2',
-      '/butterley/MA2/pages/part3',
-      '/butterley/MA2/pages/part4',
-      '/butterley/MA2/pages/part5',
-      '/butterley/MA2/pages/part6',
-      '/butterley/MA2/pages/exercises2',
-      '/butterley/MA2/pages/exercises3',
-      '/butterley/MA2/pages/exercises4',
-      '/butterley/MA2/pages/exercises5',
-      '/butterley/MA2/pages/exercises6',
-    ]
+    const order = routes
 
     const indexA = order.indexOf(a.path)
     const indexB = order.indexOf(b.path)
